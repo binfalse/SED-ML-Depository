@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000050.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DFG_1" name="DFG">
+      <listOfVariables>
+        <variable id="DFG" name="DFG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DFG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DFG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E1_1" name="E1">
+      <listOfVariables>
+        <variable id="E1" name="E1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E2_1" name="E2">
+      <listOfVariables>
+        <variable id="E2" name="E2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cn_1" name="Cn">
+      <listOfVariables>
+        <variable id="Cn" name="Cn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Gly_1" name="Gly">
+      <listOfVariables>
+        <variable id="Gly" name="Gly" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Gly']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Gly </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="_3DG_1" name="_3DG">
+      <listOfVariables>
+        <variable id="_3DG" name="_3DG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='_3DG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> _3DG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FA_1" name="FA">
+      <listOfVariables>
+        <variable id="FA" name="FA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="_1DG_1" name="_1DG">
+      <listOfVariables>
+        <variable id="_1DG" name="_1DG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='_1DG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> _1DG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AA_1" name="AA">
+      <listOfVariables>
+        <variable id="AA" name="AA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Man_1" name="Man">
+      <listOfVariables>
+        <variable id="Man" name="Man" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Man']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Man </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Glu_1" name="Glu">
+      <listOfVariables>
+        <variable id="Glu" name="Glu" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Glu']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Glu </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MG_1" name="MG">
+      <listOfVariables>
+        <variable id="MG" name="MG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mel_1" name="Mel">
+      <listOfVariables>
+        <variable id="Mel" name="Mel" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mel']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mel </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Fru_1" name="Fru">
+      <listOfVariables>
+        <variable id="Fru" name="Fru" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Fru']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Fru </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="DFG_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="E1_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="E2_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Cn_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Gly_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="_3DG_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="FA_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="_1DG_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="AA_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="Man_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="Glu_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="MG_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="Mel_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Fru_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="DFG_1" />
+        <dataSet id="col_2" dataReference="E1_1" />
+        <dataSet id="col_3" dataReference="E2_1" />
+        <dataSet id="col_4" dataReference="Cn_1" />
+        <dataSet id="col_5" dataReference="Gly_1" />
+        <dataSet id="col_6" dataReference="_3DG_1" />
+        <dataSet id="col_7" dataReference="FA_1" />
+        <dataSet id="col_8" dataReference="_1DG_1" />
+        <dataSet id="col_9" dataReference="AA_1" />
+        <dataSet id="col_10" dataReference="Man_1" />
+        <dataSet id="col_11" dataReference="Glu_1" />
+        <dataSet id="col_12" dataReference="MG_1" />
+        <dataSet id="col_13" dataReference="Mel_1" />
+        <dataSet id="col_14" dataReference="Fru_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
