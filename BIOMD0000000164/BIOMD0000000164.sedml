@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000164.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Carrier_Cytosol_1" name="Carrier_Cytosol">
+      <listOfVariables>
+        <variable id="Carrier_Cytosol" name="Carrier_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Carrier_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Carrier_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Carrier_RanGTP_Cytosol_1" name="Carrier_RanGTP_Cytosol">
+      <listOfVariables>
+        <variable id="Carrier_RanGTP_Cytosol" name="Carrier_RanGTP_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Carrier_RanGTP_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Carrier_RanGTP_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanGAP_Cytosol_1" name="RanGAP_Cytosol">
+      <listOfVariables>
+        <variable id="RanGAP_Cytosol" name="RanGAP_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanGAP_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanGAP_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanBP1_Cytosol_1" name="RanBP1_Cytosol">
+      <listOfVariables>
+        <variable id="RanBP1_Cytosol" name="RanBP1_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanBP1_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanBP1_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanBP1_Carrier_RanGTP_Cytosol_1" name="RanBP1_Carrier_RanGTP_Cytosol">
+      <listOfVariables>
+        <variable id="RanBP1_Carrier_RanGTP_Cytosol" name="RanBP1_Carrier_RanGTP_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanBP1_Carrier_RanGTP_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanBP1_Carrier_RanGTP_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NTF2_Nucleus_1" name="NTF2_Nucleus">
+      <listOfVariables>
+        <variable id="NTF2_Nucleus" name="NTF2_Nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NTF2_Nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NTF2_Nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanGDP_Nucleus_1" name="RanGDP_Nucleus">
+      <listOfVariables>
+        <variable id="RanGDP_Nucleus" name="RanGDP_Nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanGDP_Nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanGDP_Nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RCC1_Nucleus_1" name="RCC1_Nucleus">
+      <listOfVariables>
+        <variable id="RCC1_Nucleus" name="RCC1_Nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RCC1_Nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RCC1_Nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanGTP_Nucleus_1" name="RanGTP_Nucleus">
+      <listOfVariables>
+        <variable id="RanGTP_Nucleus" name="RanGTP_Nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanGTP_Nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanGTP_Nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NTF2_RanGDP_Nucleus_1" name="NTF2_RanGDP_Nucleus">
+      <listOfVariables>
+        <variable id="NTF2_RanGDP_Nucleus" name="NTF2_RanGDP_Nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NTF2_RanGDP_Nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NTF2_RanGDP_Nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Carrier_Nucleus_1" name="Carrier_Nucleus">
+      <listOfVariables>
+        <variable id="Carrier_Nucleus" name="Carrier_Nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Carrier_Nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Carrier_Nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanGDP_Cytosol_1" name="RanGDP_Cytosol">
+      <listOfVariables>
+        <variable id="RanGDP_Cytosol" name="RanGDP_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanGDP_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanGDP_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Carrier_RanGTP_Nucleus_1" name="Carrier_RanGTP_Nucleus">
+      <listOfVariables>
+        <variable id="Carrier_RanGTP_Nucleus" name="Carrier_RanGTP_Nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Carrier_RanGTP_Nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Carrier_RanGTP_Nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NTF2_RanGDP_Cytosol_1" name="NTF2_RanGDP_Cytosol">
+      <listOfVariables>
+        <variable id="NTF2_RanGDP_Cytosol" name="NTF2_RanGDP_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NTF2_RanGDP_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NTF2_RanGDP_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FRanGTP_Cytosol_1" name="FRanGTP_Cytosol">
+      <listOfVariables>
+        <variable id="FRanGTP_Cytosol" name="FRanGTP_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FRanGTP_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FRanGTP_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FCarrier_RanGTP_Cytosol_1" name="FCarrier_RanGTP_Cytosol">
+      <listOfVariables>
+        <variable id="FCarrier_RanGTP_Cytosol" name="FCarrier_RanGTP_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FCarrier_RanGTP_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FCarrier_RanGTP_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FRanGDP_Cytosol_1" name="FRanGDP_Cytosol">
+      <listOfVariables>
+        <variable id="FRanGDP_Cytosol" name="FRanGDP_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FRanGDP_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FRanGDP_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FNTF2_RanGDP_Cytosol_1" name="FNTF2_RanGDP_Cytosol">
+      <listOfVariables>
+        <variable id="FNTF2_RanGDP_Cytosol" name="FNTF2_RanGDP_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FNTF2_RanGDP_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FNTF2_RanGDP_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FRanBP1_Carrier_RanGTP_Cytosol_1" name="FRanBP1_Carrier_RanGTP_Cytosol">
+      <listOfVariables>
+        <variable id="FRanBP1_Carrier_RanGTP_Cytosol" name="FRanBP1_Carrier_RanGTP_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FRanBP1_Carrier_RanGTP_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FRanBP1_Carrier_RanGTP_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FCarrier_RanGTP_Nucleus_1" name="FCarrier_RanGTP_Nucleus">
+      <listOfVariables>
+        <variable id="FCarrier_RanGTP_Nucleus" name="FCarrier_RanGTP_Nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FCarrier_RanGTP_Nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FCarrier_RanGTP_Nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FRanGDP_Nucleus_1" name="FRanGDP_Nucleus">
+      <listOfVariables>
+        <variable id="FRanGDP_Nucleus" name="FRanGDP_Nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FRanGDP_Nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FRanGDP_Nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FNTF2_RanGDP_Nucleus_1" name="FNTF2_RanGDP_Nucleus">
+      <listOfVariables>
+        <variable id="FNTF2_RanGDP_Nucleus" name="FNTF2_RanGDP_Nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FNTF2_RanGDP_Nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FNTF2_RanGDP_Nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FRanGTP_Nucleus_1" name="FRanGTP_Nucleus">
+      <listOfVariables>
+        <variable id="FRanGTP_Nucleus" name="FRanGTP_Nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FRanGTP_Nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FRanGTP_Nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NTF2_Cytosol_1" name="NTF2_Cytosol">
+      <listOfVariables>
+        <variable id="NTF2_Cytosol" name="NTF2_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NTF2_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NTF2_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pipet_Cytosol_1" name="Pipet_Cytosol">
+      <listOfVariables>
+        <variable id="Pipet_Cytosol" name="Pipet_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pipet_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pipet_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanGTP_Cytosol_1" name="RanGTP_Cytosol">
+      <listOfVariables>
+        <variable id="RanGTP_Cytosol" name="RanGTP_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanGTP_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanGTP_Cytosol </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Carrier_Cytosol_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Carrier_RanGTP_Cytosol_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="RanGAP_Cytosol_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="RanBP1_Cytosol_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="RanBP1_Carrier_RanGTP_Cytosol_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="NTF2_Nucleus_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="RanGDP_Nucleus_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="RCC1_Nucleus_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="RanGTP_Nucleus_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="NTF2_RanGDP_Nucleus_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="Carrier_Nucleus_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="RanGDP_Cytosol_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="Carrier_RanGTP_Nucleus_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="NTF2_RanGDP_Cytosol_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="FRanGTP_Cytosol_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="FCarrier_RanGTP_Cytosol_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="FRanGDP_Cytosol_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="FNTF2_RanGDP_Cytosol_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="FRanBP1_Carrier_RanGTP_Cytosol_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="FCarrier_RanGTP_Nucleus_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="FRanGDP_Nucleus_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="FNTF2_RanGDP_Nucleus_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="FRanGTP_Nucleus_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="NTF2_Cytosol_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="Pipet_Cytosol_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="RanGTP_Cytosol_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Carrier_Cytosol_1" />
+        <dataSet id="col_2" dataReference="Carrier_RanGTP_Cytosol_1" />
+        <dataSet id="col_3" dataReference="RanGAP_Cytosol_1" />
+        <dataSet id="col_4" dataReference="RanBP1_Cytosol_1" />
+        <dataSet id="col_5" dataReference="RanBP1_Carrier_RanGTP_Cytosol_1" />
+        <dataSet id="col_6" dataReference="NTF2_Nucleus_1" />
+        <dataSet id="col_7" dataReference="RanGDP_Nucleus_1" />
+        <dataSet id="col_8" dataReference="RCC1_Nucleus_1" />
+        <dataSet id="col_9" dataReference="RanGTP_Nucleus_1" />
+        <dataSet id="col_10" dataReference="NTF2_RanGDP_Nucleus_1" />
+        <dataSet id="col_11" dataReference="Carrier_Nucleus_1" />
+        <dataSet id="col_12" dataReference="RanGDP_Cytosol_1" />
+        <dataSet id="col_13" dataReference="Carrier_RanGTP_Nucleus_1" />
+        <dataSet id="col_14" dataReference="NTF2_RanGDP_Cytosol_1" />
+        <dataSet id="col_15" dataReference="FRanGTP_Cytosol_1" />
+        <dataSet id="col_16" dataReference="FCarrier_RanGTP_Cytosol_1" />
+        <dataSet id="col_17" dataReference="FRanGDP_Cytosol_1" />
+        <dataSet id="col_18" dataReference="FNTF2_RanGDP_Cytosol_1" />
+        <dataSet id="col_19" dataReference="FRanBP1_Carrier_RanGTP_Cytosol_1" />
+        <dataSet id="col_20" dataReference="FCarrier_RanGTP_Nucleus_1" />
+        <dataSet id="col_21" dataReference="FRanGDP_Nucleus_1" />
+        <dataSet id="col_22" dataReference="FNTF2_RanGDP_Nucleus_1" />
+        <dataSet id="col_23" dataReference="FRanGTP_Nucleus_1" />
+        <dataSet id="col_24" dataReference="NTF2_Cytosol_1" />
+        <dataSet id="col_25" dataReference="Pipet_Cytosol_1" />
+        <dataSet id="col_26" dataReference="RanGTP_Cytosol_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
