@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000355.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CaI_1" name="CaI">
+      <listOfVariables>
+        <variable id="CaI" name="CaI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CaI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CaI </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IP3_1" name="IP3">
+      <listOfVariables>
+        <variable id="IP3" name="IP3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IP3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IP3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="g_1" name="g">
+      <listOfVariables>
+        <variable id="g" name="g" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='g']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> g </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwaf195932_a72c_4552_8cf2_b349b15d39c4_1" name="mwaf195932_a72c_4552_8cf2_b349b15d39c4">
+      <listOfVariables>
+        <variable id="mwaf195932_a72c_4552_8cf2_b349b15d39c4" name="mwaf195932_a72c_4552_8cf2_b349b15d39c4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwaf195932_a72c_4552_8cf2_b349b15d39c4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwaf195932_a72c_4552_8cf2_b349b15d39c4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw0ebc76ad_49d7_4845_8f88_04d443fbe7f3_1" name="mw0ebc76ad_49d7_4845_8f88_04d443fbe7f3">
+      <listOfVariables>
+        <variable id="mw0ebc76ad_49d7_4845_8f88_04d443fbe7f3" name="mw0ebc76ad_49d7_4845_8f88_04d443fbe7f3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw0ebc76ad_49d7_4845_8f88_04d443fbe7f3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw0ebc76ad_49d7_4845_8f88_04d443fbe7f3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw7cb2644a_384a_4bbb_93fd_fd686e01d7cb_1" name="mw7cb2644a_384a_4bbb_93fd_fd686e01d7cb">
+      <listOfVariables>
+        <variable id="mw7cb2644a_384a_4bbb_93fd_fd686e01d7cb" name="mw7cb2644a_384a_4bbb_93fd_fd686e01d7cb" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw7cb2644a_384a_4bbb_93fd_fd686e01d7cb']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw7cb2644a_384a_4bbb_93fd_fd686e01d7cb </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwd6b792d8_c983_42c1_b3bc_2494d6a3363e_1" name="mwd6b792d8_c983_42c1_b3bc_2494d6a3363e">
+      <listOfVariables>
+        <variable id="mwd6b792d8_c983_42c1_b3bc_2494d6a3363e" name="mwd6b792d8_c983_42c1_b3bc_2494d6a3363e" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwd6b792d8_c983_42c1_b3bc_2494d6a3363e']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwd6b792d8_c983_42c1_b3bc_2494d6a3363e </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw013a7c64_a9ec_483c_b3b8_ed658337ee95_1" name="mw013a7c64_a9ec_483c_b3b8_ed658337ee95">
+      <listOfVariables>
+        <variable id="mw013a7c64_a9ec_483c_b3b8_ed658337ee95" name="mw013a7c64_a9ec_483c_b3b8_ed658337ee95" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw013a7c64_a9ec_483c_b3b8_ed658337ee95']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw013a7c64_a9ec_483c_b3b8_ed658337ee95 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CaS_1" name="CaS">
+      <listOfVariables>
+        <variable id="CaS" name="CaS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CaS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CaS </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="CaI_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="IP3_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="g_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="mwaf195932_a72c_4552_8cf2_b349b15d39c4_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="mw0ebc76ad_49d7_4845_8f88_04d443fbe7f3_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="mw7cb2644a_384a_4bbb_93fd_fd686e01d7cb_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="mwd6b792d8_c983_42c1_b3bc_2494d6a3363e_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="mw013a7c64_a9ec_483c_b3b8_ed658337ee95_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="CaS_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="CaI_1" />
+        <dataSet id="col_2" dataReference="IP3_1" />
+        <dataSet id="col_3" dataReference="g_1" />
+        <dataSet id="col_4" dataReference="mwaf195932_a72c_4552_8cf2_b349b15d39c4_1" />
+        <dataSet id="col_5" dataReference="mw0ebc76ad_49d7_4845_8f88_04d443fbe7f3_1" />
+        <dataSet id="col_6" dataReference="mw7cb2644a_384a_4bbb_93fd_fd686e01d7cb_1" />
+        <dataSet id="col_7" dataReference="mwd6b792d8_c983_42c1_b3bc_2494d6a3363e_1" />
+        <dataSet id="col_8" dataReference="mw013a7c64_a9ec_483c_b3b8_ed658337ee95_1" />
+        <dataSet id="col_9" dataReference="CaS_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
