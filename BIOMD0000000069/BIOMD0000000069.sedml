@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000069.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="srci_1" name="srci">
+      <listOfVariables>
+        <variable id="srci" name="srci" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='srci']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> srci </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="srco_1" name="srco">
+      <listOfVariables>
+        <variable id="srco" name="srco" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='srco']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> srco </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="srca_1" name="srca">
+      <listOfVariables>
+        <variable id="srca" name="srca" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='srca']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> srca </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="srcc_1" name="srcc">
+      <listOfVariables>
+        <variable id="srcc" name="srcc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='srcc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> srcc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cbp_P_CSK_1" name="Cbp_P_CSK">
+      <listOfVariables>
+        <variable id="Cbp_P_CSK" name="Cbp_P_CSK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cbp_P_CSK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cbp_P_CSK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CSK_cytoplasm_1" name="CSK_cytoplasm">
+      <listOfVariables>
+        <variable id="CSK_cytoplasm" name="CSK_cytoplasm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CSK_cytoplasm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CSK_cytoplasm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PTP_1" name="PTP">
+      <listOfVariables>
+        <variable id="PTP" name="PTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PTP_pY789_1" name="PTP_pY789">
+      <listOfVariables>
+        <variable id="PTP_pY789" name="PTP_pY789" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PTP_pY789']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PTP_pY789 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cbp_1" name="Cbp">
+      <listOfVariables>
+        <variable id="Cbp" name="Cbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cbp_P_1" name="Cbp_P">
+      <listOfVariables>
+        <variable id="Cbp_P" name="Cbp_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cbp_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cbp_P </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="srci_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="srco_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="srca_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="srcc_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Cbp_P_CSK_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="CSK_cytoplasm_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="PTP_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="PTP_pY789_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="Cbp_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="Cbp_P_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="srci_1" />
+        <dataSet id="col_2" dataReference="srco_1" />
+        <dataSet id="col_3" dataReference="srca_1" />
+        <dataSet id="col_4" dataReference="srcc_1" />
+        <dataSet id="col_5" dataReference="Cbp_P_CSK_1" />
+        <dataSet id="col_6" dataReference="CSK_cytoplasm_1" />
+        <dataSet id="col_7" dataReference="PTP_1" />
+        <dataSet id="col_8" dataReference="PTP_pY789_1" />
+        <dataSet id="col_9" dataReference="Cbp_1" />
+        <dataSet id="col_10" dataReference="Cbp_P_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
