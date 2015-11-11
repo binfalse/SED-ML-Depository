@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000103.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A_1" name="A">
+      <listOfVariables>
+        <variable id="A" name="A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C9_1" name="C9">
+      <listOfVariables>
+        <variable id="C9" name="C9" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C9']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C9 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C9X_1" name="C9X">
+      <listOfVariables>
+        <variable id="C9X" name="C9X" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C9X']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C9X </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="X_1" name="X">
+      <listOfVariables>
+        <variable id="X" name="X" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='X']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> X </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AC9X_1" name="AC9X">
+      <listOfVariables>
+        <variable id="AC9X" name="AC9X" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AC9X']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AC9X </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AC9_1" name="AC9">
+      <listOfVariables>
+        <variable id="AC9" name="AC9" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AC9']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AC9 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3_1" name="C3">
+      <listOfVariables>
+        <variable id="C3" name="C3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3_star_1" name="C3_star">
+      <listOfVariables>
+        <variable id="C3_star" name="C3_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3_starX_1" name="C3_starX">
+      <listOfVariables>
+        <variable id="C3_starX" name="C3_starX" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3_starX']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3_starX </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C9_starX_1" name="C9_starX">
+      <listOfVariables>
+        <variable id="C9_starX" name="C9_starX" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C9_starX']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C9_starX </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C9_star_1" name="C9_star">
+      <listOfVariables>
+        <variable id="C9_star" name="C9_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C9_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C9_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AC9_star_1" name="AC9_star">
+      <listOfVariables>
+        <variable id="AC9_star" name="AC9_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AC9_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AC9_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AC9_starX_1" name="AC9_starX">
+      <listOfVariables>
+        <variable id="AC9_starX" name="AC9_starX" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AC9_starX']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AC9_starX </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C9X_C3_star_1" name="C9X_C3_star">
+      <listOfVariables>
+        <variable id="C9X_C3_star" name="C9X_C3_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C9X_C3_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C9X_C3_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AC9X_C3_star_1" name="AC9X_C3_star">
+      <listOfVariables>
+        <variable id="AC9X_C3_star" name="AC9X_C3_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AC9X_C3_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AC9X_C3_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C9_starX_C3_star_1" name="C9_starX_C3_star">
+      <listOfVariables>
+        <variable id="C9_starX_C3_star" name="C9_starX_C3_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C9_starX_C3_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C9_starX_C3_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AC9_starX_C3_star_1" name="AC9_starX_C3_star">
+      <listOfVariables>
+        <variable id="AC9_starX_C3_star" name="AC9_starX_C3_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AC9_starX_C3_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AC9_starX_C3_star </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="A_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="C9_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="C9X_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="X_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="AC9X_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="AC9_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="C3_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="C3_star_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="C3_starX_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="C9_starX_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="C9_star_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="AC9_star_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="AC9_starX_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="C9X_C3_star_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="AC9X_C3_star_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="C9_starX_C3_star_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="AC9_starX_C3_star_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="A_1" />
+        <dataSet id="col_2" dataReference="C9_1" />
+        <dataSet id="col_3" dataReference="C9X_1" />
+        <dataSet id="col_4" dataReference="X_1" />
+        <dataSet id="col_5" dataReference="AC9X_1" />
+        <dataSet id="col_6" dataReference="AC9_1" />
+        <dataSet id="col_7" dataReference="C3_1" />
+        <dataSet id="col_8" dataReference="C3_star_1" />
+        <dataSet id="col_9" dataReference="C3_starX_1" />
+        <dataSet id="col_10" dataReference="C9_starX_1" />
+        <dataSet id="col_11" dataReference="C9_star_1" />
+        <dataSet id="col_12" dataReference="AC9_star_1" />
+        <dataSet id="col_13" dataReference="AC9_starX_1" />
+        <dataSet id="col_14" dataReference="C9X_C3_star_1" />
+        <dataSet id="col_15" dataReference="AC9X_C3_star_1" />
+        <dataSet id="col_16" dataReference="C9_starX_C3_star_1" />
+        <dataSet id="col_17" dataReference="AC9_starX_C3_star_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
