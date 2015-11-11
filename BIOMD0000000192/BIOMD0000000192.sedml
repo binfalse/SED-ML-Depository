@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000192.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanGDP_nuc_1" name="RanGDP_nuc">
+      <listOfVariables>
+        <variable id="RanGDP_nuc" name="RanGDP_nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanGDP_nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanGDP_nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RCC1_RanGDP_1" name="RCC1_RanGDP">
+      <listOfVariables>
+        <variable id="RCC1_RanGDP" name="RCC1_RanGDP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RCC1_RanGDP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RCC1_RanGDP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RCC1_1" name="RCC1">
+      <listOfVariables>
+        <variable id="RCC1" name="RCC1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RCC1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RCC1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RCC1_RanGTP_1" name="RCC1_RanGTP">
+      <listOfVariables>
+        <variable id="RCC1_RanGTP" name="RCC1_RanGTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RCC1_RanGTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RCC1_RanGTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RCC1_Ran_1" name="RCC1_Ran">
+      <listOfVariables>
+        <variable id="RCC1_Ran" name="RCC1_Ran" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RCC1_Ran']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RCC1_Ran </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanGTP_nuc_1" name="RanGTP_nuc">
+      <listOfVariables>
+        <variable id="RanGTP_nuc" name="RanGTP_nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanGTP_nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanGTP_nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanGAP_1" name="RanGAP">
+      <listOfVariables>
+        <variable id="RanGAP" name="RanGAP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanGAP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanGAP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanBP1_1" name="RanBP1">
+      <listOfVariables>
+        <variable id="RanBP1" name="RanBP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanBP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanBP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanGTP_cy_1" name="RanGTP_cy">
+      <listOfVariables>
+        <variable id="RanGTP_cy" name="RanGTP_cy" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanGTP_cy']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanGTP_cy </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanGTP_RanBP1_1" name="RanGTP_RanBP1">
+      <listOfVariables>
+        <variable id="RanGTP_RanBP1" name="RanGTP_RanBP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanGTP_RanBP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanGTP_RanBP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RanGDP_cy_1" name="RanGDP_cy">
+      <listOfVariables>
+        <variable id="RanGDP_cy" name="RanGDP_cy" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RanGDP_cy']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RanGDP_cy </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="RanGDP_nuc_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="RCC1_RanGDP_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="RCC1_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="RCC1_RanGTP_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="RCC1_Ran_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="RanGTP_nuc_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="RanGAP_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="RanBP1_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="RanGTP_cy_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="RanGTP_RanBP1_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="RanGDP_cy_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="RanGDP_nuc_1" />
+        <dataSet id="col_2" dataReference="RCC1_RanGDP_1" />
+        <dataSet id="col_3" dataReference="RCC1_1" />
+        <dataSet id="col_4" dataReference="RCC1_RanGTP_1" />
+        <dataSet id="col_5" dataReference="RCC1_Ran_1" />
+        <dataSet id="col_6" dataReference="RanGTP_nuc_1" />
+        <dataSet id="col_7" dataReference="RanGAP_1" />
+        <dataSet id="col_8" dataReference="RanBP1_1" />
+        <dataSet id="col_9" dataReference="RanGTP_cy_1" />
+        <dataSet id="col_10" dataReference="RanGTP_RanBP1_1" />
+        <dataSet id="col_11" dataReference="RanGDP_cy_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
