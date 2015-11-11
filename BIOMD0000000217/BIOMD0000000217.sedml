@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000217.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PII_1" name="PII">
+      <listOfVariables>
+        <variable id="PII" name="PII" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PII']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PII </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIIUMP_1" name="PIIUMP">
+      <listOfVariables>
+        <variable id="PIIUMP" name="PIIUMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIIUMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIIUMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GLN_1" name="GLN">
+      <listOfVariables>
+        <variable id="GLN" name="GLN" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GLN']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GLN </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIIUMP2_1" name="PIIUMP2">
+      <listOfVariables>
+        <variable id="PIIUMP2" name="PIIUMP2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIIUMP2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIIUMP2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIIUMP3_1" name="PIIUMP3">
+      <listOfVariables>
+        <variable id="PIIUMP3" name="PIIUMP3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIIUMP3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIIUMP3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GS_1" name="GS">
+      <listOfVariables>
+        <variable id="GS" name="GS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AMP_1" name="AMP">
+      <listOfVariables>
+        <variable id="AMP" name="AMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GLU_1" name="GLU">
+      <listOfVariables>
+        <variable id="GLU" name="GLU" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GLU']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GLU </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AZGLU_1" name="AZGLU">
+      <listOfVariables>
+        <variable id="AZGLU" name="AZGLU" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AZGLU']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AZGLU </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATP_1" name="ATP">
+      <listOfVariables>
+        <variable id="ATP" name="ATP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ADP_1" name="ADP">
+      <listOfVariables>
+        <variable id="ADP" name="ADP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ADP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ADP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AZGLN_1" name="AZGLN">
+      <listOfVariables>
+        <variable id="AZGLN" name="AZGLN" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AZGLN']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AZGLN </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="PII_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="PIIUMP_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="GLN_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="PIIUMP2_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="PIIUMP3_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="GS_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="AMP_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="GLU_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="AZGLU_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="ATP_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="ADP_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="AZGLN_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="PII_1" />
+        <dataSet id="col_2" dataReference="PIIUMP_1" />
+        <dataSet id="col_3" dataReference="GLN_1" />
+        <dataSet id="col_4" dataReference="PIIUMP2_1" />
+        <dataSet id="col_5" dataReference="PIIUMP3_1" />
+        <dataSet id="col_6" dataReference="GS_1" />
+        <dataSet id="col_7" dataReference="AMP_1" />
+        <dataSet id="col_8" dataReference="GLU_1" />
+        <dataSet id="col_9" dataReference="AZGLU_1" />
+        <dataSet id="col_10" dataReference="ATP_1" />
+        <dataSet id="col_11" dataReference="ADP_1" />
+        <dataSet id="col_12" dataReference="AZGLN_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
