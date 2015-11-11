@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000245.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="s_glu_1" name="s_glu">
+      <listOfVariables>
+        <variable id="s_glu" name="s_glu" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='s_glu']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> s_glu </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="s_pyr_1" name="s_pyr">
+      <listOfVariables>
+        <variable id="s_pyr" name="s_pyr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='s_pyr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> s_pyr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="s_acetate_1" name="s_acetate">
+      <listOfVariables>
+        <variable id="s_acetate" name="s_acetate" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='s_acetate']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> s_acetate </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="s_acetald_1" name="s_acetald">
+      <listOfVariables>
+        <variable id="s_acetald" name="s_acetald" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='s_acetald']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> s_acetald </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="s_EtOH_1" name="s_EtOH">
+      <listOfVariables>
+        <variable id="s_EtOH" name="s_EtOH" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='s_EtOH']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> s_EtOH </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="x_1" name="x">
+      <listOfVariables>
+        <variable id="x" name="x" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='x']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> x </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="s_glu_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="s_pyr_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="s_acetate_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="s_acetald_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="s_EtOH_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="x_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="s_glu_1" />
+        <dataSet id="col_2" dataReference="s_pyr_1" />
+        <dataSet id="col_3" dataReference="s_acetate_1" />
+        <dataSet id="col_4" dataReference="s_acetald_1" />
+        <dataSet id="col_5" dataReference="s_EtOH_1" />
+        <dataSet id="col_6" dataReference="x_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
