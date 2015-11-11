@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000093.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_1" name="R">
+      <listOfVariables>
+        <variable id="R" name="R" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="JAK_1" name="JAK">
+      <listOfVariables>
+        <variable id="JAK" name="JAK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='JAK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> JAK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RJ_1" name="RJ">
+      <listOfVariables>
+        <variable id="RJ" name="RJ" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RJ']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RJ </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNRJ_1" name="IFNRJ">
+      <listOfVariables>
+        <variable id="IFNRJ" name="IFNRJ" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNRJ']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNRJ </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNRJ2_1" name="IFNRJ2">
+      <listOfVariables>
+        <variable id="IFNRJ2" name="IFNRJ2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNRJ2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNRJ2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNRJ2_star_1" name="IFNRJ2_star">
+      <listOfVariables>
+        <variable id="IFNRJ2_star" name="IFNRJ2_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNRJ2_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNRJ2_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1c_1" name="STAT1c">
+      <listOfVariables>
+        <variable id="STAT1c" name="STAT1c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNRJ2_star_STAT1c_1" name="IFNRJ2_star_STAT1c">
+      <listOfVariables>
+        <variable id="IFNRJ2_star_STAT1c" name="IFNRJ2_star_STAT1c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNRJ2_star_STAT1c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNRJ2_star_STAT1c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1c_star_1" name="STAT1c_star">
+      <listOfVariables>
+        <variable id="STAT1c_star" name="STAT1c_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1c_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1c_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNRJ2_star_STAT1c_star_1" name="IFNRJ2_star_STAT1c_star">
+      <listOfVariables>
+        <variable id="IFNRJ2_star_STAT1c_star" name="IFNRJ2_star_STAT1c_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNRJ2_star_STAT1c_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNRJ2_star_STAT1c_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1c_star_STAT1c_star_1" name="STAT1c_star_STAT1c_star">
+      <listOfVariables>
+        <variable id="STAT1c_star_STAT1c_star" name="STAT1c_star_STAT1c_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1c_star_STAT1c_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1c_star_STAT1c_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SHP2_1" name="SHP2">
+      <listOfVariables>
+        <variable id="SHP2" name="SHP2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SHP2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SHP2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNRJ2_star_SHP2_1" name="IFNRJ2_star_SHP2">
+      <listOfVariables>
+        <variable id="IFNRJ2_star_SHP2" name="IFNRJ2_star_SHP2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNRJ2_star_SHP2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNRJ2_star_SHP2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PPX_1" name="PPX">
+      <listOfVariables>
+        <variable id="PPX" name="PPX" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PPX']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PPX </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1c_star_PPX_1" name="STAT1c_star_PPX">
+      <listOfVariables>
+        <variable id="STAT1c_star_PPX" name="STAT1c_star_PPX" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1c_star_PPX']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1c_star_PPX </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1c_STAT1c_star_1" name="STAT1c_STAT1c_star">
+      <listOfVariables>
+        <variable id="STAT1c_STAT1c_star" name="STAT1c_STAT1c_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1c_STAT1c_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1c_STAT1c_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1n_star_STAT1n_star_1" name="STAT1n_star_STAT1n_star">
+      <listOfVariables>
+        <variable id="STAT1n_star_STAT1n_star" name="STAT1n_star_STAT1n_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1n_star_STAT1n_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1n_star_STAT1n_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1n_star_1" name="STAT1n_star">
+      <listOfVariables>
+        <variable id="STAT1n_star" name="STAT1n_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1n_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1n_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PPN_1" name="PPN">
+      <listOfVariables>
+        <variable id="PPN" name="PPN" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PPN']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PPN </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1n_star_PPN_1" name="STAT1n_star_PPN">
+      <listOfVariables>
+        <variable id="STAT1n_star_PPN" name="STAT1n_star_PPN" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1n_star_PPN']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1n_star_PPN </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1n_1" name="STAT1n">
+      <listOfVariables>
+        <variable id="STAT1n" name="STAT1n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1n_STAT1n_star_1" name="STAT1n_STAT1n_star">
+      <listOfVariables>
+        <variable id="STAT1n_STAT1n_star" name="STAT1n_STAT1n_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1n_STAT1n_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1n_STAT1n_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mRNAn_1" name="mRNAn">
+      <listOfVariables>
+        <variable id="mRNAn" name="mRNAn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mRNAn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mRNAn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mRNAc_1" name="mRNAc">
+      <listOfVariables>
+        <variable id="mRNAc" name="mRNAc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mRNAc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mRNAc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SOCS1_1" name="SOCS1">
+      <listOfVariables>
+        <variable id="SOCS1" name="SOCS1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SOCS1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SOCS1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNRJ2_star_SOCS1_1" name="IFNRJ2_star_SOCS1">
+      <listOfVariables>
+        <variable id="IFNRJ2_star_SOCS1" name="IFNRJ2_star_SOCS1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNRJ2_star_SOCS1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNRJ2_star_SOCS1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNRJ2_star_SHP2_SOCS1_STAT1c_1" name="IFNRJ2_star_SHP2_SOCS1_STAT1c">
+      <listOfVariables>
+        <variable id="IFNRJ2_star_SHP2_SOCS1_STAT1c" name="IFNRJ2_star_SHP2_SOCS1_STAT1c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNRJ2_star_SHP2_SOCS1_STAT1c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNRJ2_star_SHP2_SOCS1_STAT1c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1c_star_STAT1c_star_PPX_1" name="STAT1c_star_STAT1c_star_PPX">
+      <listOfVariables>
+        <variable id="STAT1c_star_STAT1c_star_PPX" name="STAT1c_star_STAT1c_star_PPX" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1c_star_STAT1c_star_PPX']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1c_star_STAT1c_star_PPX </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT1n_star_STAT1n_star_PPN_1" name="STAT1n_star_STAT1n_star_PPN">
+      <listOfVariables>
+        <variable id="STAT1n_star_STAT1n_star_PPN" name="STAT1n_star_STAT1n_star_PPN" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT1n_star_STAT1n_star_PPN']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT1n_star_STAT1n_star_PPN </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNRJ2_star_SOCS1_STAT1c_1" name="IFNRJ2_star_SOCS1_STAT1c">
+      <listOfVariables>
+        <variable id="IFNRJ2_star_SOCS1_STAT1c" name="IFNRJ2_star_SOCS1_STAT1c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNRJ2_star_SOCS1_STAT1c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNRJ2_star_SOCS1_STAT1c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNRJ2_star_SHP2_STAT1c_1" name="IFNRJ2_star_SHP2_STAT1c">
+      <listOfVariables>
+        <variable id="IFNRJ2_star_SHP2_STAT1c" name="IFNRJ2_star_SHP2_STAT1c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNRJ2_star_SHP2_STAT1c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNRJ2_star_SHP2_STAT1c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNRJ2_star_SHP2_SOCS1_1" name="IFNRJ2_star_SHP2_SOCS1">
+      <listOfVariables>
+        <variable id="IFNRJ2_star_SHP2_SOCS1" name="IFNRJ2_star_SHP2_SOCS1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNRJ2_star_SHP2_SOCS1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNRJ2_star_SHP2_SOCS1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNR_1" name="IFNR">
+      <listOfVariables>
+        <variable id="IFNR" name="IFNR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNR </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="R_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="JAK_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="RJ_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="IFNRJ_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="IFNRJ2_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="IFNRJ2_star_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="STAT1c_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="IFNRJ2_star_STAT1c_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="STAT1c_star_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="IFNRJ2_star_STAT1c_star_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="STAT1c_star_STAT1c_star_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="SHP2_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="IFNRJ2_star_SHP2_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="PPX_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="STAT1c_star_PPX_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="STAT1c_STAT1c_star_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="STAT1n_star_STAT1n_star_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="STAT1n_star_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="PPN_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="STAT1n_star_PPN_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="STAT1n_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="STAT1n_STAT1n_star_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="mRNAn_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="mRNAc_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="SOCS1_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="IFNRJ2_star_SOCS1_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="IFNRJ2_star_SHP2_SOCS1_STAT1c_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="STAT1c_star_STAT1c_star_PPX_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="STAT1n_star_STAT1n_star_PPN_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="IFNRJ2_star_SOCS1_STAT1c_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="IFNRJ2_star_SHP2_STAT1c_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="IFNRJ2_star_SHP2_SOCS1_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="IFNR_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="R_1" />
+        <dataSet id="col_2" dataReference="JAK_1" />
+        <dataSet id="col_3" dataReference="RJ_1" />
+        <dataSet id="col_4" dataReference="IFNRJ_1" />
+        <dataSet id="col_5" dataReference="IFNRJ2_1" />
+        <dataSet id="col_6" dataReference="IFNRJ2_star_1" />
+        <dataSet id="col_7" dataReference="STAT1c_1" />
+        <dataSet id="col_8" dataReference="IFNRJ2_star_STAT1c_1" />
+        <dataSet id="col_9" dataReference="STAT1c_star_1" />
+        <dataSet id="col_10" dataReference="IFNRJ2_star_STAT1c_star_1" />
+        <dataSet id="col_11" dataReference="STAT1c_star_STAT1c_star_1" />
+        <dataSet id="col_12" dataReference="SHP2_1" />
+        <dataSet id="col_13" dataReference="IFNRJ2_star_SHP2_1" />
+        <dataSet id="col_14" dataReference="PPX_1" />
+        <dataSet id="col_15" dataReference="STAT1c_star_PPX_1" />
+        <dataSet id="col_16" dataReference="STAT1c_STAT1c_star_1" />
+        <dataSet id="col_17" dataReference="STAT1n_star_STAT1n_star_1" />
+        <dataSet id="col_18" dataReference="STAT1n_star_1" />
+        <dataSet id="col_19" dataReference="PPN_1" />
+        <dataSet id="col_20" dataReference="STAT1n_star_PPN_1" />
+        <dataSet id="col_21" dataReference="STAT1n_1" />
+        <dataSet id="col_22" dataReference="STAT1n_STAT1n_star_1" />
+        <dataSet id="col_23" dataReference="mRNAn_1" />
+        <dataSet id="col_24" dataReference="mRNAc_1" />
+        <dataSet id="col_25" dataReference="SOCS1_1" />
+        <dataSet id="col_26" dataReference="IFNRJ2_star_SOCS1_1" />
+        <dataSet id="col_27" dataReference="IFNRJ2_star_SHP2_SOCS1_STAT1c_1" />
+        <dataSet id="col_28" dataReference="STAT1c_star_STAT1c_star_PPX_1" />
+        <dataSet id="col_29" dataReference="STAT1n_star_STAT1n_star_PPN_1" />
+        <dataSet id="col_30" dataReference="IFNRJ2_star_SOCS1_STAT1c_1" />
+        <dataSet id="col_31" dataReference="IFNRJ2_star_SHP2_STAT1c_1" />
+        <dataSet id="col_32" dataReference="IFNRJ2_star_SHP2_SOCS1_1" />
+        <dataSet id="col_33" dataReference="IFNR_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
