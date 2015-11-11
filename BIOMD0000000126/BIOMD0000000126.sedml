@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000126.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C1_1" name="C1">
+      <listOfVariables>
+        <variable id="C1" name="C1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C2_1" name="C2">
+      <listOfVariables>
+        <variable id="C2" name="C2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3_1" name="C3">
+      <listOfVariables>
+        <variable id="C3" name="C3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IC3_1" name="IC3">
+      <listOfVariables>
+        <variable id="IC3" name="IC3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IC3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IC3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IC2_1" name="IC2">
+      <listOfVariables>
+        <variable id="IC2" name="IC2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IC2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IC2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IM1_1" name="IM1">
+      <listOfVariables>
+        <variable id="IM1" name="IM1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IM1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IM1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IM2_1" name="IM2">
+      <listOfVariables>
+        <variable id="IM2" name="IM2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IM2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IM2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="O_1" name="O">
+      <listOfVariables>
+        <variable id="O" name="O" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='O']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> O </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IF_1" name="IF">
+      <listOfVariables>
+        <variable id="IF" name="IF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IF </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="C1_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="C2_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="C3_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="IC3_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="IC2_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="IM1_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="IM2_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="O_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="IF_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="C1_1" />
+        <dataSet id="col_2" dataReference="C2_1" />
+        <dataSet id="col_3" dataReference="C3_1" />
+        <dataSet id="col_4" dataReference="IC3_1" />
+        <dataSet id="col_5" dataReference="IC2_1" />
+        <dataSet id="col_6" dataReference="IM1_1" />
+        <dataSet id="col_7" dataReference="IM2_1" />
+        <dataSet id="col_8" dataReference="O_1" />
+        <dataSet id="col_9" dataReference="IF_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
