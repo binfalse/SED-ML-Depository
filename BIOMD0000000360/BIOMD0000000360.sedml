@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000360.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VIIa_TF_1" name="VIIa_TF">
+      <listOfVariables>
+        <variable id="VIIa_TF" name="VIIa_TF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VIIa_TF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VIIa_TF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="X_1" name="X">
+      <listOfVariables>
+        <variable id="X" name="X" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='X']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> X </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VIIa_TF_X_1" name="VIIa_TF_X">
+      <listOfVariables>
+        <variable id="VIIa_TF_X" name="VIIa_TF_X" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VIIa_TF_X']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VIIa_TF_X </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VIIa_TF_Xa_1" name="VIIa_TF_Xa">
+      <listOfVariables>
+        <variable id="VIIa_TF_Xa" name="VIIa_TF_Xa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VIIa_TF_Xa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VIIa_TF_Xa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Xa_1" name="Xa">
+      <listOfVariables>
+        <variable id="Xa" name="Xa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Xa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Xa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TFPI_1" name="TFPI">
+      <listOfVariables>
+        <variable id="TFPI" name="TFPI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TFPI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TFPI </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Xa_TFPI_1" name="Xa_TFPI">
+      <listOfVariables>
+        <variable id="Xa_TFPI" name="Xa_TFPI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Xa_TFPI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Xa_TFPI </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Xa_TFPI_VIIa_TF_1" name="Xa_TFPI_VIIa_TF">
+      <listOfVariables>
+        <variable id="Xa_TFPI_VIIa_TF" name="Xa_TFPI_VIIa_TF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Xa_TFPI_VIIa_TF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Xa_TFPI_VIIa_TF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VIIa_TF_Xa_TFPI_1" name="VIIa_TF_Xa_TFPI">
+      <listOfVariables>
+        <variable id="VIIa_TF_Xa_TFPI" name="VIIa_TF_Xa_TFPI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VIIa_TF_Xa_TFPI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VIIa_TF_Xa_TFPI </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="VIIa_TF_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="X_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="VIIa_TF_X_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="VIIa_TF_Xa_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Xa_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="TFPI_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="Xa_TFPI_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="Xa_TFPI_VIIa_TF_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="VIIa_TF_Xa_TFPI_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="VIIa_TF_1" />
+        <dataSet id="col_2" dataReference="X_1" />
+        <dataSet id="col_3" dataReference="VIIa_TF_X_1" />
+        <dataSet id="col_4" dataReference="VIIa_TF_Xa_1" />
+        <dataSet id="col_5" dataReference="Xa_1" />
+        <dataSet id="col_6" dataReference="TFPI_1" />
+        <dataSet id="col_7" dataReference="Xa_TFPI_1" />
+        <dataSet id="col_8" dataReference="Xa_TFPI_VIIa_TF_1" />
+        <dataSet id="col_9" dataReference="VIIa_TF_Xa_TFPI_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
