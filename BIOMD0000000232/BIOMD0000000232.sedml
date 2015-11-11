@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000232.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATP_1" name="ATP">
+      <listOfVariables>
+        <variable id="ATP" name="ATP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NAD_1" name="NAD">
+      <listOfVariables>
+        <variable id="NAD" name="NAD" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NAD']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NAD </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AcCoA_1" name="AcCoA">
+      <listOfVariables>
+        <variable id="AcCoA" name="AcCoA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AcCoA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AcCoA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="KG_1" name="KG">
+      <listOfVariables>
+        <variable id="KG" name="KG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='KG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> KG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cit_1" name="Cit">
+      <listOfVariables>
+        <variable id="Cit" name="Cit" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cit']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cit </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="OAA_1" name="OAA">
+      <listOfVariables>
+        <variable id="OAA" name="OAA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='OAA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> OAA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pyr_1" name="Pyr">
+      <listOfVariables>
+        <variable id="Pyr" name="Pyr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pyr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pyr </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="ATP_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="NAD_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="AcCoA_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="KG_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Cit_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="OAA_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="Pyr_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="ATP_1" />
+        <dataSet id="col_2" dataReference="NAD_1" />
+        <dataSet id="col_3" dataReference="AcCoA_1" />
+        <dataSet id="col_4" dataReference="KG_1" />
+        <dataSet id="col_5" dataReference="Cit_1" />
+        <dataSet id="col_6" dataReference="OAA_1" />
+        <dataSet id="col_7" dataReference="Pyr_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
