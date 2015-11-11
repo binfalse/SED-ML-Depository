@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000161.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGTP_Golgi_GM_1" name="RasGTP_Golgi_GM">
+      <listOfVariables>
+        <variable id="RasGTP_Golgi_GM" name="RasGTP_Golgi_GM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGTP_Golgi_GM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGTP_Golgi_GM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CAPRI_cyt_1" name="CAPRI_cyt">
+      <listOfVariables>
+        <variable id="CAPRI_cyt" name="CAPRI_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CAPRI_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CAPRI_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="serca_1" name="serca">
+      <listOfVariables>
+        <variable id="serca" name="serca" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='serca']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> serca </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIP_PM_1" name="PIP_PM">
+      <listOfVariables>
+        <variable id="PIP_PM" name="PIP_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIP_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIP_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PI_PM_1" name="PI_PM">
+      <listOfVariables>
+        <variable id="PI_PM" name="PI_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PI_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PI_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Shc_PM_1" name="Shc_PM">
+      <listOfVariables>
+        <variable id="Shc_PM" name="Shc_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Shc_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Shc_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CaCAPRI_PM_PM_1" name="CaCAPRI_PM_PM">
+      <listOfVariables>
+        <variable id="CaCAPRI_PM_PM" name="CaCAPRI_PM_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CaCAPRI_PM_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CaCAPRI_PM_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RactCa_1" name="RactCa">
+      <listOfVariables>
+        <variable id="RactCa" name="RactCa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RactCa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RactCa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Shc_star_PM_1" name="Shc_star_PM">
+      <listOfVariables>
+        <variable id="Shc_star_PM" name="Shc_star_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Shc_star_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Shc_star_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EGFR_PM_1" name="EGFR_PM">
+      <listOfVariables>
+        <variable id="EGFR_PM" name="EGFR_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EGFR_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EGFR_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PLC_act_PM_1" name="PLC_act_PM">
+      <listOfVariables>
+        <variable id="PLC_act_PM" name="PLC_act_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PLC_act_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PLC_act_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGTP_pal_cyt_1" name="RasGTP_pal_cyt">
+      <listOfVariables>
+        <variable id="RasGTP_pal_cyt" name="RasGTP_pal_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGTP_pal_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGTP_pal_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PLC_PM_1" name="PLC_PM">
+      <listOfVariables>
+        <variable id="PLC_PM" name="PLC_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PLC_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PLC_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIP2_PM_1" name="PIP2_PM">
+      <listOfVariables>
+        <variable id="PIP2_PM" name="PIP2_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIP2_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIP2_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Activated_EGFR_PM_1" name="Activated_EGFR_PM">
+      <listOfVariables>
+        <variable id="Activated_EGFR_PM" name="Activated_EGFR_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Activated_EGFR_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Activated_EGFR_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ca_1" name="Ca">
+      <listOfVariables>
+        <variable id="Ca" name="Ca" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ca']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ca </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ract_1" name="Ract">
+      <listOfVariables>
+        <variable id="Ract" name="Ract" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ract']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ract </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Rinh_1" name="Rinh">
+      <listOfVariables>
+        <variable id="Rinh" name="Rinh" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Rinh']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Rinh </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RinhCa_1" name="RinhCa">
+      <listOfVariables>
+        <variable id="RinhCa" name="RinhCa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RinhCa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RinhCa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IP3_1" name="IP3">
+      <listOfVariables>
+        <variable id="IP3" name="IP3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IP3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IP3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGDP_Golgi_GM_1" name="RasGDP_Golgi_GM">
+      <listOfVariables>
+        <variable id="RasGDP_Golgi_GM" name="RasGDP_Golgi_GM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGDP_Golgi_GM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGDP_Golgi_GM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ca_RasGRP_GM_GM_1" name="Ca_RasGRP_GM_GM">
+      <listOfVariables>
+        <variable id="Ca_RasGRP_GM_GM" name="Ca_RasGRP_GM_GM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ca_RasGRP_GM_GM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ca_RasGRP_GM_GM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DAG_GM_GM_1" name="DAG_GM_GM">
+      <listOfVariables>
+        <variable id="DAG_GM_GM" name="DAG_GM_GM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DAG_GM_GM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DAG_GM_GM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGRP_DAG_GM_1" name="RasGRP_DAG_GM">
+      <listOfVariables>
+        <variable id="RasGRP_DAG_GM" name="RasGRP_DAG_GM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGRP_DAG_GM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGRP_DAG_GM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CaCAPRI_cyt_1" name="CaCAPRI_cyt">
+      <listOfVariables>
+        <variable id="CaCAPRI_cyt" name="CaCAPRI_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CaCAPRI_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CaCAPRI_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DAG_PM_1" name="DAG_PM">
+      <listOfVariables>
+        <variable id="DAG_PM" name="DAG_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DAG_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DAG_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGTP_depal_cyt_1" name="RasGTP_depal_cyt">
+      <listOfVariables>
+        <variable id="RasGTP_depal_cyt" name="RasGTP_depal_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGTP_depal_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGTP_depal_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGDP_depal_cyt_1" name="RasGDP_depal_cyt">
+      <listOfVariables>
+        <variable id="RasGDP_depal_cyt" name="RasGDP_depal_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGDP_depal_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGDP_depal_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGDP_pal_cyt_1" name="RasGDP_pal_cyt">
+      <listOfVariables>
+        <variable id="RasGDP_pal_cyt" name="RasGDP_pal_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGDP_pal_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGDP_pal_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ca_PLCe_cyt_1" name="Ca_PLCe_cyt">
+      <listOfVariables>
+        <variable id="Ca_PLCe_cyt" name="Ca_PLCe_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ca_PLCe_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ca_PLCe_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras_CaPLCe_GM_1" name="Ras_CaPLCe_GM">
+      <listOfVariables>
+        <variable id="Ras_CaPLCe_GM" name="Ras_CaPLCe_GM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras_CaPLCe_GM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras_CaPLCe_GM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ca_ER_1" name="Ca_ER">
+      <listOfVariables>
+        <variable id="Ca_ER" name="Ca_ER" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ca_ER']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ca_ER </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Sos_cyt_1" name="Sos_cyt">
+      <listOfVariables>
+        <variable id="Sos_cyt" name="Sos_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Sos_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Sos_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Grb2_cyt_1" name="Grb2_cyt">
+      <listOfVariables>
+        <variable id="Grb2_cyt" name="Grb2_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Grb2_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Grb2_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PLCe_cyt_1" name="PLCe_cyt">
+      <listOfVariables>
+        <variable id="PLCe_cyt" name="PLCe_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PLCe_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PLCe_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="buffer_cyt_1" name="buffer_cyt">
+      <listOfVariables>
+        <variable id="buffer_cyt" name="buffer_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='buffer_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> buffer_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ca_buffer_cyt_1" name="ca_buffer_cyt">
+      <listOfVariables>
+        <variable id="ca_buffer_cyt" name="ca_buffer_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ca_buffer_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ca_buffer_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SosGrb2_cyt_1" name="SosGrb2_cyt">
+      <listOfVariables>
+        <variable id="SosGrb2_cyt" name="SosGrb2_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SosGrb2_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SosGrb2_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SGS_PM_1" name="SGS_PM">
+      <listOfVariables>
+        <variable id="SGS_PM" name="SGS_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SGS_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SGS_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGTP_PM_1" name="RasGTP_PM">
+      <listOfVariables>
+        <variable id="RasGTP_PM" name="RasGTP_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGTP_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGTP_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGDP_PM_1" name="RasGDP_PM">
+      <listOfVariables>
+        <variable id="RasGDP_PM" name="RasGDP_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGDP_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGDP_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGRP_cyt_1" name="RasGRP_cyt">
+      <listOfVariables>
+        <variable id="RasGRP_cyt" name="RasGRP_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGRP_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGRP_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CaRasGRP1_cyt_1" name="CaRasGRP1_cyt">
+      <listOfVariables>
+        <variable id="CaRasGRP1_cyt" name="CaRasGRP1_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CaRasGRP1_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CaRasGRP1_cyt </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="RasGTP_Golgi_GM_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="CAPRI_cyt_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="serca_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="PIP_PM_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="PI_PM_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Shc_PM_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="CaCAPRI_PM_PM_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="RactCa_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="Shc_star_PM_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="EGFR_PM_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="PLC_act_PM_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="RasGTP_pal_cyt_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="PLC_PM_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="PIP2_PM_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Activated_EGFR_PM_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="Ca_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="Ract_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Rinh_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="RinhCa_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="IP3_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="RasGDP_Golgi_GM_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="Ca_RasGRP_GM_GM_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="DAG_GM_GM_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="RasGRP_DAG_GM_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="CaCAPRI_cyt_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="DAG_PM_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="RasGTP_depal_cyt_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="RasGDP_depal_cyt_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="RasGDP_pal_cyt_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="Ca_PLCe_cyt_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="Ras_CaPLCe_GM_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="Ca_ER_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="Sos_cyt_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="Grb2_cyt_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="PLCe_cyt_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="buffer_cyt_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="ca_buffer_cyt_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="SosGrb2_cyt_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="SGS_PM_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="RasGTP_PM_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="RasGDP_PM_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="RasGRP_cyt_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="CaRasGRP1_cyt_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="RasGTP_Golgi_GM_1" />
+        <dataSet id="col_2" dataReference="CAPRI_cyt_1" />
+        <dataSet id="col_3" dataReference="serca_1" />
+        <dataSet id="col_4" dataReference="PIP_PM_1" />
+        <dataSet id="col_5" dataReference="PI_PM_1" />
+        <dataSet id="col_6" dataReference="Shc_PM_1" />
+        <dataSet id="col_7" dataReference="CaCAPRI_PM_PM_1" />
+        <dataSet id="col_8" dataReference="RactCa_1" />
+        <dataSet id="col_9" dataReference="Shc_star_PM_1" />
+        <dataSet id="col_10" dataReference="EGFR_PM_1" />
+        <dataSet id="col_11" dataReference="PLC_act_PM_1" />
+        <dataSet id="col_12" dataReference="RasGTP_pal_cyt_1" />
+        <dataSet id="col_13" dataReference="PLC_PM_1" />
+        <dataSet id="col_14" dataReference="PIP2_PM_1" />
+        <dataSet id="col_15" dataReference="Activated_EGFR_PM_1" />
+        <dataSet id="col_16" dataReference="Ca_1" />
+        <dataSet id="col_17" dataReference="Ract_1" />
+        <dataSet id="col_18" dataReference="Rinh_1" />
+        <dataSet id="col_19" dataReference="RinhCa_1" />
+        <dataSet id="col_20" dataReference="IP3_1" />
+        <dataSet id="col_21" dataReference="RasGDP_Golgi_GM_1" />
+        <dataSet id="col_22" dataReference="Ca_RasGRP_GM_GM_1" />
+        <dataSet id="col_23" dataReference="DAG_GM_GM_1" />
+        <dataSet id="col_24" dataReference="RasGRP_DAG_GM_1" />
+        <dataSet id="col_25" dataReference="CaCAPRI_cyt_1" />
+        <dataSet id="col_26" dataReference="DAG_PM_1" />
+        <dataSet id="col_27" dataReference="RasGTP_depal_cyt_1" />
+        <dataSet id="col_28" dataReference="RasGDP_depal_cyt_1" />
+        <dataSet id="col_29" dataReference="RasGDP_pal_cyt_1" />
+        <dataSet id="col_30" dataReference="Ca_PLCe_cyt_1" />
+        <dataSet id="col_31" dataReference="Ras_CaPLCe_GM_1" />
+        <dataSet id="col_32" dataReference="Ca_ER_1" />
+        <dataSet id="col_33" dataReference="Sos_cyt_1" />
+        <dataSet id="col_34" dataReference="Grb2_cyt_1" />
+        <dataSet id="col_35" dataReference="PLCe_cyt_1" />
+        <dataSet id="col_36" dataReference="buffer_cyt_1" />
+        <dataSet id="col_37" dataReference="ca_buffer_cyt_1" />
+        <dataSet id="col_38" dataReference="SosGrb2_cyt_1" />
+        <dataSet id="col_39" dataReference="SGS_PM_1" />
+        <dataSet id="col_40" dataReference="RasGTP_PM_1" />
+        <dataSet id="col_41" dataReference="RasGDP_PM_1" />
+        <dataSet id="col_42" dataReference="RasGRP_cyt_1" />
+        <dataSet id="col_43" dataReference="CaRasGRP1_cyt_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
