@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000049.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EGFR_1" name="EGFR">
+      <listOfVariables>
+        <variable id="EGFR" name="EGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_EGFR_1" name="L_EGFR">
+      <listOfVariables>
+        <variable id="L_EGFR" name="L_EGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L_EGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L_EGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_EGFR_dimer_1" name="L_EGFR_dimer">
+      <listOfVariables>
+        <variable id="L_EGFR_dimer" name="L_EGFR_dimer" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L_EGFR_dimer']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L_EGFR_dimer </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SOS_1" name="SOS">
+      <listOfVariables>
+        <variable id="SOS" name="SOS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SOS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SOS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_dpEGFR_1" name="L_dpEGFR">
+      <listOfVariables>
+        <variable id="L_dpEGFR" name="L_dpEGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L_dpEGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L_dpEGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pSOS_1" name="pSOS">
+      <listOfVariables>
+        <variable id="pSOS" name="pSOS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pSOS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pSOS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SOS_Grb2_1" name="SOS_Grb2">
+      <listOfVariables>
+        <variable id="SOS_Grb2" name="SOS_Grb2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SOS_Grb2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SOS_Grb2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Grb2_1" name="Grb2">
+      <listOfVariables>
+        <variable id="Grb2" name="Grb2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Grb2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Grb2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Dok_1" name="Dok">
+      <listOfVariables>
+        <variable id="Dok" name="Dok" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Dok']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Dok </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pDok_1" name="pDok">
+      <listOfVariables>
+        <variable id="pDok" name="pDok" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pDok']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pDok </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Crk_1" name="Crk">
+      <listOfVariables>
+        <variable id="Crk" name="Crk" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Crk']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Crk </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FRS2_1" name="FRS2">
+      <listOfVariables>
+        <variable id="FRS2" name="FRS2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FRS2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FRS2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Shc_1" name="Shc">
+      <listOfVariables>
+        <variable id="Shc" name="Shc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Shc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Shc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pSOS_Grb2_1" name="pSOS_Grb2">
+      <listOfVariables>
+        <variable id="pSOS_Grb2" name="pSOS_Grb2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pSOS_Grb2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pSOS_Grb2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Rap1_GDP_1" name="Rap1_GDP">
+      <listOfVariables>
+        <variable id="Rap1_GDP" name="Rap1_GDP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Rap1_GDP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Rap1_GDP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MEK_1" name="MEK">
+      <listOfVariables>
+        <variable id="MEK" name="MEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MKP3_1" name="MKP3">
+      <listOfVariables>
+        <variable id="MKP3" name="MKP3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MKP3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MKP3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pShc_dpEGFR_1" name="pShc_dpEGFR">
+      <listOfVariables>
+        <variable id="pShc_dpEGFR" name="pShc_dpEGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pShc_dpEGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pShc_dpEGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dpEGFR_c_Cbl_1" name="dpEGFR_c_Cbl">
+      <listOfVariables>
+        <variable id="dpEGFR_c_Cbl" name="dpEGFR_c_Cbl" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dpEGFR_c_Cbl']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dpEGFR_c_Cbl </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_Rap1_GTP_1" name="B_Raf_Rap1_GTP">
+      <listOfVariables>
+        <variable id="B_Raf_Rap1_GTP" name="B_Raf_Rap1_GTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_Rap1_GTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_Rap1_GTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pShc_dpEGFR_c_Cbl_1" name="pShc_dpEGFR_c_Cbl">
+      <listOfVariables>
+        <variable id="pShc_dpEGFR_c_Cbl" name="pShc_dpEGFR_c_Cbl" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pShc_dpEGFR_c_Cbl']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pShc_dpEGFR_c_Cbl </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pFRS2_dpEGFR_c_Cbl_1" name="pFRS2_dpEGFR_c_Cbl">
+      <listOfVariables>
+        <variable id="pFRS2_dpEGFR_c_Cbl" name="pFRS2_dpEGFR_c_Cbl" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pFRS2_dpEGFR_c_Cbl']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pFRS2_dpEGFR_c_Cbl </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Shc_dpEGFR_1" name="Shc_dpEGFR">
+      <listOfVariables>
+        <variable id="Shc_dpEGFR" name="Shc_dpEGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Shc_dpEGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Shc_dpEGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_Cbl_1" name="c_Cbl">
+      <listOfVariables>
+        <variable id="c_Cbl" name="c_Cbl" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c_Cbl']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c_Cbl </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGAP_1" name="RasGAP">
+      <listOfVariables>
+        <variable id="RasGAP" name="RasGAP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGAP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGAP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_Raf_1" name="c_Raf">
+      <listOfVariables>
+        <variable id="c_Raf" name="c_Raf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c_Raf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c_Raf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_1" name="B_Raf">
+      <listOfVariables>
+        <variable id="B_Raf" name="B_Raf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK_1" name="ERK">
+      <listOfVariables>
+        <variable id="ERK" name="ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2A_1" name="PP2A">
+      <listOfVariables>
+        <variable id="PP2A" name="PP2A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2A </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras_GDP_1" name="Ras_GDP">
+      <listOfVariables>
+        <variable id="Ras_GDP" name="Ras_GDP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras_GDP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras_GDP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Rap1GAP_1" name="Rap1GAP">
+      <listOfVariables>
+        <variable id="Rap1GAP" name="Rap1GAP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Rap1GAP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Rap1GAP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3G_1" name="C3G">
+      <listOfVariables>
+        <variable id="C3G" name="C3G" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3G']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3G </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NGFR_1" name="NGFR">
+      <listOfVariables>
+        <variable id="NGFR" name="NGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pShc_1" name="pShc">
+      <listOfVariables>
+        <variable id="pShc" name="pShc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pShc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pShc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pFRS2_dpEGFR_1" name="pFRS2_dpEGFR">
+      <listOfVariables>
+        <variable id="pFRS2_dpEGFR" name="pFRS2_dpEGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pFRS2_dpEGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pFRS2_dpEGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pTrkA_endo_1" name="pTrkA_endo">
+      <listOfVariables>
+        <variable id="pTrkA_endo" name="pTrkA_endo" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pTrkA_endo']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pTrkA_endo </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MEK_ERK_1" name="MEK_ERK">
+      <listOfVariables>
+        <variable id="MEK_ERK" name="MEK_ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MEK_ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MEK_ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pMEK_ERK_1" name="pMEK_ERK">
+      <listOfVariables>
+        <variable id="pMEK_ERK" name="pMEK_ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pMEK_ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pMEK_ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FRS2_dpEGFR_c_Cbl_ubiq_1" name="FRS2_dpEGFR_c_Cbl_ubiq">
+      <listOfVariables>
+        <variable id="FRS2_dpEGFR_c_Cbl_ubiq" name="FRS2_dpEGFR_c_Cbl_ubiq" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FRS2_dpEGFR_c_Cbl_ubiq']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FRS2_dpEGFR_c_Cbl_ubiq </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Crk_C3G_pFRS2_dpEGFR_c_Cbl_1" name="Crk_C3G_pFRS2_dpEGFR_c_Cbl">
+      <listOfVariables>
+        <variable id="Crk_C3G_pFRS2_dpEGFR_c_Cbl" name="Crk_C3G_pFRS2_dpEGFR_c_Cbl" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Crk_C3G_pFRS2_dpEGFR_c_Cbl']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Crk_C3G_pFRS2_dpEGFR_c_Cbl </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pShc_dpEGFR_c_Cbl_ubiq_1" name="pShc_dpEGFR_c_Cbl_ubiq">
+      <listOfVariables>
+        <variable id="pShc_dpEGFR_c_Cbl_ubiq" name="pShc_dpEGFR_c_Cbl_ubiq" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pShc_dpEGFR_c_Cbl_ubiq']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pShc_dpEGFR_c_Cbl_ubiq </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Crk_C3G_pFRS2_dpEGFR_1" name="Crk_C3G_pFRS2_dpEGFR">
+      <listOfVariables>
+        <variable id="Crk_C3G_pFRS2_dpEGFR" name="Crk_C3G_pFRS2_dpEGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Crk_C3G_pFRS2_dpEGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Crk_C3G_pFRS2_dpEGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Grb2_SOS_pShc_dpEGFR_c_Cbl_ubiq_1" name="Grb2_SOS_pShc_dpEGFR_c_Cbl_ubiq">
+      <listOfVariables>
+        <variable id="Grb2_SOS_pShc_dpEGFR_c_Cbl_ubiq" name="Grb2_SOS_pShc_dpEGFR_c_Cbl_ubiq" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Grb2_SOS_pShc_dpEGFR_c_Cbl_ubiq']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Grb2_SOS_pShc_dpEGFR_c_Cbl_ubiq </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Grb2_SOS_pShc_dpEGFR_c_Cbl_1" name="Grb2_SOS_pShc_dpEGFR_c_Cbl">
+      <listOfVariables>
+        <variable id="Grb2_SOS_pShc_dpEGFR_c_Cbl" name="Grb2_SOS_pShc_dpEGFR_c_Cbl" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Grb2_SOS_pShc_dpEGFR_c_Cbl']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Grb2_SOS_pShc_dpEGFR_c_Cbl </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Shc_dpEGFR_c_Cbl_ubiq_1" name="Shc_dpEGFR_c_Cbl_ubiq">
+      <listOfVariables>
+        <variable id="Shc_dpEGFR_c_Cbl_ubiq" name="Shc_dpEGFR_c_Cbl_ubiq" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Shc_dpEGFR_c_Cbl_ubiq']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Shc_dpEGFR_c_Cbl_ubiq </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dpEGFR_c_Cbl_ubiq_1" name="dpEGFR_c_Cbl_ubiq">
+      <listOfVariables>
+        <variable id="dpEGFR_c_Cbl_ubiq" name="dpEGFR_c_Cbl_ubiq" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dpEGFR_c_Cbl_ubiq']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dpEGFR_c_Cbl_ubiq </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="proteosome_1" name="proteosome">
+      <listOfVariables>
+        <variable id="proteosome" name="proteosome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='proteosome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> proteosome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Grb2_SOS_pShc_1" name="Grb2_SOS_pShc">
+      <listOfVariables>
+        <variable id="Grb2_SOS_pShc" name="Grb2_SOS_pShc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Grb2_SOS_pShc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Grb2_SOS_pShc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Shc_dpEGFR_c_Cbl_1" name="Shc_dpEGFR_c_Cbl">
+      <listOfVariables>
+        <variable id="Shc_dpEGFR_c_Cbl" name="Shc_dpEGFR_c_Cbl" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Shc_dpEGFR_c_Cbl']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Shc_dpEGFR_c_Cbl </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Grb2_SOS_pShc_dpEGFR_1" name="Grb2_SOS_pShc_dpEGFR">
+      <listOfVariables>
+        <variable id="Grb2_SOS_pShc_dpEGFR" name="Grb2_SOS_pShc_dpEGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Grb2_SOS_pShc_dpEGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Grb2_SOS_pShc_dpEGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pFRS2_1" name="pFRS2">
+      <listOfVariables>
+        <variable id="pFRS2" name="pFRS2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pFRS2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pFRS2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FRS2_dpEGFR_1" name="FRS2_dpEGFR">
+      <listOfVariables>
+        <variable id="FRS2_dpEGFR" name="FRS2_dpEGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FRS2_dpEGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FRS2_dpEGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pDok_RasGAP_1" name="pDok_RasGAP">
+      <listOfVariables>
+        <variable id="pDok_RasGAP" name="pDok_RasGAP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pDok_RasGAP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pDok_RasGAP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pMEK_1" name="pMEK">
+      <listOfVariables>
+        <variable id="pMEK" name="pMEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pMEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pMEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FRS2_dpEGFR_c_Cbl_1" name="FRS2_dpEGFR_c_Cbl">
+      <listOfVariables>
+        <variable id="FRS2_dpEGFR_c_Cbl" name="FRS2_dpEGFR_c_Cbl" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FRS2_dpEGFR_c_Cbl']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FRS2_dpEGFR_c_Cbl </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pFRS2_dpEGFR_c_Cbl_ubiq_1" name="pFRS2_dpEGFR_c_Cbl_ubiq">
+      <listOfVariables>
+        <variable id="pFRS2_dpEGFR_c_Cbl_ubiq" name="pFRS2_dpEGFR_c_Cbl_ubiq" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pFRS2_dpEGFR_c_Cbl_ubiq']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pFRS2_dpEGFR_c_Cbl_ubiq </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras_GTP_1" name="Ras_GTP">
+      <listOfVariables>
+        <variable id="Ras_GTP" name="Ras_GTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras_GTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras_GTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Crk_C3G_pFRS2_dpEGFR_c_Cbl_ubiq_1" name="Crk_C3G_pFRS2_dpEGFR_c_Cbl_ubiq">
+      <listOfVariables>
+        <variable id="Crk_C3G_pFRS2_dpEGFR_c_Cbl_ubiq" name="Crk_C3G_pFRS2_dpEGFR_c_Cbl_ubiq" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Crk_C3G_pFRS2_dpEGFR_c_Cbl_ubiq']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Crk_C3G_pFRS2_dpEGFR_c_Cbl_ubiq </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_Raf_Ras_GTP_1" name="c_Raf_Ras_GTP">
+      <listOfVariables>
+        <variable id="c_Raf_Ras_GTP" name="c_Raf_Ras_GTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c_Raf_Ras_GTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c_Raf_Ras_GTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_Ras_GTP_1" name="B_Raf_Ras_GTP">
+      <listOfVariables>
+        <variable id="B_Raf_Ras_GTP" name="B_Raf_Ras_GTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_Ras_GTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_Ras_GTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppMEK_1" name="ppMEK">
+      <listOfVariables>
+        <variable id="ppMEK" name="ppMEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppMEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppMEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERK_1" name="ppERK">
+      <listOfVariables>
+        <variable id="ppERK" name="ppERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pTrkA_1" name="pTrkA">
+      <listOfVariables>
+        <variable id="pTrkA" name="pTrkA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pTrkA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pTrkA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Crk_C3G_1" name="Crk_C3G">
+      <listOfVariables>
+        <variable id="Crk_C3G" name="Crk_C3G" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Crk_C3G']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Crk_C3G </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Rap1_GTP_1" name="Rap1_GTP">
+      <listOfVariables>
+        <variable id="Rap1_GTP" name="Rap1_GTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Rap1_GTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Rap1_GTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_NGFR_1" name="L_NGFR">
+      <listOfVariables>
+        <variable id="L_NGFR" name="L_NGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L_NGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L_NGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppMEK_ERK_1" name="ppMEK_ERK">
+      <listOfVariables>
+        <variable id="ppMEK_ERK" name="ppMEK_ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppMEK_ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppMEK_ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dppERK_1" name="dppERK">
+      <listOfVariables>
+        <variable id="dppERK" name="dppERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dppERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dppERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Shc_pTrkA_1" name="Shc_pTrkA">
+      <listOfVariables>
+        <variable id="Shc_pTrkA" name="Shc_pTrkA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Shc_pTrkA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Shc_pTrkA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Shc_pTrkA_endo_1" name="Shc_pTrkA_endo">
+      <listOfVariables>
+        <variable id="Shc_pTrkA_endo" name="Shc_pTrkA_endo" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Shc_pTrkA_endo']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Shc_pTrkA_endo </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pShc_pTrkA_1" name="pShc_pTrkA">
+      <listOfVariables>
+        <variable id="pShc_pTrkA" name="pShc_pTrkA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pShc_pTrkA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pShc_pTrkA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pFRS2_pTrkA_1" name="pFRS2_pTrkA">
+      <listOfVariables>
+        <variable id="pFRS2_pTrkA" name="pFRS2_pTrkA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pFRS2_pTrkA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pFRS2_pTrkA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FRS2_pTrkA_1" name="FRS2_pTrkA">
+      <listOfVariables>
+        <variable id="FRS2_pTrkA" name="FRS2_pTrkA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FRS2_pTrkA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FRS2_pTrkA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pShc_pTrkA_endo_1" name="pShc_pTrkA_endo">
+      <listOfVariables>
+        <variable id="pShc_pTrkA_endo" name="pShc_pTrkA_endo" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pShc_pTrkA_endo']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pShc_pTrkA_endo </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FRS2_pTrkA_endo_1" name="FRS2_pTrkA_endo">
+      <listOfVariables>
+        <variable id="FRS2_pTrkA_endo" name="FRS2_pTrkA_endo" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FRS2_pTrkA_endo']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FRS2_pTrkA_endo </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pFRS2_pTrkA_endo_1" name="pFRS2_pTrkA_endo">
+      <listOfVariables>
+        <variable id="pFRS2_pTrkA_endo" name="pFRS2_pTrkA_endo" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pFRS2_pTrkA_endo']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pFRS2_pTrkA_endo </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Crk_C3G_pFRS2_pTrkA_endo_1" name="Crk_C3G_pFRS2_pTrkA_endo">
+      <listOfVariables>
+        <variable id="Crk_C3G_pFRS2_pTrkA_endo" name="Crk_C3G_pFRS2_pTrkA_endo" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Crk_C3G_pFRS2_pTrkA_endo']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Crk_C3G_pFRS2_pTrkA_endo </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Grb2_SOS_pShc_pTrkA_1" name="Grb2_SOS_pShc_pTrkA">
+      <listOfVariables>
+        <variable id="Grb2_SOS_pShc_pTrkA" name="Grb2_SOS_pShc_pTrkA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Grb2_SOS_pShc_pTrkA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Grb2_SOS_pShc_pTrkA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Crk_C3G_pFRS2_pTrkA_1" name="Crk_C3G_pFRS2_pTrkA">
+      <listOfVariables>
+        <variable id="Crk_C3G_pFRS2_pTrkA" name="Crk_C3G_pFRS2_pTrkA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Crk_C3G_pFRS2_pTrkA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Crk_C3G_pFRS2_pTrkA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Grb2_SOS_pShc_pTrkA_endo_1" name="Grb2_SOS_pShc_pTrkA_endo">
+      <listOfVariables>
+        <variable id="Grb2_SOS_pShc_pTrkA_endo" name="Grb2_SOS_pShc_pTrkA_endo" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Grb2_SOS_pShc_pTrkA_endo']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Grb2_SOS_pShc_pTrkA_endo </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_Raf_Ras_GTP_MEK_1" name="c_Raf_Ras_GTP_MEK">
+      <listOfVariables>
+        <variable id="c_Raf_Ras_GTP_MEK" name="c_Raf_Ras_GTP_MEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c_Raf_Ras_GTP_MEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c_Raf_Ras_GTP_MEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_Raf_Ras_GTP_pMEK_1" name="c_Raf_Ras_GTP_pMEK">
+      <listOfVariables>
+        <variable id="c_Raf_Ras_GTP_pMEK" name="c_Raf_Ras_GTP_pMEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c_Raf_Ras_GTP_pMEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c_Raf_Ras_GTP_pMEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_Raf_Ras_GTP_MEK_ERK_1" name="c_Raf_Ras_GTP_MEK_ERK">
+      <listOfVariables>
+        <variable id="c_Raf_Ras_GTP_MEK_ERK" name="c_Raf_Ras_GTP_MEK_ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c_Raf_Ras_GTP_MEK_ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c_Raf_Ras_GTP_MEK_ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_Raf_Ras_GTP_pMEK_ERK_1" name="c_Raf_Ras_GTP_pMEK_ERK">
+      <listOfVariables>
+        <variable id="c_Raf_Ras_GTP_pMEK_ERK" name="c_Raf_Ras_GTP_pMEK_ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c_Raf_Ras_GTP_pMEK_ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c_Raf_Ras_GTP_pMEK_ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_Ras_GTP_MEK_1" name="B_Raf_Ras_GTP_MEK">
+      <listOfVariables>
+        <variable id="B_Raf_Ras_GTP_MEK" name="B_Raf_Ras_GTP_MEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_Ras_GTP_MEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_Ras_GTP_MEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_Ras_GTP_pMEK_1" name="B_Raf_Ras_GTP_pMEK">
+      <listOfVariables>
+        <variable id="B_Raf_Ras_GTP_pMEK" name="B_Raf_Ras_GTP_pMEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_Ras_GTP_pMEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_Ras_GTP_pMEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_Ras_GTP_MEK_ERK_1" name="B_Raf_Ras_GTP_MEK_ERK">
+      <listOfVariables>
+        <variable id="B_Raf_Ras_GTP_MEK_ERK" name="B_Raf_Ras_GTP_MEK_ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_Ras_GTP_MEK_ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_Ras_GTP_MEK_ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_Ras_GTP_pMEK_ERK_1" name="B_Raf_Ras_GTP_pMEK_ERK">
+      <listOfVariables>
+        <variable id="B_Raf_Ras_GTP_pMEK_ERK" name="B_Raf_Ras_GTP_pMEK_ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_Ras_GTP_pMEK_ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_Ras_GTP_pMEK_ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_Rap1_GTP_MEK_1" name="B_Raf_Rap1_GTP_MEK">
+      <listOfVariables>
+        <variable id="B_Raf_Rap1_GTP_MEK" name="B_Raf_Rap1_GTP_MEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_Rap1_GTP_MEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_Rap1_GTP_MEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_Rap1_GTP_pMEK_1" name="B_Raf_Rap1_GTP_pMEK">
+      <listOfVariables>
+        <variable id="B_Raf_Rap1_GTP_pMEK" name="B_Raf_Rap1_GTP_pMEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_Rap1_GTP_pMEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_Rap1_GTP_pMEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_Rap1_GTP_MEK_ERK_1" name="B_Raf_Rap1_GTP_MEK_ERK">
+      <listOfVariables>
+        <variable id="B_Raf_Rap1_GTP_MEK_ERK" name="B_Raf_Rap1_GTP_MEK_ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_Rap1_GTP_MEK_ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_Rap1_GTP_MEK_ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_Rap1_GTP_pMEK_ERK_1" name="B_Raf_Rap1_GTP_pMEK_ERK">
+      <listOfVariables>
+        <variable id="B_Raf_Rap1_GTP_pMEK_ERK" name="B_Raf_Rap1_GTP_pMEK_ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_Rap1_GTP_pMEK_ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_Rap1_GTP_pMEK_ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERK_MKP3_1" name="ppERK_MKP3">
+      <listOfVariables>
+        <variable id="ppERK_MKP3" name="ppERK_MKP3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERK_MKP3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERK_MKP3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dppERK_MKP3_1" name="dppERK_MKP3">
+      <listOfVariables>
+        <variable id="dppERK_MKP3" name="dppERK_MKP3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dppERK_MKP3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dppERK_MKP3 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="EGFR_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="L_EGFR_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="L_EGFR_dimer_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="SOS_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="L_dpEGFR_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="pSOS_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="SOS_Grb2_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="Grb2_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="Dok_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="pDok_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="Crk_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="FRS2_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="Shc_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="pSOS_Grb2_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Rap1_GDP_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="MEK_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="MKP3_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="pShc_dpEGFR_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="dpEGFR_c_Cbl_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_Rap1_GTP_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="pShc_dpEGFR_c_Cbl_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="pFRS2_dpEGFR_c_Cbl_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="Shc_dpEGFR_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="c_Cbl_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="RasGAP_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="c_Raf_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="ERK_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="PP2A_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="Ras_GDP_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="Rap1GAP_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="C3G_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="NGFR_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="pShc_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="pFRS2_dpEGFR_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="pTrkA_endo_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="MEK_ERK_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="pMEK_ERK_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="FRS2_dpEGFR_c_Cbl_ubiq_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="Crk_C3G_pFRS2_dpEGFR_c_Cbl_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="pShc_dpEGFR_c_Cbl_ubiq_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="Crk_C3G_pFRS2_dpEGFR_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="Grb2_SOS_pShc_dpEGFR_c_Cbl_ubiq_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="Grb2_SOS_pShc_dpEGFR_c_Cbl_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="Shc_dpEGFR_c_Cbl_ubiq_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="dpEGFR_c_Cbl_ubiq_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="proteosome_1" />
+        <curve id="curve_47" logX="false" logY="false" xDataReference="time" yDataReference="Grb2_SOS_pShc_1" />
+        <curve id="curve_48" logX="false" logY="false" xDataReference="time" yDataReference="Shc_dpEGFR_c_Cbl_1" />
+        <curve id="curve_49" logX="false" logY="false" xDataReference="time" yDataReference="Grb2_SOS_pShc_dpEGFR_1" />
+        <curve id="curve_50" logX="false" logY="false" xDataReference="time" yDataReference="pFRS2_1" />
+        <curve id="curve_51" logX="false" logY="false" xDataReference="time" yDataReference="FRS2_dpEGFR_1" />
+        <curve id="curve_52" logX="false" logY="false" xDataReference="time" yDataReference="pDok_RasGAP_1" />
+        <curve id="curve_53" logX="false" logY="false" xDataReference="time" yDataReference="pMEK_1" />
+        <curve id="curve_54" logX="false" logY="false" xDataReference="time" yDataReference="FRS2_dpEGFR_c_Cbl_1" />
+        <curve id="curve_55" logX="false" logY="false" xDataReference="time" yDataReference="pFRS2_dpEGFR_c_Cbl_ubiq_1" />
+        <curve id="curve_56" logX="false" logY="false" xDataReference="time" yDataReference="Ras_GTP_1" />
+        <curve id="curve_57" logX="false" logY="false" xDataReference="time" yDataReference="Crk_C3G_pFRS2_dpEGFR_c_Cbl_ubiq_1" />
+        <curve id="curve_58" logX="false" logY="false" xDataReference="time" yDataReference="c_Raf_Ras_GTP_1" />
+        <curve id="curve_59" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_Ras_GTP_1" />
+        <curve id="curve_60" logX="false" logY="false" xDataReference="time" yDataReference="ppMEK_1" />
+        <curve id="curve_61" logX="false" logY="false" xDataReference="time" yDataReference="ppERK_1" />
+        <curve id="curve_62" logX="false" logY="false" xDataReference="time" yDataReference="pTrkA_1" />
+        <curve id="curve_63" logX="false" logY="false" xDataReference="time" yDataReference="Crk_C3G_1" />
+        <curve id="curve_64" logX="false" logY="false" xDataReference="time" yDataReference="Rap1_GTP_1" />
+        <curve id="curve_65" logX="false" logY="false" xDataReference="time" yDataReference="L_NGFR_1" />
+        <curve id="curve_66" logX="false" logY="false" xDataReference="time" yDataReference="ppMEK_ERK_1" />
+        <curve id="curve_67" logX="false" logY="false" xDataReference="time" yDataReference="dppERK_1" />
+        <curve id="curve_68" logX="false" logY="false" xDataReference="time" yDataReference="Shc_pTrkA_1" />
+        <curve id="curve_69" logX="false" logY="false" xDataReference="time" yDataReference="Shc_pTrkA_endo_1" />
+        <curve id="curve_70" logX="false" logY="false" xDataReference="time" yDataReference="pShc_pTrkA_1" />
+        <curve id="curve_71" logX="false" logY="false" xDataReference="time" yDataReference="pFRS2_pTrkA_1" />
+        <curve id="curve_72" logX="false" logY="false" xDataReference="time" yDataReference="FRS2_pTrkA_1" />
+        <curve id="curve_73" logX="false" logY="false" xDataReference="time" yDataReference="pShc_pTrkA_endo_1" />
+        <curve id="curve_74" logX="false" logY="false" xDataReference="time" yDataReference="FRS2_pTrkA_endo_1" />
+        <curve id="curve_75" logX="false" logY="false" xDataReference="time" yDataReference="pFRS2_pTrkA_endo_1" />
+        <curve id="curve_76" logX="false" logY="false" xDataReference="time" yDataReference="Crk_C3G_pFRS2_pTrkA_endo_1" />
+        <curve id="curve_77" logX="false" logY="false" xDataReference="time" yDataReference="Grb2_SOS_pShc_pTrkA_1" />
+        <curve id="curve_78" logX="false" logY="false" xDataReference="time" yDataReference="Crk_C3G_pFRS2_pTrkA_1" />
+        <curve id="curve_79" logX="false" logY="false" xDataReference="time" yDataReference="Grb2_SOS_pShc_pTrkA_endo_1" />
+        <curve id="curve_80" logX="false" logY="false" xDataReference="time" yDataReference="c_Raf_Ras_GTP_MEK_1" />
+        <curve id="curve_81" logX="false" logY="false" xDataReference="time" yDataReference="c_Raf_Ras_GTP_pMEK_1" />
+        <curve id="curve_82" logX="false" logY="false" xDataReference="time" yDataReference="c_Raf_Ras_GTP_MEK_ERK_1" />
+        <curve id="curve_83" logX="false" logY="false" xDataReference="time" yDataReference="c_Raf_Ras_GTP_pMEK_ERK_1" />
+        <curve id="curve_84" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_Ras_GTP_MEK_1" />
+        <curve id="curve_85" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_Ras_GTP_pMEK_1" />
+        <curve id="curve_86" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_Ras_GTP_MEK_ERK_1" />
+        <curve id="curve_87" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_Ras_GTP_pMEK_ERK_1" />
+        <curve id="curve_88" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_Rap1_GTP_MEK_1" />
+        <curve id="curve_89" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_Rap1_GTP_pMEK_1" />
+        <curve id="curve_90" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_Rap1_GTP_MEK_ERK_1" />
+        <curve id="curve_91" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_Rap1_GTP_pMEK_ERK_1" />
+        <curve id="curve_92" logX="false" logY="false" xDataReference="time" yDataReference="ppERK_MKP3_1" />
+        <curve id="curve_93" logX="false" logY="false" xDataReference="time" yDataReference="dppERK_MKP3_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="EGFR_1" />
+        <dataSet id="col_2" dataReference="L_EGFR_1" />
+        <dataSet id="col_3" dataReference="L_EGFR_dimer_1" />
+        <dataSet id="col_4" dataReference="SOS_1" />
+        <dataSet id="col_5" dataReference="L_dpEGFR_1" />
+        <dataSet id="col_6" dataReference="pSOS_1" />
+        <dataSet id="col_7" dataReference="SOS_Grb2_1" />
+        <dataSet id="col_8" dataReference="Grb2_1" />
+        <dataSet id="col_9" dataReference="Dok_1" />
+        <dataSet id="col_10" dataReference="pDok_1" />
+        <dataSet id="col_11" dataReference="Crk_1" />
+        <dataSet id="col_12" dataReference="FRS2_1" />
+        <dataSet id="col_13" dataReference="Shc_1" />
+        <dataSet id="col_14" dataReference="pSOS_Grb2_1" />
+        <dataSet id="col_15" dataReference="Rap1_GDP_1" />
+        <dataSet id="col_16" dataReference="MEK_1" />
+        <dataSet id="col_17" dataReference="MKP3_1" />
+        <dataSet id="col_18" dataReference="pShc_dpEGFR_1" />
+        <dataSet id="col_19" dataReference="dpEGFR_c_Cbl_1" />
+        <dataSet id="col_20" dataReference="B_Raf_Rap1_GTP_1" />
+        <dataSet id="col_21" dataReference="pShc_dpEGFR_c_Cbl_1" />
+        <dataSet id="col_22" dataReference="pFRS2_dpEGFR_c_Cbl_1" />
+        <dataSet id="col_23" dataReference="Shc_dpEGFR_1" />
+        <dataSet id="col_24" dataReference="c_Cbl_1" />
+        <dataSet id="col_25" dataReference="RasGAP_1" />
+        <dataSet id="col_26" dataReference="c_Raf_1" />
+        <dataSet id="col_27" dataReference="B_Raf_1" />
+        <dataSet id="col_28" dataReference="ERK_1" />
+        <dataSet id="col_29" dataReference="PP2A_1" />
+        <dataSet id="col_30" dataReference="Ras_GDP_1" />
+        <dataSet id="col_31" dataReference="Rap1GAP_1" />
+        <dataSet id="col_32" dataReference="C3G_1" />
+        <dataSet id="col_33" dataReference="NGFR_1" />
+        <dataSet id="col_34" dataReference="pShc_1" />
+        <dataSet id="col_35" dataReference="pFRS2_dpEGFR_1" />
+        <dataSet id="col_36" dataReference="pTrkA_endo_1" />
+        <dataSet id="col_37" dataReference="MEK_ERK_1" />
+        <dataSet id="col_38" dataReference="pMEK_ERK_1" />
+        <dataSet id="col_39" dataReference="FRS2_dpEGFR_c_Cbl_ubiq_1" />
+        <dataSet id="col_40" dataReference="Crk_C3G_pFRS2_dpEGFR_c_Cbl_1" />
+        <dataSet id="col_41" dataReference="pShc_dpEGFR_c_Cbl_ubiq_1" />
+        <dataSet id="col_42" dataReference="Crk_C3G_pFRS2_dpEGFR_1" />
+        <dataSet id="col_43" dataReference="Grb2_SOS_pShc_dpEGFR_c_Cbl_ubiq_1" />
+        <dataSet id="col_44" dataReference="Grb2_SOS_pShc_dpEGFR_c_Cbl_1" />
+        <dataSet id="col_45" dataReference="Shc_dpEGFR_c_Cbl_ubiq_1" />
+        <dataSet id="col_46" dataReference="dpEGFR_c_Cbl_ubiq_1" />
+        <dataSet id="col_47" dataReference="proteosome_1" />
+        <dataSet id="col_48" dataReference="Grb2_SOS_pShc_1" />
+        <dataSet id="col_49" dataReference="Shc_dpEGFR_c_Cbl_1" />
+        <dataSet id="col_50" dataReference="Grb2_SOS_pShc_dpEGFR_1" />
+        <dataSet id="col_51" dataReference="pFRS2_1" />
+        <dataSet id="col_52" dataReference="FRS2_dpEGFR_1" />
+        <dataSet id="col_53" dataReference="pDok_RasGAP_1" />
+        <dataSet id="col_54" dataReference="pMEK_1" />
+        <dataSet id="col_55" dataReference="FRS2_dpEGFR_c_Cbl_1" />
+        <dataSet id="col_56" dataReference="pFRS2_dpEGFR_c_Cbl_ubiq_1" />
+        <dataSet id="col_57" dataReference="Ras_GTP_1" />
+        <dataSet id="col_58" dataReference="Crk_C3G_pFRS2_dpEGFR_c_Cbl_ubiq_1" />
+        <dataSet id="col_59" dataReference="c_Raf_Ras_GTP_1" />
+        <dataSet id="col_60" dataReference="B_Raf_Ras_GTP_1" />
+        <dataSet id="col_61" dataReference="ppMEK_1" />
+        <dataSet id="col_62" dataReference="ppERK_1" />
+        <dataSet id="col_63" dataReference="pTrkA_1" />
+        <dataSet id="col_64" dataReference="Crk_C3G_1" />
+        <dataSet id="col_65" dataReference="Rap1_GTP_1" />
+        <dataSet id="col_66" dataReference="L_NGFR_1" />
+        <dataSet id="col_67" dataReference="ppMEK_ERK_1" />
+        <dataSet id="col_68" dataReference="dppERK_1" />
+        <dataSet id="col_69" dataReference="Shc_pTrkA_1" />
+        <dataSet id="col_70" dataReference="Shc_pTrkA_endo_1" />
+        <dataSet id="col_71" dataReference="pShc_pTrkA_1" />
+        <dataSet id="col_72" dataReference="pFRS2_pTrkA_1" />
+        <dataSet id="col_73" dataReference="FRS2_pTrkA_1" />
+        <dataSet id="col_74" dataReference="pShc_pTrkA_endo_1" />
+        <dataSet id="col_75" dataReference="FRS2_pTrkA_endo_1" />
+        <dataSet id="col_76" dataReference="pFRS2_pTrkA_endo_1" />
+        <dataSet id="col_77" dataReference="Crk_C3G_pFRS2_pTrkA_endo_1" />
+        <dataSet id="col_78" dataReference="Grb2_SOS_pShc_pTrkA_1" />
+        <dataSet id="col_79" dataReference="Crk_C3G_pFRS2_pTrkA_1" />
+        <dataSet id="col_80" dataReference="Grb2_SOS_pShc_pTrkA_endo_1" />
+        <dataSet id="col_81" dataReference="c_Raf_Ras_GTP_MEK_1" />
+        <dataSet id="col_82" dataReference="c_Raf_Ras_GTP_pMEK_1" />
+        <dataSet id="col_83" dataReference="c_Raf_Ras_GTP_MEK_ERK_1" />
+        <dataSet id="col_84" dataReference="c_Raf_Ras_GTP_pMEK_ERK_1" />
+        <dataSet id="col_85" dataReference="B_Raf_Ras_GTP_MEK_1" />
+        <dataSet id="col_86" dataReference="B_Raf_Ras_GTP_pMEK_1" />
+        <dataSet id="col_87" dataReference="B_Raf_Ras_GTP_MEK_ERK_1" />
+        <dataSet id="col_88" dataReference="B_Raf_Ras_GTP_pMEK_ERK_1" />
+        <dataSet id="col_89" dataReference="B_Raf_Rap1_GTP_MEK_1" />
+        <dataSet id="col_90" dataReference="B_Raf_Rap1_GTP_pMEK_1" />
+        <dataSet id="col_91" dataReference="B_Raf_Rap1_GTP_MEK_ERK_1" />
+        <dataSet id="col_92" dataReference="B_Raf_Rap1_GTP_pMEK_ERK_1" />
+        <dataSet id="col_93" dataReference="ppERK_MKP3_1" />
+        <dataSet id="col_94" dataReference="dppERK_MKP3_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
