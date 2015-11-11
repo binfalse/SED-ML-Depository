@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000275.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RA_1" name="RA">
+      <listOfVariables>
+        <variable id="RA" name="RA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="M_C_1" name="M_C">
+      <listOfVariables>
+        <variable id="M_C" name="M_C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='M_C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> M_C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C_1" name="C">
+      <listOfVariables>
+        <variable id="C" name="C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F_1" name="F">
+      <listOfVariables>
+        <variable id="F" name="F" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="M_F_1" name="M_F">
+      <listOfVariables>
+        <variable id="M_F" name="M_F" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='M_F']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> M_F </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="RA_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="M_C_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="C_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="F_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="M_F_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="RA_1" />
+        <dataSet id="col_2" dataReference="M_C_1" />
+        <dataSet id="col_3" dataReference="C_1" />
+        <dataSet id="col_4" dataReference="F_1" />
+        <dataSet id="col_5" dataReference="M_F_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
