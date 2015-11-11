@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000270.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="JAK2_1" name="JAK2">
+      <listOfVariables>
+        <variable id="JAK2" name="JAK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='JAK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> JAK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EpoR_1" name="EpoR">
+      <listOfVariables>
+        <variable id="EpoR" name="EpoR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EpoR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EpoR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SHP1_1" name="SHP1">
+      <listOfVariables>
+        <variable id="SHP1" name="SHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SOS_1" name="SOS">
+      <listOfVariables>
+        <variable id="SOS" name="SOS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SOS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SOS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Raf_1" name="Raf">
+      <listOfVariables>
+        <variable id="Raf" name="Raf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Raf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Raf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MEK2_1" name="MEK2">
+      <listOfVariables>
+        <variable id="MEK2" name="MEK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MEK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MEK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MEK1_1" name="MEK1">
+      <listOfVariables>
+        <variable id="MEK1" name="MEK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MEK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MEK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK1_1" name="ERK1">
+      <listOfVariables>
+        <variable id="ERK1" name="ERK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK2_1" name="ERK2">
+      <listOfVariables>
+        <variable id="ERK2" name="ERK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pJAK2_1" name="pJAK2">
+      <listOfVariables>
+        <variable id="pJAK2" name="pJAK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pJAK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pJAK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pEpoR_1" name="pEpoR">
+      <listOfVariables>
+        <variable id="pEpoR" name="pEpoR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pEpoR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pEpoR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mSHP1_1" name="mSHP1">
+      <listOfVariables>
+        <variable id="mSHP1" name="mSHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mSHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mSHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="actSHP1_1" name="actSHP1">
+      <listOfVariables>
+        <variable id="actSHP1" name="actSHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='actSHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> actSHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mSOS_1" name="mSOS">
+      <listOfVariables>
+        <variable id="mSOS" name="mSOS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mSOS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mSOS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRaf_1" name="pRaf">
+      <listOfVariables>
+        <variable id="pRaf" name="pRaf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRaf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRaf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppMEK2_1" name="ppMEK2">
+      <listOfVariables>
+        <variable id="ppMEK2" name="ppMEK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppMEK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppMEK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppMEK1_1" name="ppMEK1">
+      <listOfVariables>
+        <variable id="ppMEK1" name="ppMEK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppMEK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppMEK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERK1_1" name="ppERK1">
+      <listOfVariables>
+        <variable id="ppERK1" name="ppERK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERK2_1" name="ppERK2">
+      <listOfVariables>
+        <variable id="ppERK2" name="ppERK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pSOS_1" name="pSOS">
+      <listOfVariables>
+        <variable id="pSOS" name="pSOS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pSOS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pSOS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pMEK2_1" name="pMEK2">
+      <listOfVariables>
+        <variable id="pMEK2" name="pMEK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pMEK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pMEK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pMEK1_1" name="pMEK1">
+      <listOfVariables>
+        <variable id="pMEK1" name="pMEK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pMEK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pMEK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pERK1_1" name="pERK1">
+      <listOfVariables>
+        <variable id="pERK1" name="pERK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pERK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pERK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pERK2_1" name="pERK2">
+      <listOfVariables>
+        <variable id="pERK2" name="pERK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pERK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pERK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Delay01_mSHP1_1" name="Delay01_mSHP1">
+      <listOfVariables>
+        <variable id="Delay01_mSHP1" name="Delay01_mSHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Delay01_mSHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Delay01_mSHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Delay02_mSHP1_1" name="Delay02_mSHP1">
+      <listOfVariables>
+        <variable id="Delay02_mSHP1" name="Delay02_mSHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Delay02_mSHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Delay02_mSHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Delay03_mSHP1_1" name="Delay03_mSHP1">
+      <listOfVariables>
+        <variable id="Delay03_mSHP1" name="Delay03_mSHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Delay03_mSHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Delay03_mSHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Delay04_mSHP1_1" name="Delay04_mSHP1">
+      <listOfVariables>
+        <variable id="Delay04_mSHP1" name="Delay04_mSHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Delay04_mSHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Delay04_mSHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Delay05_mSHP1_1" name="Delay05_mSHP1">
+      <listOfVariables>
+        <variable id="Delay05_mSHP1" name="Delay05_mSHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Delay05_mSHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Delay05_mSHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Delay06_mSHP1_1" name="Delay06_mSHP1">
+      <listOfVariables>
+        <variable id="Delay06_mSHP1" name="Delay06_mSHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Delay06_mSHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Delay06_mSHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Delay07_mSHP1_1" name="Delay07_mSHP1">
+      <listOfVariables>
+        <variable id="Delay07_mSHP1" name="Delay07_mSHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Delay07_mSHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Delay07_mSHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Delay08_mSHP1_1" name="Delay08_mSHP1">
+      <listOfVariables>
+        <variable id="Delay08_mSHP1" name="Delay08_mSHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Delay08_mSHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Delay08_mSHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Epo_1" name="Epo">
+      <listOfVariables>
+        <variable id="Epo" name="Epo" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Epo']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Epo </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="JAK2_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="EpoR_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="SHP1_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="SOS_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Raf_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="MEK2_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="MEK1_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="ERK1_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="ERK2_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="pJAK2_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="pEpoR_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="mSHP1_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="actSHP1_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="mSOS_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="pRaf_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="ppMEK2_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="ppMEK1_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="ppERK1_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="ppERK2_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="pSOS_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="pMEK2_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="pMEK1_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="pERK1_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="pERK2_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="Delay01_mSHP1_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="Delay02_mSHP1_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="Delay03_mSHP1_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="Delay04_mSHP1_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="Delay05_mSHP1_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="Delay06_mSHP1_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="Delay07_mSHP1_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="Delay08_mSHP1_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="Epo_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="JAK2_1" />
+        <dataSet id="col_2" dataReference="EpoR_1" />
+        <dataSet id="col_3" dataReference="SHP1_1" />
+        <dataSet id="col_4" dataReference="SOS_1" />
+        <dataSet id="col_5" dataReference="Raf_1" />
+        <dataSet id="col_6" dataReference="MEK2_1" />
+        <dataSet id="col_7" dataReference="MEK1_1" />
+        <dataSet id="col_8" dataReference="ERK1_1" />
+        <dataSet id="col_9" dataReference="ERK2_1" />
+        <dataSet id="col_10" dataReference="pJAK2_1" />
+        <dataSet id="col_11" dataReference="pEpoR_1" />
+        <dataSet id="col_12" dataReference="mSHP1_1" />
+        <dataSet id="col_13" dataReference="actSHP1_1" />
+        <dataSet id="col_14" dataReference="mSOS_1" />
+        <dataSet id="col_15" dataReference="pRaf_1" />
+        <dataSet id="col_16" dataReference="ppMEK2_1" />
+        <dataSet id="col_17" dataReference="ppMEK1_1" />
+        <dataSet id="col_18" dataReference="ppERK1_1" />
+        <dataSet id="col_19" dataReference="ppERK2_1" />
+        <dataSet id="col_20" dataReference="pSOS_1" />
+        <dataSet id="col_21" dataReference="pMEK2_1" />
+        <dataSet id="col_22" dataReference="pMEK1_1" />
+        <dataSet id="col_23" dataReference="pERK1_1" />
+        <dataSet id="col_24" dataReference="pERK2_1" />
+        <dataSet id="col_25" dataReference="Delay01_mSHP1_1" />
+        <dataSet id="col_26" dataReference="Delay02_mSHP1_1" />
+        <dataSet id="col_27" dataReference="Delay03_mSHP1_1" />
+        <dataSet id="col_28" dataReference="Delay04_mSHP1_1" />
+        <dataSet id="col_29" dataReference="Delay05_mSHP1_1" />
+        <dataSet id="col_30" dataReference="Delay06_mSHP1_1" />
+        <dataSet id="col_31" dataReference="Delay07_mSHP1_1" />
+        <dataSet id="col_32" dataReference="Delay08_mSHP1_1" />
+        <dataSet id="col_33" dataReference="Epo_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
