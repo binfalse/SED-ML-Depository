@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000269.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Auxin_1" name="Auxin">
+      <listOfVariables>
+        <variable id="Auxin" name="Auxin" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Auxin']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Auxin </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="X_1" name="X">
+      <listOfVariables>
+        <variable id="X" name="X" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='X']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> X </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PLSp_1" name="PLSp">
+      <listOfVariables>
+        <variable id="PLSp" name="PLSp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PLSp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PLSp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ra_star_1" name="Ra_star">
+      <listOfVariables>
+        <variable id="Ra_star" name="Ra_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ra_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ra_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CK_1" name="CK">
+      <listOfVariables>
+        <variable id="CK" name="CK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ET_1" name="ET">
+      <listOfVariables>
+        <variable id="ET" name="ET" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ET']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ET </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PLSm_1" name="PLSm">
+      <listOfVariables>
+        <variable id="PLSm" name="PLSm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PLSm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PLSm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Re_star_1" name="Re_star">
+      <listOfVariables>
+        <variable id="Re_star" name="Re_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Re_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Re_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CTR1_star_1" name="CTR1_star">
+      <listOfVariables>
+        <variable id="CTR1_star" name="CTR1_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CTR1_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CTR1_star </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Auxin_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="X_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="PLSp_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Ra_star_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="CK_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="ET_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="PLSm_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="Re_star_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="CTR1_star_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Auxin_1" />
+        <dataSet id="col_2" dataReference="X_1" />
+        <dataSet id="col_3" dataReference="PLSp_1" />
+        <dataSet id="col_4" dataReference="Ra_star_1" />
+        <dataSet id="col_5" dataReference="CK_1" />
+        <dataSet id="col_6" dataReference="ET_1" />
+        <dataSet id="col_7" dataReference="PLSm_1" />
+        <dataSet id="col_8" dataReference="Re_star_1" />
+        <dataSet id="col_9" dataReference="CTR1_star_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
