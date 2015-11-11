@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000228.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRB_1" name="pRB">
+      <listOfVariables>
+        <variable id="pRB" name="pRB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRBp_1" name="pRBp">
+      <listOfVariables>
+        <variable id="pRBp" name="pRBp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRBp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRBp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E2F1_1" name="E2F1">
+      <listOfVariables>
+        <variable id="E2F1" name="E2F1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E2F1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E2F1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CycDi_1" name="CycDi">
+      <listOfVariables>
+        <variable id="CycDi" name="CycDi" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CycDi']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CycDi </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CycDa_1" name="CycDa">
+      <listOfVariables>
+        <variable id="CycDa" name="CycDa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CycDa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CycDa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AP1_1" name="AP1">
+      <listOfVariables>
+        <variable id="AP1" name="AP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRBpp_1" name="pRBpp">
+      <listOfVariables>
+        <variable id="pRBpp" name="pRBpp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRBpp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRBpp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CycEi_1" name="CycEi">
+      <listOfVariables>
+        <variable id="CycEi" name="CycEi" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CycEi']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CycEi </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CycEa_1" name="CycEa">
+      <listOfVariables>
+        <variable id="CycEa" name="CycEa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CycEa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CycEa </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="pRB_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="pRBp_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="E2F1_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="CycDi_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="CycDa_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="AP1_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="pRBpp_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="CycEi_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="CycEa_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="pRB_1" />
+        <dataSet id="col_2" dataReference="pRBp_1" />
+        <dataSet id="col_3" dataReference="E2F1_1" />
+        <dataSet id="col_4" dataReference="CycDi_1" />
+        <dataSet id="col_5" dataReference="CycDa_1" />
+        <dataSet id="col_6" dataReference="AP1_1" />
+        <dataSet id="col_7" dataReference="pRBpp_1" />
+        <dataSet id="col_8" dataReference="CycEi_1" />
+        <dataSet id="col_9" dataReference="CycEa_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
