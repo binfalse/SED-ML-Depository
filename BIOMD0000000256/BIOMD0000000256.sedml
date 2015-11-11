@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000256.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PC3_1" name="PC3">
+      <listOfVariables>
+        <variable id="PC3" name="PC3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PC3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PC3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_1" name="XIAP">
+      <listOfVariables>
+        <variable id="XIAP" name="XIAP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C9_1" name="C9">
+      <listOfVariables>
+        <variable id="C9" name="C9" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C9']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C9 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PC9_1" name="PC9">
+      <listOfVariables>
+        <variable id="PC9" name="PC9" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PC9']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PC9 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3_1" name="C3">
+      <listOfVariables>
+        <variable id="C3" name="C3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C9P_1" name="C9P">
+      <listOfVariables>
+        <variable id="C9P" name="C9P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C9P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C9P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_C3_1" name="XIAP_C3">
+      <listOfVariables>
+        <variable id="XIAP_C3" name="XIAP_C3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP_C3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP_C3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_C9_1" name="XIAP_C9">
+      <listOfVariables>
+        <variable id="XIAP_C9" name="XIAP_C9" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP_C9']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP_C9 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_C9_C3_1" name="XIAP_C9_C3">
+      <listOfVariables>
+        <variable id="XIAP_C9_C3" name="XIAP_C9_C3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP_C9_C3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP_C9_C3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_p2frag_1" name="XIAP_p2frag">
+      <listOfVariables>
+        <variable id="XIAP_p2frag" name="XIAP_p2frag" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP_p2frag']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP_p2frag </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_p2frag_C3_1" name="XIAP_p2frag_C3">
+      <listOfVariables>
+        <variable id="XIAP_p2frag_C3" name="XIAP_p2frag_C3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP_p2frag_C3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP_p2frag_C3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BIR12_1" name="BIR12">
+      <listOfVariables>
+        <variable id="BIR12" name="BIR12" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BIR12']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BIR12 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BIR12_C3_1" name="BIR12_C3">
+      <listOfVariables>
+        <variable id="BIR12_C3" name="BIR12_C3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BIR12_C3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BIR12_C3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BIR3R_1" name="BIR3R">
+      <listOfVariables>
+        <variable id="BIR3R" name="BIR3R" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BIR3R']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BIR3R </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BIR3R_C9_1" name="BIR3R_C9">
+      <listOfVariables>
+        <variable id="BIR3R_C9" name="BIR3R_C9" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BIR3R_C9']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BIR3R_C9 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BIR3R_p2frag_1" name="BIR3R_p2frag">
+      <listOfVariables>
+        <variable id="BIR3R_p2frag" name="BIR3R_p2frag" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BIR3R_p2frag']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BIR3R_p2frag </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_2SMAC_1" name="XIAP_2SMAC">
+      <listOfVariables>
+        <variable id="XIAP_2SMAC" name="XIAP_2SMAC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP_2SMAC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP_2SMAC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BIR12_SMAC_1" name="BIR12_SMAC">
+      <listOfVariables>
+        <variable id="BIR12_SMAC" name="BIR12_SMAC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BIR12_SMAC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BIR12_SMAC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BIR3R_SMAC_1" name="BIR3R_SMAC">
+      <listOfVariables>
+        <variable id="BIR3R_SMAC" name="BIR3R_SMAC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BIR3R_SMAC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BIR3R_SMAC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SMAC_1" name="SMAC">
+      <listOfVariables>
+        <variable id="SMAC" name="SMAC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SMAC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SMAC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="APAF1_1" name="APAF1">
+      <listOfVariables>
+        <variable id="APAF1" name="APAF1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='APAF1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> APAF1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_p2frag_2SMAC_1" name="XIAP_p2frag_2SMAC">
+      <listOfVariables>
+        <variable id="XIAP_p2frag_2SMAC" name="XIAP_p2frag_2SMAC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP_p2frag_2SMAC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP_p2frag_2SMAC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Substrate_1" name="Substrate">
+      <listOfVariables>
+        <variable id="Substrate" name="Substrate" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Substrate']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Substrate </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ClvgPrds_1" name="ClvgPrds">
+      <listOfVariables>
+        <variable id="ClvgPrds" name="ClvgPrds" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ClvgPrds']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ClvgPrds </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SMAC_mito_1" name="SMAC_mito">
+      <listOfVariables>
+        <variable id="SMAC_mito" name="SMAC_mito" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SMAC_mito']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SMAC_mito </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CytC_mit_1" name="CytC_mit">
+      <listOfVariables>
+        <variable id="CytC_mit" name="CytC_mit" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CytC_mit']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CytC_mit </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CytC_cell_1" name="CytC_cell">
+      <listOfVariables>
+        <variable id="CytC_cell" name="CytC_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CytC_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CytC_cell </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="PC3_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="C9_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="PC9_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="C3_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="C9P_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_C3_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_C9_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_C9_C3_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_p2frag_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_p2frag_C3_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="BIR12_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="BIR12_C3_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="BIR3R_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="BIR3R_C9_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="BIR3R_p2frag_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_2SMAC_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="BIR12_SMAC_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="BIR3R_SMAC_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="SMAC_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="APAF1_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_p2frag_2SMAC_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="Substrate_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="ClvgPrds_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="SMAC_mito_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="CytC_mit_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="CytC_cell_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="PC3_1" />
+        <dataSet id="col_2" dataReference="XIAP_1" />
+        <dataSet id="col_3" dataReference="C9_1" />
+        <dataSet id="col_4" dataReference="PC9_1" />
+        <dataSet id="col_5" dataReference="C3_1" />
+        <dataSet id="col_6" dataReference="C9P_1" />
+        <dataSet id="col_7" dataReference="XIAP_C3_1" />
+        <dataSet id="col_8" dataReference="XIAP_C9_1" />
+        <dataSet id="col_9" dataReference="XIAP_C9_C3_1" />
+        <dataSet id="col_10" dataReference="XIAP_p2frag_1" />
+        <dataSet id="col_11" dataReference="XIAP_p2frag_C3_1" />
+        <dataSet id="col_12" dataReference="BIR12_1" />
+        <dataSet id="col_13" dataReference="BIR12_C3_1" />
+        <dataSet id="col_14" dataReference="BIR3R_1" />
+        <dataSet id="col_15" dataReference="BIR3R_C9_1" />
+        <dataSet id="col_16" dataReference="BIR3R_p2frag_1" />
+        <dataSet id="col_17" dataReference="XIAP_2SMAC_1" />
+        <dataSet id="col_18" dataReference="BIR12_SMAC_1" />
+        <dataSet id="col_19" dataReference="BIR3R_SMAC_1" />
+        <dataSet id="col_20" dataReference="SMAC_1" />
+        <dataSet id="col_21" dataReference="APAF1_1" />
+        <dataSet id="col_22" dataReference="XIAP_p2frag_2SMAC_1" />
+        <dataSet id="col_23" dataReference="Substrate_1" />
+        <dataSet id="col_24" dataReference="ClvgPrds_1" />
+        <dataSet id="col_25" dataReference="SMAC_mito_1" />
+        <dataSet id="col_26" dataReference="CytC_mit_1" />
+        <dataSet id="col_27" dataReference="CytC_cell_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
