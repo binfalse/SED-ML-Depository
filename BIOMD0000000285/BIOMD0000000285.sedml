@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000285.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PolyQ_1" name="PolyQ">
+      <listOfVariables>
+        <variable id="PolyQ" name="PolyQ" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PolyQ']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PolyQ </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Proteasome_1" name="Proteasome">
+      <listOfVariables>
+        <variable id="Proteasome" name="Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Proteasome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NatP_1" name="NatP">
+      <listOfVariables>
+        <variable id="NatP" name="NatP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NatP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NatP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MisP_1" name="MisP">
+      <listOfVariables>
+        <variable id="MisP" name="MisP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MisP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MisP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MisP_Proteasome_1" name="MisP_Proteasome">
+      <listOfVariables>
+        <variable id="MisP_Proteasome" name="MisP_Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MisP_Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MisP_Proteasome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggP1_1" name="AggP1">
+      <listOfVariables>
+        <variable id="AggP1" name="AggP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggP2_1" name="AggP2">
+      <listOfVariables>
+        <variable id="AggP2" name="AggP2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggP2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggP2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggP3_1" name="AggP3">
+      <listOfVariables>
+        <variable id="AggP3" name="AggP3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggP3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggP3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggP4_1" name="AggP4">
+      <listOfVariables>
+        <variable id="AggP4" name="AggP4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggP4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggP4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggP5_1" name="AggP5">
+      <listOfVariables>
+        <variable id="AggP5" name="AggP5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggP5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggP5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggPolyQ1_1" name="AggPolyQ1">
+      <listOfVariables>
+        <variable id="AggPolyQ1" name="AggPolyQ1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggPolyQ1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggPolyQ1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggPolyQ2_1" name="AggPolyQ2">
+      <listOfVariables>
+        <variable id="AggPolyQ2" name="AggPolyQ2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggPolyQ2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggPolyQ2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggPolyQ3_1" name="AggPolyQ3">
+      <listOfVariables>
+        <variable id="AggPolyQ3" name="AggPolyQ3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggPolyQ3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggPolyQ3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggPolyQ4_1" name="AggPolyQ4">
+      <listOfVariables>
+        <variable id="AggPolyQ4" name="AggPolyQ4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggPolyQ4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggPolyQ4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggPolyQ5_1" name="AggPolyQ5">
+      <listOfVariables>
+        <variable id="AggPolyQ5" name="AggPolyQ5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggPolyQ5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggPolyQ5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SeqAggP_1" name="SeqAggP">
+      <listOfVariables>
+        <variable id="SeqAggP" name="SeqAggP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SeqAggP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SeqAggP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggP_Proteasome_1" name="AggP_Proteasome">
+      <listOfVariables>
+        <variable id="AggP_Proteasome" name="AggP_Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggP_Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggP_Proteasome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mRFPu_1" name="mRFPu">
+      <listOfVariables>
+        <variable id="mRFPu" name="mRFPu" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mRFPu']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mRFPu </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mRFPu_Proteasome_1" name="mRFPu_Proteasome">
+      <listOfVariables>
+        <variable id="mRFPu_Proteasome" name="mRFPu_Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mRFPu_Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mRFPu_Proteasome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PolyQ_Proteasome_1" name="PolyQ_Proteasome">
+      <listOfVariables>
+        <variable id="PolyQ_Proteasome" name="PolyQ_Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PolyQ_Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PolyQ_Proteasome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ROS_1" name="ROS">
+      <listOfVariables>
+        <variable id="ROS" name="ROS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ROS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ROS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p38_P_1" name="p38_P">
+      <listOfVariables>
+        <variable id="p38_P" name="p38_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p38_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p38_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p38_1" name="p38">
+      <listOfVariables>
+        <variable id="p38" name="p38" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p38']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p38 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p38death_1" name="p38death">
+      <listOfVariables>
+        <variable id="p38death" name="p38death" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p38death']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p38death </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIdeath_1" name="PIdeath">
+      <listOfVariables>
+        <variable id="PIdeath" name="PIdeath" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIdeath']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIdeath </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="PolyQ_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Proteasome_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="NatP_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="MisP_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="MisP_Proteasome_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="AggP1_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="AggP2_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="AggP3_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="AggP4_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="AggP5_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="AggPolyQ1_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="AggPolyQ2_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="AggPolyQ3_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="AggPolyQ4_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="AggPolyQ5_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="SeqAggP_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="AggP_Proteasome_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="mRFPu_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="mRFPu_Proteasome_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="PolyQ_Proteasome_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="ROS_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="p38_P_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="p38_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="p38death_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="PIdeath_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="PolyQ_1" />
+        <dataSet id="col_2" dataReference="Proteasome_1" />
+        <dataSet id="col_3" dataReference="NatP_1" />
+        <dataSet id="col_4" dataReference="MisP_1" />
+        <dataSet id="col_5" dataReference="MisP_Proteasome_1" />
+        <dataSet id="col_6" dataReference="AggP1_1" />
+        <dataSet id="col_7" dataReference="AggP2_1" />
+        <dataSet id="col_8" dataReference="AggP3_1" />
+        <dataSet id="col_9" dataReference="AggP4_1" />
+        <dataSet id="col_10" dataReference="AggP5_1" />
+        <dataSet id="col_11" dataReference="AggPolyQ1_1" />
+        <dataSet id="col_12" dataReference="AggPolyQ2_1" />
+        <dataSet id="col_13" dataReference="AggPolyQ3_1" />
+        <dataSet id="col_14" dataReference="AggPolyQ4_1" />
+        <dataSet id="col_15" dataReference="AggPolyQ5_1" />
+        <dataSet id="col_16" dataReference="SeqAggP_1" />
+        <dataSet id="col_17" dataReference="AggP_Proteasome_1" />
+        <dataSet id="col_18" dataReference="mRFPu_1" />
+        <dataSet id="col_19" dataReference="mRFPu_Proteasome_1" />
+        <dataSet id="col_20" dataReference="PolyQ_Proteasome_1" />
+        <dataSet id="col_21" dataReference="ROS_1" />
+        <dataSet id="col_22" dataReference="p38_P_1" />
+        <dataSet id="col_23" dataReference="p38_1" />
+        <dataSet id="col_24" dataReference="p38death_1" />
+        <dataSet id="col_25" dataReference="PIdeath_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
