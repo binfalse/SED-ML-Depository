@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000109.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="APCC_1" name="APCC">
+      <listOfVariables>
+        <variable id="APCC" name="APCC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='APCC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> APCC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="APCCYCdk1Y00YCdk1Y01YInt_1" name="APCCYCdk1Y00YCdk1Y01YInt">
+      <listOfVariables>
+        <variable id="APCCYCdk1Y00YCdk1Y01YInt" name="APCCYCdk1Y00YCdk1Y01YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='APCCYCdk1Y00YCdk1Y01YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> APCCYCdk1Y00YCdk1Y01YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="APCCYCdk1Y10YCdk1Y11YInt_1" name="APCCYCdk1Y10YCdk1Y11YInt">
+      <listOfVariables>
+        <variable id="APCCYCdk1Y10YCdk1Y11YInt" name="APCCYCdk1Y10YCdk1Y11YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='APCCYCdk1Y10YCdk1Y11YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> APCCYCdk1Y10YCdk1Y11YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="APCCYCdk2Y000YCdk2Y002YInt_1" name="APCCYCdk2Y000YCdk2Y002YInt">
+      <listOfVariables>
+        <variable id="APCCYCdk2Y000YCdk2Y002YInt" name="APCCYCdk2Y000YCdk2Y002YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='APCCYCdk2Y000YCdk2Y002YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> APCCYCdk2Y000YCdk2Y002YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="APCCYCdk2Y010YCdk2Y012YInt_1" name="APCCYCdk2Y010YCdk2Y012YInt">
+      <listOfVariables>
+        <variable id="APCCYCdk2Y010YCdk2Y012YInt" name="APCCYCdk2Y010YCdk2Y012YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='APCCYCdk2Y010YCdk2Y012YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> APCCYCdk2Y010YCdk2Y012YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="APCCYCdk2Y100YCdk2Y102YInt_1" name="APCCYCdk2Y100YCdk2Y102YInt">
+      <listOfVariables>
+        <variable id="APCCYCdk2Y100YCdk2Y102YInt" name="APCCYCdk2Y100YCdk2Y102YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='APCCYCdk2Y100YCdk2Y102YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> APCCYCdk2Y100YCdk2Y102YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="APCCYCdk2Y110YCdk2Y112YInt_1" name="APCCYCdk2Y110YCdk2Y112YInt">
+      <listOfVariables>
+        <variable id="APCCYCdk2Y110YCdk2Y112YInt" name="APCCYCdk2Y110YCdk2Y112YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='APCCYCdk2Y110YCdk2Y112YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> APCCYCdk2Y110YCdk2Y112YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="APCCYCyclinAYInt_1" name="APCCYCyclinAYInt">
+      <listOfVariables>
+        <variable id="APCCYCyclinAYInt" name="APCCYCyclinAYInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='APCCYCyclinAYInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> APCCYCyclinAYInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="APCCYEmi1_1" name="APCCYEmi1">
+      <listOfVariables>
+        <variable id="APCCYEmi1" name="APCCYEmi1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='APCCYEmi1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> APCCYEmi1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk1Y00_1" name="Cdk1Y00">
+      <listOfVariables>
+        <variable id="Cdk1Y00" name="Cdk1Y00" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk1Y00']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk1Y00 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk1Y01_1" name="Cdk1Y01">
+      <listOfVariables>
+        <variable id="Cdk1Y01" name="Cdk1Y01" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk1Y01']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk1Y01 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk1Y10_1" name="Cdk1Y10">
+      <listOfVariables>
+        <variable id="Cdk1Y10" name="Cdk1Y10" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk1Y10']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk1Y10 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk1Y11_1" name="Cdk1Y11">
+      <listOfVariables>
+        <variable id="Cdk1Y11" name="Cdk1Y11" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk1Y11']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk1Y11 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk1Y11YpRbY10YpRbY20YInt_1" name="Cdk1Y11YpRbY10YpRbY20YInt">
+      <listOfVariables>
+        <variable id="Cdk1Y11YpRbY10YpRbY20YInt" name="Cdk1Y11YpRbY10YpRbY20YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk1Y11YpRbY10YpRbY20YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk1Y11YpRbY10YpRbY20YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk1Y11YpRbY11YpRbY21YInt_1" name="Cdk1Y11YpRbY11YpRbY21YInt">
+      <listOfVariables>
+        <variable id="Cdk1Y11YpRbY11YpRbY21YInt" name="Cdk1Y11YpRbY11YpRbY21YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk1Y11YpRbY11YpRbY21YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk1Y11YpRbY11YpRbY21YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y000_1" name="Cdk2Y000">
+      <listOfVariables>
+        <variable id="Cdk2Y000" name="Cdk2Y000" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y000']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y000 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y001_1" name="Cdk2Y001">
+      <listOfVariables>
+        <variable id="Cdk2Y001" name="Cdk2Y001" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y001']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y001 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y002_1" name="Cdk2Y002">
+      <listOfVariables>
+        <variable id="Cdk2Y002" name="Cdk2Y002" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y002']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y002 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y010_1" name="Cdk2Y010">
+      <listOfVariables>
+        <variable id="Cdk2Y010" name="Cdk2Y010" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y010']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y010 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y011_1" name="Cdk2Y011">
+      <listOfVariables>
+        <variable id="Cdk2Y011" name="Cdk2Y011" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y011']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y011 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y011YpRbY10YpRbY20YInt_1" name="Cdk2Y011YpRbY10YpRbY20YInt">
+      <listOfVariables>
+        <variable id="Cdk2Y011YpRbY10YpRbY20YInt" name="Cdk2Y011YpRbY10YpRbY20YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y011YpRbY10YpRbY20YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y011YpRbY10YpRbY20YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y011YpRbY11YpRbY21YInt_1" name="Cdk2Y011YpRbY11YpRbY21YInt">
+      <listOfVariables>
+        <variable id="Cdk2Y011YpRbY11YpRbY21YInt" name="Cdk2Y011YpRbY11YpRbY21YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y011YpRbY11YpRbY21YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y011YpRbY11YpRbY21YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y012_1" name="Cdk2Y012">
+      <listOfVariables>
+        <variable id="Cdk2Y012" name="Cdk2Y012" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y012']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y012 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y012YpRbY10YpRbY20YInt_1" name="Cdk2Y012YpRbY10YpRbY20YInt">
+      <listOfVariables>
+        <variable id="Cdk2Y012YpRbY10YpRbY20YInt" name="Cdk2Y012YpRbY10YpRbY20YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y012YpRbY10YpRbY20YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y012YpRbY10YpRbY20YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y012YpRbY11YpRbY21YInt_1" name="Cdk2Y012YpRbY11YpRbY21YInt">
+      <listOfVariables>
+        <variable id="Cdk2Y012YpRbY11YpRbY21YInt" name="Cdk2Y012YpRbY11YpRbY21YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y012YpRbY11YpRbY21YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y012YpRbY11YpRbY21YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y100_1" name="Cdk2Y100">
+      <listOfVariables>
+        <variable id="Cdk2Y100" name="Cdk2Y100" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y100']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y100 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y101_1" name="Cdk2Y101">
+      <listOfVariables>
+        <variable id="Cdk2Y101" name="Cdk2Y101" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y101']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y101 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y102_1" name="Cdk2Y102">
+      <listOfVariables>
+        <variable id="Cdk2Y102" name="Cdk2Y102" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y102']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y102 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y110_1" name="Cdk2Y110">
+      <listOfVariables>
+        <variable id="Cdk2Y110" name="Cdk2Y110" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y110']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y110 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y111_1" name="Cdk2Y111">
+      <listOfVariables>
+        <variable id="Cdk2Y111" name="Cdk2Y111" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y111']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y111 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk2Y112_1" name="Cdk2Y112">
+      <listOfVariables>
+        <variable id="Cdk2Y112" name="Cdk2Y112" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk2Y112']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk2Y112 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk4Y00_1" name="Cdk4Y00">
+      <listOfVariables>
+        <variable id="Cdk4Y00" name="Cdk4Y00" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk4Y00']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk4Y00 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk4Y01_1" name="Cdk4Y01">
+      <listOfVariables>
+        <variable id="Cdk4Y01" name="Cdk4Y01" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk4Y01']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk4Y01 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk4Y01YpRbY00YpRbY10YInt_1" name="Cdk4Y01YpRbY00YpRbY10YInt">
+      <listOfVariables>
+        <variable id="Cdk4Y01YpRbY00YpRbY10YInt" name="Cdk4Y01YpRbY00YpRbY10YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk4Y01YpRbY00YpRbY10YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk4Y01YpRbY00YpRbY10YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk4Y01YpRbY01YpRbY11YInt_1" name="Cdk4Y01YpRbY01YpRbY11YInt">
+      <listOfVariables>
+        <variable id="Cdk4Y01YpRbY01YpRbY11YInt" name="Cdk4Y01YpRbY01YpRbY11YInt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk4Y01YpRbY01YpRbY11YInt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk4Y01YpRbY01YpRbY11YInt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk4Y10_1" name="Cdk4Y10">
+      <listOfVariables>
+        <variable id="Cdk4Y10" name="Cdk4Y10" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk4Y10']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk4Y10 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdk4Y11_1" name="Cdk4Y11">
+      <listOfVariables>
+        <variable id="Cdk4Y11" name="Cdk4Y11" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdk4Y11']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdk4Y11 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CyclinA_1" name="CyclinA">
+      <listOfVariables>
+        <variable id="CyclinA" name="CyclinA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CyclinA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CyclinA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CyclinD_1" name="CyclinD">
+      <listOfVariables>
+        <variable id="CyclinD" name="CyclinD" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CyclinD']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CyclinD </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CyclinE_1" name="CyclinE">
+      <listOfVariables>
+        <variable id="CyclinE" name="CyclinE" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CyclinE']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CyclinE </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E2F_1" name="E2F">
+      <listOfVariables>
+        <variable id="E2F" name="E2F" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E2F']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E2F </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Emi1_1" name="Emi1">
+      <listOfVariables>
+        <variable id="Emi1" name="Emi1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Emi1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Emi1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p27_1" name="p27">
+      <listOfVariables>
+        <variable id="p27" name="p27" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p27']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p27 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRbY00_1" name="pRbY00">
+      <listOfVariables>
+        <variable id="pRbY00" name="pRbY00" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRbY00']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRbY00 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRbY01_1" name="pRbY01">
+      <listOfVariables>
+        <variable id="pRbY01" name="pRbY01" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRbY01']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRbY01 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRbY10_1" name="pRbY10">
+      <listOfVariables>
+        <variable id="pRbY10" name="pRbY10" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRbY10']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRbY10 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRbY11_1" name="pRbY11">
+      <listOfVariables>
+        <variable id="pRbY11" name="pRbY11" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRbY11']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRbY11 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRbY20_1" name="pRbY20">
+      <listOfVariables>
+        <variable id="pRbY20" name="pRbY20" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRbY20']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRbY20 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRbY21_1" name="pRbY21">
+      <listOfVariables>
+        <variable id="pRbY21" name="pRbY21" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRbY21']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRbY21 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="totalYCyclinYD_1" name="totalYCyclinYD">
+      <listOfVariables>
+        <variable id="totalYCyclinYD" name="totalYCyclinYD" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='totalYCyclinYD']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> totalYCyclinYD </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="totalYCyclinYE_1" name="totalYCyclinYE">
+      <listOfVariables>
+        <variable id="totalYCyclinYE" name="totalYCyclinYE" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='totalYCyclinYE']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> totalYCyclinYE </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="totalYCyclinYA_1" name="totalYCyclinYA">
+      <listOfVariables>
+        <variable id="totalYCyclinYA" name="totalYCyclinYA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='totalYCyclinYA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> totalYCyclinYA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="totalYp27_1" name="totalYp27">
+      <listOfVariables>
+        <variable id="totalYp27" name="totalYp27" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='totalYp27']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> totalYp27 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hypophosphorylatedYpRb_1" name="hypophosphorylatedYpRb">
+      <listOfVariables>
+        <variable id="hypophosphorylatedYpRb" name="hypophosphorylatedYpRb" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hypophosphorylatedYpRb']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hypophosphorylatedYpRb </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hyperphosphorylatedYpRb_1" name="hyperphosphorylatedYpRb">
+      <listOfVariables>
+        <variable id="hyperphosphorylatedYpRb" name="hyperphosphorylatedYpRb" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hyperphosphorylatedYpRb']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hyperphosphorylatedYpRb </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="totalYEmi1_1" name="totalYEmi1">
+      <listOfVariables>
+        <variable id="totalYEmi1" name="totalYEmi1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='totalYEmi1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> totalYEmi1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="activeYCdk2_1" name="activeYCdk2">
+      <listOfVariables>
+        <variable id="activeYCdk2" name="activeYCdk2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='activeYCdk2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> activeYCdk2 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="APCC_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="APCCYCdk1Y00YCdk1Y01YInt_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="APCCYCdk1Y10YCdk1Y11YInt_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="APCCYCdk2Y000YCdk2Y002YInt_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="APCCYCdk2Y010YCdk2Y012YInt_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="APCCYCdk2Y100YCdk2Y102YInt_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="APCCYCdk2Y110YCdk2Y112YInt_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="APCCYCyclinAYInt_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="APCCYEmi1_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="Cdk1Y00_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="Cdk1Y01_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="Cdk1Y10_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="Cdk1Y11_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Cdk1Y11YpRbY10YpRbY20YInt_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Cdk1Y11YpRbY11YpRbY21YInt_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y000_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y001_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y002_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y010_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y011_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y011YpRbY10YpRbY20YInt_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y011YpRbY11YpRbY21YInt_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y012_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y012YpRbY10YpRbY20YInt_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y012YpRbY11YpRbY21YInt_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y100_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y101_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y102_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y110_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y111_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="Cdk2Y112_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="Cdk4Y00_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="Cdk4Y01_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="Cdk4Y01YpRbY00YpRbY10YInt_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="Cdk4Y01YpRbY01YpRbY11YInt_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="Cdk4Y10_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="Cdk4Y11_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="CyclinA_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="CyclinD_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="CyclinE_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="E2F_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="Emi1_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="p27_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="pRbY00_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="pRbY01_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="pRbY10_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="pRbY11_1" />
+        <curve id="curve_47" logX="false" logY="false" xDataReference="time" yDataReference="pRbY20_1" />
+        <curve id="curve_48" logX="false" logY="false" xDataReference="time" yDataReference="pRbY21_1" />
+        <curve id="curve_49" logX="false" logY="false" xDataReference="time" yDataReference="totalYCyclinYD_1" />
+        <curve id="curve_50" logX="false" logY="false" xDataReference="time" yDataReference="totalYCyclinYE_1" />
+        <curve id="curve_51" logX="false" logY="false" xDataReference="time" yDataReference="totalYCyclinYA_1" />
+        <curve id="curve_52" logX="false" logY="false" xDataReference="time" yDataReference="totalYp27_1" />
+        <curve id="curve_53" logX="false" logY="false" xDataReference="time" yDataReference="hypophosphorylatedYpRb_1" />
+        <curve id="curve_54" logX="false" logY="false" xDataReference="time" yDataReference="hyperphosphorylatedYpRb_1" />
+        <curve id="curve_55" logX="false" logY="false" xDataReference="time" yDataReference="totalYEmi1_1" />
+        <curve id="curve_56" logX="false" logY="false" xDataReference="time" yDataReference="activeYCdk2_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="APCC_1" />
+        <dataSet id="col_2" dataReference="APCCYCdk1Y00YCdk1Y01YInt_1" />
+        <dataSet id="col_3" dataReference="APCCYCdk1Y10YCdk1Y11YInt_1" />
+        <dataSet id="col_4" dataReference="APCCYCdk2Y000YCdk2Y002YInt_1" />
+        <dataSet id="col_5" dataReference="APCCYCdk2Y010YCdk2Y012YInt_1" />
+        <dataSet id="col_6" dataReference="APCCYCdk2Y100YCdk2Y102YInt_1" />
+        <dataSet id="col_7" dataReference="APCCYCdk2Y110YCdk2Y112YInt_1" />
+        <dataSet id="col_8" dataReference="APCCYCyclinAYInt_1" />
+        <dataSet id="col_9" dataReference="APCCYEmi1_1" />
+        <dataSet id="col_10" dataReference="Cdk1Y00_1" />
+        <dataSet id="col_11" dataReference="Cdk1Y01_1" />
+        <dataSet id="col_12" dataReference="Cdk1Y10_1" />
+        <dataSet id="col_13" dataReference="Cdk1Y11_1" />
+        <dataSet id="col_14" dataReference="Cdk1Y11YpRbY10YpRbY20YInt_1" />
+        <dataSet id="col_15" dataReference="Cdk1Y11YpRbY11YpRbY21YInt_1" />
+        <dataSet id="col_16" dataReference="Cdk2Y000_1" />
+        <dataSet id="col_17" dataReference="Cdk2Y001_1" />
+        <dataSet id="col_18" dataReference="Cdk2Y002_1" />
+        <dataSet id="col_19" dataReference="Cdk2Y010_1" />
+        <dataSet id="col_20" dataReference="Cdk2Y011_1" />
+        <dataSet id="col_21" dataReference="Cdk2Y011YpRbY10YpRbY20YInt_1" />
+        <dataSet id="col_22" dataReference="Cdk2Y011YpRbY11YpRbY21YInt_1" />
+        <dataSet id="col_23" dataReference="Cdk2Y012_1" />
+        <dataSet id="col_24" dataReference="Cdk2Y012YpRbY10YpRbY20YInt_1" />
+        <dataSet id="col_25" dataReference="Cdk2Y012YpRbY11YpRbY21YInt_1" />
+        <dataSet id="col_26" dataReference="Cdk2Y100_1" />
+        <dataSet id="col_27" dataReference="Cdk2Y101_1" />
+        <dataSet id="col_28" dataReference="Cdk2Y102_1" />
+        <dataSet id="col_29" dataReference="Cdk2Y110_1" />
+        <dataSet id="col_30" dataReference="Cdk2Y111_1" />
+        <dataSet id="col_31" dataReference="Cdk2Y112_1" />
+        <dataSet id="col_32" dataReference="Cdk4Y00_1" />
+        <dataSet id="col_33" dataReference="Cdk4Y01_1" />
+        <dataSet id="col_34" dataReference="Cdk4Y01YpRbY00YpRbY10YInt_1" />
+        <dataSet id="col_35" dataReference="Cdk4Y01YpRbY01YpRbY11YInt_1" />
+        <dataSet id="col_36" dataReference="Cdk4Y10_1" />
+        <dataSet id="col_37" dataReference="Cdk4Y11_1" />
+        <dataSet id="col_38" dataReference="CyclinA_1" />
+        <dataSet id="col_39" dataReference="CyclinD_1" />
+        <dataSet id="col_40" dataReference="CyclinE_1" />
+        <dataSet id="col_41" dataReference="E2F_1" />
+        <dataSet id="col_42" dataReference="Emi1_1" />
+        <dataSet id="col_43" dataReference="p27_1" />
+        <dataSet id="col_44" dataReference="pRbY00_1" />
+        <dataSet id="col_45" dataReference="pRbY01_1" />
+        <dataSet id="col_46" dataReference="pRbY10_1" />
+        <dataSet id="col_47" dataReference="pRbY11_1" />
+        <dataSet id="col_48" dataReference="pRbY20_1" />
+        <dataSet id="col_49" dataReference="pRbY21_1" />
+        <dataSet id="col_50" dataReference="totalYCyclinYD_1" />
+        <dataSet id="col_51" dataReference="totalYCyclinYE_1" />
+        <dataSet id="col_52" dataReference="totalYCyclinYA_1" />
+        <dataSet id="col_53" dataReference="totalYp27_1" />
+        <dataSet id="col_54" dataReference="hypophosphorylatedYpRb_1" />
+        <dataSet id="col_55" dataReference="hyperphosphorylatedYpRb_1" />
+        <dataSet id="col_56" dataReference="totalYEmi1_1" />
+        <dataSet id="col_57" dataReference="activeYCdk2_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
