@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000220.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_1" name="L">
+      <listOfVariables>
+        <variable id="L" name="L" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_1" name="R">
+      <listOfVariables>
+        <variable id="R" name="R" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="flip_1" name="flip">
+      <listOfVariables>
+        <variable id="flip" name="flip" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='flip']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> flip </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pC8_1" name="pC8">
+      <listOfVariables>
+        <variable id="pC8" name="pC8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pC8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pC8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C8_1" name="C8">
+      <listOfVariables>
+        <variable id="C8" name="C8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C6_1" name="C6">
+      <listOfVariables>
+        <variable id="C6" name="C6" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C6']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C6 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BAR_1" name="BAR">
+      <listOfVariables>
+        <variable id="BAR" name="BAR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BAR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BAR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pC3_1" name="pC3">
+      <listOfVariables>
+        <variable id="pC3" name="pC3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pC3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pC3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3_1" name="C3">
+      <listOfVariables>
+        <variable id="C3" name="C3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bid_1" name="Bid">
+      <listOfVariables>
+        <variable id="Bid" name="Bid" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bid']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bid </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="tBid_1" name="tBid">
+      <listOfVariables>
+        <variable id="tBid" name="tBid" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='tBid']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> tBid </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pC6_1" name="pC6">
+      <listOfVariables>
+        <variable id="pC6" name="pC6" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pC6']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pC6 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_1" name="XIAP">
+      <listOfVariables>
+        <variable id="XIAP" name="XIAP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3_Ub_1" name="C3_Ub">
+      <listOfVariables>
+        <variable id="C3_Ub" name="C3_Ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3_Ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3_Ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PARP_1" name="PARP">
+      <listOfVariables>
+        <variable id="PARP" name="PARP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PARP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PARP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CPARP_1" name="CPARP">
+      <listOfVariables>
+        <variable id="CPARP" name="CPARP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CPARP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CPARP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Smac_1" name="Smac">
+      <listOfVariables>
+        <variable id="Smac" name="Smac" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Smac']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Smac </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bcl2c_1" name="Bcl2c">
+      <listOfVariables>
+        <variable id="Bcl2c" name="Bcl2c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bcl2c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bcl2c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bax_1" name="Bax">
+      <listOfVariables>
+        <variable id="Bax" name="Bax" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bax']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bax </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bax_hash_1" name="Bax_hash">
+      <listOfVariables>
+        <variable id="Bax_hash" name="Bax_hash" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bax_hash']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bax_hash </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bcl2_1" name="Bcl2">
+      <listOfVariables>
+        <variable id="Bcl2" name="Bcl2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bcl2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bcl2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_R_1" name="L_R">
+      <listOfVariables>
+        <variable id="L_R" name="L_R" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L_R']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L_R </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_hash_1" name="R_hash">
+      <listOfVariables>
+        <variable id="R_hash" name="R_hash" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R_hash']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R_hash </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="flip_R_hash_1" name="flip_R_hash">
+      <listOfVariables>
+        <variable id="flip_R_hash" name="flip_R_hash" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='flip_R_hash']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> flip_R_hash </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_hash_pC8_1" name="R_hash_pC8">
+      <listOfVariables>
+        <variable id="R_hash_pC8" name="R_hash_pC8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R_hash_pC8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R_hash_pC8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C6_pC8_1" name="C6_pC8">
+      <listOfVariables>
+        <variable id="C6_pC8" name="C6_pC8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C6_pC8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C6_pC8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BAR_C8_1" name="BAR_C8">
+      <listOfVariables>
+        <variable id="BAR_C8" name="BAR_C8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BAR_C8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BAR_C8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C8_pC3_1" name="C8_pC3">
+      <listOfVariables>
+        <variable id="C8_pC3" name="C8_pC3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C8_pC3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C8_pC3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pC3_Apop_1" name="pC3_Apop">
+      <listOfVariables>
+        <variable id="pC3_Apop" name="pC3_Apop" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pC3_Apop']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pC3_Apop </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Apop_1" name="Apop">
+      <listOfVariables>
+        <variable id="Apop" name="Apop" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Apop']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Apop </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C8_Bid_1" name="C8_Bid">
+      <listOfVariables>
+        <variable id="C8_Bid" name="C8_Bid" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C8_Bid']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C8_Bid </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3_pC6_1" name="C3_pC6">
+      <listOfVariables>
+        <variable id="C3_pC6" name="C3_pC6" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3_pC6']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3_pC6 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_C3_1" name="XIAP_C3">
+      <listOfVariables>
+        <variable id="XIAP_C3" name="XIAP_C3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP_C3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP_C3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PARP_C3_1" name="PARP_C3">
+      <listOfVariables>
+        <variable id="PARP_C3" name="PARP_C3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PARP_C3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PARP_C3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Apop_XIAP_1" name="Apop_XIAP">
+      <listOfVariables>
+        <variable id="Apop_XIAP" name="Apop_XIAP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Apop_XIAP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Apop_XIAP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Smac_XIAP_1" name="Smac_XIAP">
+      <listOfVariables>
+        <variable id="Smac_XIAP" name="Smac_XIAP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Smac_XIAP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Smac_XIAP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bcl2c_tBid_1" name="Bcl2c_tBid">
+      <listOfVariables>
+        <variable id="Bcl2c_tBid" name="Bcl2c_tBid" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bcl2c_tBid']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bcl2c_tBid </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bax_tBid_1" name="Bax_tBid">
+      <listOfVariables>
+        <variable id="Bax_tBid" name="Bax_tBid" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bax_tBid']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bax_tBid </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Baxm_Bcl2_1" name="Baxm_Bcl2">
+      <listOfVariables>
+        <variable id="Baxm_Bcl2" name="Baxm_Bcl2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Baxm_Bcl2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Baxm_Bcl2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bax4_1" name="Bax4">
+      <listOfVariables>
+        <variable id="Bax4" name="Bax4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bax4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bax4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bax2_Bcl2_1" name="Bax2_Bcl2">
+      <listOfVariables>
+        <variable id="Bax2_Bcl2" name="Bax2_Bcl2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bax2_Bcl2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bax2_Bcl2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bax4_Bcl2_1" name="Bax4_Bcl2">
+      <listOfVariables>
+        <variable id="Bax4_Bcl2" name="Bax4_Bcl2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bax4_Bcl2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bax4_Bcl2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="M_1" name="M">
+      <listOfVariables>
+        <variable id="M" name="M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bax4_M_1" name="Bax4_M">
+      <listOfVariables>
+        <variable id="Bax4_M" name="Bax4_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bax4_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bax4_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="M_hash_1" name="M_hash">
+      <listOfVariables>
+        <variable id="M_hash" name="M_hash" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='M_hash']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> M_hash </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Smacm_1" name="Smacm">
+      <listOfVariables>
+        <variable id="Smacm" name="Smacm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Smacm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Smacm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="M_hash_Smacm_1" name="M_hash_Smacm">
+      <listOfVariables>
+        <variable id="M_hash_Smacm" name="M_hash_Smacm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='M_hash_Smacm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> M_hash_Smacm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Smacr_1" name="Smacr">
+      <listOfVariables>
+        <variable id="Smacr" name="Smacr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Smacr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Smacr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CytoCm_1" name="CytoCm">
+      <listOfVariables>
+        <variable id="CytoCm" name="CytoCm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CytoCm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CytoCm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="M_hash_CytoCm_1" name="M_hash_CytoCm">
+      <listOfVariables>
+        <variable id="M_hash_CytoCm" name="M_hash_CytoCm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='M_hash_CytoCm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> M_hash_CytoCm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CytoCr_1" name="CytoCr">
+      <listOfVariables>
+        <variable id="CytoCr" name="CytoCr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CytoCr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CytoCr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CytoC_1" name="CytoC">
+      <listOfVariables>
+        <variable id="CytoC" name="CytoC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CytoC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CytoC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Apaf_1" name="Apaf">
+      <listOfVariables>
+        <variable id="Apaf" name="Apaf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Apaf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Apaf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CytoC_Apaf_1" name="CytoC_Apaf">
+      <listOfVariables>
+        <variable id="CytoC_Apaf" name="CytoC_Apaf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CytoC_Apaf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CytoC_Apaf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Apaf_hash_1" name="Apaf_hash">
+      <listOfVariables>
+        <variable id="Apaf_hash" name="Apaf_hash" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Apaf_hash']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Apaf_hash </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pC9_1" name="pC9">
+      <listOfVariables>
+        <variable id="pC9" name="pC9" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pC9']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pC9 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Baxm_1" name="Baxm">
+      <listOfVariables>
+        <variable id="Baxm" name="Baxm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Baxm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Baxm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Bax2_1" name="Bax2">
+      <listOfVariables>
+        <variable id="Bax2" name="Bax2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Bax2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Bax2 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="L_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="R_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="flip_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="pC8_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="C8_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="C6_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="BAR_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="pC3_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="C3_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="Bid_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="tBid_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="pC6_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="C3_Ub_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="PARP_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="CPARP_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="Smac_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Bcl2c_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="Bax_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="Bax_hash_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="Bcl2_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="L_R_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="R_hash_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="flip_R_hash_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="R_hash_pC8_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="C6_pC8_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="BAR_C8_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="C8_pC3_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="pC3_Apop_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="Apop_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="C8_Bid_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="C3_pC6_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_C3_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="PARP_C3_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="Apop_XIAP_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="Smac_XIAP_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="Bcl2c_tBid_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="Bax_tBid_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="Baxm_Bcl2_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="Bax4_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="Bax2_Bcl2_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="Bax4_Bcl2_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="M_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="Bax4_M_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="M_hash_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="Smacm_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="M_hash_Smacm_1" />
+        <curve id="curve_47" logX="false" logY="false" xDataReference="time" yDataReference="Smacr_1" />
+        <curve id="curve_48" logX="false" logY="false" xDataReference="time" yDataReference="CytoCm_1" />
+        <curve id="curve_49" logX="false" logY="false" xDataReference="time" yDataReference="M_hash_CytoCm_1" />
+        <curve id="curve_50" logX="false" logY="false" xDataReference="time" yDataReference="CytoCr_1" />
+        <curve id="curve_51" logX="false" logY="false" xDataReference="time" yDataReference="CytoC_1" />
+        <curve id="curve_52" logX="false" logY="false" xDataReference="time" yDataReference="Apaf_1" />
+        <curve id="curve_53" logX="false" logY="false" xDataReference="time" yDataReference="CytoC_Apaf_1" />
+        <curve id="curve_54" logX="false" logY="false" xDataReference="time" yDataReference="Apaf_hash_1" />
+        <curve id="curve_55" logX="false" logY="false" xDataReference="time" yDataReference="pC9_1" />
+        <curve id="curve_56" logX="false" logY="false" xDataReference="time" yDataReference="Baxm_1" />
+        <curve id="curve_57" logX="false" logY="false" xDataReference="time" yDataReference="Bax2_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="L_1" />
+        <dataSet id="col_2" dataReference="R_1" />
+        <dataSet id="col_3" dataReference="flip_1" />
+        <dataSet id="col_4" dataReference="pC8_1" />
+        <dataSet id="col_5" dataReference="C8_1" />
+        <dataSet id="col_6" dataReference="C6_1" />
+        <dataSet id="col_7" dataReference="BAR_1" />
+        <dataSet id="col_8" dataReference="pC3_1" />
+        <dataSet id="col_9" dataReference="C3_1" />
+        <dataSet id="col_10" dataReference="Bid_1" />
+        <dataSet id="col_11" dataReference="tBid_1" />
+        <dataSet id="col_12" dataReference="pC6_1" />
+        <dataSet id="col_13" dataReference="XIAP_1" />
+        <dataSet id="col_14" dataReference="C3_Ub_1" />
+        <dataSet id="col_15" dataReference="PARP_1" />
+        <dataSet id="col_16" dataReference="CPARP_1" />
+        <dataSet id="col_17" dataReference="Smac_1" />
+        <dataSet id="col_18" dataReference="Bcl2c_1" />
+        <dataSet id="col_19" dataReference="Bax_1" />
+        <dataSet id="col_20" dataReference="Bax_hash_1" />
+        <dataSet id="col_21" dataReference="Bcl2_1" />
+        <dataSet id="col_22" dataReference="L_R_1" />
+        <dataSet id="col_23" dataReference="R_hash_1" />
+        <dataSet id="col_24" dataReference="flip_R_hash_1" />
+        <dataSet id="col_25" dataReference="R_hash_pC8_1" />
+        <dataSet id="col_26" dataReference="C6_pC8_1" />
+        <dataSet id="col_27" dataReference="BAR_C8_1" />
+        <dataSet id="col_28" dataReference="C8_pC3_1" />
+        <dataSet id="col_29" dataReference="pC3_Apop_1" />
+        <dataSet id="col_30" dataReference="Apop_1" />
+        <dataSet id="col_31" dataReference="C8_Bid_1" />
+        <dataSet id="col_32" dataReference="C3_pC6_1" />
+        <dataSet id="col_33" dataReference="XIAP_C3_1" />
+        <dataSet id="col_34" dataReference="PARP_C3_1" />
+        <dataSet id="col_35" dataReference="Apop_XIAP_1" />
+        <dataSet id="col_36" dataReference="Smac_XIAP_1" />
+        <dataSet id="col_37" dataReference="Bcl2c_tBid_1" />
+        <dataSet id="col_38" dataReference="Bax_tBid_1" />
+        <dataSet id="col_39" dataReference="Baxm_Bcl2_1" />
+        <dataSet id="col_40" dataReference="Bax4_1" />
+        <dataSet id="col_41" dataReference="Bax2_Bcl2_1" />
+        <dataSet id="col_42" dataReference="Bax4_Bcl2_1" />
+        <dataSet id="col_43" dataReference="M_1" />
+        <dataSet id="col_44" dataReference="Bax4_M_1" />
+        <dataSet id="col_45" dataReference="M_hash_1" />
+        <dataSet id="col_46" dataReference="Smacm_1" />
+        <dataSet id="col_47" dataReference="M_hash_Smacm_1" />
+        <dataSet id="col_48" dataReference="Smacr_1" />
+        <dataSet id="col_49" dataReference="CytoCm_1" />
+        <dataSet id="col_50" dataReference="M_hash_CytoCm_1" />
+        <dataSet id="col_51" dataReference="CytoCr_1" />
+        <dataSet id="col_52" dataReference="CytoC_1" />
+        <dataSet id="col_53" dataReference="Apaf_1" />
+        <dataSet id="col_54" dataReference="CytoC_Apaf_1" />
+        <dataSet id="col_55" dataReference="Apaf_hash_1" />
+        <dataSet id="col_56" dataReference="pC9_1" />
+        <dataSet id="col_57" dataReference="Baxm_1" />
+        <dataSet id="col_58" dataReference="Bax2_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
