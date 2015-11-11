@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000301.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="taRNA_1" name="taRNA">
+      <listOfVariables>
+        <variable id="taRNA" name="taRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='taRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> taRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mT7cr_1" name="mT7cr">
+      <listOfVariables>
+        <variable id="mT7cr" name="mT7cr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mT7cr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mT7cr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mGFPcr_1" name="mGFPcr">
+      <listOfVariables>
+        <variable id="mGFPcr" name="mGFPcr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mGFPcr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mGFPcr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pT7_1" name="pT7">
+      <listOfVariables>
+        <variable id="pT7" name="pT7" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pT7']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pT7 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pGFP_1" name="pGFP">
+      <listOfVariables>
+        <variable id="pGFP" name="pGFP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pGFP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pGFP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ara_1" name="ara">
+      <listOfVariables>
+        <variable id="ara" name="ara" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ara']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ara </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pT3_1" name="pT3">
+      <listOfVariables>
+        <variable id="pT3" name="pT3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pT3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pT3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mT3cr_1" name="mT3cr">
+      <listOfVariables>
+        <variable id="mT3cr" name="mT3cr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mT3cr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mT3cr </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="taRNA_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="mT7cr_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="mGFPcr_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="pT7_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="pGFP_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="ara_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="pT3_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="mT3cr_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="taRNA_1" />
+        <dataSet id="col_2" dataReference="mT7cr_1" />
+        <dataSet id="col_3" dataReference="mGFPcr_1" />
+        <dataSet id="col_4" dataReference="pT7_1" />
+        <dataSet id="col_5" dataReference="pGFP_1" />
+        <dataSet id="col_6" dataReference="ara_1" />
+        <dataSet id="col_7" dataReference="pT3_1" />
+        <dataSet id="col_8" dataReference="mT3cr_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
