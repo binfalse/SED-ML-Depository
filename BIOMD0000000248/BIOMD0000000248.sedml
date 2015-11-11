@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000248.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATP_1" name="ATP">
+      <listOfVariables>
+        <variable id="ATP" name="ATP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PCr_1" name="PCr">
+      <listOfVariables>
+        <variable id="PCr" name="PCr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PCr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PCr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ADP_1" name="ADP">
+      <listOfVariables>
+        <variable id="ADP" name="ADP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ADP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ADP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cr_1" name="Cr">
+      <listOfVariables>
+        <variable id="Cr" name="Cr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pi_1" name="Pi">
+      <listOfVariables>
+        <variable id="Pi" name="Pi" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pi']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <pi />
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CTcap_1" name="CTcap">
+      <listOfVariables>
+        <variable id="CTcap" name="CTcap" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CTcap']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CTcap </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CTtis_1" name="CTtis">
+      <listOfVariables>
+        <variable id="CTtis" name="CTtis" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CTtis']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CTtis </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="ATP_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="PCr_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="ADP_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Cr_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Pi_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="CTcap_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="CTtis_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="ATP_1" />
+        <dataSet id="col_2" dataReference="PCr_1" />
+        <dataSet id="col_3" dataReference="ADP_1" />
+        <dataSet id="col_4" dataReference="Cr_1" />
+        <dataSet id="col_5" dataReference="Pi_1" />
+        <dataSet id="col_6" dataReference="CTcap_1" />
+        <dataSet id="col_7" dataReference="CTtis_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
