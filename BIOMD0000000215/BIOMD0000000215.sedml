@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000215.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Tbet_mRNA_1" name="Tbet_mRNA">
+      <listOfVariables>
+        <variable id="Tbet_mRNA" name="Tbet_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Tbet_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Tbet_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ifn_mRNA_1" name="Ifn_mRNA">
+      <listOfVariables>
+        <variable id="Ifn_mRNA" name="Ifn_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ifn_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ifn_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ifn_Prot_1" name="Ifn_Prot">
+      <listOfVariables>
+        <variable id="Ifn_Prot" name="Ifn_Prot" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ifn_Prot']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ifn_Prot </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Rec_Prot_1" name="Rec_Prot">
+      <listOfVariables>
+        <variable id="Rec_Prot" name="Rec_Prot" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Rec_Prot']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Rec_Prot </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Tbet_Prot_1" name="Tbet_Prot">
+      <listOfVariables>
+        <variable id="Tbet_Prot" name="Tbet_Prot" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Tbet_Prot']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Tbet_Prot </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Rec_mRNA_1" name="Rec_mRNA">
+      <listOfVariables>
+        <variable id="Rec_mRNA" name="Rec_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Rec_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Rec_mRNA </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Tbet_mRNA_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Ifn_mRNA_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Ifn_Prot_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Rec_Prot_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Tbet_Prot_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Rec_mRNA_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Tbet_mRNA_1" />
+        <dataSet id="col_2" dataReference="Ifn_mRNA_1" />
+        <dataSet id="col_3" dataReference="Ifn_Prot_1" />
+        <dataSet id="col_4" dataReference="Rec_Prot_1" />
+        <dataSet id="col_5" dataReference="Tbet_Prot_1" />
+        <dataSet id="col_6" dataReference="Rec_mRNA_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
