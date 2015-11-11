@@ -22,6 +22,7 @@ die () { echo $1; exit 2; }
 # dependencies
 [ -x /bin/sed ] || die "cannot find sed"
 [ -x /bin/cat ] || die "cannot find cat"
+[ -x /bin/date ] || die "cannot find date"
 [ -x /usr/bin/curl ] || die "cannot find curl"
 [ -x /usr/bin/perl ] || die "cannot find perl"
 [ -x /usr/bin/xmllint ] || die "cannot find xmllint"
@@ -41,7 +42,8 @@ ads[6]="http://sysbioapps.dyndns.org/SED-ML_Web_Tools/Home/"
 ads[7]="http://www.ebi.ac.uk/biomodels-main/"
 
 # iterate over all biomodels
-for i in {001..583}
+# for i in {001..583}
+for i in {001..001}
 do
 		model=BIOMD0000000$i
 		modeldoc='http://www.ebi.ac.uk/biomodels-main/download?mid='$model
@@ -53,6 +55,7 @@ do
 
 		echo "== processing model $model =="
 		mkdir -p $model
+		datum=$(date -u '+%Y-%m-%dT%TZ')
 
 		echo "downloading model ..."
 		/usr/bin/curl -s $modeldoc > $model/$model.sbml
@@ -65,10 +68,11 @@ do
 
 		echo "creating combine archive ..."
 		/bin/cat template-manifest | /bin/sed 's/MODEL/'$model'.sbml/' | /bin/sed 's/SIMULATION/'$model'.sedml/' > $model/manifest.xml
+		/bin/cat template-meta | /bin/sed 's/MODELFILEURL/http:\/\/www.ebi.ac.uk\/biomodels-main\/download?mid='$model'/' | /bin/sed 's/MODELFILE/'$model'.sbml/' | /bin/sed 's/SIMULATIONDESCRIPTION/'$model'.sedml/' | /bin/sed 's/DATE/'$datum'/' > $model/metadata.rdf
 		cd $model
-		/usr/bin/zip -qr combine-archive.omex * && rm manifest.xml
+		/usr/bin/zip -qr combine-archive.omex * && rm manifest.xml metadata.rdf
 		cd -
-
+exit 1
 		echo "simulating model and storing simulation results ..."
 		/usr/bin/curl -sLF file=@$model/combine-archive.omex http://sysbioapps.dyndns.org/SED-ML_Web_Tools/Home/SimulatePostArchive > $model/simulation-results.omex
 		

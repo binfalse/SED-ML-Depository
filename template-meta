@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2006/vcard/ns#">
+  <rdf:Description rdf:about=".">
+    <dcterms:description>Archive created within the SED-ML depository, see https://github.com/binfalse/SED-ML-Depository .</dcterms:description>
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:family-name>Scharm</vCard:family-name>
+            <vCard:given-name>Martin</vCard:given-name>
+          </vCard:n>
+          <vCard:email>martin.scharm@uni-rostock.de</vCard:email>
+          <vCard:org rdf:parseType="Resource">
+            <vCard:organization-name>University of Rostock</vCard:organization-name>
+          </vCard:org>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:created rdf:parseType="Resource">
+      <dcterms:W3CDTF>DATE</dcterms:W3CDTF>
+    </dcterms:created>
+  </rdf:Description>
+  <rdf:Description rdf:about="/SIMULATIONDESCRIPTION">
+    <dcterms:description>Simulation description for MODELFILE in the SED-ML depository. This SED-ML file was generated using the SED-ML WebTools, see http://sysbioapps.dyndns.org/SED-ML_Web_Tools/Home .</dcterms:description>
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:family-name>Scharm</vCard:family-name>
+            <vCard:given-name>Martin</vCard:given-name>
+          </vCard:n>
+          <vCard:email>martin.scharm@uni-rostock.de</vCard:email>
+          <vCard:org rdf:parseType="Resource">
+            <vCard:organization-name>University of Rostock</vCard:organization-name>
+          </vCard:org>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:created rdf:parseType="Resource">
+      <dcterms:W3CDTF>DATE</dcterms:W3CDTF>
+    </dcterms:created>
+  </rdf:Description>
+  <rdf:Description rdf:about="/MODELFILE">
+    <dcterms:description>The model file encoded in SBML. The file was retrieved from MODELFILEURL .</dcterms:description>
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:family-name>Scharm</vCard:family-name>
+            <vCard:given-name>Martin</vCard:given-name>
+          </vCard:n>
+          <vCard:email>martin.scharm@uni-rostock.de</vCard:email>
+          <vCard:org rdf:parseType="Resource">
+            <vCard:organization-name>University of Rostock</vCard:organization-name>
+          </vCard:org>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:created rdf:parseType="Resource">
+      <dcterms:W3CDTF>DATE</dcterms:W3CDTF>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
