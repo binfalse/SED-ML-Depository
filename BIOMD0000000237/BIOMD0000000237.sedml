@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000237.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste5_1" name="Ste5">
+      <listOfVariables>
+        <variable id="Ste5" name="Ste5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste11_1" name="Ste11">
+      <listOfVariables>
+        <variable id="Ste11" name="Ste11" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste11']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste11 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste5Ste11_1" name="Ste5Ste11">
+      <listOfVariables>
+        <variable id="Ste5Ste11" name="Ste5Ste11" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste5Ste11']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste5Ste11 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Gbg_1" name="Gbg">
+      <listOfVariables>
+        <variable id="Gbg" name="Gbg" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Gbg']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Gbg </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste5Ste11Gbg_1" name="Ste5Ste11Gbg">
+      <listOfVariables>
+        <variable id="Ste5Ste11Gbg" name="Ste5Ste11Gbg" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste5Ste11Gbg']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste5Ste11Gbg </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Fus3_1" name="Fus3">
+      <listOfVariables>
+        <variable id="Fus3" name="Fus3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Fus3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Fus3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste5Ste11GbgFus3_1" name="Ste5Ste11GbgFus3">
+      <listOfVariables>
+        <variable id="Ste5Ste11GbgFus3" name="Ste5Ste11GbgFus3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste5Ste11GbgFus3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste5Ste11GbgFus3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste5Ste11GbgFus3P_1" name="Ste5Ste11GbgFus3P">
+      <listOfVariables>
+        <variable id="Ste5Ste11GbgFus3P" name="Ste5Ste11GbgFus3P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste5Ste11GbgFus3P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste5Ste11GbgFus3P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Fus3PP_1" name="Fus3PP">
+      <listOfVariables>
+        <variable id="Fus3PP" name="Fus3PP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Fus3PP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Fus3PP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste5Ste11GbgP_1" name="Ste5Ste11GbgP">
+      <listOfVariables>
+        <variable id="Ste5Ste11GbgP" name="Ste5Ste11GbgP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste5Ste11GbgP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste5Ste11GbgP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste11Ubi_1" name="Ste11Ubi">
+      <listOfVariables>
+        <variable id="Ste11Ubi" name="Ste11Ubi" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste11Ubi']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste11Ubi </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Kss1_1" name="Kss1">
+      <listOfVariables>
+        <variable id="Kss1" name="Kss1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Kss1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Kss1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste5Ste11GbgKss1_1" name="Ste5Ste11GbgKss1">
+      <listOfVariables>
+        <variable id="Ste5Ste11GbgKss1" name="Ste5Ste11GbgKss1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste5Ste11GbgKss1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste5Ste11GbgKss1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste5Ste11GbgKss1P_1" name="Ste5Ste11GbgKss1P">
+      <listOfVariables>
+        <variable id="Ste5Ste11GbgKss1P" name="Ste5Ste11GbgKss1P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste5Ste11GbgKss1P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste5Ste11GbgKss1P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Kss1PP_1" name="Kss1PP">
+      <listOfVariables>
+        <variable id="Kss1PP" name="Kss1PP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Kss1PP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Kss1PP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste11P_1" name="Ste11P">
+      <listOfVariables>
+        <variable id="Ste11P" name="Ste11P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste11P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste11P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste12Kss1_1" name="Ste12Kss1">
+      <listOfVariables>
+        <variable id="Ste12Kss1" name="Ste12Kss1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste12Kss1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste12Kss1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste12_1" name="Ste12">
+      <listOfVariables>
+        <variable id="Ste12" name="Ste12" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste12']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste12 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste12P_1" name="Ste12P">
+      <listOfVariables>
+        <variable id="Ste12P" name="Ste12P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste12P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste12P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PREP_1" name="PREP">
+      <listOfVariables>
+        <variable id="PREP" name="PREP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PREP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PREP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste12TeSte5Kss1_1" name="Ste12TeSte5Kss1">
+      <listOfVariables>
+        <variable id="Ste12TeSte5Kss1" name="Ste12TeSte5Kss1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste12TeSte5Kss1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste12TeSte5Kss1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste12TeSte5_1" name="Ste12TeSte5">
+      <listOfVariables>
+        <variable id="Ste12TeSte5" name="Ste12TeSte5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste12TeSte5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste12TeSte5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ste12TeSte5P_1" name="Ste12TeSte5P">
+      <listOfVariables>
+        <variable id="Ste12TeSte5P" name="Ste12TeSte5P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ste12TeSte5P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ste12TeSte5P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FREP_1" name="FREP">
+      <listOfVariables>
+        <variable id="FREP" name="FREP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FREP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FREP </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Ste5_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Ste11_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Ste5Ste11_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Gbg_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Ste5Ste11Gbg_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Fus3_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="Ste5Ste11GbgFus3_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="Ste5Ste11GbgFus3P_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="Fus3PP_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="Ste5Ste11GbgP_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="Ste11Ubi_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="Kss1_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="Ste5Ste11GbgKss1_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Ste5Ste11GbgKss1P_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Kss1PP_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="Ste11P_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="Ste12Kss1_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Ste12_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="Ste12P_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="PREP_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="Ste12TeSte5Kss1_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="Ste12TeSte5_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="Ste12TeSte5P_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="FREP_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Ste5_1" />
+        <dataSet id="col_2" dataReference="Ste11_1" />
+        <dataSet id="col_3" dataReference="Ste5Ste11_1" />
+        <dataSet id="col_4" dataReference="Gbg_1" />
+        <dataSet id="col_5" dataReference="Ste5Ste11Gbg_1" />
+        <dataSet id="col_6" dataReference="Fus3_1" />
+        <dataSet id="col_7" dataReference="Ste5Ste11GbgFus3_1" />
+        <dataSet id="col_8" dataReference="Ste5Ste11GbgFus3P_1" />
+        <dataSet id="col_9" dataReference="Fus3PP_1" />
+        <dataSet id="col_10" dataReference="Ste5Ste11GbgP_1" />
+        <dataSet id="col_11" dataReference="Ste11Ubi_1" />
+        <dataSet id="col_12" dataReference="Kss1_1" />
+        <dataSet id="col_13" dataReference="Ste5Ste11GbgKss1_1" />
+        <dataSet id="col_14" dataReference="Ste5Ste11GbgKss1P_1" />
+        <dataSet id="col_15" dataReference="Kss1PP_1" />
+        <dataSet id="col_16" dataReference="Ste11P_1" />
+        <dataSet id="col_17" dataReference="Ste12Kss1_1" />
+        <dataSet id="col_18" dataReference="Ste12_1" />
+        <dataSet id="col_19" dataReference="Ste12P_1" />
+        <dataSet id="col_20" dataReference="PREP_1" />
+        <dataSet id="col_21" dataReference="Ste12TeSte5Kss1_1" />
+        <dataSet id="col_22" dataReference="Ste12TeSte5_1" />
+        <dataSet id="col_23" dataReference="Ste12TeSte5P_1" />
+        <dataSet id="col_24" dataReference="FREP_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
