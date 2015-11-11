@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000018.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FH2f_1" name="FH2f">
+      <listOfVariables>
+        <variable id="FH2f" name="FH2f" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FH2f']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FH2f </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DHFRf_1" name="DHFRf">
+      <listOfVariables>
+        <variable id="DHFRf" name="DHFRf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DHFRf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DHFRf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FH4_1" name="FH4">
+      <listOfVariables>
+        <variable id="FH4" name="FH4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FH4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FH4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CH2FH4_1" name="CH2FH4">
+      <listOfVariables>
+        <variable id="CH2FH4" name="CH2FH4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CH2FH4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CH2FH4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CH3FH4_1" name="CH3FH4">
+      <listOfVariables>
+        <variable id="CH3FH4" name="CH3FH4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CH3FH4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CH3FH4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CHOFH4_1" name="CHOFH4">
+      <listOfVariables>
+        <variable id="CHOFH4" name="CHOFH4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CHOFH4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CHOFH4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FFH2_1" name="FFH2">
+      <listOfVariables>
+        <variable id="FFH2" name="FFH2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FFH2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FFH2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HCHO_1" name="HCHO">
+      <listOfVariables>
+        <variable id="HCHO" name="HCHO" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HCHO']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HCHO </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FGAR_1" name="FGAR">
+      <listOfVariables>
+        <variable id="FGAR" name="FGAR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FGAR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FGAR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AICAR_1" name="AICAR">
+      <listOfVariables>
+        <variable id="AICAR" name="AICAR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AICAR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AICAR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MTX1_1" name="MTX1">
+      <listOfVariables>
+        <variable id="MTX1" name="MTX1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MTX1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MTX1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MTX2_1" name="MTX2">
+      <listOfVariables>
+        <variable id="MTX2" name="MTX2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MTX2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MTX2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MTX3_1" name="MTX3">
+      <listOfVariables>
+        <variable id="MTX3" name="MTX3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MTX3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MTX3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MTX4_1" name="MTX4">
+      <listOfVariables>
+        <variable id="MTX4" name="MTX4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MTX4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MTX4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MTX5_1" name="MTX5">
+      <listOfVariables>
+        <variable id="MTX5" name="MTX5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MTX5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MTX5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MTX1b_1" name="MTX1b">
+      <listOfVariables>
+        <variable id="MTX1b" name="MTX1b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MTX1b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MTX1b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MTX2b_1" name="MTX2b">
+      <listOfVariables>
+        <variable id="MTX2b" name="MTX2b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MTX2b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MTX2b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MTX3b_1" name="MTX3b">
+      <listOfVariables>
+        <variable id="MTX3b" name="MTX3b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MTX3b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MTX3b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MTX4b_1" name="MTX4b">
+      <listOfVariables>
+        <variable id="MTX4b" name="MTX4b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MTX4b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MTX4b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MTX5b_1" name="MTX5b">
+      <listOfVariables>
+        <variable id="MTX5b" name="MTX5b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MTX5b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MTX5b </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="FH2f_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="DHFRf_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="FH4_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="CH2FH4_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="CH3FH4_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="CHOFH4_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="FFH2_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="HCHO_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="FGAR_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="AICAR_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="MTX1_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="MTX2_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="MTX3_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="MTX4_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="MTX5_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="MTX1b_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="MTX2b_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="MTX3b_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="MTX4b_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="MTX5b_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="FH2f_1" />
+        <dataSet id="col_2" dataReference="DHFRf_1" />
+        <dataSet id="col_3" dataReference="FH4_1" />
+        <dataSet id="col_4" dataReference="CH2FH4_1" />
+        <dataSet id="col_5" dataReference="CH3FH4_1" />
+        <dataSet id="col_6" dataReference="CHOFH4_1" />
+        <dataSet id="col_7" dataReference="FFH2_1" />
+        <dataSet id="col_8" dataReference="HCHO_1" />
+        <dataSet id="col_9" dataReference="FGAR_1" />
+        <dataSet id="col_10" dataReference="AICAR_1" />
+        <dataSet id="col_11" dataReference="MTX1_1" />
+        <dataSet id="col_12" dataReference="MTX2_1" />
+        <dataSet id="col_13" dataReference="MTX3_1" />
+        <dataSet id="col_14" dataReference="MTX4_1" />
+        <dataSet id="col_15" dataReference="MTX5_1" />
+        <dataSet id="col_16" dataReference="MTX1b_1" />
+        <dataSet id="col_17" dataReference="MTX2b_1" />
+        <dataSet id="col_18" dataReference="MTX3b_1" />
+        <dataSet id="col_19" dataReference="MTX4b_1" />
+        <dataSet id="col_20" dataReference="MTX5b_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
