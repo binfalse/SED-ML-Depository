@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000163.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Smad2c_1" name="Smad2c">
+      <listOfVariables>
+        <variable id="Smad2c" name="Smad2c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Smad2c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Smad2c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Smad2n_1" name="Smad2n">
+      <listOfVariables>
+        <variable id="Smad2n" name="Smad2n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Smad2n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Smad2n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Smad4c_1" name="Smad4c">
+      <listOfVariables>
+        <variable id="Smad4c" name="Smad4c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Smad4c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Smad4c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Smad4n_1" name="Smad4n">
+      <listOfVariables>
+        <variable id="Smad4n" name="Smad4n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Smad4n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Smad4n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="T1R_Surf_1" name="T1R_Surf">
+      <listOfVariables>
+        <variable id="T1R_Surf" name="T1R_Surf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='T1R_Surf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> T1R_Surf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="T1R_Cave_1" name="T1R_Cave">
+      <listOfVariables>
+        <variable id="T1R_Cave" name="T1R_Cave" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='T1R_Cave']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> T1R_Cave </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="T1R_EE_1" name="T1R_EE">
+      <listOfVariables>
+        <variable id="T1R_EE" name="T1R_EE" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='T1R_EE']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> T1R_EE </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="T2R_Surf_1" name="T2R_Surf">
+      <listOfVariables>
+        <variable id="T2R_Surf" name="T2R_Surf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='T2R_Surf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> T2R_Surf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="T2R_Cave_1" name="T2R_Cave">
+      <listOfVariables>
+        <variable id="T2R_Cave" name="T2R_Cave" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='T2R_Cave']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> T2R_Cave </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="T2R_EE_1" name="T2R_EE">
+      <listOfVariables>
+        <variable id="T2R_EE" name="T2R_EE" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='T2R_EE']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> T2R_EE </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LRC_Surf_1" name="LRC_Surf">
+      <listOfVariables>
+        <variable id="LRC_Surf" name="LRC_Surf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LRC_Surf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LRC_Surf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LRC_Cave_1" name="LRC_Cave">
+      <listOfVariables>
+        <variable id="LRC_Cave" name="LRC_Cave" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LRC_Cave']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LRC_Cave </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LRC_EE_1" name="LRC_EE">
+      <listOfVariables>
+        <variable id="LRC_EE" name="LRC_EE" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LRC_EE']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LRC_EE </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Smads_Complex_c_1" name="Smads_Complex_c">
+      <listOfVariables>
+        <variable id="Smads_Complex_c" name="Smads_Complex_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Smads_Complex_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Smads_Complex_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Smads_Complex_n_1" name="Smads_Complex_n">
+      <listOfVariables>
+        <variable id="Smads_Complex_n" name="Smads_Complex_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Smads_Complex_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Smads_Complex_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TGF_beta_1" name="TGF_beta">
+      <listOfVariables>
+        <variable id="TGF_beta" name="TGF_beta" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TGF_beta']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TGF_beta </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Smad2c_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Smad2n_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Smad4c_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Smad4n_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="T1R_Surf_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="T1R_Cave_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="T1R_EE_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="T2R_Surf_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="T2R_Cave_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="T2R_EE_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="LRC_Surf_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="LRC_Cave_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="LRC_EE_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Smads_Complex_c_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Smads_Complex_n_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="TGF_beta_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Smad2c_1" />
+        <dataSet id="col_2" dataReference="Smad2n_1" />
+        <dataSet id="col_3" dataReference="Smad4c_1" />
+        <dataSet id="col_4" dataReference="Smad4n_1" />
+        <dataSet id="col_5" dataReference="T1R_Surf_1" />
+        <dataSet id="col_6" dataReference="T1R_Cave_1" />
+        <dataSet id="col_7" dataReference="T1R_EE_1" />
+        <dataSet id="col_8" dataReference="T2R_Surf_1" />
+        <dataSet id="col_9" dataReference="T2R_Cave_1" />
+        <dataSet id="col_10" dataReference="T2R_EE_1" />
+        <dataSet id="col_11" dataReference="LRC_Surf_1" />
+        <dataSet id="col_12" dataReference="LRC_Cave_1" />
+        <dataSet id="col_13" dataReference="LRC_EE_1" />
+        <dataSet id="col_14" dataReference="Smads_Complex_c_1" />
+        <dataSet id="col_15" dataReference="Smads_Complex_n_1" />
+        <dataSet id="col_16" dataReference="TGF_beta_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
