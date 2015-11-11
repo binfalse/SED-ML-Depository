@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000320.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A_dopa_1" name="A_dopa">
+      <listOfVariables>
+        <variable id="A_dopa" name="A_dopa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A_dopa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A_dopa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A_B_1" name="A_B">
+      <listOfVariables>
+        <variable id="A_B" name="A_B" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A_B']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A_B </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A_M_1" name="A_M">
+      <listOfVariables>
+        <variable id="A_M" name="A_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C_dopa_1" name="C_dopa">
+      <listOfVariables>
+        <variable id="C_dopa" name="C_dopa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C_dopa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C_dopa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C_OMD_1" name="C_OMD">
+      <listOfVariables>
+        <variable id="C_OMD" name="C_OMD" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C_OMD']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C_OMD </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C1_M_1" name="C1_M">
+      <listOfVariables>
+        <variable id="C1_M" name="C1_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C1_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C1_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C2_M_1" name="C2_M">
+      <listOfVariables>
+        <variable id="C2_M" name="C2_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C2_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C2_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C1_B_1" name="C1_B">
+      <listOfVariables>
+        <variable id="C1_B" name="C1_B" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C1_B']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C1_B </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C2_B_1" name="C2_B">
+      <listOfVariables>
+        <variable id="C2_B" name="C2_B" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C2_B']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C2_B </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="A_dopa_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="A_B_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="A_M_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="C_dopa_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="C_OMD_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="C1_M_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="C2_M_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="C1_B_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="C2_B_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="A_dopa_1" />
+        <dataSet id="col_2" dataReference="A_B_1" />
+        <dataSet id="col_3" dataReference="A_M_1" />
+        <dataSet id="col_4" dataReference="C_dopa_1" />
+        <dataSet id="col_5" dataReference="C_OMD_1" />
+        <dataSet id="col_6" dataReference="C1_M_1" />
+        <dataSet id="col_7" dataReference="C2_M_1" />
+        <dataSet id="col_8" dataReference="C1_B_1" />
+        <dataSet id="col_9" dataReference="C2_B_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
