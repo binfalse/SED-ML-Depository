@@ -1,0 +1,10 @@
+Error
+=====
+Your request could not be processed. Please verify your archive and if the problem persists, contact the author with the following information.
+Detailed Information:
+Message: Task 'task1' could not be carried out. Please make sure that the parameters of the simulation are correct.
+Stacktrace:    at libSedMLRunner.SBMLSimulator.ComputeResults(Task task, List`1 neededVariables, Boolean reload)
+   at libSedMLRunner.SedMLRunner.CalculateAllNeededResults(Hashtable oTable)
+   at libSedMLRunner.SedMLRunner.Run(SedMLInfo oInfo)
+   at libSedMLRunner.SedMLRunner.ComputeResults(SedMLInfo info)
+   at SED_MLWeb.Controllers.HomeController.SimulatePostArchive(HttpPostedFileBase imagefile)
