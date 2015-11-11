@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000038.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EI_1" name="EI">
+      <listOfVariables>
+        <variable id="EI" name="EI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EI </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PyrPI_1" name="PyrPI">
+      <listOfVariables>
+        <variable id="PyrPI" name="PyrPI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PyrPI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PyrPI </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EIP_1" name="EIP">
+      <listOfVariables>
+        <variable id="EIP" name="EIP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EIP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EIP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HPr_1" name="HPr">
+      <listOfVariables>
+        <variable id="HPr" name="HPr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HPr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HPr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EIPHPr_1" name="EIPHPr">
+      <listOfVariables>
+        <variable id="EIPHPr" name="EIPHPr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EIPHPr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EIPHPr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HPrP_1" name="HPrP">
+      <listOfVariables>
+        <variable id="HPrP" name="HPrP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HPrP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HPrP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EIIA_1" name="EIIA">
+      <listOfVariables>
+        <variable id="EIIA" name="EIIA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EIIA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EIIA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HPrPIIA_1" name="HPrPIIA">
+      <listOfVariables>
+        <variable id="HPrPIIA" name="HPrPIIA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HPrPIIA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HPrPIIA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EIIAP_1" name="EIIAP">
+      <listOfVariables>
+        <variable id="EIIAP" name="EIIAP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EIIAP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EIIAP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EIICB_1" name="EIICB">
+      <listOfVariables>
+        <variable id="EIICB" name="EIICB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EIICB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EIICB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EIIAPIICB_1" name="EIIAPIICB">
+      <listOfVariables>
+        <variable id="EIIAPIICB" name="EIIAPIICB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EIIAPIICB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EIIAPIICB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EIICBP_1" name="EIICBP">
+      <listOfVariables>
+        <variable id="EIICBP" name="EIICBP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EIICBP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EIICBP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EIICBPGlc_1" name="EIICBPGlc">
+      <listOfVariables>
+        <variable id="EIICBPGlc" name="EIICBPGlc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EIICBPGlc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EIICBPGlc </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="EI_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="PyrPI_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="EIP_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="HPr_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="EIPHPr_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="HPrP_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="EIIA_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="HPrPIIA_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="EIIAP_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="EIICB_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="EIIAPIICB_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="EIICBP_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="EIICBPGlc_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="EI_1" />
+        <dataSet id="col_2" dataReference="PyrPI_1" />
+        <dataSet id="col_3" dataReference="EIP_1" />
+        <dataSet id="col_4" dataReference="HPr_1" />
+        <dataSet id="col_5" dataReference="EIPHPr_1" />
+        <dataSet id="col_6" dataReference="HPrP_1" />
+        <dataSet id="col_7" dataReference="EIIA_1" />
+        <dataSet id="col_8" dataReference="HPrPIIA_1" />
+        <dataSet id="col_9" dataReference="EIIAP_1" />
+        <dataSet id="col_10" dataReference="EIICB_1" />
+        <dataSet id="col_11" dataReference="EIIAPIICB_1" />
+        <dataSet id="col_12" dataReference="EIICBP_1" />
+        <dataSet id="col_13" dataReference="EIICBPGlc_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
