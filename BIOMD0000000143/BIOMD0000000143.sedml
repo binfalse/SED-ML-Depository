@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000143.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="H2O2_p_1" name="H2O2_p">
+      <listOfVariables>
+        <variable id="H2O2_p" name="H2O2_p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='H2O2_p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> H2O2_p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="per3_p_1" name="per3_p">
+      <listOfVariables>
+        <variable id="per3_p" name="per3_p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='per3_p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> per3_p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="coI_p_1" name="coI_p">
+      <listOfVariables>
+        <variable id="coI_p" name="coI_p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='coI_p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> coI_p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MLTH_p_1" name="MLTH_p">
+      <listOfVariables>
+        <variable id="MLTH_p" name="MLTH_p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MLTH_p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MLTH_p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="coII_p_1" name="coII_p">
+      <listOfVariables>
+        <variable id="coII_p" name="coII_p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='coII_p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> coII_p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MLT_p_1" name="MLT_p">
+      <listOfVariables>
+        <variable id="MLT_p" name="MLT_p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MLT_p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MLT_p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="O2minus_p_1" name="O2minus_p">
+      <listOfVariables>
+        <variable id="O2minus_p" name="O2minus_p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='O2minus_p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> O2minus_p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="H_p_1" name="H_p">
+      <listOfVariables>
+        <variable id="H_p" name="H_p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='H_p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> H_p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="O2_p_1" name="O2_p">
+      <listOfVariables>
+        <variable id="O2_p" name="O2_p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='O2_p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> O2_p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NADPH_c_1" name="NADPH_c">
+      <listOfVariables>
+        <variable id="NADPH_c" name="NADPH_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NADPH_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NADPH_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="O2_c_1" name="O2_c">
+      <listOfVariables>
+        <variable id="O2_c" name="O2_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='O2_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> O2_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NADPplus_c_1" name="NADPplus_c">
+      <listOfVariables>
+        <variable id="NADPplus_c" name="NADPplus_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NADPplus_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NADPplus_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="H2O2_c_1" name="H2O2_c">
+      <listOfVariables>
+        <variable id="H2O2_c" name="H2O2_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='H2O2_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> H2O2_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NADP_c_1" name="NADP_c">
+      <listOfVariables>
+        <variable id="NADP_c" name="NADP_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NADP_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NADP_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="O2minus_c_1" name="O2minus_c">
+      <listOfVariables>
+        <variable id="O2minus_c" name="O2minus_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='O2minus_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> O2minus_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="H_c_1" name="H_c">
+      <listOfVariables>
+        <variable id="H_c" name="H_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='H_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> H_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MLT_c_1" name="MLT_c">
+      <listOfVariables>
+        <variable id="MLT_c" name="MLT_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MLT_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MLT_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MLTH_c_1" name="MLTH_c">
+      <listOfVariables>
+        <variable id="MLTH_c" name="MLTH_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MLTH_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MLTH_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="coIII_p_1" name="coIII_p">
+      <listOfVariables>
+        <variable id="coIII_p" name="coIII_p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='coIII_p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> coIII_p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NADP2_c_1" name="NADP2_c">
+      <listOfVariables>
+        <variable id="NADP2_c" name="NADP2_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NADP2_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NADP2_c </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="H2O2_p_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="per3_p_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="coI_p_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="MLTH_p_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="coII_p_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="MLT_p_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="O2minus_p_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="H_p_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="O2_p_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="NADPH_c_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="O2_c_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="NADPplus_c_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="H2O2_c_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="NADP_c_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="O2minus_c_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="H_c_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="MLT_c_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="MLTH_c_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="coIII_p_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="NADP2_c_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="H2O2_p_1" />
+        <dataSet id="col_2" dataReference="per3_p_1" />
+        <dataSet id="col_3" dataReference="coI_p_1" />
+        <dataSet id="col_4" dataReference="MLTH_p_1" />
+        <dataSet id="col_5" dataReference="coII_p_1" />
+        <dataSet id="col_6" dataReference="MLT_p_1" />
+        <dataSet id="col_7" dataReference="O2minus_p_1" />
+        <dataSet id="col_8" dataReference="H_p_1" />
+        <dataSet id="col_9" dataReference="O2_p_1" />
+        <dataSet id="col_10" dataReference="NADPH_c_1" />
+        <dataSet id="col_11" dataReference="O2_c_1" />
+        <dataSet id="col_12" dataReference="NADPplus_c_1" />
+        <dataSet id="col_13" dataReference="H2O2_c_1" />
+        <dataSet id="col_14" dataReference="NADP_c_1" />
+        <dataSet id="col_15" dataReference="O2minus_c_1" />
+        <dataSet id="col_16" dataReference="H_c_1" />
+        <dataSet id="col_17" dataReference="MLT_c_1" />
+        <dataSet id="col_18" dataReference="MLTH_c_1" />
+        <dataSet id="col_19" dataReference="coIII_p_1" />
+        <dataSet id="col_20" dataReference="NADP2_c_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
