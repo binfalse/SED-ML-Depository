@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000075.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIP2_PHGFP_PM_1" name="PIP2_PHGFP_PM">
+      <listOfVariables>
+        <variable id="PIP2_PHGFP_PM" name="PIP2_PHGFP_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIP2_PHGFP_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIP2_PHGFP_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PH_GFP_Cyt_1" name="PH_GFP_Cyt">
+      <listOfVariables>
+        <variable id="PH_GFP_Cyt" name="PH_GFP_Cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PH_GFP_Cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PH_GFP_Cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PI_PM_1" name="PI_PM">
+      <listOfVariables>
+        <variable id="PI_PM" name="PI_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PI_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PI_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IP3_PHGFP_Cyt_1" name="IP3_PHGFP_Cyt">
+      <listOfVariables>
+        <variable id="IP3_PHGFP_Cyt" name="IP3_PHGFP_Cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IP3_PHGFP_Cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IP3_PHGFP_Cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIP2_PM_1" name="PIP2_PM">
+      <listOfVariables>
+        <variable id="PIP2_PM" name="PIP2_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIP2_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIP2_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIP_PM_1" name="PIP_PM">
+      <listOfVariables>
+        <variable id="PIP_PM" name="PIP_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIP_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIP_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DAG_PM_1" name="DAG_PM">
+      <listOfVariables>
+        <variable id="DAG_PM" name="DAG_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DAG_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DAG_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PLC_PM_1" name="PLC_PM">
+      <listOfVariables>
+        <variable id="PLC_PM" name="PLC_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PLC_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PLC_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PLC_act_PM_1" name="PLC_act_PM">
+      <listOfVariables>
+        <variable id="PLC_act_PM" name="PLC_act_PM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PLC_act_PM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PLC_act_PM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IP3_Cyt_1" name="IP3_Cyt">
+      <listOfVariables>
+        <variable id="IP3_Cyt" name="IP3_Cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IP3_Cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IP3_Cyt </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="PIP2_PHGFP_PM_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="PH_GFP_Cyt_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="PI_PM_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="IP3_PHGFP_Cyt_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="PIP2_PM_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="PIP_PM_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="DAG_PM_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="PLC_PM_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="PLC_act_PM_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="IP3_Cyt_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="PIP2_PHGFP_PM_1" />
+        <dataSet id="col_2" dataReference="PH_GFP_Cyt_1" />
+        <dataSet id="col_3" dataReference="PI_PM_1" />
+        <dataSet id="col_4" dataReference="IP3_PHGFP_Cyt_1" />
+        <dataSet id="col_5" dataReference="PIP2_PM_1" />
+        <dataSet id="col_6" dataReference="PIP_PM_1" />
+        <dataSet id="col_7" dataReference="DAG_PM_1" />
+        <dataSet id="col_8" dataReference="PLC_PM_1" />
+        <dataSet id="col_9" dataReference="PLC_act_PM_1" />
+        <dataSet id="col_10" dataReference="IP3_Cyt_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
