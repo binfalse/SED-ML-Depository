@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000081.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GTPgS_C_1" name="GTPgS_C">
+      <listOfVariables>
+        <variable id="GTPgS_C" name="GTPgS_C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GTPgS_C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GTPgS_C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="KCNQsites_M_1" name="KCNQsites_M">
+      <listOfVariables>
+        <variable id="KCNQsites_M" name="KCNQsites_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='KCNQsites_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> KCNQsites_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIP2_M_1" name="PIP2_M">
+      <listOfVariables>
+        <variable id="PIP2_M" name="PIP2_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIP2_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIP2_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GGDPbS_M_1" name="GGDPbS_M">
+      <listOfVariables>
+        <variable id="GGDPbS_M" name="GGDPbS_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GGDPbS_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GGDPbS_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATP_C_1" name="ATP_C">
+      <listOfVariables>
+        <variable id="ATP_C" name="ATP_C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATP_C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATP_C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="oxoM_EX_1" name="oxoM_EX">
+      <listOfVariables>
+        <variable id="oxoM_EX" name="oxoM_EX" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='oxoM_EX']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> oxoM_EX </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GDPbS_C_1" name="GDPbS_C">
+      <listOfVariables>
+        <variable id="GDPbS_C" name="GDPbS_C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GDPbS_C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GDPbS_C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GGTPMg_M_1" name="GGTPMg_M">
+      <listOfVariables>
+        <variable id="GGTPMg_M" name="GGTPMg_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GGTPMg_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GGTPMg_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GDP_C_1" name="GDP_C">
+      <listOfVariables>
+        <variable id="GDP_C" name="GDP_C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GDP_C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GDP_C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GTP_C_1" name="GTP_C">
+      <listOfVariables>
+        <variable id="GTP_C" name="GTP_C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GTP_C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GTP_C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GGDPAlF4Mg_M_1" name="GGDPAlF4Mg_M">
+      <listOfVariables>
+        <variable id="GGDPAlF4Mg_M" name="GGDPAlF4Mg_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GGDPAlF4Mg_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GGDPAlF4Mg_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ip3_C_1" name="ip3_C">
+      <listOfVariables>
+        <variable id="ip3_C" name="ip3_C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ip3_C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ip3_C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AlF4_C_1" name="AlF4_C">
+      <listOfVariables>
+        <variable id="AlF4_C" name="AlF4_C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AlF4_C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AlF4_C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="G_M_1" name="G_M">
+      <listOfVariables>
+        <variable id="G_M" name="G_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='G_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> G_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GGTP_M_1" name="GGTP_M">
+      <listOfVariables>
+        <variable id="GGTP_M" name="GGTP_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GGTP_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GGTP_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GGDPAlF4_M_1" name="GGDPAlF4_M">
+      <listOfVariables>
+        <variable id="GGDPAlF4_M" name="GGDPAlF4_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GGDPAlF4_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GGDPAlF4_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GGTPgS_M_1" name="GGTPgS_M">
+      <listOfVariables>
+        <variable id="GGTPgS_M" name="GGTPgS_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GGTPgS_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GGTPgS_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PI_M_1" name="PI_M">
+      <listOfVariables>
+        <variable id="PI_M" name="PI_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PI_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PI_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIP_M_1" name="PIP_M">
+      <listOfVariables>
+        <variable id="PIP_M" name="PIP_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIP_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIP_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIP2xKCNQ_M_1" name="PIP2xKCNQ_M">
+      <listOfVariables>
+        <variable id="PIP2xKCNQ_M" name="PIP2xKCNQ_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIP2xKCNQ_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIP2xKCNQ_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GGTPgSMg_M_1" name="GGTPgSMg_M">
+      <listOfVariables>
+        <variable id="GGTPgSMg_M" name="GGTPgSMg_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GGTPgSMg_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GGTPgSMg_M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GGDP_M_1" name="GGDP_M">
+      <listOfVariables>
+        <variable id="GGDP_M" name="GGDP_M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GGDP_M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GGDP_M </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="GTPgS_C_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="KCNQsites_M_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="PIP2_M_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="GGDPbS_M_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="ATP_C_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="oxoM_EX_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="GDPbS_C_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="GGTPMg_M_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="GDP_C_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="GTP_C_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="GGDPAlF4Mg_M_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="ip3_C_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="AlF4_C_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="G_M_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="GGTP_M_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="GGDPAlF4_M_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="GGTPgS_M_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="PI_M_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="PIP_M_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="PIP2xKCNQ_M_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="GGTPgSMg_M_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="GGDP_M_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="GTPgS_C_1" />
+        <dataSet id="col_2" dataReference="KCNQsites_M_1" />
+        <dataSet id="col_3" dataReference="PIP2_M_1" />
+        <dataSet id="col_4" dataReference="GGDPbS_M_1" />
+        <dataSet id="col_5" dataReference="ATP_C_1" />
+        <dataSet id="col_6" dataReference="oxoM_EX_1" />
+        <dataSet id="col_7" dataReference="GDPbS_C_1" />
+        <dataSet id="col_8" dataReference="GGTPMg_M_1" />
+        <dataSet id="col_9" dataReference="GDP_C_1" />
+        <dataSet id="col_10" dataReference="GTP_C_1" />
+        <dataSet id="col_11" dataReference="GGDPAlF4Mg_M_1" />
+        <dataSet id="col_12" dataReference="ip3_C_1" />
+        <dataSet id="col_13" dataReference="AlF4_C_1" />
+        <dataSet id="col_14" dataReference="G_M_1" />
+        <dataSet id="col_15" dataReference="GGTP_M_1" />
+        <dataSet id="col_16" dataReference="GGDPAlF4_M_1" />
+        <dataSet id="col_17" dataReference="GGTPgS_M_1" />
+        <dataSet id="col_18" dataReference="PI_M_1" />
+        <dataSet id="col_19" dataReference="PIP_M_1" />
+        <dataSet id="col_20" dataReference="PIP2xKCNQ_M_1" />
+        <dataSet id="col_21" dataReference="GGTPgSMg_M_1" />
+        <dataSet id="col_22" dataReference="GGDP_M_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
