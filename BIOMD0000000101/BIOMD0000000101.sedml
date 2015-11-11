@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000101.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RI_1" name="RI">
+      <listOfVariables>
+        <variable id="RI" name="RI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RI </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RII_1" name="RII">
+      <listOfVariables>
+        <variable id="RII" name="RII" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RII']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RII </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="lRIRII_1" name="lRIRII">
+      <listOfVariables>
+        <variable id="lRIRII" name="lRIRII" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='lRIRII']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> lRIRII </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="lRIRII_endo_1" name="lRIRII_endo">
+      <listOfVariables>
+        <variable id="lRIRII_endo" name="lRIRII_endo" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='lRIRII_endo']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> lRIRII_endo </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RI_endo_1" name="RI_endo">
+      <listOfVariables>
+        <variable id="RI_endo" name="RI_endo" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RI_endo']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RI_endo </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RII_endo_1" name="RII_endo">
+      <listOfVariables>
+        <variable id="RII_endo" name="RII_endo" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RII_endo']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RII_endo </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="RI_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="RII_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="lRIRII_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="lRIRII_endo_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="RI_endo_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="RII_endo_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="RI_1" />
+        <dataSet id="col_2" dataReference="RII_1" />
+        <dataSet id="col_3" dataReference="lRIRII_1" />
+        <dataSet id="col_4" dataReference="lRIRII_endo_1" />
+        <dataSet id="col_5" dataReference="RI_endo_1" />
+        <dataSet id="col_6" dataReference="RII_endo_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
