@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000152.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D_1" name="D">
+      <listOfVariables>
+        <variable id="D" name="D" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CDK5_1" name="CDK5">
+      <listOfVariables>
+        <variable id="CDK5" name="CDK5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CDK5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CDK5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D_CDK5_1" name="D_CDK5">
+      <listOfVariables>
+        <variable id="D_CDK5" name="D_CDK5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D_CDK5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D_CDK5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D75_1" name="D75">
+      <listOfVariables>
+        <variable id="D75" name="D75" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D75']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D75 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CK1_1" name="CK1">
+      <listOfVariables>
+        <variable id="CK1" name="CK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D_CK1_1" name="D_CK1">
+      <listOfVariables>
+        <variable id="D_CK1" name="D_CK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D_CK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D_CK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D137_1" name="D137">
+      <listOfVariables>
+        <variable id="D137" name="D137" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D137']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D137 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PKA_1" name="PKA">
+      <listOfVariables>
+        <variable id="PKA" name="PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D_PKA_1" name="D_PKA">
+      <listOfVariables>
+        <variable id="D_PKA" name="D_PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D_PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D_PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_1" name="D34">
+      <listOfVariables>
+        <variable id="D34" name="D34" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_CDK5_1" name="D34_CDK5">
+      <listOfVariables>
+        <variable id="D34_CDK5" name="D34_CDK5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_CDK5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_CDK5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_CK1_1" name="D34_CK1">
+      <listOfVariables>
+        <variable id="D34_CK1" name="D34_CK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_CK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_CK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2B_1" name="PP2B">
+      <listOfVariables>
+        <variable id="PP2B" name="PP2B" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2B']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2B </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_PP2B_1" name="D34_PP2B">
+      <listOfVariables>
+        <variable id="D34_PP2B" name="D34_PP2B" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_PP2B']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_PP2B </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_75_1" name="D34_75">
+      <listOfVariables>
+        <variable id="D34_75" name="D34_75" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_75']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_75 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_137_1" name="D34_137">
+      <listOfVariables>
+        <variable id="D34_137" name="D34_137" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_137']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_137 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D75CK1_1" name="D75CK1">
+      <listOfVariables>
+        <variable id="D75CK1" name="D75CK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D75CK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D75CK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D75_PKA_1" name="D75_PKA">
+      <listOfVariables>
+        <variable id="D75_PKA" name="D75_PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D75_PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D75_PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2A_1" name="PP2A">
+      <listOfVariables>
+        <variable id="PP2A" name="PP2A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2A </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D75_PP2A_1" name="D75_PP2A">
+      <listOfVariables>
+        <variable id="D75_PP2A" name="D75_PP2A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D75_PP2A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D75_PP2A </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2AP_1" name="PP2AP">
+      <listOfVariables>
+        <variable id="PP2AP" name="PP2AP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2AP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2AP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D75_PP2AP_1" name="D75_PP2AP">
+      <listOfVariables>
+        <variable id="D75_PP2AP" name="D75_PP2AP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D75_PP2AP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D75_PP2AP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D75_137_1" name="D75_137">
+      <listOfVariables>
+        <variable id="D75_137" name="D75_137" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D75_137']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D75_137 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D137_CDK5_1" name="D137_CDK5">
+      <listOfVariables>
+        <variable id="D137_CDK5" name="D137_CDK5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D137_CDK5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D137_CDK5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D137_PKA_1" name="D137_PKA">
+      <listOfVariables>
+        <variable id="D137_PKA" name="D137_PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D137_PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D137_PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D137_PP2C_1" name="D137_PP2C">
+      <listOfVariables>
+        <variable id="D137_PP2C" name="D137_PP2C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D137_PP2C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D137_PP2C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2C_1" name="PP2C">
+      <listOfVariables>
+        <variable id="PP2C" name="PP2C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_75_CK1_1" name="D34_75_CK1">
+      <listOfVariables>
+        <variable id="D34_75_CK1" name="D34_75_CK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_75_CK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_75_CK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_137_CDK5_1" name="D34_137_CDK5">
+      <listOfVariables>
+        <variable id="D34_137_CDK5" name="D34_137_CDK5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_137_CDK5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_137_CDK5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_75_137_1" name="D34_75_137">
+      <listOfVariables>
+        <variable id="D34_75_137" name="D34_75_137" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_75_137']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_75_137 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D75_137_PKA_1" name="D75_137_PKA">
+      <listOfVariables>
+        <variable id="D75_137_PKA" name="D75_137_PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D75_137_PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D75_137_PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_75_PP2B_1" name="D34_75_PP2B">
+      <listOfVariables>
+        <variable id="D34_75_PP2B" name="D34_75_PP2B" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_75_PP2B']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_75_PP2B </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_137_PP2B_1" name="D34_137_PP2B">
+      <listOfVariables>
+        <variable id="D34_137_PP2B" name="D34_137_PP2B" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_137_PP2B']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_137_PP2B </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_75_137_PP2B_1" name="D34_75_137_PP2B">
+      <listOfVariables>
+        <variable id="D34_75_137_PP2B" name="D34_75_137_PP2B" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_75_137_PP2B']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_75_137_PP2B </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_75_PP2A_1" name="D34_75_PP2A">
+      <listOfVariables>
+        <variable id="D34_75_PP2A" name="D34_75_PP2A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_75_PP2A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_75_PP2A </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D75_137_PP2A_1" name="D75_137_PP2A">
+      <listOfVariables>
+        <variable id="D75_137_PP2A" name="D75_137_PP2A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D75_137_PP2A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D75_137_PP2A </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_75_134_PP2A_1" name="D34_75_134_PP2A">
+      <listOfVariables>
+        <variable id="D34_75_134_PP2A" name="D34_75_134_PP2A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_75_134_PP2A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_75_134_PP2A </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_75_PP2AP_1" name="D34_75_PP2AP">
+      <listOfVariables>
+        <variable id="D34_75_PP2AP" name="D34_75_PP2AP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_75_PP2AP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_75_PP2AP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D75_137_PP2AP_1" name="D75_137_PP2AP">
+      <listOfVariables>
+        <variable id="D75_137_PP2AP" name="D75_137_PP2AP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D75_137_PP2AP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D75_137_PP2AP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_75_137_PP2AP_1" name="D34_75_137_PP2AP">
+      <listOfVariables>
+        <variable id="D34_75_137_PP2AP" name="D34_75_137_PP2AP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_75_137_PP2AP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_75_137_PP2AP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_137_PP2C_1" name="D34_137_PP2C">
+      <listOfVariables>
+        <variable id="D34_137_PP2C" name="D34_137_PP2C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_137_PP2C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_137_PP2C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D75_137_PP2C_1" name="D75_137_PP2C">
+      <listOfVariables>
+        <variable id="D75_137_PP2C" name="D75_137_PP2C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D75_137_PP2C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D75_137_PP2C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PDE_1" name="PDE">
+      <listOfVariables>
+        <variable id="PDE" name="PDE" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PDE']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PDE </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2Binactive_1" name="PP2Binactive">
+      <listOfVariables>
+        <variable id="PP2Binactive" name="PP2Binactive" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2Binactive']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2Binactive </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D34_75_137_PP2C_1" name="D34_75_137_PP2C">
+      <listOfVariables>
+        <variable id="D34_75_137_PP2C" name="D34_75_137_PP2C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D34_75_137_PP2C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D34_75_137_PP2C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CK1P_1" name="CK1P">
+      <listOfVariables>
+        <variable id="CK1P" name="CK1P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CK1P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CK1P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CK1P_PP2B_1" name="CK1P_PP2B">
+      <listOfVariables>
+        <variable id="CK1P_PP2B" name="CK1P_PP2B" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CK1P_PP2B']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CK1P_PP2B </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PDE_PKA_1" name="PDE_PKA">
+      <listOfVariables>
+        <variable id="PDE_PKA" name="PDE_PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PDE_PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PDE_PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PDEP_1" name="PDEP">
+      <listOfVariables>
+        <variable id="PDEP" name="PDEP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PDEP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PDEP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2A_PKA_1" name="PP2A_PKA">
+      <listOfVariables>
+        <variable id="PP2A_PKA" name="PP2A_PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2A_PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2A_PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ca_1" name="Ca">
+      <listOfVariables>
+        <variable id="Ca" name="Ca" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ca']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ca </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2BinactiveCa2_1" name="PP2BinactiveCa2">
+      <listOfVariables>
+        <variable id="PP2BinactiveCa2" name="PP2BinactiveCa2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2BinactiveCa2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2BinactiveCa2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R2C2_1" name="R2C2">
+      <listOfVariables>
+        <variable id="R2C2" name="R2C2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R2C2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R2C2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP_1" name="cAMP">
+      <listOfVariables>
+        <variable id="cAMP" name="cAMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP_R2C2_1" name="cAMP_R2C2">
+      <listOfVariables>
+        <variable id="cAMP_R2C2" name="cAMP_R2C2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP_R2C2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP_R2C2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP2_R2C2_1" name="cAMP2_R2C2">
+      <listOfVariables>
+        <variable id="cAMP2_R2C2" name="cAMP2_R2C2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP2_R2C2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP2_R2C2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP3_R2C2_1" name="cAMP3_R2C2">
+      <listOfVariables>
+        <variable id="cAMP3_R2C2" name="cAMP3_R2C2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP3_R2C2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP3_R2C2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP4_R2C2_1" name="cAMP4_R2C2">
+      <listOfVariables>
+        <variable id="cAMP4_R2C2" name="cAMP4_R2C2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP4_R2C2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP4_R2C2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP4_R2C_1" name="cAMP4_R2C">
+      <listOfVariables>
+        <variable id="cAMP4_R2C" name="cAMP4_R2C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP4_R2C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP4_R2C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP4_R2_1" name="cAMP4_R2">
+      <listOfVariables>
+        <variable id="cAMP4_R2" name="cAMP4_R2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP4_R2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP4_R2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP_PDE_1" name="cAMP_PDE">
+      <listOfVariables>
+        <variable id="cAMP_PDE" name="cAMP_PDE" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP_PDE']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP_PDE </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AMP_1" name="AMP">
+      <listOfVariables>
+        <variable id="AMP" name="AMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP_PDEP_1" name="cAMP_PDEP">
+      <listOfVariables>
+        <variable id="cAMP_PDEP" name="cAMP_PDEP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP_PDEP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP_PDEP </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="D_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="CDK5_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="D_CDK5_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="D75_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="CK1_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="D_CK1_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="D137_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="PKA_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="D_PKA_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="D34_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="D34_CDK5_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="D34_CK1_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="PP2B_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="D34_PP2B_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="D34_75_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="D34_137_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="D75CK1_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="D75_PKA_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="PP2A_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="D75_PP2A_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="PP2AP_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="D75_PP2AP_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="D75_137_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="D137_CDK5_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="D137_PKA_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="D137_PP2C_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="PP2C_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="D34_75_CK1_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="D34_137_CDK5_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="D34_75_137_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="D75_137_PKA_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="D34_75_PP2B_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="D34_137_PP2B_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="D34_75_137_PP2B_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="D34_75_PP2A_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="D75_137_PP2A_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="D34_75_134_PP2A_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="D34_75_PP2AP_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="D75_137_PP2AP_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="D34_75_137_PP2AP_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="D34_137_PP2C_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="D75_137_PP2C_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="PDE_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="PP2Binactive_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="D34_75_137_PP2C_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="CK1P_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="CK1P_PP2B_1" />
+        <curve id="curve_47" logX="false" logY="false" xDataReference="time" yDataReference="PDE_PKA_1" />
+        <curve id="curve_48" logX="false" logY="false" xDataReference="time" yDataReference="PDEP_1" />
+        <curve id="curve_49" logX="false" logY="false" xDataReference="time" yDataReference="PP2A_PKA_1" />
+        <curve id="curve_50" logX="false" logY="false" xDataReference="time" yDataReference="Ca_1" />
+        <curve id="curve_51" logX="false" logY="false" xDataReference="time" yDataReference="PP2BinactiveCa2_1" />
+        <curve id="curve_52" logX="false" logY="false" xDataReference="time" yDataReference="R2C2_1" />
+        <curve id="curve_53" logX="false" logY="false" xDataReference="time" yDataReference="cAMP_1" />
+        <curve id="curve_54" logX="false" logY="false" xDataReference="time" yDataReference="cAMP_R2C2_1" />
+        <curve id="curve_55" logX="false" logY="false" xDataReference="time" yDataReference="cAMP2_R2C2_1" />
+        <curve id="curve_56" logX="false" logY="false" xDataReference="time" yDataReference="cAMP3_R2C2_1" />
+        <curve id="curve_57" logX="false" logY="false" xDataReference="time" yDataReference="cAMP4_R2C2_1" />
+        <curve id="curve_58" logX="false" logY="false" xDataReference="time" yDataReference="cAMP4_R2C_1" />
+        <curve id="curve_59" logX="false" logY="false" xDataReference="time" yDataReference="cAMP4_R2_1" />
+        <curve id="curve_60" logX="false" logY="false" xDataReference="time" yDataReference="cAMP_PDE_1" />
+        <curve id="curve_61" logX="false" logY="false" xDataReference="time" yDataReference="AMP_1" />
+        <curve id="curve_62" logX="false" logY="false" xDataReference="time" yDataReference="cAMP_PDEP_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="D_1" />
+        <dataSet id="col_2" dataReference="CDK5_1" />
+        <dataSet id="col_3" dataReference="D_CDK5_1" />
+        <dataSet id="col_4" dataReference="D75_1" />
+        <dataSet id="col_5" dataReference="CK1_1" />
+        <dataSet id="col_6" dataReference="D_CK1_1" />
+        <dataSet id="col_7" dataReference="D137_1" />
+        <dataSet id="col_8" dataReference="PKA_1" />
+        <dataSet id="col_9" dataReference="D_PKA_1" />
+        <dataSet id="col_10" dataReference="D34_1" />
+        <dataSet id="col_11" dataReference="D34_CDK5_1" />
+        <dataSet id="col_12" dataReference="D34_CK1_1" />
+        <dataSet id="col_13" dataReference="PP2B_1" />
+        <dataSet id="col_14" dataReference="D34_PP2B_1" />
+        <dataSet id="col_15" dataReference="D34_75_1" />
+        <dataSet id="col_16" dataReference="D34_137_1" />
+        <dataSet id="col_17" dataReference="D75CK1_1" />
+        <dataSet id="col_18" dataReference="D75_PKA_1" />
+        <dataSet id="col_19" dataReference="PP2A_1" />
+        <dataSet id="col_20" dataReference="D75_PP2A_1" />
+        <dataSet id="col_21" dataReference="PP2AP_1" />
+        <dataSet id="col_22" dataReference="D75_PP2AP_1" />
+        <dataSet id="col_23" dataReference="D75_137_1" />
+        <dataSet id="col_24" dataReference="D137_CDK5_1" />
+        <dataSet id="col_25" dataReference="D137_PKA_1" />
+        <dataSet id="col_26" dataReference="D137_PP2C_1" />
+        <dataSet id="col_27" dataReference="PP2C_1" />
+        <dataSet id="col_28" dataReference="D34_75_CK1_1" />
+        <dataSet id="col_29" dataReference="D34_137_CDK5_1" />
+        <dataSet id="col_30" dataReference="D34_75_137_1" />
+        <dataSet id="col_31" dataReference="D75_137_PKA_1" />
+        <dataSet id="col_32" dataReference="D34_75_PP2B_1" />
+        <dataSet id="col_33" dataReference="D34_137_PP2B_1" />
+        <dataSet id="col_34" dataReference="D34_75_137_PP2B_1" />
+        <dataSet id="col_35" dataReference="D34_75_PP2A_1" />
+        <dataSet id="col_36" dataReference="D75_137_PP2A_1" />
+        <dataSet id="col_37" dataReference="D34_75_134_PP2A_1" />
+        <dataSet id="col_38" dataReference="D34_75_PP2AP_1" />
+        <dataSet id="col_39" dataReference="D75_137_PP2AP_1" />
+        <dataSet id="col_40" dataReference="D34_75_137_PP2AP_1" />
+        <dataSet id="col_41" dataReference="D34_137_PP2C_1" />
+        <dataSet id="col_42" dataReference="D75_137_PP2C_1" />
+        <dataSet id="col_43" dataReference="PDE_1" />
+        <dataSet id="col_44" dataReference="PP2Binactive_1" />
+        <dataSet id="col_45" dataReference="D34_75_137_PP2C_1" />
+        <dataSet id="col_46" dataReference="CK1P_1" />
+        <dataSet id="col_47" dataReference="CK1P_PP2B_1" />
+        <dataSet id="col_48" dataReference="PDE_PKA_1" />
+        <dataSet id="col_49" dataReference="PDEP_1" />
+        <dataSet id="col_50" dataReference="PP2A_PKA_1" />
+        <dataSet id="col_51" dataReference="Ca_1" />
+        <dataSet id="col_52" dataReference="PP2BinactiveCa2_1" />
+        <dataSet id="col_53" dataReference="R2C2_1" />
+        <dataSet id="col_54" dataReference="cAMP_1" />
+        <dataSet id="col_55" dataReference="cAMP_R2C2_1" />
+        <dataSet id="col_56" dataReference="cAMP2_R2C2_1" />
+        <dataSet id="col_57" dataReference="cAMP3_R2C2_1" />
+        <dataSet id="col_58" dataReference="cAMP4_R2C2_1" />
+        <dataSet id="col_59" dataReference="cAMP4_R2C_1" />
+        <dataSet id="col_60" dataReference="cAMP4_R2_1" />
+        <dataSet id="col_61" dataReference="cAMP_PDE_1" />
+        <dataSet id="col_62" dataReference="AMP_1" />
+        <dataSet id="col_63" dataReference="cAMP_PDEP_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
