@@ -1,0 +1,5019 @@
+<?xml version="1.0" encoding="utf-8"?>
+<numl version="1" level="1" xmlns="http://www.numl.org/numl/level1/version1">
+  <resultComponent>
+    <dimensionDescription>
+      <compositeDescription name="time" indexType="double">
+        <compositeDescription name="Names" indexType="string">
+          <atomicDescription name="Value" valueType="double" />
+        </compositeDescription>
+      </compositeDescription>
+    </dimensionDescription>
+    <dimension>
+      <compositeValue indexValue="0">
+        <compositeValue indexValue="Ce">
+          <atomicValue>0</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>518.03972387416</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1031.41888529773</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1540.17946513473</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2044.36301343156</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2251.22954157825</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2230.97651189462</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2210.9054727019</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2191.01494478865</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2171.30341449844</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2151.77015937751</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2650.43768084621</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3144.63419001633</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3634.38376241289</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4119.72094969073</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4307.88380174893</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4269.13039012344</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4230.72318252145</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4192.66129020048</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4154.94407982806</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4117.56409500103</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4080.52020119726</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4043.80957305528</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4007.42946324046</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3971.3768839231</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3935.64877028706</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3900.24409351764</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3865.15553545349</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3830.38238646252</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3795.92202237715</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3761.79202359652</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4245.98893398099</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4725.83072574424</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5201.35496895032</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5672.60103480085</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5846.79588363576</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5794.19816023178</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5742.07062377499</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5690.41177218114</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5639.21767067391</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5588.48641602927</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6056.24288237759</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6519.79931745297</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6979.18477557964</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7434.43686910814</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7592.82516601424</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7524.51676510789</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7456.8222159238</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7389.73643708284</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7323.25454195136</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7257.37128222301</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7192.08098161841</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7127.3783314213</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7063.25784958673</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6999.71404984364</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6936.74185126135</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6874.33614236869</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6812.49183068071</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6751.20388858803</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6690.46731916716</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6630.29998986963</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7088.68943838535</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7542.95761016096</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7993.13878117335</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8439.26902860049</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8588.63110549628</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8511.36387566323</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8434.79093832865</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8358.90669199654</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8283.70511073956</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8209.19943801717</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8653.37952733468</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9093.57141016861</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9529.80310225646</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9962.1091580219</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10097.7047322891</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10006.8611208627</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9916.83395075343</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9827.61626720404</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9739.20149589129</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9651.58295102584</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9564.75318603072</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9478.70483781822</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9393.43086178938</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9308.92394833615</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9225.17746848882</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9142.18420215087</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9059.93768517753</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8978.43092532968</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8897.65727063486</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8817.62833077608</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9256.35864464353</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9691.12605599052</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10121.9817580094</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10548.9602918227</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10679.3468497418</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10583.2707010365</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10488.0576285381</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10393.7007600587</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10300.1926847772</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10207.544401883</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10633.7577800658</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11056.1334534219</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11474.7098720632</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11889.5191583704</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12007.8289214588</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11899.8013080851</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11792.7442488923</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11686.6500433847</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11581.5102147946</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11477.3167511588</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11374.0615119248</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11271.7357068033</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11170.3307294203</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11069.8380470225</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10970.2495522223</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10871.5568679003</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10773.7521251141</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10676.8271651369</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10580.7742164505</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10485.6222979615</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10909.3031420661</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11329.199947729</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11745.3196896009</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12157.6945138424</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12273.5842752536</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12163.1655347529</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12053.7388678734</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11945.2963122126</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11837.8293041227</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11731.3941361459</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12143.8939263814</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12552.6841876758</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12957.7973112389</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13359.2646395931</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13464.3104740083</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13343.1797471543</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13223.1369747382</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13104.1735969204</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12986.2803203295</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12869.4482130175</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12753.6682422901</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12638.9305835611</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12525.2255353273</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12412.5437873407</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12300.8756827238</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12190.2123965375</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12080.5444758012</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11971.8632809671</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11864.1596396967</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11757.4431968854</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12169.7192015026</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12578.2771685657</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12983.1600498115</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13384.3993090784</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13489.233210947</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13367.8785532322</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13247.6136024043</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13128.4299286617</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13010.3182875646</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12893.3329430443</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13295.3480319999</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13693.7793457218</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14088.6029722081</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14479.8975289272</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14574.8914414137</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14443.7810911297</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14313.8379781655</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14185.0762636808</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14057.4605690088</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13930.9917804676</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13805.6744191389</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13681.4719897321</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13558.3994684353</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13436.4216359091</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13315.5401698665</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13195.759783558</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13077.0444247551</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12959.4096699771</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12842.8206277526</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12727.2794505212</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12612.7913419141</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12499.3206432967</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12386.883343073</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12275.4450217185</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12165.008201588</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12055.578490011</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11947.120748287</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11839.6512140499</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11733.13605989</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11627.5781009907</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11522.9832454805</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11419.3169923071</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11316.5822996794</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11214.7852137058</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11113.8916624402</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11013.9180045409</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10914.8315542435</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10816.63546055</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10719.335938903</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10622.899695037</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10527.3430239759</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10432.6340436745</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10338.7760424553</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10245.7753405672</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10153.5994828699</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10062.2646167812</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9971.7397125491</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9882.02815470835</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9793.1363150865</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9705.03262234702</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9617.73300875841</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9531.20733090777</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9445.45903377181</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9360.49449708598</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9276.28306389174</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9192.84039774598</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9110.1372634563</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9028.17567313519</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8946.96491959382</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8866.47380205861</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8786.71767350955</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8707.66821888138</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8629.32752278035</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8551.70468925129</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8474.76952660676</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8398.53704501496</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8322.97985342703</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8248.10010400302</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8173.90665865465</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8100.37035172091</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8027.50582615071</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7955.28661248291</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7883.71492302954</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7812.79934084331</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7742.51173123599</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7672.86635181473</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7603.83764739801</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7535.42788081198</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7467.64533350608</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7400.46289699811</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7333.89443043042</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7267.91528190003</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7202.52775343233</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7137.73981316149</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7073.5253665777</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7009.8978651888</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6946.83354662927</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6884.33473976691</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6822.4090959883</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6761.03151703852</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6700.2150407456</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6639.93677854331</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6580.19994617872</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6521.01012724577</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6462.34407894642</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6404.2144218703</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6346.59912407272</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6289.50132639516</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6232.92645775844</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6176.85214905004</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6121.29060246299</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6066.22062329729</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>6011.6452736423</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5957.56982391155</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5903.97275396785</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5850.86585644613</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5798.22874569194</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5746.06440801607</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5694.37794896144</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5643.14867725296</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5592.38797794477</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5542.07625617034</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5492.21641747268</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5442.8133993958</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5393.8473211953</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5345.32916123848</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5297.24009732196</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5249.58295012682</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5202.36248712217</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5155.55961900242</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5109.18491977694</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5063.2203211154</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>5017.66855557232</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4972.53421945701</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4927.79899511454</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4883.47305587068</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4839.53906786341</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4795.9996730395</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4752.85929640232</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4710.10037150723</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4667.73267594613</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4625.73959034208</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4584.12366429959</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4542.88915225797</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4502.01921793011</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4461.52324933316</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4421.38532104972</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4381.60788931922</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4342.19503959231</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4303.13064412144</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4264.42370864455</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4226.05898068197</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4188.03882275869</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4150.36715368403</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4113.02853212806</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4076.03158989558</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4039.36172598781</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>4003.02120949499</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3967.0137956343</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3931.32470694615</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3895.96221059723</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3860.91233525608</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3826.17725743532</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3791.76057243268</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3757.64814378205</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3723.84788413922</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3690.3464297641</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3657.14586596812</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3624.24963233997</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3591.64421031143</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3559.33163132544</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3527.30957883727</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3495.57555572514</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3464.12682601363</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3432.96681181268</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3402.08225907885</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3371.47509383497</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3341.14312175522</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3311.08397737917</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3281.30059224091</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3251.78049922115</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3222.52553919838</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3193.53361473584</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3164.80246473959</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3136.33488888193</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3108.11897446637</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3080.15647997184</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3052.44540056143</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>3024.98357488745</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2997.77367588586</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2970.80432218132</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2944.07719279609</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2917.59037139875</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2891.34179198231</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2865.33400598137</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2839.5561406489</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2814.00979862942</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2788.69314818784</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2763.6042144546</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2738.74543263027</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2714.10641642029</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2689.68837957728</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2665.48970522741</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2641.50818419909</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2617.74766055337</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2594.197195977</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2570.8579412599</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2547.72834818958</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2524.80632102527</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2502.09553490494</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2479.58553002022</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2457.27739756174</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2435.16965474648</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2413.26031418441</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2391.55288865269</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2370.03737620257</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2348.71481182056</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2327.58377512966</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2306.64238192018</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2285.89398900834</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2265.32903254601</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2244.94849467953</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2224.75101461832</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2204.73480610193</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2184.90307625476</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2165.24668041826</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2145.76655117742</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2126.46138470052</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2107.32948743391</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2088.37392296341</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2069.58594771599</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2050.96644786509</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2032.51417408581</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>2014.22752033826</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1996.10574870179</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1978.15064734803</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1960.35429131129</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1942.717514997</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1925.23913147156</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1907.91763302203</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1890.75578852362</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1873.74567678788</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1856.88809213219</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1840.18189725942</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1823.62566103039</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1807.22202763639</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1790.96342400499</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1774.85060692413</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1758.88248671588</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1743.05770418451</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1727.3787844092</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1711.83848730492</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1696.43753448287</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1681.1748819671</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1666.04923814328</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1651.06301436504</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1636.20928903363</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1621.48875073385</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1606.90039936164</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1592.44300681037</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1578.11887589456</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1563.92138960374</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1549.85120545353</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1535.90736545855</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1522.08870124097</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1508.39741205253</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1494.82717215387</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1481.37860976888</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1468.05080734688</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1454.84265274954</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1441.75624642693</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1428.78554115406</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1415.93113747647</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1403.19215665767</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1390.56753958543</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1378.05929245365</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1365.66163433571</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1353.37513956509</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1341.19896665843</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1329.13210657242</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1317.17647557804</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1305.32654735287</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1293.58287135435</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1281.94464184783</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1270.41089713536</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1258.983467692</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1247.65707060845</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1236.43223168825</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1225.30817949539</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1214.28399716387</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1203.3614333014</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1192.53543770538</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1181.80651364855</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1171.17392259631</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1160.63679018829</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1150.19678690395</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1139.8490850072</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1129.59416627753</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1119.43132373584</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1109.35972336695</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1099.38096108108</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1089.49042181636</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1079.68856682275</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1069.97471938076</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1060.3480838069</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1050.81018483023</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1041.35661070073</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1031.98780303874</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1022.70311413735</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1013.50178476132</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>1004.38527168505</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>995.349357519944</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>986.394465101466</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>977.519974535584</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>968.725161267951</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>960.011417191619</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>951.374710723658</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>942.815446711201</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>934.333031919528</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47">
+        <compositeValue indexValue="Ce">
+          <atomicValue>925.926774811642</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>917.598005327753</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>909.342869512358</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>901.161754978523</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>893.054094041929</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>885.019226613195</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>877.05842347095</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>869.168000469929</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>861.348328705898</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>853.598864979264</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48">
+        <compositeValue indexValue="Ce">
+          <atomicValue>845.918979163847</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>838.309885537892</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>830.768062294256</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>823.293864694593</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>815.886773000146</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>808.546185641737</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>801.273262935051</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>794.064638268673</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>786.920651722898</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>779.840806036268</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49">
+        <compositeValue indexValue="Ce">
+          <atomicValue>772.824526862647</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>765.87292297585</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>758.98277613277</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>752.154411857243</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>745.387354420488</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>738.681055432602</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>732.036574434922</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>725.450835026112</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>718.924148772659</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>712.456060571369</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50">
+        <compositeValue indexValue="Ce">
+          <atomicValue>706.046046784513</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>699.695119924545</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>693.400339192741</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>687.162002773276</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>680.979675317619</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>674.852856795074</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>668.782514792149</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>662.765838148097</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>656.803112217151</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>650.893920569351</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51">
+        <compositeValue indexValue="Ce">
+          <atomicValue>645.037785691417</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>639.235632251052</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>633.484773023093</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>627.785481062704</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>622.137358055969</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>616.539947969867</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>610.994134469215</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>605.497348812599</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>600.049852266491</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>594.651263862812</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52">
+        <compositeValue indexValue="Ce">
+          <atomicValue>589.301148061319</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>584.000349352971</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>578.746412267677</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>573.539586773963</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>568.379508510511</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>563.265761489482</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>558.199152774213</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>553.1773351823</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>548.200547856201</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>543.268442332267</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53">
+        <compositeValue indexValue="Ce">
+          <atomicValue>538.380621279403</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>533.53785600065</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>528.737902836333</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>523.980990556539</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>519.266785915062</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>514.594909384373</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>509.966098099318</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>505.378207367024</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>500.831456021353</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>496.325525381117</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54">
+        <compositeValue indexValue="Ce">
+          <atomicValue>491.860052909551</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>487.435743093675</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>483.050545851319</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>478.704670499311</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>474.397812295824</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>470.12962492043</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>465.900781664291</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>461.709322890894</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>457.555448802829</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>453.438867997737</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55">
+        <compositeValue indexValue="Ce">
+          <atomicValue>449.359249633594</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>445.317237192422</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>441.310957501005</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>437.340602034625</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>433.405892155302</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>429.506511796179</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>425.643075954617</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>421.813794113019</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>418.018849390952</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>414.257975363584</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56">
+        <compositeValue indexValue="Ce">
+          <atomicValue>410.530870068994</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>406.838121284973</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>403.178017508905</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>399.550733861407</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>395.956015602527</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>392.393574236418</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>388.863971529732</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>385.365571513953</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>381.898541653163</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>378.462638386108</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57">
+        <compositeValue indexValue="Ce">
+          <atomicValue>375.057586074002</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>371.683921626706</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>368.340081281696</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>365.026225175088</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>361.742120439375</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>358.487503712191</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>355.26288814936</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>352.066779012342</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>348.899329424473</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>345.760316747458</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58">
+        <compositeValue indexValue="Ce">
+          <atomicValue>342.649489341707</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>339.567337662494</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>336.51243295299</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>333.484921626027</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>330.484590827603</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>327.511200112933</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>324.565218243208</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>321.645279534674</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>318.751523979473</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>315.88374808183</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59">
+        <compositeValue indexValue="Ce">
+          <atomicValue>313.041722088216</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>310.225894027316</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>307.434958507616</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>304.669049378383</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>301.927972094098</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>299.211507112178</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>296.520082647523</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>293.85245094225</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>291.208739968991</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>288.588763741902</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60">
+        <compositeValue indexValue="Ce">
+          <atomicValue>285.992312471142</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>283.419795435628</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>280.870019969386</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>278.343108423513</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>275.838882997946</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>273.357143218425</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>270.89828026661</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>268.461154138496</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>266.045881808028</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>263.652293303041</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61">
+        <compositeValue indexValue="Ce">
+          <atomicValue>261.280197047723</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>258.929966927893</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>256.600513278469</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>254.291947930315</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>252.004108396642</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>249.736811602026</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>247.490414902221</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>245.263876750248</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>243.057304058049</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>240.870541496424</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62">
+        <compositeValue indexValue="Ce">
+          <atomicValue>238.703414110428</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>236.556263457502</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>234.428093985696</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>232.319007902657</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>230.228856723126</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>228.157473250019</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>226.105183941705</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>224.071037211665</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>222.055130768728</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>220.057322671471</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63">
+        <compositeValue indexValue="Ce">
+          <atomicValue>218.077453134524</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>216.115834185383</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>214.171556262735</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>212.244712773284</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>210.335168032322</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>208.442769335744</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>206.567814918705</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>204.709435390345</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>202.867720043494</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>201.042539175485</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64">
+        <compositeValue indexValue="Ce">
+          <atomicValue>199.233746847982</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>197.441265150004</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>195.664843247232</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>193.904445365436</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>192.159879919143</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>190.430983915021</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>188.71769806191</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>187.019793360372</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>185.337233854058</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>183.669809883825</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65">
+        <compositeValue indexValue="Ce">
+          <atomicValue>182.017417578543</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>180.379905760683</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>178.757132489923</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>177.148964367546</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>175.555266182308</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>173.97590988527</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>172.410774287077</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>170.859718246069</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>169.32260744664</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>167.799332892413</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66">
+        <compositeValue indexValue="Ce">
+          <atomicValue>166.289769494828</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>164.793781045634</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>163.311239186915</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>161.842062905097</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>160.386115699088</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>158.943271276022</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>157.51340677805</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>156.096398851505</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>154.692123646908</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>153.300475557774</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67">
+        <compositeValue indexValue="Ce">
+          <atomicValue>151.92138763524</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>150.55470651811</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>149.20031686561</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>147.85810365554</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>146.527952184267</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>145.209748066731</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>143.903411364785</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>142.608837058177</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>141.325904303399</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>140.054507370217</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68">
+        <compositeValue indexValue="Ce">
+          <atomicValue>138.794541457807</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>137.545902694752</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>136.30848837839</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>135.082209588044</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>133.866959154199</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>132.662638551191</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>131.469150324847</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>130.286398092484</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>129.114286542914</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>127.952717927427</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69">
+        <compositeValue indexValue="Ce">
+          <atomicValue>126.801593780545</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>125.660824819426</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>124.530318733678</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>123.409984175812</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>122.299730761238</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>121.199469068268</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>120.109102016532</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>119.028542804558</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>117.957705412124</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>116.896502747948</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70">
+        <compositeValue indexValue="Ce">
+          <atomicValue>115.844848559077</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>114.802657430881</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>113.769844060147</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>112.746319734757</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>111.732003935726</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>110.72681386758</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>109.73066750981</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>108.743483616876</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>107.765181718204</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>106.795680880959</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71">
+        <compositeValue indexValue="Ce">
+          <atomicValue>105.834901302068</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>104.882765369148</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>103.939195376466</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>103.004114365256</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>102.077446123714</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>101.159115186997</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>100.249044469303</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>99.3471607623925</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>98.4533907135305</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>97.5676614951276</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72">
+        <compositeValue indexValue="Ce">
+          <atomicValue>96.6899009981451</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>95.8200378320951</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>94.9579991645411</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>94.1037090119571</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>93.257101621412</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>92.4181076832058</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>91.5866586008013</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>90.7626864999697</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>89.9461242379378</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>89.1369054125333</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73">
+        <compositeValue indexValue="Ce">
+          <atomicValue>88.3349643713316</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>87.5402362208021</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>86.7526568354538</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>85.9721628669825</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>85.1986917534162</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>84.4321817282616</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>83.6725718296508</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>82.9198019094867</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>82.17381264259</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>81.4345249362078</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74">
+        <compositeValue indexValue="Ce">
+          <atomicValue>80.7018808860824</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>79.9758295555836</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>79.2563120131652</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>78.5432698593391</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>77.8366452189683</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>77.1363807335604</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>76.4424195535622</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>75.7547053306521</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>75.073182210035</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>74.3977900184189</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75">
+        <compositeValue indexValue="Ce">
+          <atomicValue>73.7284756712224</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>73.0651848956825</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>72.4078631875207</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>71.7564564399219</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>71.1109109331708</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>70.4711733242906</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>69.8371906366811</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>69.2089102497555</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>68.5862804129691</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>67.9692602120837</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76">
+        <compositeValue indexValue="Ce">
+          <atomicValue>67.3577915610581</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>66.7518242007634</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>66.1513082892601</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>65.5561943966921</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>64.9664335001803</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>64.381976978716</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>63.8027766080557</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>63.2287845556137</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>62.6599549934454</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>62.0962459653799</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77">
+        <compositeValue indexValue="Ce">
+          <atomicValue>61.5376074476479</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>60.9839938067599</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>60.4353598485243</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>59.8916608162886</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>59.3528523891797</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>58.8188906803461</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>58.289732235198</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>57.7653340296491</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>57.2456525656092</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>56.7306447895359</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78">
+        <compositeValue indexValue="Ce">
+          <atomicValue>56.2202696889225</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>55.714485734497</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>55.2132517965109</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>54.716527141975</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>54.2242714318936</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>53.7364447185007</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>53.2530074424942</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>52.7739204302716</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>52.2991425387136</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>51.8286350496918</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79">
+        <compositeValue indexValue="Ce">
+          <atomicValue>51.3623606825211</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>50.9002814066592</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>50.4423595244968</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>49.988557666842</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>49.5388387884052</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>49.0931661632843</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>48.6515033804486</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>48.2138143392241</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>47.7800635636185</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>47.3502154571972</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80">
+        <compositeValue indexValue="Ce">
+          <atomicValue>46.9242348047462</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>46.5020867397586</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>46.0837366874305</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>45.6691503603199</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>45.2582937540068</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>44.8511331427523</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>44.4476350751585</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>44.0477664319898</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>43.6514971992733</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>43.2587930393914</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81">
+        <compositeValue indexValue="Ce">
+          <atomicValue>42.8696218181526</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>42.4839516825587</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>42.1017510577843</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>41.7229886441565</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>41.3476334141337</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>40.9756546092851</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>40.6070217372699</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>40.2417048947145</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>39.8796753505731</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>39.5209026005007</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82">
+        <compositeValue indexValue="Ce">
+          <atomicValue>39.1653573422922</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>38.8130105414545</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>38.4638334289523</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>38.1177974989533</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>37.774874506574</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>37.4350364656247</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>37.0982556463552</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>36.7645045032744</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>36.4337557307987</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>36.1059824192654</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83">
+        <compositeValue indexValue="Ce">
+          <atomicValue>35.7811578247324</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>35.459255446579</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>35.1402490251678</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>34.8241125395063</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>34.5108202049083</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>34.2003464706562</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>33.892666017662</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>33.5877534161243</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>33.2855837619335</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>32.98613257106</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84">
+        <compositeValue indexValue="Ce">
+          <atomicValue>32.6893753974511</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>32.3952880138901</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>32.1038464097307</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>31.8150267886295</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>31.5288055662796</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>31.2451593681438</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>30.9640650271876</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>30.6854995816127</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>30.4094402725906</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>30.1358645419951</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85">
+        <compositeValue indexValue="Ce">
+          <atomicValue>29.864750030136</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>29.5960745734924</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>29.329816283671</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>29.0659542298756</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>28.8044661725743</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>28.5453307471048</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>28.2885267760316</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>28.0340332669311</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>27.7818294101763</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>27.5318945767223</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86">
+        <compositeValue indexValue="Ce">
+          <atomicValue>27.2842083158912</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>27.0387503531569</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>26.7955005879305</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>26.5544390913452</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>26.3155461040415</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>26.0788020339521</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>25.8441874540868</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>25.6116831003178</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>25.3812717401782</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>25.1529346241888</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87">
+        <compositeValue indexValue="Ce">
+          <atomicValue>24.9266518886295</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>24.7024050255226</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>24.4801756873383</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>24.2599456850303</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>24.0416969860691</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>23.8254117124778</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>23.6110721388655</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>23.3986606904626</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>23.1881599411548</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>22.9795526115181</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88">
+        <compositeValue indexValue="Ce">
+          <atomicValue>22.772821566853</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>22.5679498152191</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>22.3649205054696</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>22.1637171588514</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>21.9643269809383</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>21.7667306493714</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>21.5709120055702</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>21.37685503239</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>21.1845438524734</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>20.9939627266011</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89">
+        <compositeValue indexValue="Ce">
+          <atomicValue>20.8050960520425</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>20.6179283609068</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>20.432444318494</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>20.2486287216456</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>20.0664664970957</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>19.8859426998219</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>19.7070425113958</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>19.5297512383344</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>19.354054310451</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>19.1799389395263</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90">
+        <compositeValue indexValue="Ce">
+          <atomicValue>19.0073911480147</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>18.8363956391513</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>18.6669384378091</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>18.4990056920731</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>18.3325836718331</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>18.1676587673785</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>18.004217487992</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>17.8422464605432</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>17.6817324280831</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>17.5226622484375</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91">
+        <compositeValue indexValue="Ce">
+          <atomicValue>17.3650228928016</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>17.208801444333</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>17.0539850967467</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>16.9005611529082</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>16.7485170856668</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>16.5978424394922</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>16.4485233224775</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>16.3005475359457</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>16.1539029886794</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>16.0085776956762</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92">
+        <compositeValue indexValue="Ce">
+          <atomicValue>15.8645597769037</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>15.7218374560556</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>15.5803990593066</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>15.440233014068</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>15.301327847743</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>15.1636721864826</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>15.0272547539401</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14.8920643700275</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14.7580899496704</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14.6253205015632</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14.4937460258465</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14.3633560137061</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14.2341390799016</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>14.1060846636903</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13.9791822965647</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13.8534216011475</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13.728792290087</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13.6052841649522</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13.4828871151281</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13.3615911167105</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13.2413862314018</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13.1222626054055</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>13.004210468322</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12.8872201320435</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12.771281989649</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12.6563865195321</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12.5425262161799</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12.4296902866327</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12.3178695069357</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12.2070547336738</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95">
+        <compositeValue indexValue="Ce">
+          <atomicValue>12.0972369030149</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11.9884070297526</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11.8805562063488</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11.773675601977</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11.6677564615647</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11.5627901048364</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11.4587679253566</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11.3556813895722</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11.2535220358557</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11.1522814735478</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96">
+        <compositeValue indexValue="Ce">
+          <atomicValue>11.0519513820007</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10.9525243490099</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10.8539925839202</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10.756347263472</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10.6595804049582</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10.5636840955592</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10.4686504915249</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10.3744718173566</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10.2811403649888</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10.1886484929713</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10.0969886256513</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>10.0061532523549</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9.91613492656918</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9.82692626512432</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9.73851994737529</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9.65090871438395</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9.56408536810082</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9.47804419785388</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9.39277712656867</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9.30827715137584</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9.22453736541953</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9.1415509224294</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>9.05931103601393</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.97781097895379</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.89704408249503</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.81700373564252</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.73768338445314</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.65907653132912</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.58117673431137</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.50397760637274</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.42747281471138</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.1">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.35165608004397</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.2">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.27652166727946</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.3">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.20206370746373</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.4">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.12827560862002</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.5">
+        <compositeValue indexValue="Ce">
+          <atomicValue>8.05515134064057</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.6">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7.98268492631996</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.7">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7.91087044073562</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.8">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7.83970201062825</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.9">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7.76917381378215</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="100">
+        <compositeValue indexValue="Ce">
+          <atomicValue>7.69928007840574</atomicValue>
+        </compositeValue>
+      </compositeValue>
+    </dimension>
+  </resultComponent>
+</numl>
