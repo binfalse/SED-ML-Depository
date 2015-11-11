@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000303.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_1" name="CRP">
+      <listOfVariables>
+        <variable id="CRP" name="CRP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PC_1" name="PC">
+      <listOfVariables>
+        <variable id="PC" name="PC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PC_CRP_1" name="PC_CRP">
+      <listOfVariables>
+        <variable id="PC_CRP" name="PC_CRP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PC_CRP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PC_CRP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4_1" name="C4">
+      <listOfVariables>
+        <variable id="C4" name="C4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4a_1" name="C4a">
+      <listOfVariables>
+        <variable id="C4a" name="C4a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4b_1" name="C4b">
+      <listOfVariables>
+        <variable id="C4b" name="C4b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C2_1" name="C2">
+      <listOfVariables>
+        <variable id="C2" name="C2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C1_1" name="C1">
+      <listOfVariables>
+        <variable id="C1" name="C1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PC_CRP_C1_1" name="PC_CRP_C1">
+      <listOfVariables>
+        <variable id="PC_CRP_C1" name="PC_CRP_C1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PC_CRP_C1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PC_CRP_C1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C2a_1" name="C2a">
+      <listOfVariables>
+        <variable id="C2a" name="C2a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C2a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C2a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C2b_1" name="C2b">
+      <listOfVariables>
+        <variable id="C2b" name="C2b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C2b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C2b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4b_C2a_1" name="C4b_C2a">
+      <listOfVariables>
+        <variable id="C4b_C2a" name="C4b_C2a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4b_C2a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4b_C2a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3_1" name="C3">
+      <listOfVariables>
+        <variable id="C3" name="C3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3a_1" name="C3a">
+      <listOfVariables>
+        <variable id="C3a" name="C3a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C3b_1" name="C3b">
+      <listOfVariables>
+        <variable id="C3b" name="C3b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C3b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C3b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dC3b_1" name="dC3b">
+      <listOfVariables>
+        <variable id="dC3b" name="dC3b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dC3b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dC3b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MASP_1" name="MASP">
+      <listOfVariables>
+        <variable id="MASP" name="MASP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MASP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MASP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dC4b_C2a_1" name="dC4b_C2a">
+      <listOfVariables>
+        <variable id="dC4b_C2a" name="dC4b_C2a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dC4b_C2a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dC4b_C2a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GlcNac_1" name="GlcNac">
+      <listOfVariables>
+        <variable id="GlcNac" name="GlcNac" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GlcNac']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GlcNac </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GlcNac_LF_1" name="GlcNac_LF">
+      <listOfVariables>
+        <variable id="GlcNac_LF" name="GlcNac_LF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GlcNac_LF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GlcNac_LF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LF_1" name="LF">
+      <listOfVariables>
+        <variable id="LF" name="LF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GlcNac_LF_MASP_1" name="GlcNac_LF_MASP">
+      <listOfVariables>
+        <variable id="GlcNac_LF_MASP" name="GlcNac_LF_MASP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GlcNac_LF_MASP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GlcNac_LF_MASP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PC_CRP_LF_1" name="PC_CRP_LF">
+      <listOfVariables>
+        <variable id="PC_CRP_LF" name="PC_CRP_LF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PC_CRP_LF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PC_CRP_LF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PC_CRP_LF_MASP_1" name="PC_CRP_LF_MASP">
+      <listOfVariables>
+        <variable id="PC_CRP_LF_MASP" name="PC_CRP_LF_MASP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PC_CRP_LF_MASP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PC_CRP_LF_MASP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GlcNac_LF_CRP_1" name="GlcNac_LF_CRP">
+      <listOfVariables>
+        <variable id="GlcNac_LF_CRP" name="GlcNac_LF_CRP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GlcNac_LF_CRP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GlcNac_LF_CRP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GlcNac_LF_CRP_C1_1" name="GlcNac_LF_CRP_C1">
+      <listOfVariables>
+        <variable id="GlcNac_LF_CRP_C1" name="GlcNac_LF_CRP_C1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GlcNac_LF_CRP_C1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GlcNac_LF_CRP_C1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4BP_1" name="C4BP">
+      <listOfVariables>
+        <variable id="C4BP" name="C4BP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4BP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4BP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4BP_PC_CRP_1" name="C4BP_PC_CRP">
+      <listOfVariables>
+        <variable id="C4BP_PC_CRP" name="C4BP_PC_CRP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4BP_PC_CRP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4BP_PC_CRP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4BP_GlcNac_LF_CRP_1" name="C4BP_GlcNac_LF_CRP">
+      <listOfVariables>
+        <variable id="C4BP_GlcNac_LF_CRP" name="C4BP_GlcNac_LF_CRP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4BP_GlcNac_LF_CRP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4BP_GlcNac_LF_CRP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="iC4b_C2a_1" name="iC4b_C2a">
+      <listOfVariables>
+        <variable id="iC4b_C2a" name="iC4b_C2a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='iC4b_C2a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> iC4b_C2a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4BP_C4b_1" name="C4BP_C4b">
+      <listOfVariables>
+        <variable id="C4BP_C4b" name="C4BP_C4b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4BP_C4b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4BP_C4b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4b_C2a_C4BP_1" name="C4b_C2a_C4BP">
+      <listOfVariables>
+        <variable id="C4b_C2a_C4BP" name="C4b_C2a_C4BP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4b_C2a_C4BP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4b_C2a_C4BP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dC4b_C2a_C4BP_1" name="dC4b_C2a_C4BP">
+      <listOfVariables>
+        <variable id="dC4b_C2a_C4BP" name="dC4b_C2a_C4BP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dC4b_C2a_C4BP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dC4b_C2a_C4BP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PC_CRP_LF_C1_1" name="PC_CRP_LF_C1">
+      <listOfVariables>
+        <variable id="PC_CRP_LF_C1" name="PC_CRP_LF_C1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PC_CRP_LF_C1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PC_CRP_LF_C1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4BP_PC_CRP_LF_1" name="C4BP_PC_CRP_LF">
+      <listOfVariables>
+        <variable id="C4BP_PC_CRP_LF" name="C4BP_PC_CRP_LF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4BP_PC_CRP_LF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4BP_PC_CRP_LF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GlcNac_LF_CRP_MASP_1" name="GlcNac_LF_CRP_MASP">
+      <listOfVariables>
+        <variable id="GlcNac_LF_CRP_MASP" name="GlcNac_LF_CRP_MASP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GlcNac_LF_CRP_MASP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GlcNac_LF_CRP_MASP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PC_CRP_LF_C1_MASP_1" name="PC_CRP_LF_C1_MASP">
+      <listOfVariables>
+        <variable id="PC_CRP_LF_C1_MASP" name="PC_CRP_LF_C1_MASP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PC_CRP_LF_C1_MASP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PC_CRP_LF_C1_MASP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GlcNac_LF_C1_MASP_1" name="GlcNac_LF_C1_MASP">
+      <listOfVariables>
+        <variable id="GlcNac_LF_C1_MASP" name="GlcNac_LF_C1_MASP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GlcNac_LF_C1_MASP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GlcNac_LF_C1_MASP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GlcNac_HF_1" name="GlcNac_HF">
+      <listOfVariables>
+        <variable id="GlcNac_HF" name="GlcNac_HF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GlcNac_HF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GlcNac_HF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HF_1" name="HF">
+      <listOfVariables>
+        <variable id="HF" name="HF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GlcNac_HF_MASP_1" name="GlcNac_HF_MASP">
+      <listOfVariables>
+        <variable id="GlcNac_HF_MASP" name="GlcNac_HF_MASP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GlcNac_HF_MASP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GlcNac_HF_MASP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="X_1" name="X">
+      <listOfVariables>
+        <variable id="X" name="X" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='X']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> X </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="CRP_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="PC_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="PC_CRP_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="C4_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="C4a_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="C4b_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="C2_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="C1_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="PC_CRP_C1_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="C2a_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="C2b_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="C4b_C2a_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="C3_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="C3a_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="C3b_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="dC3b_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="MASP_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="dC4b_C2a_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="GlcNac_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="GlcNac_LF_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="LF_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="GlcNac_LF_MASP_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="PC_CRP_LF_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="PC_CRP_LF_MASP_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="GlcNac_LF_CRP_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="GlcNac_LF_CRP_C1_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="C4BP_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="C4BP_PC_CRP_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="C4BP_GlcNac_LF_CRP_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="iC4b_C2a_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="C4BP_C4b_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="C4b_C2a_C4BP_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="dC4b_C2a_C4BP_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="PC_CRP_LF_C1_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="C4BP_PC_CRP_LF_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="GlcNac_LF_CRP_MASP_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="PC_CRP_LF_C1_MASP_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="GlcNac_LF_C1_MASP_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="GlcNac_HF_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="HF_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="GlcNac_HF_MASP_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="X_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="CRP_1" />
+        <dataSet id="col_2" dataReference="PC_1" />
+        <dataSet id="col_3" dataReference="PC_CRP_1" />
+        <dataSet id="col_4" dataReference="C4_1" />
+        <dataSet id="col_5" dataReference="C4a_1" />
+        <dataSet id="col_6" dataReference="C4b_1" />
+        <dataSet id="col_7" dataReference="C2_1" />
+        <dataSet id="col_8" dataReference="C1_1" />
+        <dataSet id="col_9" dataReference="PC_CRP_C1_1" />
+        <dataSet id="col_10" dataReference="C2a_1" />
+        <dataSet id="col_11" dataReference="C2b_1" />
+        <dataSet id="col_12" dataReference="C4b_C2a_1" />
+        <dataSet id="col_13" dataReference="C3_1" />
+        <dataSet id="col_14" dataReference="C3a_1" />
+        <dataSet id="col_15" dataReference="C3b_1" />
+        <dataSet id="col_16" dataReference="dC3b_1" />
+        <dataSet id="col_17" dataReference="MASP_1" />
+        <dataSet id="col_18" dataReference="dC4b_C2a_1" />
+        <dataSet id="col_19" dataReference="GlcNac_1" />
+        <dataSet id="col_20" dataReference="GlcNac_LF_1" />
+        <dataSet id="col_21" dataReference="LF_1" />
+        <dataSet id="col_22" dataReference="GlcNac_LF_MASP_1" />
+        <dataSet id="col_23" dataReference="PC_CRP_LF_1" />
+        <dataSet id="col_24" dataReference="PC_CRP_LF_MASP_1" />
+        <dataSet id="col_25" dataReference="GlcNac_LF_CRP_1" />
+        <dataSet id="col_26" dataReference="GlcNac_LF_CRP_C1_1" />
+        <dataSet id="col_27" dataReference="C4BP_1" />
+        <dataSet id="col_28" dataReference="C4BP_PC_CRP_1" />
+        <dataSet id="col_29" dataReference="C4BP_GlcNac_LF_CRP_1" />
+        <dataSet id="col_30" dataReference="iC4b_C2a_1" />
+        <dataSet id="col_31" dataReference="C4BP_C4b_1" />
+        <dataSet id="col_32" dataReference="C4b_C2a_C4BP_1" />
+        <dataSet id="col_33" dataReference="dC4b_C2a_C4BP_1" />
+        <dataSet id="col_34" dataReference="PC_CRP_LF_C1_1" />
+        <dataSet id="col_35" dataReference="C4BP_PC_CRP_LF_1" />
+        <dataSet id="col_36" dataReference="GlcNac_LF_CRP_MASP_1" />
+        <dataSet id="col_37" dataReference="PC_CRP_LF_C1_MASP_1" />
+        <dataSet id="col_38" dataReference="GlcNac_LF_C1_MASP_1" />
+        <dataSet id="col_39" dataReference="GlcNac_HF_1" />
+        <dataSet id="col_40" dataReference="HF_1" />
+        <dataSet id="col_41" dataReference="GlcNac_HF_MASP_1" />
+        <dataSet id="col_42" dataReference="X_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
