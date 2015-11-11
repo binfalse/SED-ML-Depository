@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000350.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="acc_1" name="acc">
+      <listOfVariables>
+        <variable id="acc" name="acc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='acc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> acc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="toc1_mrna_1" name="toc1_mrna">
+      <listOfVariables>
+        <variable id="toc1_mrna" name="toc1_mrna" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='toc1_mrna']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> toc1_mrna </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="toc1_1_1" name="toc1_1">
+      <listOfVariables>
+        <variable id="toc1_1" name="toc1_1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='toc1_1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> toc1_1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="toc1_2_1" name="toc1_2">
+      <listOfVariables>
+        <variable id="toc1_2" name="toc1_2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='toc1_2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> toc1_2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cca1_mrna_1" name="cca1_mrna">
+      <listOfVariables>
+        <variable id="cca1_mrna" name="cca1_mrna" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cca1_mrna']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cca1_mrna </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cca1_c_1" name="cca1_c">
+      <listOfVariables>
+        <variable id="cca1_c" name="cca1_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cca1_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cca1_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cca1_n_1" name="cca1_n">
+      <listOfVariables>
+        <variable id="cca1_n" name="cca1_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cca1_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cca1_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="toc1luc_mrna_1" name="toc1luc_mrna">
+      <listOfVariables>
+        <variable id="toc1luc_mrna" name="toc1luc_mrna" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='toc1luc_mrna']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> toc1luc_mrna </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="toc1luc_1_1" name="toc1luc_1">
+      <listOfVariables>
+        <variable id="toc1luc_1" name="toc1luc_1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='toc1luc_1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> toc1luc_1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="toc1luc_2_1" name="toc1luc_2">
+      <listOfVariables>
+        <variable id="toc1luc_2" name="toc1luc_2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='toc1luc_2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> toc1luc_2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cca1luc_mrna_1" name="cca1luc_mrna">
+      <listOfVariables>
+        <variable id="cca1luc_mrna" name="cca1luc_mrna" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cca1luc_mrna']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cca1luc_mrna </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cca1luc_1" name="cca1luc">
+      <listOfVariables>
+        <variable id="cca1luc" name="cca1luc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cca1luc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cca1luc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="luc_mrna_1" name="luc_mrna">
+      <listOfVariables>
+        <variable id="luc_mrna" name="luc_mrna" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='luc_mrna']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> luc_mrna </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="luc_1" name="luc">
+      <listOfVariables>
+        <variable id="luc" name="luc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='luc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> luc </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="acc_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="toc1_mrna_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="toc1_1_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="toc1_2_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="cca1_mrna_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="cca1_c_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="cca1_n_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="toc1luc_mrna_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="toc1luc_1_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="toc1luc_2_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="cca1luc_mrna_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="cca1luc_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="luc_mrna_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="luc_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="acc_1" />
+        <dataSet id="col_2" dataReference="toc1_mrna_1" />
+        <dataSet id="col_3" dataReference="toc1_1_1" />
+        <dataSet id="col_4" dataReference="toc1_2_1" />
+        <dataSet id="col_5" dataReference="cca1_mrna_1" />
+        <dataSet id="col_6" dataReference="cca1_c_1" />
+        <dataSet id="col_7" dataReference="cca1_n_1" />
+        <dataSet id="col_8" dataReference="toc1luc_mrna_1" />
+        <dataSet id="col_9" dataReference="toc1luc_1_1" />
+        <dataSet id="col_10" dataReference="toc1luc_2_1" />
+        <dataSet id="col_11" dataReference="cca1luc_mrna_1" />
+        <dataSet id="col_12" dataReference="cca1luc_1" />
+        <dataSet id="col_13" dataReference="luc_mrna_1" />
+        <dataSet id="col_14" dataReference="luc_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
