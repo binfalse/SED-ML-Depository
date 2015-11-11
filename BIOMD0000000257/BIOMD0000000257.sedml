@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000257.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STU_1" name="STU">
+      <listOfVariables>
+        <variable id="STU" name="STU" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STU']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STU </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STUS_1" name="STUS">
+      <listOfVariables>
+        <variable id="STUS" name="STUS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STUS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STUS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STUST_1" name="STUST">
+      <listOfVariables>
+        <variable id="STUST" name="STUST" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STUST']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STUST </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STUSU_1" name="STUSU">
+      <listOfVariables>
+        <variable id="STUSU" name="STUSU" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STUSU']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STUSU </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SU_1" name="SU">
+      <listOfVariables>
+        <variable id="SU" name="SU" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SU']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SU </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ST_1" name="ST">
+      <listOfVariables>
+        <variable id="ST" name="ST" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ST']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ST </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SUST_1" name="SUST">
+      <listOfVariables>
+        <variable id="SUST" name="SUST" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SUST']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SUST </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SUSTU_1" name="SUSTU">
+      <listOfVariables>
+        <variable id="SUSTU" name="SUSTU" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SUSTU']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SUSTU </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="STU_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="STUS_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="STUST_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="STUSU_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="SU_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="ST_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="SUST_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="SUSTU_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="STU_1" />
+        <dataSet id="col_2" dataReference="STUS_1" />
+        <dataSet id="col_3" dataReference="STUST_1" />
+        <dataSet id="col_4" dataReference="STUSU_1" />
+        <dataSet id="col_5" dataReference="SU_1" />
+        <dataSet id="col_6" dataReference="ST_1" />
+        <dataSet id="col_7" dataReference="SUST_1" />
+        <dataSet id="col_8" dataReference="SUSTU_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
