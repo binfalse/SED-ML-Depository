@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000198.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="sGCfast_1" name="sGCfast">
+      <listOfVariables>
+        <variable id="sGCfast" name="sGCfast" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='sGCfast']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> sGCfast </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NO_sGCfast_1" name="NO_sGCfast">
+      <listOfVariables>
+        <variable id="NO_sGCfast" name="NO_sGCfast" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NO_sGCfast']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NO_sGCfast </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NO_sGCfast_6coord_1" name="NO_sGCfast_6coord">
+      <listOfVariables>
+        <variable id="NO_sGCfast_6coord" name="NO_sGCfast_6coord" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NO_sGCfast_6coord']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NO_sGCfast_6coord </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NO_sGCfast_5coord_1" name="NO_sGCfast_5coord">
+      <listOfVariables>
+        <variable id="NO_sGCfast_5coord" name="NO_sGCfast_5coord" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NO_sGCfast_5coord']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NO_sGCfast_5coord </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="sGCslow_1" name="sGCslow">
+      <listOfVariables>
+        <variable id="sGCslow" name="sGCslow" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='sGCslow']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> sGCslow </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NO_sGCslow_1" name="NO_sGCslow">
+      <listOfVariables>
+        <variable id="NO_sGCslow" name="NO_sGCslow" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NO_sGCslow']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NO_sGCslow </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NO_sGCslow_6coord_1" name="NO_sGCslow_6coord">
+      <listOfVariables>
+        <variable id="NO_sGCslow_6coord" name="NO_sGCslow_6coord" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NO_sGCslow_6coord']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NO_sGCslow_6coord </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NO_sGCslow_6coord_NO_int_1" name="NO_sGCslow_6coord_NO_int">
+      <listOfVariables>
+        <variable id="NO_sGCslow_6coord_NO_int" name="NO_sGCslow_6coord_NO_int" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NO_sGCslow_6coord_NO_int']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NO_sGCslow_6coord_NO_int </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NO_sGCslow_5coord_1" name="NO_sGCslow_5coord">
+      <listOfVariables>
+        <variable id="NO_sGCslow_5coord" name="NO_sGCslow_5coord" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NO_sGCslow_5coord']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NO_sGCslow_5coord </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NO_sGC_5coord_tot_1" name="NO_sGC_5coord_tot">
+      <listOfVariables>
+        <variable id="NO_sGC_5coord_tot" name="NO_sGC_5coord_tot" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NO_sGC_5coord_tot']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NO_sGC_5coord_tot </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="sGC_inact_tot_1" name="sGC_inact_tot">
+      <listOfVariables>
+        <variable id="sGC_inact_tot" name="sGC_inact_tot" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='sGC_inact_tot']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> sGC_inact_tot </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="sGCfast_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="NO_sGCfast_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="NO_sGCfast_6coord_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="NO_sGCfast_5coord_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="sGCslow_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="NO_sGCslow_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="NO_sGCslow_6coord_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="NO_sGCslow_6coord_NO_int_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="NO_sGCslow_5coord_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="NO_sGC_5coord_tot_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="sGC_inact_tot_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="sGCfast_1" />
+        <dataSet id="col_2" dataReference="NO_sGCfast_1" />
+        <dataSet id="col_3" dataReference="NO_sGCfast_6coord_1" />
+        <dataSet id="col_4" dataReference="NO_sGCfast_5coord_1" />
+        <dataSet id="col_5" dataReference="sGCslow_1" />
+        <dataSet id="col_6" dataReference="NO_sGCslow_1" />
+        <dataSet id="col_7" dataReference="NO_sGCslow_6coord_1" />
+        <dataSet id="col_8" dataReference="NO_sGCslow_6coord_NO_int_1" />
+        <dataSet id="col_9" dataReference="NO_sGCslow_5coord_1" />
+        <dataSet id="col_10" dataReference="NO_sGC_5coord_tot_1" />
+        <dataSet id="col_11" dataReference="sGC_inact_tot_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
