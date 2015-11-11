@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000122.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFAT_Nuc_1" name="NFAT_Nuc">
+      <listOfVariables>
+        <variable id="NFAT_Nuc" name="NFAT_Nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFAT_Nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFAT_Nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Act_C_Nuc_1" name="Act_C_Nuc">
+      <listOfVariables>
+        <variable id="Act_C_Nuc" name="Act_C_Nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Act_C_Nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Act_C_Nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFAT_Pi_Nuc_1" name="NFAT_Pi_Nuc">
+      <listOfVariables>
+        <variable id="NFAT_Pi_Nuc" name="NFAT_Pi_Nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFAT_Pi_Nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFAT_Pi_Nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFAT_Act_C_Nuc_1" name="NFAT_Act_C_Nuc">
+      <listOfVariables>
+        <variable id="NFAT_Act_C_Nuc" name="NFAT_Act_C_Nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFAT_Act_C_Nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFAT_Act_C_Nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFAT_Pi_Act_C_Nuc_1" name="NFAT_Pi_Act_C_Nuc">
+      <listOfVariables>
+        <variable id="NFAT_Pi_Act_C_Nuc" name="NFAT_Pi_Act_C_Nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFAT_Pi_Act_C_Nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFAT_Pi_Act_C_Nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Inact_C_Nuc_1" name="Inact_C_Nuc">
+      <listOfVariables>
+        <variable id="Inact_C_Nuc" name="Inact_C_Nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Inact_C_Nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Inact_C_Nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFAT_Cyt_1" name="NFAT_Cyt">
+      <listOfVariables>
+        <variable id="NFAT_Cyt" name="NFAT_Cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFAT_Cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFAT_Cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Act_C_Cyt_1" name="Act_C_Cyt">
+      <listOfVariables>
+        <variable id="Act_C_Cyt" name="Act_C_Cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Act_C_Cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Act_C_Cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFAT_Pi_Cyt_1" name="NFAT_Pi_Cyt">
+      <listOfVariables>
+        <variable id="NFAT_Pi_Cyt" name="NFAT_Pi_Cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFAT_Pi_Cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFAT_Pi_Cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFAT_Act_C_Cyt_1" name="NFAT_Act_C_Cyt">
+      <listOfVariables>
+        <variable id="NFAT_Act_C_Cyt" name="NFAT_Act_C_Cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFAT_Act_C_Cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFAT_Act_C_Cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFAT_Pi_Act_C_Cyt_1" name="NFAT_Pi_Act_C_Cyt">
+      <listOfVariables>
+        <variable id="NFAT_Pi_Act_C_Cyt" name="NFAT_Pi_Act_C_Cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFAT_Pi_Act_C_Cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFAT_Pi_Act_C_Cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Inact_C_Cyt_1" name="Inact_C_Cyt">
+      <listOfVariables>
+        <variable id="Inact_C_Cyt" name="Inact_C_Cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Inact_C_Cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Inact_C_Cyt </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="NFAT_Nuc_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Act_C_Nuc_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="NFAT_Pi_Nuc_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="NFAT_Act_C_Nuc_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="NFAT_Pi_Act_C_Nuc_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Inact_C_Nuc_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="NFAT_Cyt_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="Act_C_Cyt_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="NFAT_Pi_Cyt_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="NFAT_Act_C_Cyt_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="NFAT_Pi_Act_C_Cyt_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="Inact_C_Cyt_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="NFAT_Nuc_1" />
+        <dataSet id="col_2" dataReference="Act_C_Nuc_1" />
+        <dataSet id="col_3" dataReference="NFAT_Pi_Nuc_1" />
+        <dataSet id="col_4" dataReference="NFAT_Act_C_Nuc_1" />
+        <dataSet id="col_5" dataReference="NFAT_Pi_Act_C_Nuc_1" />
+        <dataSet id="col_6" dataReference="Inact_C_Nuc_1" />
+        <dataSet id="col_7" dataReference="NFAT_Cyt_1" />
+        <dataSet id="col_8" dataReference="Act_C_Cyt_1" />
+        <dataSet id="col_9" dataReference="NFAT_Pi_Cyt_1" />
+        <dataSet id="col_10" dataReference="NFAT_Act_C_Cyt_1" />
+        <dataSet id="col_11" dataReference="NFAT_Pi_Act_C_Cyt_1" />
+        <dataSet id="col_12" dataReference="Inact_C_Cyt_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
