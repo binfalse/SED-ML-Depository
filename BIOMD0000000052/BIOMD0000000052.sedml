@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000052.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Glu_1" name="Glu">
+      <listOfVariables>
+        <variable id="Glu" name="Glu" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Glu']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Glu </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Fru_1" name="Fru">
+      <listOfVariables>
+        <variable id="Fru" name="Fru" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Fru']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Fru </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Formic_acid_1" name="Formic_acid">
+      <listOfVariables>
+        <variable id="Formic_acid" name="Formic_acid" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Formic_acid']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Formic_acid </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Triose_1" name="Triose">
+      <listOfVariables>
+        <variable id="Triose" name="Triose" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Triose']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Triose </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Acetic_acid_1" name="Acetic_acid">
+      <listOfVariables>
+        <variable id="Acetic_acid" name="Acetic_acid" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Acetic_acid']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Acetic_acid </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cn_1" name="Cn">
+      <listOfVariables>
+        <variable id="Cn" name="Cn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Amadori_1" name="Amadori">
+      <listOfVariables>
+        <variable id="Amadori" name="Amadori" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Amadori']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Amadori </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AMP_1" name="AMP">
+      <listOfVariables>
+        <variable id="AMP" name="AMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C5_1" name="C5">
+      <listOfVariables>
+        <variable id="C5" name="C5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="lys_R_1" name="lys_R">
+      <listOfVariables>
+        <variable id="lys_R" name="lys_R" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='lys_R']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> lys_R </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Melanoidin_1" name="Melanoidin">
+      <listOfVariables>
+        <variable id="Melanoidin" name="Melanoidin" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Melanoidin']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Melanoidin </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Glu_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Fru_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Formic_acid_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Triose_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Acetic_acid_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Cn_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="Amadori_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="AMP_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="C5_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="lys_R_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="Melanoidin_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Glu_1" />
+        <dataSet id="col_2" dataReference="Fru_1" />
+        <dataSet id="col_3" dataReference="Formic_acid_1" />
+        <dataSet id="col_4" dataReference="Triose_1" />
+        <dataSet id="col_5" dataReference="Acetic_acid_1" />
+        <dataSet id="col_6" dataReference="Cn_1" />
+        <dataSet id="col_7" dataReference="Amadori_1" />
+        <dataSet id="col_8" dataReference="AMP_1" />
+        <dataSet id="col_9" dataReference="C5_1" />
+        <dataSet id="col_10" dataReference="lys_R_1" />
+        <dataSet id="col_11" dataReference="Melanoidin_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
