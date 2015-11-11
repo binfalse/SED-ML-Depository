@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000162.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PA_D_Cytosol_1" name="PA_D_Cytosol">
+      <listOfVariables>
+        <variable id="PA_D_Cytosol" name="PA_D_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PA_D_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PA_D_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PABCa_D_Cytosol_1" name="PABCa_D_Cytosol">
+      <listOfVariables>
+        <variable id="PABCa_D_Cytosol" name="PABCa_D_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PABCa_D_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PABCa_D_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="h_D_ERM_1" name="h_D_ERM">
+      <listOfVariables>
+        <variable id="h_D_ERM" name="h_D_ERM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='h_D_ERM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> h_D_ERM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PABMg_D_Cytosol_1" name="PABMg_D_Cytosol">
+      <listOfVariables>
+        <variable id="PABMg_D_Cytosol" name="PABMg_D_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PABMg_D_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PABMg_D_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CG_D_Cytosol_1" name="CG_D_Cytosol">
+      <listOfVariables>
+        <variable id="CG_D_Cytosol" name="CG_D_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CG_D_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CG_D_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D28kB_D_Cytosol_1" name="D28kB_D_Cytosol">
+      <listOfVariables>
+        <variable id="D28kB_D_Cytosol" name="D28kB_D_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D28kB_D_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D28kB_D_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PA_Cytosol_1" name="PA_Cytosol">
+      <listOfVariables>
+        <variable id="PA_Cytosol" name="PA_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PA_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PA_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CG_Cytosol_1" name="CG_Cytosol">
+      <listOfVariables>
+        <variable id="CG_Cytosol" name="CG_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CG_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CG_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PABCa_Cytosol_1" name="PABCa_Cytosol">
+      <listOfVariables>
+        <variable id="PABCa_Cytosol" name="PABCa_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PABCa_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PABCa_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D28k_high_Cytosol_1" name="D28k_high_Cytosol">
+      <listOfVariables>
+        <variable id="D28k_high_Cytosol" name="D28k_high_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D28k_high_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D28k_high_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D28k_high_D_Cytosol_1" name="D28k_high_D_Cytosol">
+      <listOfVariables>
+        <variable id="D28k_high_D_Cytosol" name="D28k_high_D_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D28k_high_D_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D28k_high_D_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D28kB_high_D_Cytosol_1" name="D28kB_high_D_Cytosol">
+      <listOfVariables>
+        <variable id="D28kB_high_D_Cytosol" name="D28kB_high_D_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D28kB_high_D_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D28kB_high_D_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CGB_D_Cytosol_1" name="CGB_D_Cytosol">
+      <listOfVariables>
+        <variable id="CGB_D_Cytosol" name="CGB_D_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CGB_D_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CGB_D_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ca_D_Cytosol_1" name="Ca_D_Cytosol">
+      <listOfVariables>
+        <variable id="Ca_D_Cytosol" name="Ca_D_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ca_D_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ca_D_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CGB_Cytosol_1" name="CGB_Cytosol">
+      <listOfVariables>
+        <variable id="CGB_Cytosol" name="CGB_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CGB_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CGB_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D28k_Cytosol_1" name="D28k_Cytosol">
+      <listOfVariables>
+        <variable id="D28k_Cytosol" name="D28k_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D28k_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D28k_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D28kB_high_Cytosol_1" name="D28kB_high_Cytosol">
+      <listOfVariables>
+        <variable id="D28kB_high_Cytosol" name="D28kB_high_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D28kB_high_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D28kB_high_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PABMg_Cytosol_1" name="PABMg_Cytosol">
+      <listOfVariables>
+        <variable id="PABMg_Cytosol" name="PABMg_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PABMg_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PABMg_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IP3_Cytosol_1" name="IP3_Cytosol">
+      <listOfVariables>
+        <variable id="IP3_Cytosol" name="IP3_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IP3_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IP3_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D28k_D_Cytosol_1" name="D28k_D_Cytosol">
+      <listOfVariables>
+        <variable id="D28k_D_Cytosol" name="D28k_D_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D28k_D_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D28k_D_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IP3_D_Cytosol_1" name="IP3_D_Cytosol">
+      <listOfVariables>
+        <variable id="IP3_D_Cytosol" name="IP3_D_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IP3_D_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IP3_D_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ca_Cytosol_1" name="Ca_Cytosol">
+      <listOfVariables>
+        <variable id="Ca_Cytosol" name="Ca_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ca_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ca_Cytosol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="h_ERM_1" name="h_ERM">
+      <listOfVariables>
+        <variable id="h_ERM" name="h_ERM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='h_ERM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> h_ERM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D28kB_Cytosol_1" name="D28kB_Cytosol">
+      <listOfVariables>
+        <variable id="D28kB_Cytosol" name="D28kB_Cytosol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D28kB_Cytosol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D28kB_Cytosol </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="PA_D_Cytosol_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="PABCa_D_Cytosol_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="h_D_ERM_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="PABMg_D_Cytosol_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="CG_D_Cytosol_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="D28kB_D_Cytosol_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="PA_Cytosol_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="CG_Cytosol_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="PABCa_Cytosol_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="D28k_high_Cytosol_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="D28k_high_D_Cytosol_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="D28kB_high_D_Cytosol_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="CGB_D_Cytosol_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Ca_D_Cytosol_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="CGB_Cytosol_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="D28k_Cytosol_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="D28kB_high_Cytosol_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="PABMg_Cytosol_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="IP3_Cytosol_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="D28k_D_Cytosol_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="IP3_D_Cytosol_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="Ca_Cytosol_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="h_ERM_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="D28kB_Cytosol_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="PA_D_Cytosol_1" />
+        <dataSet id="col_2" dataReference="PABCa_D_Cytosol_1" />
+        <dataSet id="col_3" dataReference="h_D_ERM_1" />
+        <dataSet id="col_4" dataReference="PABMg_D_Cytosol_1" />
+        <dataSet id="col_5" dataReference="CG_D_Cytosol_1" />
+        <dataSet id="col_6" dataReference="D28kB_D_Cytosol_1" />
+        <dataSet id="col_7" dataReference="PA_Cytosol_1" />
+        <dataSet id="col_8" dataReference="CG_Cytosol_1" />
+        <dataSet id="col_9" dataReference="PABCa_Cytosol_1" />
+        <dataSet id="col_10" dataReference="D28k_high_Cytosol_1" />
+        <dataSet id="col_11" dataReference="D28k_high_D_Cytosol_1" />
+        <dataSet id="col_12" dataReference="D28kB_high_D_Cytosol_1" />
+        <dataSet id="col_13" dataReference="CGB_D_Cytosol_1" />
+        <dataSet id="col_14" dataReference="Ca_D_Cytosol_1" />
+        <dataSet id="col_15" dataReference="CGB_Cytosol_1" />
+        <dataSet id="col_16" dataReference="D28k_Cytosol_1" />
+        <dataSet id="col_17" dataReference="D28kB_high_Cytosol_1" />
+        <dataSet id="col_18" dataReference="PABMg_Cytosol_1" />
+        <dataSet id="col_19" dataReference="IP3_Cytosol_1" />
+        <dataSet id="col_20" dataReference="D28k_D_Cytosol_1" />
+        <dataSet id="col_21" dataReference="IP3_D_Cytosol_1" />
+        <dataSet id="col_22" dataReference="Ca_Cytosol_1" />
+        <dataSet id="col_23" dataReference="h_ERM_1" />
+        <dataSet id="col_24" dataReference="D28kB_Cytosol_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
