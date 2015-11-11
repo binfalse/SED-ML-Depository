@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000365.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="APC_1" name="APC">
+      <listOfVariables>
+        <variable id="APC" name="APC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='APC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> APC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va_1" name="Va">
+      <listOfVariables>
+        <variable id="Va" name="Va" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va_APC_1" name="Va_APC">
+      <listOfVariables>
+        <variable id="Va_APC" name="Va_APC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va_APC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va_APC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va3_1" name="Va3">
+      <listOfVariables>
+        <variable id="Va3" name="Va3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va3_APC_1" name="Va3_APC">
+      <listOfVariables>
+        <variable id="Va3_APC" name="Va3_APC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va3_APC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va3_APC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va5_1" name="Va5">
+      <listOfVariables>
+        <variable id="Va5" name="Va5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va5_APC_1" name="Va5_APC">
+      <listOfVariables>
+        <variable id="Va5_APC" name="Va5_APC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va5_APC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va5_APC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va53_1" name="Va53">
+      <listOfVariables>
+        <variable id="Va53" name="Va53" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va53']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va53 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va53_APC_1" name="Va53_APC">
+      <listOfVariables>
+        <variable id="Va53_APC" name="Va53_APC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va53_APC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va53_APC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va56_1" name="Va56">
+      <listOfVariables>
+        <variable id="Va56" name="Va56" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va56']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va56 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va56_APC_1" name="Va56_APC">
+      <listOfVariables>
+        <variable id="Va56_APC" name="Va56_APC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va56_APC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va56_APC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va36_1" name="Va36">
+      <listOfVariables>
+        <variable id="Va36" name="Va36" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va36']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va36 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va36_APC_1" name="Va36_APC">
+      <listOfVariables>
+        <variable id="Va36_APC" name="Va36_APC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va36_APC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va36_APC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va536_1" name="Va536">
+      <listOfVariables>
+        <variable id="Va536" name="Va536" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va536']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va536 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Va536_APC_1" name="Va536_APC">
+      <listOfVariables>
+        <variable id="Va536_APC" name="Va536_APC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Va536_APC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Va536_APC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HC_1" name="HC">
+      <listOfVariables>
+        <variable id="HC" name="HC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LC_1" name="LC">
+      <listOfVariables>
+        <variable id="LC" name="LC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HC5_1" name="HC5">
+      <listOfVariables>
+        <variable id="HC5" name="HC5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HC5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HC5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HC3_1" name="HC3">
+      <listOfVariables>
+        <variable id="HC3" name="HC3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HC3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HC3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HC56_1" name="HC56">
+      <listOfVariables>
+        <variable id="HC56" name="HC56" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HC56']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HC56 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HC36_1" name="HC36">
+      <listOfVariables>
+        <variable id="HC36" name="HC36" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HC36']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HC36 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HC536_1" name="HC536">
+      <listOfVariables>
+        <variable id="HC536" name="HC536" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HC536']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HC536 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LC_APC_1" name="LC_APC">
+      <listOfVariables>
+        <variable id="LC_APC" name="LC_APC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LC_APC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LC_APC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HC53_1" name="HC53">
+      <listOfVariables>
+        <variable id="HC53" name="HC53" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HC53']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HC53 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VaA3_1" name="VaA3">
+      <listOfVariables>
+        <variable id="VaA3" name="VaA3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VaA3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VaA3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VaA53_1" name="VaA53">
+      <listOfVariables>
+        <variable id="VaA53" name="VaA53" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VaA53']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VaA53 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VaA36_1" name="VaA36">
+      <listOfVariables>
+        <variable id="VaA36" name="VaA36" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VaA36']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VaA36 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VaA536_1" name="VaA536">
+      <listOfVariables>
+        <variable id="VaA536" name="VaA536" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VaA536']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VaA536 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VaLCA1_1" name="VaLCA1">
+      <listOfVariables>
+        <variable id="VaLCA1" name="VaLCA1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VaLCA1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VaLCA1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VaLCA1_APC_1" name="VaLCA1_APC">
+      <listOfVariables>
+        <variable id="VaLCA1_APC" name="VaLCA1_APC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VaLCA1_APC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VaLCA1_APC </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="APC_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Va_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Va_APC_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Va3_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Va3_APC_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Va5_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="Va5_APC_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="Va53_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="Va53_APC_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="Va56_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="Va56_APC_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="Va36_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="Va36_APC_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Va536_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Va536_APC_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="HC_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="LC_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="HC5_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="HC3_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="HC56_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="HC36_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="HC536_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="LC_APC_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="HC53_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="VaA3_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="VaA53_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="VaA36_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="VaA536_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="VaLCA1_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="VaLCA1_APC_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="APC_1" />
+        <dataSet id="col_2" dataReference="Va_1" />
+        <dataSet id="col_3" dataReference="Va_APC_1" />
+        <dataSet id="col_4" dataReference="Va3_1" />
+        <dataSet id="col_5" dataReference="Va3_APC_1" />
+        <dataSet id="col_6" dataReference="Va5_1" />
+        <dataSet id="col_7" dataReference="Va5_APC_1" />
+        <dataSet id="col_8" dataReference="Va53_1" />
+        <dataSet id="col_9" dataReference="Va53_APC_1" />
+        <dataSet id="col_10" dataReference="Va56_1" />
+        <dataSet id="col_11" dataReference="Va56_APC_1" />
+        <dataSet id="col_12" dataReference="Va36_1" />
+        <dataSet id="col_13" dataReference="Va36_APC_1" />
+        <dataSet id="col_14" dataReference="Va536_1" />
+        <dataSet id="col_15" dataReference="Va536_APC_1" />
+        <dataSet id="col_16" dataReference="HC_1" />
+        <dataSet id="col_17" dataReference="LC_1" />
+        <dataSet id="col_18" dataReference="HC5_1" />
+        <dataSet id="col_19" dataReference="HC3_1" />
+        <dataSet id="col_20" dataReference="HC56_1" />
+        <dataSet id="col_21" dataReference="HC36_1" />
+        <dataSet id="col_22" dataReference="HC536_1" />
+        <dataSet id="col_23" dataReference="LC_APC_1" />
+        <dataSet id="col_24" dataReference="HC53_1" />
+        <dataSet id="col_25" dataReference="VaA3_1" />
+        <dataSet id="col_26" dataReference="VaA53_1" />
+        <dataSet id="col_27" dataReference="VaA36_1" />
+        <dataSet id="col_28" dataReference="VaA536_1" />
+        <dataSet id="col_29" dataReference="VaLCA1_1" />
+        <dataSet id="col_30" dataReference="VaLCA1_APC_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
