@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000147.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBa_mRNA_1" name="IkBa_mRNA">
+      <listOfVariables>
+        <variable id="IkBa_mRNA" name="IkBa_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBa_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBa_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBa_cytoplasm_1" name="IkBa_cytoplasm">
+      <listOfVariables>
+        <variable id="IkBa_cytoplasm" name="IkBa_cytoplasm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBa_cytoplasm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBa_cytoplasm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBa_nucleus_1" name="IkBa_nucleus">
+      <listOfVariables>
+        <variable id="IkBa_nucleus" name="IkBa_nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBa_nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBa_nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBaIKK_1" name="IkBaIKK">
+      <listOfVariables>
+        <variable id="IkBaIKK" name="IkBaIKK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBaIKK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBaIKK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBaNFkB_cytoplasm_1" name="IkBaNFkB_cytoplasm">
+      <listOfVariables>
+        <variable id="IkBaNFkB_cytoplasm" name="IkBaNFkB_cytoplasm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBaNFkB_cytoplasm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBaNFkB_cytoplasm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBaNFkB_nucleus_1" name="IkBaNFkB_nucleus">
+      <listOfVariables>
+        <variable id="IkBaNFkB_nucleus" name="IkBaNFkB_nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBaNFkB_nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBaNFkB_nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBaIKKNFkB_1" name="IkBaIKKNFkB">
+      <listOfVariables>
+        <variable id="IkBaIKKNFkB" name="IkBaIKKNFkB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBaIKKNFkB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBaIKKNFkB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFkB_cytoplasm_1" name="NFkB_cytoplasm">
+      <listOfVariables>
+        <variable id="NFkB_cytoplasm" name="NFkB_cytoplasm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFkB_cytoplasm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFkB_cytoplasm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IKK_1" name="IKK">
+      <listOfVariables>
+        <variable id="IKK" name="IKK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IKK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IKK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFkB_nucleus_1" name="NFkB_nucleus">
+      <listOfVariables>
+        <variable id="NFkB_nucleus" name="NFkB_nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFkB_nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFkB_nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBbIKK_1" name="IkBbIKK">
+      <listOfVariables>
+        <variable id="IkBbIKK" name="IkBbIKK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBbIKK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBbIKK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBbIKKNFkB_1" name="IkBbIKKNFkB">
+      <listOfVariables>
+        <variable id="IkBbIKKNFkB" name="IkBbIKKNFkB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBbIKKNFkB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBbIKKNFkB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBbNFkB_nucleus_1" name="IkBbNFkB_nucleus">
+      <listOfVariables>
+        <variable id="IkBbNFkB_nucleus" name="IkBbNFkB_nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBbNFkB_nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBbNFkB_nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBbNFkB_cytoplasm_1" name="IkBbNFkB_cytoplasm">
+      <listOfVariables>
+        <variable id="IkBbNFkB_cytoplasm" name="IkBbNFkB_cytoplasm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBbNFkB_cytoplasm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBbNFkB_cytoplasm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBb_nucleus_1" name="IkBb_nucleus">
+      <listOfVariables>
+        <variable id="IkBb_nucleus" name="IkBb_nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBb_nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBb_nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBb_cytoplasm_1" name="IkBb_cytoplasm">
+      <listOfVariables>
+        <variable id="IkBb_cytoplasm" name="IkBb_cytoplasm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBb_cytoplasm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBb_cytoplasm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBb_mRNA_1" name="IkBb_mRNA">
+      <listOfVariables>
+        <variable id="IkBb_mRNA" name="IkBb_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBb_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBb_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBe_mRNA_1" name="IkBe_mRNA">
+      <listOfVariables>
+        <variable id="IkBe_mRNA" name="IkBe_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBe_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBe_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBe_cytoplasm_1" name="IkBe_cytoplasm">
+      <listOfVariables>
+        <variable id="IkBe_cytoplasm" name="IkBe_cytoplasm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBe_cytoplasm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBe_cytoplasm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBe_nucleus_1" name="IkBe_nucleus">
+      <listOfVariables>
+        <variable id="IkBe_nucleus" name="IkBe_nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBe_nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBe_nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBeNFkB_cytoplasm_1" name="IkBeNFkB_cytoplasm">
+      <listOfVariables>
+        <variable id="IkBeNFkB_cytoplasm" name="IkBeNFkB_cytoplasm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBeNFkB_cytoplasm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBeNFkB_cytoplasm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBeNFkB_nucleus_1" name="IkBeNFkB_nucleus">
+      <listOfVariables>
+        <variable id="IkBeNFkB_nucleus" name="IkBeNFkB_nucleus" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBeNFkB_nucleus']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBeNFkB_nucleus </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBeIKKNFkB_1" name="IkBeIKKNFkB">
+      <listOfVariables>
+        <variable id="IkBeIKKNFkB" name="IkBeIKKNFkB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBeIKKNFkB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBeIKKNFkB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBeIKK_1" name="IkBeIKK">
+      <listOfVariables>
+        <variable id="IkBeIKK" name="IkBeIKK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBeIKK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBeIKK </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="IkBa_mRNA_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="IkBa_cytoplasm_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="IkBa_nucleus_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="IkBaIKK_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="IkBaNFkB_cytoplasm_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="IkBaNFkB_nucleus_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="IkBaIKKNFkB_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="NFkB_cytoplasm_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="IKK_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="NFkB_nucleus_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="IkBbIKK_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="IkBbIKKNFkB_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="IkBbNFkB_nucleus_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="IkBbNFkB_cytoplasm_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="IkBb_nucleus_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="IkBb_cytoplasm_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="IkBb_mRNA_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="IkBe_mRNA_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="IkBe_cytoplasm_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="IkBe_nucleus_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="IkBeNFkB_cytoplasm_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="IkBeNFkB_nucleus_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="IkBeIKKNFkB_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="IkBeIKK_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="IkBa_mRNA_1" />
+        <dataSet id="col_2" dataReference="IkBa_cytoplasm_1" />
+        <dataSet id="col_3" dataReference="IkBa_nucleus_1" />
+        <dataSet id="col_4" dataReference="IkBaIKK_1" />
+        <dataSet id="col_5" dataReference="IkBaNFkB_cytoplasm_1" />
+        <dataSet id="col_6" dataReference="IkBaNFkB_nucleus_1" />
+        <dataSet id="col_7" dataReference="IkBaIKKNFkB_1" />
+        <dataSet id="col_8" dataReference="NFkB_cytoplasm_1" />
+        <dataSet id="col_9" dataReference="IKK_1" />
+        <dataSet id="col_10" dataReference="NFkB_nucleus_1" />
+        <dataSet id="col_11" dataReference="IkBbIKK_1" />
+        <dataSet id="col_12" dataReference="IkBbIKKNFkB_1" />
+        <dataSet id="col_13" dataReference="IkBbNFkB_nucleus_1" />
+        <dataSet id="col_14" dataReference="IkBbNFkB_cytoplasm_1" />
+        <dataSet id="col_15" dataReference="IkBb_nucleus_1" />
+        <dataSet id="col_16" dataReference="IkBb_cytoplasm_1" />
+        <dataSet id="col_17" dataReference="IkBb_mRNA_1" />
+        <dataSet id="col_18" dataReference="IkBe_mRNA_1" />
+        <dataSet id="col_19" dataReference="IkBe_cytoplasm_1" />
+        <dataSet id="col_20" dataReference="IkBe_nucleus_1" />
+        <dataSet id="col_21" dataReference="IkBeNFkB_cytoplasm_1" />
+        <dataSet id="col_22" dataReference="IkBeNFkB_nucleus_1" />
+        <dataSet id="col_23" dataReference="IkBeIKKNFkB_1" />
+        <dataSet id="col_24" dataReference="IkBeIKK_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
