@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000174.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="r5_1" name="r5">
+      <listOfVariables>
+        <variable id="r5" name="r5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='r5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> r5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R5_1" name="R5">
+      <listOfVariables>
+        <variable id="R5" name="R5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="r7_1" name="r7">
+      <listOfVariables>
+        <variable id="r7" name="r7" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='r7']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> r7 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R7_1" name="R7">
+      <listOfVariables>
+        <variable id="R7" name="R7" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R7']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R7 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="r5_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="R5_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="r7_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="R7_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="r5_1" />
+        <dataSet id="col_2" dataReference="R5_1" />
+        <dataSet id="col_3" dataReference="r7_1" />
+        <dataSet id="col_4" dataReference="R7_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
