@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000199.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FeIII_1" name="FeIII">
+      <listOfVariables>
+        <variable id="FeIII" name="FeIII" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FeIII']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FeIII </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FeII_1" name="FeII">
+      <listOfVariables>
+        <variable id="FeII" name="FeII" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FeII']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FeII </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FeII_O2_1" name="FeII_O2">
+      <listOfVariables>
+        <variable id="FeII_O2" name="FeII_O2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FeII_O2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FeII_O2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FeIII_star_1" name="FeIII_star">
+      <listOfVariables>
+        <variable id="FeIII_star" name="FeIII_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FeIII_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FeIII_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FeII_star_1" name="FeII_star">
+      <listOfVariables>
+        <variable id="FeII_star" name="FeII_star" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FeII_star']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FeII_star </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FeII_star_O2_1" name="FeII_star_O2">
+      <listOfVariables>
+        <variable id="FeII_star_O2" name="FeII_star_O2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FeII_star_O2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FeII_star_O2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FeIII_NO_1" name="FeIII_NO">
+      <listOfVariables>
+        <variable id="FeIII_NO" name="FeIII_NO" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FeIII_NO']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FeIII_NO </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FeII_NO_1" name="FeII_NO">
+      <listOfVariables>
+        <variable id="FeII_NO" name="FeII_NO" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FeII_NO']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FeII_NO </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FeIII_t_1" name="FeIII_t">
+      <listOfVariables>
+        <variable id="FeIII_t" name="FeIII_t" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FeIII_t']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FeIII_t </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="FeIII_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="FeII_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="FeII_O2_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="FeIII_star_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="FeII_star_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="FeII_star_O2_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="FeIII_NO_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="FeII_NO_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="FeIII_t_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="FeIII_1" />
+        <dataSet id="col_2" dataReference="FeII_1" />
+        <dataSet id="col_3" dataReference="FeII_O2_1" />
+        <dataSet id="col_4" dataReference="FeIII_star_1" />
+        <dataSet id="col_5" dataReference="FeII_star_1" />
+        <dataSet id="col_6" dataReference="FeII_star_O2_1" />
+        <dataSet id="col_7" dataReference="FeIII_NO_1" />
+        <dataSet id="col_8" dataReference="FeII_NO_1" />
+        <dataSet id="col_9" dataReference="FeIII_t_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
