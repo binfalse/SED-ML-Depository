@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000023.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Fru_1" name="Fru">
+      <listOfVariables>
+        <variable id="Fru" name="Fru" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Fru']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Fru </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Glc_1" name="Glc">
+      <listOfVariables>
+        <variable id="Glc" name="Glc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Glc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Glc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HexP_1" name="HexP">
+      <listOfVariables>
+        <variable id="HexP" name="HexP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HexP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HexP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Suc6P_1" name="Suc6P">
+      <listOfVariables>
+        <variable id="Suc6P" name="Suc6P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Suc6P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Suc6P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Suc_1" name="Suc">
+      <listOfVariables>
+        <variable id="Suc" name="Suc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Suc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Suc </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Fru_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Glc_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="HexP_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Suc6P_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Suc_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Fru_1" />
+        <dataSet id="col_2" dataReference="Glc_1" />
+        <dataSet id="col_3" dataReference="HexP_1" />
+        <dataSet id="col_4" dataReference="Suc6P_1" />
+        <dataSet id="col_5" dataReference="Suc_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
