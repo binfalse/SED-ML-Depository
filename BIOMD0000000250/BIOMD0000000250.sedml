@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000250.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A1_1" name="A1">
+      <listOfVariables>
+        <variable id="A1" name="A1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A1_2_1" name="A1_2">
+      <listOfVariables>
+        <variable id="A1_2" name="A1_2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A1_2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A1_2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A2_1" name="A2">
+      <listOfVariables>
+        <variable id="A2" name="A2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A2_2_1" name="A2_2">
+      <listOfVariables>
+        <variable id="A2_2" name="A2_2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A2_2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A2_2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A3_1" name="A3">
+      <listOfVariables>
+        <variable id="A3" name="A3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A3_2_1" name="A3_2">
+      <listOfVariables>
+        <variable id="A3_2" name="A3_2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A3_2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A3_2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DUSPmRNA_1" name="DUSPmRNA">
+      <listOfVariables>
+        <variable id="DUSPmRNA" name="DUSPmRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DUSPmRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DUSPmRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK_c_1" name="ERK_c">
+      <listOfVariables>
+        <variable id="ERK_c" name="ERK_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pERK_c_1" name="pERK_c">
+      <listOfVariables>
+        <variable id="pERK_c" name="pERK_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pERK_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pERK_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERK_c_1" name="ppERK_c">
+      <listOfVariables>
+        <variable id="ppERK_c" name="ppERK_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERK_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERK_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F_1" name="F">
+      <listOfVariables>
+        <variable id="F" name="F" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_FOS_c_1" name="c_FOS_c">
+      <listOfVariables>
+        <variable id="c_FOS_c" name="c_FOS_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c_FOS_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c_FOS_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pc_FOS_c_1" name="pc_FOS_c">
+      <listOfVariables>
+        <variable id="pc_FOS_c" name="pc_FOS_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pc_FOS_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pc_FOS_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_FOSmRNA_1" name="c_FOSmRNA">
+      <listOfVariables>
+        <variable id="c_FOSmRNA" name="c_FOSmRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c_FOSmRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c_FOSmRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FmRNA_1" name="FmRNA">
+      <listOfVariables>
+        <variable id="FmRNA" name="FmRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FmRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FmRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Kin_1" name="Kin">
+      <listOfVariables>
+        <variable id="Kin" name="Kin" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Kin']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Kin </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Kin_2_1" name="Kin_2">
+      <listOfVariables>
+        <variable id="Kin_2" name="Kin_2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Kin_2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Kin_2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pMEK_1" name="pMEK">
+      <listOfVariables>
+        <variable id="pMEK" name="pMEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pMEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pMEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MEK_1" name="MEK">
+      <listOfVariables>
+        <variable id="MEK" name="MEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DUSP_c_1" name="DUSP_c">
+      <listOfVariables>
+        <variable id="DUSP_c" name="DUSP_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DUSP_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DUSP_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pDUSP_c_1" name="pDUSP_c">
+      <listOfVariables>
+        <variable id="pDUSP_c" name="pDUSP_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pDUSP_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pDUSP_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RSK_c_1" name="RSK_c">
+      <listOfVariables>
+        <variable id="RSK_c" name="RSK_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RSK_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RSK_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRSK_c_1" name="pRSK_c">
+      <listOfVariables>
+        <variable id="pRSK_c" name="pRSK_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRSK_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRSK_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RsD_1" name="RsD">
+      <listOfVariables>
+        <variable id="RsD" name="RsD" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RsD']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RsD </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RsT_1" name="RsT">
+      <listOfVariables>
+        <variable id="RsT" name="RsT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RsT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RsT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CREB_n_1" name="CREB_n">
+      <listOfVariables>
+        <variable id="CREB_n" name="CREB_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CREB_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CREB_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pCREB_n_1" name="pCREB_n">
+      <listOfVariables>
+        <variable id="pCREB_n" name="pCREB_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pCREB_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pCREB_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK_n_1" name="ERK_n">
+      <listOfVariables>
+        <variable id="ERK_n" name="ERK_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pERK_n_1" name="pERK_n">
+      <listOfVariables>
+        <variable id="pERK_n" name="pERK_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pERK_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pERK_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERK_n_1" name="ppERK_n">
+      <listOfVariables>
+        <variable id="ppERK_n" name="ppERK_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERK_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERK_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Elk1_n_1" name="Elk1_n">
+      <listOfVariables>
+        <variable id="Elk1_n" name="Elk1_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Elk1_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Elk1_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pElk1_n_1" name="pElk1_n">
+      <listOfVariables>
+        <variable id="pElk1_n" name="pElk1_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pElk1_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pElk1_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FOSn_1" name="FOSn">
+      <listOfVariables>
+        <variable id="FOSn" name="FOSn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FOSn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FOSn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FOSn_2_1" name="FOSn_2">
+      <listOfVariables>
+        <variable id="FOSn_2" name="FOSn_2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FOSn_2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FOSn_2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Fn_1" name="Fn">
+      <listOfVariables>
+        <variable id="Fn" name="Fn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Fn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Fn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DUSP_n_1" name="DUSP_n">
+      <listOfVariables>
+        <variable id="DUSP_n" name="DUSP_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DUSP_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DUSP_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pDUSP_n_1" name="pDUSP_n">
+      <listOfVariables>
+        <variable id="pDUSP_n" name="pDUSP_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pDUSP_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pDUSP_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pDUSP_n_ERK_n_1" name="pDUSP_n_ERK_n">
+      <listOfVariables>
+        <variable id="pDUSP_n_ERK_n" name="pDUSP_n_ERK_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pDUSP_n_ERK_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pDUSP_n_ERK_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pDUSP_n_pERK_n_1" name="pDUSP_n_pERK_n">
+      <listOfVariables>
+        <variable id="pDUSP_n_pERK_n" name="pDUSP_n_pERK_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pDUSP_n_pERK_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pDUSP_n_pERK_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pDUSP_n_ppERK_n_1" name="pDUSP_n_ppERK_n">
+      <listOfVariables>
+        <variable id="pDUSP_n_ppERK_n" name="pDUSP_n_ppERK_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pDUSP_n_ppERK_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pDUSP_n_ppERK_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DUSP_n_ERK_n_1" name="DUSP_n_ERK_n">
+      <listOfVariables>
+        <variable id="DUSP_n_ERK_n" name="DUSP_n_ERK_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DUSP_n_ERK_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DUSP_n_ERK_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DUSP_n_pERK_n_1" name="DUSP_n_pERK_n">
+      <listOfVariables>
+        <variable id="DUSP_n_pERK_n" name="DUSP_n_pERK_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DUSP_n_pERK_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DUSP_n_pERK_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DUSP_n_ppERK_n_1" name="DUSP_n_ppERK_n">
+      <listOfVariables>
+        <variable id="DUSP_n_ppERK_n" name="DUSP_n_ppERK_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DUSP_n_ppERK_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DUSP_n_ppERK_n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PreDUSPmRNA_1" name="PreDUSPmRNA">
+      <listOfVariables>
+        <variable id="PreDUSPmRNA" name="PreDUSPmRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PreDUSPmRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PreDUSPmRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PreFOSmRNA_1" name="PreFOSmRNA">
+      <listOfVariables>
+        <variable id="PreFOSmRNA" name="PreFOSmRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PreFOSmRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PreFOSmRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PreFmRNA_1" name="PreFmRNA">
+      <listOfVariables>
+        <variable id="PreFmRNA" name="PreFmRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PreFmRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PreFmRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pRSK_n_1" name="pRSK_n">
+      <listOfVariables>
+        <variable id="pRSK_n" name="pRSK_n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pRSK_n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pRSK_n </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="A1_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="A1_2_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="A2_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="A2_2_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="A3_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="A3_2_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="DUSPmRNA_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="ERK_c_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="pERK_c_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="ppERK_c_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="F_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="c_FOS_c_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="pc_FOS_c_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="c_FOSmRNA_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="FmRNA_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="Kin_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="Kin_2_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="pMEK_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="MEK_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="DUSP_c_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="pDUSP_c_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="RSK_c_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="pRSK_c_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="RsD_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="RsT_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="CREB_n_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="pCREB_n_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="ERK_n_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="pERK_n_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="ppERK_n_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="Elk1_n_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="pElk1_n_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="FOSn_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="FOSn_2_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="Fn_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="DUSP_n_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="pDUSP_n_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="pDUSP_n_ERK_n_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="pDUSP_n_pERK_n_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="pDUSP_n_ppERK_n_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="DUSP_n_ERK_n_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="DUSP_n_pERK_n_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="DUSP_n_ppERK_n_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="PreDUSPmRNA_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="PreFOSmRNA_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="PreFmRNA_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="pRSK_n_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="A1_1" />
+        <dataSet id="col_2" dataReference="A1_2_1" />
+        <dataSet id="col_3" dataReference="A2_1" />
+        <dataSet id="col_4" dataReference="A2_2_1" />
+        <dataSet id="col_5" dataReference="A3_1" />
+        <dataSet id="col_6" dataReference="A3_2_1" />
+        <dataSet id="col_7" dataReference="DUSPmRNA_1" />
+        <dataSet id="col_8" dataReference="ERK_c_1" />
+        <dataSet id="col_9" dataReference="pERK_c_1" />
+        <dataSet id="col_10" dataReference="ppERK_c_1" />
+        <dataSet id="col_11" dataReference="F_1" />
+        <dataSet id="col_12" dataReference="c_FOS_c_1" />
+        <dataSet id="col_13" dataReference="pc_FOS_c_1" />
+        <dataSet id="col_14" dataReference="c_FOSmRNA_1" />
+        <dataSet id="col_15" dataReference="FmRNA_1" />
+        <dataSet id="col_16" dataReference="Kin_1" />
+        <dataSet id="col_17" dataReference="Kin_2_1" />
+        <dataSet id="col_18" dataReference="pMEK_1" />
+        <dataSet id="col_19" dataReference="MEK_1" />
+        <dataSet id="col_20" dataReference="DUSP_c_1" />
+        <dataSet id="col_21" dataReference="pDUSP_c_1" />
+        <dataSet id="col_22" dataReference="RSK_c_1" />
+        <dataSet id="col_23" dataReference="pRSK_c_1" />
+        <dataSet id="col_24" dataReference="RsD_1" />
+        <dataSet id="col_25" dataReference="RsT_1" />
+        <dataSet id="col_26" dataReference="CREB_n_1" />
+        <dataSet id="col_27" dataReference="pCREB_n_1" />
+        <dataSet id="col_28" dataReference="ERK_n_1" />
+        <dataSet id="col_29" dataReference="pERK_n_1" />
+        <dataSet id="col_30" dataReference="ppERK_n_1" />
+        <dataSet id="col_31" dataReference="Elk1_n_1" />
+        <dataSet id="col_32" dataReference="pElk1_n_1" />
+        <dataSet id="col_33" dataReference="FOSn_1" />
+        <dataSet id="col_34" dataReference="FOSn_2_1" />
+        <dataSet id="col_35" dataReference="Fn_1" />
+        <dataSet id="col_36" dataReference="DUSP_n_1" />
+        <dataSet id="col_37" dataReference="pDUSP_n_1" />
+        <dataSet id="col_38" dataReference="pDUSP_n_ERK_n_1" />
+        <dataSet id="col_39" dataReference="pDUSP_n_pERK_n_1" />
+        <dataSet id="col_40" dataReference="pDUSP_n_ppERK_n_1" />
+        <dataSet id="col_41" dataReference="DUSP_n_ERK_n_1" />
+        <dataSet id="col_42" dataReference="DUSP_n_pERK_n_1" />
+        <dataSet id="col_43" dataReference="DUSP_n_ppERK_n_1" />
+        <dataSet id="col_44" dataReference="PreDUSPmRNA_1" />
+        <dataSet id="col_45" dataReference="PreFOSmRNA_1" />
+        <dataSet id="col_46" dataReference="PreFmRNA_1" />
+        <dataSet id="col_47" dataReference="pRSK_n_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
