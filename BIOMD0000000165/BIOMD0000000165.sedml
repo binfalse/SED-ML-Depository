@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000165.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Gsbg_cell_1" name="Gsbg_cell">
+      <listOfVariables>
+        <variable id="Gsbg_cell" name="Gsbg_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Gsbg_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Gsbg_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_cell_1" name="L_cell">
+      <listOfVariables>
+        <variable id="L_cell" name="L_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Gsa_gdp_cell_1" name="Gsa_gdp_cell">
+      <listOfVariables>
+        <variable id="Gsa_gdp_cell" name="Gsa_gdp_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Gsa_gdp_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Gsa_gdp_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Gsa_gtp_cell_1" name="Gsa_gtp_cell">
+      <listOfVariables>
+        <variable id="Gsa_gtp_cell" name="Gsa_gtp_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Gsa_gtp_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Gsa_gtp_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="b1AR_S464_cell_1" name="b1AR_S464_cell">
+      <listOfVariables>
+        <variable id="b1AR_S464_cell" name="b1AR_S464_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='b1AR_S464_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> b1AR_S464_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PDEcAMP_cell_1" name="PDEcAMP_cell">
+      <listOfVariables>
+        <variable id="PDEcAMP_cell" name="PDEcAMP_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PDEcAMP_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PDEcAMP_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PDE_cell_1" name="PDE_cell">
+      <listOfVariables>
+        <variable id="PDE_cell" name="PDE_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PDE_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PDE_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="b1AR_cell_1" name="b1AR_cell">
+      <listOfVariables>
+        <variable id="b1AR_cell" name="b1AR_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='b1AR_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> b1AR_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Gs_cell_1" name="Gs_cell">
+      <listOfVariables>
+        <variable id="Gs_cell" name="Gs_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Gs_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Gs_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A2RC_cell_1" name="A2RC_cell">
+      <listOfVariables>
+        <variable id="A2RC_cell" name="A2RC_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A2RC_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A2RC_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A2R_cell_1" name="A2R_cell">
+      <listOfVariables>
+        <variable id="A2R_cell" name="A2R_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A2R_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A2R_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PKAC_cell_1" name="PKAC_cell">
+      <listOfVariables>
+        <variable id="PKAC_cell" name="PKAC_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PKAC_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PKAC_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARC_cell_1" name="ARC_cell">
+      <listOfVariables>
+        <variable id="ARC_cell" name="ARC_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARC_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARC_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PKAC_AKAR_cell_1" name="PKAC_AKAR_cell">
+      <listOfVariables>
+        <variable id="PKAC_AKAR_cell" name="PKAC_AKAR_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PKAC_AKAR_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PKAC_AKAR_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Propranolol_cell_1" name="Propranolol_cell">
+      <listOfVariables>
+        <variable id="Propranolol_cell" name="Propranolol_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Propranolol_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Propranolol_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="b1ARinhib_cell_1" name="b1ARinhib_cell">
+      <listOfVariables>
+        <variable id="b1ARinhib_cell" name="b1ARinhib_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='b1ARinhib_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> b1ARinhib_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="light_spot_cell_1" name="light_spot_cell">
+      <listOfVariables>
+        <variable id="light_spot_cell" name="light_spot_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='light_spot_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> light_spot_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AC_cell_1" name="AC_cell">
+      <listOfVariables>
+        <variable id="AC_cell" name="AC_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AC_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AC_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PKI_cell_1" name="PKI_cell">
+      <listOfVariables>
+        <variable id="PKI_cell" name="PKI_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PKI_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PKI_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PKAC_PKI_cell_1" name="PKAC_PKI_cell">
+      <listOfVariables>
+        <variable id="PKAC_PKI_cell" name="PKAC_PKI_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PKAC_PKI_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PKAC_PKI_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RC_cell_1" name="RC_cell">
+      <listOfVariables>
+        <variable id="RC_cell" name="RC_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RC_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RC_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="b1AR_Gs_cell_1" name="b1AR_Gs_cell">
+      <listOfVariables>
+        <variable id="b1AR_Gs_cell" name="b1AR_Gs_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='b1AR_Gs_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> b1AR_Gs_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP_cell_1" name="cAMP_cell">
+      <listOfVariables>
+        <variable id="cAMP_cell" name="cAMP_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GsAC_cell_1" name="GsAC_cell">
+      <listOfVariables>
+        <variable id="GsAC_cell" name="GsAC_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GsAC_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GsAC_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IBMX_cell_1" name="IBMX_cell">
+      <listOfVariables>
+        <variable id="IBMX_cell" name="IBMX_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IBMX_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IBMX_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PDE_IBMX_cell_1" name="PDE_IBMX_cell">
+      <listOfVariables>
+        <variable id="PDE_IBMX_cell" name="PDE_IBMX_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PDE_IBMX_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PDE_IBMX_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Fsk_cell_1" name="Fsk_cell">
+      <listOfVariables>
+        <variable id="Fsk_cell" name="Fsk_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Fsk_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Fsk_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FskAC_cell_1" name="FskAC_cell">
+      <listOfVariables>
+        <variable id="FskAC_cell" name="FskAC_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FskAC_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FskAC_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="b1AR_p_cell_1" name="b1AR_p_cell">
+      <listOfVariables>
+        <variable id="b1AR_p_cell" name="b1AR_p_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='b1AR_p_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> b1AR_p_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_b1AR_cell_1" name="L_b1AR_cell">
+      <listOfVariables>
+        <variable id="L_b1AR_cell" name="L_b1AR_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L_b1AR_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L_b1AR_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AKAR_cell_1" name="AKAR_cell">
+      <listOfVariables>
+        <variable id="AKAR_cell" name="AKAR_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AKAR_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AKAR_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AKARp_cell_1" name="AKARp_cell">
+      <listOfVariables>
+        <variable id="AKARp_cell" name="AKARp_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AKARp_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AKARp_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP_cell_1" name="PP_cell">
+      <listOfVariables>
+        <variable id="PP_cell" name="PP_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP_AKARp_cell_1" name="PP_AKARp_cell">
+      <listOfVariables>
+        <variable id="PP_AKARp_cell" name="PP_AKARp_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP_AKARp_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP_AKARp_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DMNB_cAMP_cell_1" name="DMNB_cAMP_cell">
+      <listOfVariables>
+        <variable id="DMNB_cAMP_cell" name="DMNB_cAMP_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DMNB_cAMP_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DMNB_cAMP_cell </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_b1AR_Gs_cell_1" name="L_b1AR_Gs_cell">
+      <listOfVariables>
+        <variable id="L_b1AR_Gs_cell" name="L_b1AR_Gs_cell" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L_b1AR_Gs_cell']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L_b1AR_Gs_cell </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Gsbg_cell_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="L_cell_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Gsa_gdp_cell_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Gsa_gtp_cell_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="b1AR_S464_cell_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="PDEcAMP_cell_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="PDE_cell_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="b1AR_cell_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="Gs_cell_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="A2RC_cell_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="A2R_cell_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="PKAC_cell_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="ARC_cell_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="PKAC_AKAR_cell_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Propranolol_cell_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="b1ARinhib_cell_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="light_spot_cell_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="AC_cell_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="PKI_cell_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="PKAC_PKI_cell_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="RC_cell_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="b1AR_Gs_cell_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="cAMP_cell_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="GsAC_cell_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="IBMX_cell_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="PDE_IBMX_cell_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="Fsk_cell_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="FskAC_cell_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="b1AR_p_cell_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="L_b1AR_cell_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="AKAR_cell_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="AKARp_cell_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="PP_cell_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="PP_AKARp_cell_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="DMNB_cAMP_cell_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="L_b1AR_Gs_cell_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Gsbg_cell_1" />
+        <dataSet id="col_2" dataReference="L_cell_1" />
+        <dataSet id="col_3" dataReference="Gsa_gdp_cell_1" />
+        <dataSet id="col_4" dataReference="Gsa_gtp_cell_1" />
+        <dataSet id="col_5" dataReference="b1AR_S464_cell_1" />
+        <dataSet id="col_6" dataReference="PDEcAMP_cell_1" />
+        <dataSet id="col_7" dataReference="PDE_cell_1" />
+        <dataSet id="col_8" dataReference="b1AR_cell_1" />
+        <dataSet id="col_9" dataReference="Gs_cell_1" />
+        <dataSet id="col_10" dataReference="A2RC_cell_1" />
+        <dataSet id="col_11" dataReference="A2R_cell_1" />
+        <dataSet id="col_12" dataReference="PKAC_cell_1" />
+        <dataSet id="col_13" dataReference="ARC_cell_1" />
+        <dataSet id="col_14" dataReference="PKAC_AKAR_cell_1" />
+        <dataSet id="col_15" dataReference="Propranolol_cell_1" />
+        <dataSet id="col_16" dataReference="b1ARinhib_cell_1" />
+        <dataSet id="col_17" dataReference="light_spot_cell_1" />
+        <dataSet id="col_18" dataReference="AC_cell_1" />
+        <dataSet id="col_19" dataReference="PKI_cell_1" />
+        <dataSet id="col_20" dataReference="PKAC_PKI_cell_1" />
+        <dataSet id="col_21" dataReference="RC_cell_1" />
+        <dataSet id="col_22" dataReference="b1AR_Gs_cell_1" />
+        <dataSet id="col_23" dataReference="cAMP_cell_1" />
+        <dataSet id="col_24" dataReference="GsAC_cell_1" />
+        <dataSet id="col_25" dataReference="IBMX_cell_1" />
+        <dataSet id="col_26" dataReference="PDE_IBMX_cell_1" />
+        <dataSet id="col_27" dataReference="Fsk_cell_1" />
+        <dataSet id="col_28" dataReference="FskAC_cell_1" />
+        <dataSet id="col_29" dataReference="b1AR_p_cell_1" />
+        <dataSet id="col_30" dataReference="L_b1AR_cell_1" />
+        <dataSet id="col_31" dataReference="AKAR_cell_1" />
+        <dataSet id="col_32" dataReference="AKARp_cell_1" />
+        <dataSet id="col_33" dataReference="PP_cell_1" />
+        <dataSet id="col_34" dataReference="PP_AKARp_cell_1" />
+        <dataSet id="col_35" dataReference="DMNB_cAMP_cell_1" />
+        <dataSet id="col_36" dataReference="L_b1AR_Gs_cell_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
