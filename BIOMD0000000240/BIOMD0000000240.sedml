@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000240.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AprE_1" name="AprE">
+      <listOfVariables>
+        <variable id="AprE" name="AprE" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AprE']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AprE </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DegU_1" name="DegU">
+      <listOfVariables>
+        <variable id="DegU" name="DegU" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DegU']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DegU </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DegUP_1" name="DegUP">
+      <listOfVariables>
+        <variable id="DegUP" name="DegUP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DegUP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DegUP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Dim_1" name="Dim">
+      <listOfVariables>
+        <variable id="Dim" name="Dim" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Dim']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Dim </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mAprE_1" name="mAprE">
+      <listOfVariables>
+        <variable id="mAprE" name="mAprE" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mAprE']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mAprE </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mDegU_1" name="mDegU">
+      <listOfVariables>
+        <variable id="mDegU" name="mDegU" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mDegU']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mDegU </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="AprE_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="DegU_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="DegUP_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Dim_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="mAprE_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="mDegU_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="AprE_1" />
+        <dataSet id="col_2" dataReference="DegU_1" />
+        <dataSet id="col_3" dataReference="DegUP_1" />
+        <dataSet id="col_4" dataReference="Dim_1" />
+        <dataSet id="col_5" dataReference="mAprE_1" />
+        <dataSet id="col_6" dataReference="mDegU_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
