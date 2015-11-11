@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000313.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Rec_1" name="Rec">
+      <listOfVariables>
+        <variable id="Rec" name="Rec" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Rec']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Rec </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Rec_i_1" name="Rec_i">
+      <listOfVariables>
+        <variable id="Rec_i" name="Rec_i" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Rec_i']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Rec_i </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IL13_Rec_1" name="IL13_Rec">
+      <listOfVariables>
+        <variable id="IL13_Rec" name="IL13_Rec" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IL13_Rec']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IL13_Rec </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p_IL13_Rec_1" name="p_IL13_Rec">
+      <listOfVariables>
+        <variable id="p_IL13_Rec" name="p_IL13_Rec" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p_IL13_Rec']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p_IL13_Rec </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p_IL13_Rec_i_1" name="p_IL13_Rec_i">
+      <listOfVariables>
+        <variable id="p_IL13_Rec_i" name="p_IL13_Rec_i" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p_IL13_Rec_i']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p_IL13_Rec_i </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="JAK2_1" name="JAK2">
+      <listOfVariables>
+        <variable id="JAK2" name="JAK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='JAK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> JAK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pJAK2_1" name="pJAK2">
+      <listOfVariables>
+        <variable id="pJAK2" name="pJAK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pJAK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pJAK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SHP1_1" name="SHP1">
+      <listOfVariables>
+        <variable id="SHP1" name="SHP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SHP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SHP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT5_1" name="STAT5">
+      <listOfVariables>
+        <variable id="STAT5" name="STAT5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pSTAT5_1" name="pSTAT5">
+      <listOfVariables>
+        <variable id="pSTAT5" name="pSTAT5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pSTAT5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pSTAT5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SOCS3mRNA_1" name="SOCS3mRNA">
+      <listOfVariables>
+        <variable id="SOCS3mRNA" name="SOCS3mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SOCS3mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SOCS3mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DecoyR_1" name="DecoyR">
+      <listOfVariables>
+        <variable id="DecoyR" name="DecoyR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DecoyR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DecoyR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IL13_DecoyR_1" name="IL13_DecoyR">
+      <listOfVariables>
+        <variable id="IL13_DecoyR" name="IL13_DecoyR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IL13_DecoyR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IL13_DecoyR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SOCS3_1" name="SOCS3">
+      <listOfVariables>
+        <variable id="SOCS3" name="SOCS3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SOCS3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SOCS3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CD274mRNA_1" name="CD274mRNA">
+      <listOfVariables>
+        <variable id="CD274mRNA" name="CD274mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CD274mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CD274mRNA </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Rec_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Rec_i_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="IL13_Rec_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="p_IL13_Rec_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="p_IL13_Rec_i_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="JAK2_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="pJAK2_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="SHP1_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="STAT5_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="pSTAT5_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="SOCS3mRNA_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="DecoyR_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="IL13_DecoyR_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="SOCS3_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="CD274mRNA_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Rec_1" />
+        <dataSet id="col_2" dataReference="Rec_i_1" />
+        <dataSet id="col_3" dataReference="IL13_Rec_1" />
+        <dataSet id="col_4" dataReference="p_IL13_Rec_1" />
+        <dataSet id="col_5" dataReference="p_IL13_Rec_i_1" />
+        <dataSet id="col_6" dataReference="JAK2_1" />
+        <dataSet id="col_7" dataReference="pJAK2_1" />
+        <dataSet id="col_8" dataReference="SHP1_1" />
+        <dataSet id="col_9" dataReference="STAT5_1" />
+        <dataSet id="col_10" dataReference="pSTAT5_1" />
+        <dataSet id="col_11" dataReference="SOCS3mRNA_1" />
+        <dataSet id="col_12" dataReference="DecoyR_1" />
+        <dataSet id="col_13" dataReference="IL13_DecoyR_1" />
+        <dataSet id="col_14" dataReference="SOCS3_1" />
+        <dataSet id="col_15" dataReference="CD274mRNA_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
