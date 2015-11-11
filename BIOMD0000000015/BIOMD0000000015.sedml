@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000015.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PRPP_1" name="PRPP">
+      <listOfVariables>
+        <variable id="PRPP" name="PRPP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PRPP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PRPP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IMP_1" name="IMP">
+      <listOfVariables>
+        <variable id="IMP" name="IMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SAMP_1" name="SAMP">
+      <listOfVariables>
+        <variable id="SAMP" name="SAMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SAMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SAMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATP_1" name="ATP">
+      <listOfVariables>
+        <variable id="ATP" name="ATP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SAM_1" name="SAM">
+      <listOfVariables>
+        <variable id="SAM" name="SAM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SAM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SAM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ade_1" name="Ade">
+      <listOfVariables>
+        <variable id="Ade" name="Ade" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ade']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ade </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XMP_1" name="XMP">
+      <listOfVariables>
+        <variable id="XMP" name="XMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GTP_1" name="GTP">
+      <listOfVariables>
+        <variable id="GTP" name="GTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dATP_1" name="dATP">
+      <listOfVariables>
+        <variable id="dATP" name="dATP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dATP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dATP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dGTP_1" name="dGTP">
+      <listOfVariables>
+        <variable id="dGTP" name="dGTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dGTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dGTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RNA_1" name="RNA">
+      <listOfVariables>
+        <variable id="RNA" name="RNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DNA_1" name="DNA">
+      <listOfVariables>
+        <variable id="DNA" name="DNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HX_1" name="HX">
+      <listOfVariables>
+        <variable id="HX" name="HX" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HX']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HX </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Xa_1" name="Xa">
+      <listOfVariables>
+        <variable id="Xa" name="Xa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Xa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Xa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Gua_1" name="Gua">
+      <listOfVariables>
+        <variable id="Gua" name="Gua" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Gua']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Gua </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UA_1" name="UA">
+      <listOfVariables>
+        <variable id="UA" name="UA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UA </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="PRPP_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="IMP_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="SAMP_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="ATP_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="SAM_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Ade_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="XMP_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="GTP_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="dATP_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="dGTP_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="RNA_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="DNA_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="HX_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Xa_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Gua_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="UA_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="PRPP_1" />
+        <dataSet id="col_2" dataReference="IMP_1" />
+        <dataSet id="col_3" dataReference="SAMP_1" />
+        <dataSet id="col_4" dataReference="ATP_1" />
+        <dataSet id="col_5" dataReference="SAM_1" />
+        <dataSet id="col_6" dataReference="Ade_1" />
+        <dataSet id="col_7" dataReference="XMP_1" />
+        <dataSet id="col_8" dataReference="GTP_1" />
+        <dataSet id="col_9" dataReference="dATP_1" />
+        <dataSet id="col_10" dataReference="dGTP_1" />
+        <dataSet id="col_11" dataReference="RNA_1" />
+        <dataSet id="col_12" dataReference="DNA_1" />
+        <dataSet id="col_13" dataReference="HX_1" />
+        <dataSet id="col_14" dataReference="Xa_1" />
+        <dataSet id="col_15" dataReference="Gua_1" />
+        <dataSet id="col_16" dataReference="UA_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
