@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000031.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="M_1" name="M">
+      <listOfVariables>
+        <variable id="M" name="M" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='M']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> M </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mp_1" name="Mp">
+      <listOfVariables>
+        <variable id="Mp" name="Mp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mpp_1" name="Mpp">
+      <listOfVariables>
+        <variable id="Mpp" name="Mpp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mpp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mpp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MAPKK1_1" name="MAPKK1">
+      <listOfVariables>
+        <variable id="MAPKK1" name="MAPKK1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MAPKK1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MAPKK1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MAPKK2_1" name="MAPKK2">
+      <listOfVariables>
+        <variable id="MAPKK2" name="MAPKK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MAPKK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MAPKK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MKP3_1" name="MKP3">
+      <listOfVariables>
+        <variable id="MKP3" name="MKP3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MKP3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MKP3 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="M_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Mp_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Mpp_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="MAPKK1_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="MAPKK2_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="MKP3_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="M_1" />
+        <dataSet id="col_2" dataReference="Mp_1" />
+        <dataSet id="col_3" dataReference="Mpp_1" />
+        <dataSet id="col_4" dataReference="MAPKK1_1" />
+        <dataSet id="col_5" dataReference="MAPKK2_1" />
+        <dataSet id="col_6" dataReference="MKP3_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
