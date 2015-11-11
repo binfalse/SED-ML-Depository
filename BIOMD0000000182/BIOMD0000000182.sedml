@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000182.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AC_active_cyto_mem_1" name="AC_active_cyto_mem">
+      <listOfVariables>
+        <variable id="AC_active_cyto_mem" name="AC_active_cyto_mem" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AC_active_cyto_mem']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AC_active_cyto_mem </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="G_GDP_cyto_1" name="G_GDP_cyto">
+      <listOfVariables>
+        <variable id="G_GDP_cyto" name="G_GDP_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='G_GDP_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> G_GDP_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="G_protein_cyto_1" name="G_protein_cyto">
+      <listOfVariables>
+        <variable id="G_protein_cyto" name="G_protein_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='G_protein_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> G_protein_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="G_a_s_cyto_1" name="G_a_s_cyto">
+      <listOfVariables>
+        <variable id="G_a_s_cyto" name="G_a_s_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='G_a_s_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> G_a_s_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GRK_bg_cyto_1" name="GRK_bg_cyto">
+      <listOfVariables>
+        <variable id="GRK_bg_cyto" name="GRK_bg_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GRK_bg_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GRK_bg_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="iso_BAR_p_cyto_mem_1" name="iso_BAR_p_cyto_mem">
+      <listOfVariables>
+        <variable id="iso_BAR_p_cyto_mem" name="iso_BAR_p_cyto_mem" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='iso_BAR_p_cyto_mem']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> iso_BAR_p_cyto_mem </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PDE4_cyto_1" name="PDE4_cyto">
+      <listOfVariables>
+        <variable id="PDE4_cyto" name="PDE4_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PDE4_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PDE4_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATP_cyto_1" name="ATP_cyto">
+      <listOfVariables>
+        <variable id="ATP_cyto" name="ATP_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATP_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATP_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AC_PKA_cyto_mem_1" name="AC_PKA_cyto_mem">
+      <listOfVariables>
+        <variable id="AC_PKA_cyto_mem" name="AC_PKA_cyto_mem" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AC_PKA_cyto_mem']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AC_PKA_cyto_mem </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R2C2_cyto_1" name="R2C2_cyto">
+      <listOfVariables>
+        <variable id="R2C2_cyto" name="R2C2_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R2C2_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R2C2_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP_PDE_cyto_1" name="PP_PDE_cyto">
+      <listOfVariables>
+        <variable id="PP_PDE_cyto" name="PP_PDE_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP_PDE_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP_PDE_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BAR_cyto_mem_1" name="BAR_cyto_mem">
+      <listOfVariables>
+        <variable id="BAR_cyto_mem" name="BAR_cyto_mem" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BAR_cyto_mem']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BAR_cyto_mem </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BAR_G_cyto_mem_1" name="BAR_G_cyto_mem">
+      <listOfVariables>
+        <variable id="BAR_G_cyto_mem" name="BAR_G_cyto_mem" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BAR_G_cyto_mem']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BAR_G_cyto_mem </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="iso_extra_1" name="iso_extra">
+      <listOfVariables>
+        <variable id="iso_extra" name="iso_extra" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='iso_extra']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> iso_extra </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="iso_BAR_cyto_mem_1" name="iso_BAR_cyto_mem">
+      <listOfVariables>
+        <variable id="iso_BAR_cyto_mem" name="iso_BAR_cyto_mem" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='iso_BAR_cyto_mem']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> iso_BAR_cyto_mem </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MAPK_active_cyto_1" name="MAPK_active_cyto">
+      <listOfVariables>
+        <variable id="MAPK_active_cyto" name="MAPK_active_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MAPK_active_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MAPK_active_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MEK_cyto_1" name="MEK_cyto">
+      <listOfVariables>
+        <variable id="MEK_cyto" name="MEK_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MEK_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MEK_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MEK_active_cyto_1" name="MEK_active_cyto">
+      <listOfVariables>
+        <variable id="MEK_active_cyto" name="MEK_active_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MEK_active_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MEK_active_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_active_cyto_1" name="B_Raf_active_cyto">
+      <listOfVariables>
+        <variable id="B_Raf_active_cyto" name="B_Raf_active_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_active_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_active_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="bg_cyto_1" name="bg_cyto">
+      <listOfVariables>
+        <variable id="bg_cyto" name="bg_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='bg_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> bg_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="B_Raf_cyto_1" name="B_Raf_cyto">
+      <listOfVariables>
+        <variable id="B_Raf_cyto" name="B_Raf_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='B_Raf_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> B_Raf_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PKA_cyto_1" name="PKA_cyto">
+      <listOfVariables>
+        <variable id="PKA_cyto" name="PKA_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PKA_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PKA_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AC_cyto_mem_1" name="AC_cyto_mem">
+      <listOfVariables>
+        <variable id="AC_cyto_mem" name="AC_cyto_mem" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AC_cyto_mem']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AC_cyto_mem </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AMP_cyto_1" name="AMP_cyto">
+      <listOfVariables>
+        <variable id="AMP_cyto" name="AMP_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AMP_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AMP_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GRK_cyto_1" name="GRK_cyto">
+      <listOfVariables>
+        <variable id="GRK_cyto" name="GRK_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GRK_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GRK_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2A_cyto_1" name="PP2A_cyto">
+      <listOfVariables>
+        <variable id="PP2A_cyto" name="PP2A_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2A_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2A_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MAPK_cyto_1" name="MAPK_cyto">
+      <listOfVariables>
+        <variable id="MAPK_cyto" name="MAPK_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MAPK_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MAPK_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PTP_cyto_1" name="PTP_cyto">
+      <listOfVariables>
+        <variable id="PTP_cyto" name="PTP_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PTP_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PTP_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PTP_PKA_cyto_1" name="PTP_PKA_cyto">
+      <listOfVariables>
+        <variable id="PTP_PKA_cyto" name="PTP_PKA_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PTP_PKA_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PTP_PKA_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_R2C2_cyto_1" name="c_R2C2_cyto">
+      <listOfVariables>
+        <variable id="c_R2C2_cyto" name="c_R2C2_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c_R2C2_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c_R2C2_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c2_R2C2_cyto_1" name="c2_R2C2_cyto">
+      <listOfVariables>
+        <variable id="c2_R2C2_cyto" name="c2_R2C2_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c2_R2C2_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c2_R2C2_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c3_R2C2_cyto_1" name="c3_R2C2_cyto">
+      <listOfVariables>
+        <variable id="c3_R2C2_cyto" name="c3_R2C2_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c3_R2C2_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c3_R2C2_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="iso_BAR_G_cyto_mem_1" name="iso_BAR_G_cyto_mem">
+      <listOfVariables>
+        <variable id="iso_BAR_G_cyto_mem" name="iso_BAR_G_cyto_mem" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='iso_BAR_G_cyto_mem']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> iso_BAR_G_cyto_mem </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PDE_high_km_cyto_1" name="PDE_high_km_cyto">
+      <listOfVariables>
+        <variable id="PDE_high_km_cyto" name="PDE_high_km_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PDE_high_km_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PDE_high_km_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP_cyto_1" name="cAMP_cyto">
+      <listOfVariables>
+        <variable id="cAMP_cyto" name="cAMP_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PTP_PP_cyto_1" name="PTP_PP_cyto">
+      <listOfVariables>
+        <variable id="PTP_PP_cyto" name="PTP_PP_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PTP_PP_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PTP_PP_cyto </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PDE4_P_cyto_1" name="PDE4_P_cyto">
+      <listOfVariables>
+        <variable id="PDE4_P_cyto" name="PDE4_P_cyto" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PDE4_P_cyto']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PDE4_P_cyto </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="AC_active_cyto_mem_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="G_GDP_cyto_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="G_protein_cyto_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="G_a_s_cyto_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="GRK_bg_cyto_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="iso_BAR_p_cyto_mem_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="PDE4_cyto_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="ATP_cyto_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="AC_PKA_cyto_mem_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="R2C2_cyto_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="PP_PDE_cyto_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="BAR_cyto_mem_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="BAR_G_cyto_mem_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="iso_extra_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="iso_BAR_cyto_mem_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="MAPK_active_cyto_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="MEK_cyto_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="MEK_active_cyto_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_active_cyto_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="bg_cyto_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="B_Raf_cyto_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="PKA_cyto_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="AC_cyto_mem_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="AMP_cyto_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="GRK_cyto_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="PP2A_cyto_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="MAPK_cyto_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="PTP_cyto_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="PTP_PKA_cyto_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="c_R2C2_cyto_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="c2_R2C2_cyto_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="c3_R2C2_cyto_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="iso_BAR_G_cyto_mem_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="PDE_high_km_cyto_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="cAMP_cyto_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="PTP_PP_cyto_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="PDE4_P_cyto_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="AC_active_cyto_mem_1" />
+        <dataSet id="col_2" dataReference="G_GDP_cyto_1" />
+        <dataSet id="col_3" dataReference="G_protein_cyto_1" />
+        <dataSet id="col_4" dataReference="G_a_s_cyto_1" />
+        <dataSet id="col_5" dataReference="GRK_bg_cyto_1" />
+        <dataSet id="col_6" dataReference="iso_BAR_p_cyto_mem_1" />
+        <dataSet id="col_7" dataReference="PDE4_cyto_1" />
+        <dataSet id="col_8" dataReference="ATP_cyto_1" />
+        <dataSet id="col_9" dataReference="AC_PKA_cyto_mem_1" />
+        <dataSet id="col_10" dataReference="R2C2_cyto_1" />
+        <dataSet id="col_11" dataReference="PP_PDE_cyto_1" />
+        <dataSet id="col_12" dataReference="BAR_cyto_mem_1" />
+        <dataSet id="col_13" dataReference="BAR_G_cyto_mem_1" />
+        <dataSet id="col_14" dataReference="iso_extra_1" />
+        <dataSet id="col_15" dataReference="iso_BAR_cyto_mem_1" />
+        <dataSet id="col_16" dataReference="MAPK_active_cyto_1" />
+        <dataSet id="col_17" dataReference="MEK_cyto_1" />
+        <dataSet id="col_18" dataReference="MEK_active_cyto_1" />
+        <dataSet id="col_19" dataReference="B_Raf_active_cyto_1" />
+        <dataSet id="col_20" dataReference="bg_cyto_1" />
+        <dataSet id="col_21" dataReference="B_Raf_cyto_1" />
+        <dataSet id="col_22" dataReference="PKA_cyto_1" />
+        <dataSet id="col_23" dataReference="AC_cyto_mem_1" />
+        <dataSet id="col_24" dataReference="AMP_cyto_1" />
+        <dataSet id="col_25" dataReference="GRK_cyto_1" />
+        <dataSet id="col_26" dataReference="PP2A_cyto_1" />
+        <dataSet id="col_27" dataReference="MAPK_cyto_1" />
+        <dataSet id="col_28" dataReference="PTP_cyto_1" />
+        <dataSet id="col_29" dataReference="PTP_PKA_cyto_1" />
+        <dataSet id="col_30" dataReference="c_R2C2_cyto_1" />
+        <dataSet id="col_31" dataReference="c2_R2C2_cyto_1" />
+        <dataSet id="col_32" dataReference="c3_R2C2_cyto_1" />
+        <dataSet id="col_33" dataReference="iso_BAR_G_cyto_mem_1" />
+        <dataSet id="col_34" dataReference="PDE_high_km_cyto_1" />
+        <dataSet id="col_35" dataReference="cAMP_cyto_1" />
+        <dataSet id="col_36" dataReference="PTP_PP_cyto_1" />
+        <dataSet id="col_37" dataReference="PDE4_P_cyto_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
