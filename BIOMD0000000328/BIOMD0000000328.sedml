@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000328.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AS_m_1" name="AS_m">
+      <listOfVariables>
+        <variable id="AS_m" name="AS_m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AS_m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AS_m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASL_m_1" name="ASL_m">
+      <listOfVariables>
+        <variable id="ASL_m" name="ASL_m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASL_m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASL_m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASoOH_m_1" name="ASoOH_m">
+      <listOfVariables>
+        <variable id="ASoOH_m" name="ASoOH_m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASoOH_m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASoOH_m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASLpOH_m_1" name="ASLpOH_m">
+      <listOfVariables>
+        <variable id="ASLpOH_m" name="ASLpOH_m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASLpOH_m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASLpOH_m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASpOH_m_1" name="ASpOH_m">
+      <listOfVariables>
+        <variable id="ASpOH_m" name="ASpOH_m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASpOH_m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASpOH_m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASLoOH_m_1" name="ASLoOH_m">
+      <listOfVariables>
+        <variable id="ASLoOH_m" name="ASLoOH_m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASLoOH_m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASLoOH_m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AS_c_1" name="AS_c">
+      <listOfVariables>
+        <variable id="AS_c" name="AS_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AS_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AS_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASL_c_1" name="ASL_c">
+      <listOfVariables>
+        <variable id="ASL_c" name="ASL_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASL_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASL_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASpOH_c_1" name="ASpOH_c">
+      <listOfVariables>
+        <variable id="ASpOH_c" name="ASpOH_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASpOH_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASpOH_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASoOH_c_1" name="ASoOH_c">
+      <listOfVariables>
+        <variable id="ASoOH_c" name="ASoOH_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASoOH_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASoOH_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASLpOH_c_1" name="ASLpOH_c">
+      <listOfVariables>
+        <variable id="ASLpOH_c" name="ASLpOH_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASLpOH_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASLpOH_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASLoOH_c_1" name="ASLoOH_c">
+      <listOfVariables>
+        <variable id="ASLoOH_c" name="ASLoOH_c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASLoOH_c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASLoOH_c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASpOH_b_1" name="ASpOH_b">
+      <listOfVariables>
+        <variable id="ASpOH_b" name="ASpOH_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASpOH_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASpOH_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASoOH_b_1" name="ASoOH_b">
+      <listOfVariables>
+        <variable id="ASoOH_b" name="ASoOH_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASoOH_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASoOH_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASLpOH_b_1" name="ASLpOH_b">
+      <listOfVariables>
+        <variable id="ASLpOH_b" name="ASLpOH_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASLpOH_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASLpOH_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASLoOH_b_1" name="ASLoOH_b">
+      <listOfVariables>
+        <variable id="ASLoOH_b" name="ASLoOH_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASLoOH_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASLoOH_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AS_b_1" name="AS_b">
+      <listOfVariables>
+        <variable id="AS_b" name="AS_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AS_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AS_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ASL_b_1" name="ASL_b">
+      <listOfVariables>
+        <variable id="ASL_b" name="ASL_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ASL_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ASL_b </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="AS_m_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="ASL_m_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="ASoOH_m_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="ASLpOH_m_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="ASpOH_m_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="ASLoOH_m_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="AS_c_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="ASL_c_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="ASpOH_c_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="ASoOH_c_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="ASLpOH_c_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="ASLoOH_c_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="ASpOH_b_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="ASoOH_b_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="ASLpOH_b_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="ASLoOH_b_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="AS_b_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="ASL_b_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="AS_m_1" />
+        <dataSet id="col_2" dataReference="ASL_m_1" />
+        <dataSet id="col_3" dataReference="ASoOH_m_1" />
+        <dataSet id="col_4" dataReference="ASLpOH_m_1" />
+        <dataSet id="col_5" dataReference="ASpOH_m_1" />
+        <dataSet id="col_6" dataReference="ASLoOH_m_1" />
+        <dataSet id="col_7" dataReference="AS_c_1" />
+        <dataSet id="col_8" dataReference="ASL_c_1" />
+        <dataSet id="col_9" dataReference="ASpOH_c_1" />
+        <dataSet id="col_10" dataReference="ASoOH_c_1" />
+        <dataSet id="col_11" dataReference="ASLpOH_c_1" />
+        <dataSet id="col_12" dataReference="ASLoOH_c_1" />
+        <dataSet id="col_13" dataReference="ASpOH_b_1" />
+        <dataSet id="col_14" dataReference="ASoOH_b_1" />
+        <dataSet id="col_15" dataReference="ASLpOH_b_1" />
+        <dataSet id="col_16" dataReference="ASLoOH_b_1" />
+        <dataSet id="col_17" dataReference="AS_b_1" />
+        <dataSet id="col_18" dataReference="ASL_b_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
