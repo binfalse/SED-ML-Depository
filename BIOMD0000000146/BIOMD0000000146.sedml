@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000146.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Akt_1" name="Akt">
+      <listOfVariables>
+        <variable id="Akt" name="Akt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Akt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Akt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AktPIP3_1" name="AktPIP3">
+      <listOfVariables>
+        <variable id="AktPIP3" name="AktPIP3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AktPIP3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AktPIP3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AktPIP_1" name="AktPIP">
+      <listOfVariables>
+        <variable id="AktPIP" name="AktPIP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AktPIP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AktPIP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AktPIPP_1" name="AktPIPP">
+      <listOfVariables>
+        <variable id="AktPIPP" name="AktPIPP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AktPIPP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AktPIPP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK_1" name="ERK">
+      <listOfVariables>
+        <variable id="ERK" name="ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERKP_1" name="ERKP">
+      <listOfVariables>
+        <variable id="ERKP" name="ERKP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERKP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERKP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERKPP_1" name="ERKPP">
+      <listOfVariables>
+        <variable id="ERKPP" name="ERKPP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERKPP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERKPP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GS_1" name="GS">
+      <listOfVariables>
+        <variable id="GS" name="GS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HRG_1" name="HRG">
+      <listOfVariables>
+        <variable id="HRG" name="HRG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HRG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HRG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MEK_1" name="MEK">
+      <listOfVariables>
+        <variable id="MEK" name="MEK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MEK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MEK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MEKP_1" name="MEKP">
+      <listOfVariables>
+        <variable id="MEKP" name="MEKP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MEKP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MEKP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MEKPP_1" name="MEKPP">
+      <listOfVariables>
+        <variable id="MEKPP" name="MEKPP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MEKPP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MEKPP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PI3K_1" name="PI3K">
+      <listOfVariables>
+        <variable id="PI3K" name="PI3K" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PI3K']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PI3K </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PI3Kstar_1" name="PI3Kstar">
+      <listOfVariables>
+        <variable id="PI3Kstar" name="PI3Kstar" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PI3Kstar']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PI3Kstar </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIP3_1" name="PIP3">
+      <listOfVariables>
+        <variable id="PIP3" name="PIP3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIP3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIP3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_1" name="R">
+      <listOfVariables>
+        <variable id="R" name="R" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RP_1" name="RP">
+      <listOfVariables>
+        <variable id="RP" name="RP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RHRG_1" name="RHRG">
+      <listOfVariables>
+        <variable id="RHRG" name="RHRG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RHRG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RHRG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RHRG2_1" name="RHRG2">
+      <listOfVariables>
+        <variable id="RHRG2" name="RHRG2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RHRG2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RHRG2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RPI3K_1" name="RPI3K">
+      <listOfVariables>
+        <variable id="RPI3K" name="RPI3K" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RPI3K']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RPI3K </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RPI3Kstar_1" name="RPI3Kstar">
+      <listOfVariables>
+        <variable id="RPI3Kstar" name="RPI3Kstar" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RPI3Kstar']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RPI3Kstar </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RShGS_1" name="RShGS">
+      <listOfVariables>
+        <variable id="RShGS" name="RShGS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RShGS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RShGS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RShP_1" name="RShP">
+      <listOfVariables>
+        <variable id="RShP" name="RShP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RShP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RShP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RShc_1" name="RShc">
+      <listOfVariables>
+        <variable id="RShc" name="RShc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RShc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RShc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Raf_1" name="Raf">
+      <listOfVariables>
+        <variable id="Raf" name="Raf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Raf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Raf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Rafstar_1" name="Rafstar">
+      <listOfVariables>
+        <variable id="Rafstar" name="Rafstar" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Rafstar']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Rafstar </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGDP_1" name="RasGDP">
+      <listOfVariables>
+        <variable id="RasGDP" name="RasGDP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGDP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGDP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGTP_1" name="RasGTP">
+      <listOfVariables>
+        <variable id="RasGTP" name="RasGTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ShGS_1" name="ShGS">
+      <listOfVariables>
+        <variable id="ShGS" name="ShGS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ShGS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ShGS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ShP_1" name="ShP">
+      <listOfVariables>
+        <variable id="ShP" name="ShP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ShP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ShP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Shc_1" name="Shc">
+      <listOfVariables>
+        <variable id="Shc" name="Shc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Shc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Shc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="P_I_1" name="P_I">
+      <listOfVariables>
+        <variable id="P_I" name="P_I" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='P_I']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> P_I </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="internalization_1" name="internalization">
+      <listOfVariables>
+        <variable id="internalization" name="internalization" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='internalization']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> internalization </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E_1" name="E">
+      <listOfVariables>
+        <variable id="E" name="E" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MKP3_1" name="MKP3">
+      <listOfVariables>
+        <variable id="MKP3" name="MKP3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MKP3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MKP3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2A_1" name="PP2A">
+      <listOfVariables>
+        <variable id="PP2A" name="PP2A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2A </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Akt_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="AktPIP3_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="AktPIP_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="AktPIPP_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="ERK_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="ERKP_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="ERKPP_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="GS_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="HRG_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="MEK_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="MEKP_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="MEKPP_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="PI3K_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="PI3Kstar_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="PIP3_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="R_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="RP_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="RHRG_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="RHRG2_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="RPI3K_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="RPI3Kstar_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="RShGS_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="RShP_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="RShc_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="Raf_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="Rafstar_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="RasGDP_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="RasGTP_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="ShGS_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="ShP_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="Shc_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="P_I_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="internalization_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="E_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="MKP3_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="PP2A_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Akt_1" />
+        <dataSet id="col_2" dataReference="AktPIP3_1" />
+        <dataSet id="col_3" dataReference="AktPIP_1" />
+        <dataSet id="col_4" dataReference="AktPIPP_1" />
+        <dataSet id="col_5" dataReference="ERK_1" />
+        <dataSet id="col_6" dataReference="ERKP_1" />
+        <dataSet id="col_7" dataReference="ERKPP_1" />
+        <dataSet id="col_8" dataReference="GS_1" />
+        <dataSet id="col_9" dataReference="HRG_1" />
+        <dataSet id="col_10" dataReference="MEK_1" />
+        <dataSet id="col_11" dataReference="MEKP_1" />
+        <dataSet id="col_12" dataReference="MEKPP_1" />
+        <dataSet id="col_13" dataReference="PI3K_1" />
+        <dataSet id="col_14" dataReference="PI3Kstar_1" />
+        <dataSet id="col_15" dataReference="PIP3_1" />
+        <dataSet id="col_16" dataReference="R_1" />
+        <dataSet id="col_17" dataReference="RP_1" />
+        <dataSet id="col_18" dataReference="RHRG_1" />
+        <dataSet id="col_19" dataReference="RHRG2_1" />
+        <dataSet id="col_20" dataReference="RPI3K_1" />
+        <dataSet id="col_21" dataReference="RPI3Kstar_1" />
+        <dataSet id="col_22" dataReference="RShGS_1" />
+        <dataSet id="col_23" dataReference="RShP_1" />
+        <dataSet id="col_24" dataReference="RShc_1" />
+        <dataSet id="col_25" dataReference="Raf_1" />
+        <dataSet id="col_26" dataReference="Rafstar_1" />
+        <dataSet id="col_27" dataReference="RasGDP_1" />
+        <dataSet id="col_28" dataReference="RasGTP_1" />
+        <dataSet id="col_29" dataReference="ShGS_1" />
+        <dataSet id="col_30" dataReference="ShP_1" />
+        <dataSet id="col_31" dataReference="Shc_1" />
+        <dataSet id="col_32" dataReference="P_I_1" />
+        <dataSet id="col_33" dataReference="internalization_1" />
+        <dataSet id="col_34" dataReference="E_1" />
+        <dataSet id="col_35" dataReference="MKP3_1" />
+        <dataSet id="col_36" dataReference="PP2A_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
