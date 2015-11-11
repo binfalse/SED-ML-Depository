@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000188.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_1" name="Mdm2">
+      <listOfVariables>
+        <variable id="Mdm2" name="Mdm2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p53_1" name="p53">
+      <listOfVariables>
+        <variable id="p53" name="p53" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p53']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p53 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_p53_1" name="Mdm2_p53">
+      <listOfVariables>
+        <variable id="Mdm2_p53" name="Mdm2_p53" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_p53']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_p53 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_mRNA_1" name="Mdm2_mRNA">
+      <listOfVariables>
+        <variable id="Mdm2_mRNA" name="Mdm2_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p53_mRNA_1" name="p53_mRNA">
+      <listOfVariables>
+        <variable id="p53_mRNA" name="p53_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p53_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p53_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATMA_1" name="ATMA">
+      <listOfVariables>
+        <variable id="ATMA" name="ATMA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATMA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATMA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATMI_1" name="ATMI">
+      <listOfVariables>
+        <variable id="ATMI" name="ATMI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATMI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATMI </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p53_P_1" name="p53_P">
+      <listOfVariables>
+        <variable id="p53_P" name="p53_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p53_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p53_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_P_1" name="Mdm2_P">
+      <listOfVariables>
+        <variable id="Mdm2_P" name="Mdm2_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="damDNA_1" name="damDNA">
+      <listOfVariables>
+        <variable id="damDNA" name="damDNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='damDNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> damDNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p53deg_1" name="p53deg">
+      <listOfVariables>
+        <variable id="p53deg" name="p53deg" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p53deg']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p53deg </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p53syn_1" name="p53syn">
+      <listOfVariables>
+        <variable id="p53syn" name="p53syn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p53syn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p53syn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mdm2deg_1" name="mdm2deg">
+      <listOfVariables>
+        <variable id="mdm2deg" name="mdm2deg" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mdm2deg']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mdm2deg </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mdm2syn_1" name="mdm2syn">
+      <listOfVariables>
+        <variable id="mdm2syn" name="mdm2syn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mdm2syn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mdm2syn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2mRNAdeg_1" name="Mdm2mRNAdeg">
+      <listOfVariables>
+        <variable id="Mdm2mRNAdeg" name="Mdm2mRNAdeg" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2mRNAdeg']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2mRNAdeg </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2mRNAsyn_1" name="Mdm2mRNAsyn">
+      <listOfVariables>
+        <variable id="Mdm2mRNAsyn" name="Mdm2mRNAsyn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2mRNAsyn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2mRNAsyn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="totp53_1" name="totp53">
+      <listOfVariables>
+        <variable id="totp53" name="totp53" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='totp53']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> totp53 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="totMdm2_1" name="totMdm2">
+      <listOfVariables>
+        <variable id="totMdm2" name="totMdm2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='totMdm2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> totMdm2 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="p53_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_p53_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_mRNA_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="p53_mRNA_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="ATMA_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="ATMI_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="p53_P_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_P_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="damDNA_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="p53deg_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="p53syn_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="mdm2deg_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="mdm2syn_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2mRNAdeg_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2mRNAsyn_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="totp53_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="totMdm2_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Mdm2_1" />
+        <dataSet id="col_2" dataReference="p53_1" />
+        <dataSet id="col_3" dataReference="Mdm2_p53_1" />
+        <dataSet id="col_4" dataReference="Mdm2_mRNA_1" />
+        <dataSet id="col_5" dataReference="p53_mRNA_1" />
+        <dataSet id="col_6" dataReference="ATMA_1" />
+        <dataSet id="col_7" dataReference="ATMI_1" />
+        <dataSet id="col_8" dataReference="p53_P_1" />
+        <dataSet id="col_9" dataReference="Mdm2_P_1" />
+        <dataSet id="col_10" dataReference="damDNA_1" />
+        <dataSet id="col_11" dataReference="p53deg_1" />
+        <dataSet id="col_12" dataReference="p53syn_1" />
+        <dataSet id="col_13" dataReference="mdm2deg_1" />
+        <dataSet id="col_14" dataReference="mdm2syn_1" />
+        <dataSet id="col_15" dataReference="Mdm2mRNAdeg_1" />
+        <dataSet id="col_16" dataReference="Mdm2mRNAsyn_1" />
+        <dataSet id="col_17" dataReference="totp53_1" />
+        <dataSet id="col_18" dataReference="totMdm2_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
