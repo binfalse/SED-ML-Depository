@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000120.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="lck_inactive_1" name="lck_inactive">
+      <listOfVariables>
+        <variable id="lck_inactive" name="lck_inactive" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='lck_inactive']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> lck_inactive </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="lck_active_1" name="lck_active">
+      <listOfVariables>
+        <variable id="lck_active" name="lck_active" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='lck_active']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> lck_active </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="phosphatase_inactive_1" name="phosphatase_inactive">
+      <listOfVariables>
+        <variable id="phosphatase_inactive" name="phosphatase_inactive" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='phosphatase_inactive']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> phosphatase_inactive </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="phosphatase_active_1" name="phosphatase_active">
+      <listOfVariables>
+        <variable id="phosphatase_active" name="phosphatase_active" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='phosphatase_active']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> phosphatase_active </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="lck_total_1" name="lck_total">
+      <listOfVariables>
+        <variable id="lck_total" name="lck_total" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='lck_total']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> lck_total </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="lck_inactive_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="lck_active_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="phosphatase_inactive_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="phosphatase_active_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="lck_total_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="lck_inactive_1" />
+        <dataSet id="col_2" dataReference="lck_active_1" />
+        <dataSet id="col_3" dataReference="phosphatase_inactive_1" />
+        <dataSet id="col_4" dataReference="phosphatase_active_1" />
+        <dataSet id="col_5" dataReference="lck_total_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
