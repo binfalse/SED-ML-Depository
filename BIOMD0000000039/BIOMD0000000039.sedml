@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000039.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ca_cyt_1" name="Ca_cyt">
+      <listOfVariables>
+        <variable id="Ca_cyt" name="Ca_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ca_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ca_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CaER_1" name="CaER">
+      <listOfVariables>
+        <variable id="CaER" name="CaER" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CaER']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CaER </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CaM_1" name="CaM">
+      <listOfVariables>
+        <variable id="CaM" name="CaM" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CaM']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CaM </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CaPr_1" name="CaPr">
+      <listOfVariables>
+        <variable id="CaPr" name="CaPr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CaPr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CaPr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pr_1" name="Pr">
+      <listOfVariables>
+        <variable id="Pr" name="Pr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pr </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Ca_cyt_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="CaER_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="CaM_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="CaPr_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Pr_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Ca_cyt_1" />
+        <dataSet id="col_2" dataReference="CaER_1" />
+        <dataSet id="col_3" dataReference="CaM_1" />
+        <dataSet id="col_4" dataReference="CaPr_1" />
+        <dataSet id="col_5" dataReference="Pr_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
