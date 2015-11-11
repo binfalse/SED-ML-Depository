@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000167.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="stat_sol_1" name="stat_sol">
+      <listOfVariables>
+        <variable id="stat_sol" name="stat_sol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='stat_sol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> stat_sol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pstat_sol_1" name="Pstat_sol">
+      <listOfVariables>
+        <variable id="Pstat_sol" name="Pstat_sol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pstat_sol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pstat_sol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PstatDimer_sol_1" name="PstatDimer_sol">
+      <listOfVariables>
+        <variable id="PstatDimer_sol" name="PstatDimer_sol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PstatDimer_sol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PstatDimer_sol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PstatDimer_nuc_1" name="PstatDimer_nuc">
+      <listOfVariables>
+        <variable id="PstatDimer_nuc" name="PstatDimer_nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PstatDimer_nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PstatDimer_nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="stat_nuc_1" name="stat_nuc">
+      <listOfVariables>
+        <variable id="stat_nuc" name="stat_nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='stat_nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> stat_nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pstat_nuc_1" name="Pstat_nuc">
+      <listOfVariables>
+        <variable id="Pstat_nuc" name="Pstat_nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pstat_nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pstat_nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="statPhosphatase_nuc_1" name="statPhosphatase_nuc">
+      <listOfVariables>
+        <variable id="statPhosphatase_nuc" name="statPhosphatase_nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='statPhosphatase_nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> statPhosphatase_nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="species_test_1" name="species_test">
+      <listOfVariables>
+        <variable id="species_test" name="species_test" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='species_test']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> species_test </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="stat_sol_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Pstat_sol_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="PstatDimer_sol_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="PstatDimer_nuc_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="stat_nuc_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Pstat_nuc_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="statPhosphatase_nuc_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="species_test_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="stat_sol_1" />
+        <dataSet id="col_2" dataReference="Pstat_sol_1" />
+        <dataSet id="col_3" dataReference="PstatDimer_sol_1" />
+        <dataSet id="col_4" dataReference="PstatDimer_nuc_1" />
+        <dataSet id="col_5" dataReference="stat_nuc_1" />
+        <dataSet id="col_6" dataReference="Pstat_nuc_1" />
+        <dataSet id="col_7" dataReference="statPhosphatase_nuc_1" />
+        <dataSet id="col_8" dataReference="species_test_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
