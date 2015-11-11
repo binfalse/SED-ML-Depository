@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000013.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RuBP_ch_1" name="RuBP_ch">
+      <listOfVariables>
+        <variable id="RuBP_ch" name="RuBP_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RuBP_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RuBP_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PGA_ch_1" name="PGA_ch">
+      <listOfVariables>
+        <variable id="PGA_ch" name="PGA_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PGA_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PGA_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATP_ch_1" name="ATP_ch">
+      <listOfVariables>
+        <variable id="ATP_ch" name="ATP_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATP_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATP_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BPGA_ch_1" name="BPGA_ch">
+      <listOfVariables>
+        <variable id="BPGA_ch" name="BPGA_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BPGA_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BPGA_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GAP_ch_1" name="GAP_ch">
+      <listOfVariables>
+        <variable id="GAP_ch" name="GAP_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GAP_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GAP_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pi_ch_1" name="Pi_ch">
+      <listOfVariables>
+        <variable id="Pi_ch" name="Pi_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pi_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pi_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DHAP_ch_1" name="DHAP_ch">
+      <listOfVariables>
+        <variable id="DHAP_ch" name="DHAP_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DHAP_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DHAP_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FBP_ch_1" name="FBP_ch">
+      <listOfVariables>
+        <variable id="FBP_ch" name="FBP_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FBP_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FBP_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F6P_ch_1" name="F6P_ch">
+      <listOfVariables>
+        <variable id="F6P_ch" name="F6P_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F6P_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F6P_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E4P_ch_1" name="E4P_ch">
+      <listOfVariables>
+        <variable id="E4P_ch" name="E4P_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E4P_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E4P_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="X5P_ch_1" name="X5P_ch">
+      <listOfVariables>
+        <variable id="X5P_ch" name="X5P_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='X5P_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> X5P_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SBP_ch_1" name="SBP_ch">
+      <listOfVariables>
+        <variable id="SBP_ch" name="SBP_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SBP_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SBP_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="S7P_ch_1" name="S7P_ch">
+      <listOfVariables>
+        <variable id="S7P_ch" name="S7P_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='S7P_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> S7P_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R5P_ch_1" name="R5P_ch">
+      <listOfVariables>
+        <variable id="R5P_ch" name="R5P_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R5P_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R5P_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ru5P_ch_1" name="Ru5P_ch">
+      <listOfVariables>
+        <variable id="Ru5P_ch" name="Ru5P_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ru5P_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ru5P_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="G6P_ch_1" name="G6P_ch">
+      <listOfVariables>
+        <variable id="G6P_ch" name="G6P_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='G6P_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> G6P_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ADP_ch_1" name="ADP_ch">
+      <listOfVariables>
+        <variable id="ADP_ch" name="ADP_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ADP_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ADP_ch </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="G1P_ch_1" name="G1P_ch">
+      <listOfVariables>
+        <variable id="G1P_ch" name="G1P_ch" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='G1P_ch']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> G1P_ch </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="RuBP_ch_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="PGA_ch_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="ATP_ch_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="BPGA_ch_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="GAP_ch_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Pi_ch_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="DHAP_ch_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="FBP_ch_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="F6P_ch_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="E4P_ch_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="X5P_ch_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="SBP_ch_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="S7P_ch_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="R5P_ch_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Ru5P_ch_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="G6P_ch_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="ADP_ch_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="G1P_ch_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="RuBP_ch_1" />
+        <dataSet id="col_2" dataReference="PGA_ch_1" />
+        <dataSet id="col_3" dataReference="ATP_ch_1" />
+        <dataSet id="col_4" dataReference="BPGA_ch_1" />
+        <dataSet id="col_5" dataReference="GAP_ch_1" />
+        <dataSet id="col_6" dataReference="Pi_ch_1" />
+        <dataSet id="col_7" dataReference="DHAP_ch_1" />
+        <dataSet id="col_8" dataReference="FBP_ch_1" />
+        <dataSet id="col_9" dataReference="F6P_ch_1" />
+        <dataSet id="col_10" dataReference="E4P_ch_1" />
+        <dataSet id="col_11" dataReference="X5P_ch_1" />
+        <dataSet id="col_12" dataReference="SBP_ch_1" />
+        <dataSet id="col_13" dataReference="S7P_ch_1" />
+        <dataSet id="col_14" dataReference="R5P_ch_1" />
+        <dataSet id="col_15" dataReference="Ru5P_ch_1" />
+        <dataSet id="col_16" dataReference="G6P_ch_1" />
+        <dataSet id="col_17" dataReference="ADP_ch_1" />
+        <dataSet id="col_18" dataReference="G1P_ch_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
