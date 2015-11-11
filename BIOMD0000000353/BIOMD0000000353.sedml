@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000353.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C00369_CS_1" name="cpd_C00369_CS">
+      <listOfVariables>
+        <variable id="cpd_C00369_CS" name="cpd_C00369_CS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C00369_CS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C00369_CS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C00369db_CS_1" name="cpd_C00369db_CS">
+      <listOfVariables>
+        <variable id="cpd_C00369db_CS" name="cpd_C00369db_CS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C00369db_CS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C00369db_CS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C00208_CY_1" name="cpd_C00208_CY">
+      <listOfVariables>
+        <variable id="cpd_C00208_CY" name="cpd_C00208_CY" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C00208_CY']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C00208_CY </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C00208_CS_1" name="cpd_C00208_CS">
+      <listOfVariables>
+        <variable id="cpd_C00208_CS" name="cpd_C00208_CS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C00208_CS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C00208_CS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C01835_CS_1" name="cpd_C01835_CS">
+      <listOfVariables>
+        <variable id="cpd_C01835_CS" name="cpd_C01835_CS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C01835_CS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C01835_CS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_G00343_CS_1" name="cpd_G00343_CS">
+      <listOfVariables>
+        <variable id="cpd_G00343_CS" name="cpd_G00343_CS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_G00343_CS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_G00343_CS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C00031_CS_1" name="cpd_C00031_CS">
+      <listOfVariables>
+        <variable id="cpd_C00031_CS" name="cpd_C00031_CS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C00031_CS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C00031_CS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C00031_CY_1" name="cpd_C00031_CY">
+      <listOfVariables>
+        <variable id="cpd_C00031_CY" name="cpd_C00031_CY" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C00031_CY']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C00031_CY </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C00569_CY_1" name="cpd_C00569_CY">
+      <listOfVariables>
+        <variable id="cpd_C00569_CY" name="cpd_C00569_CY" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C00569_CY']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C00569_CY </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C00569Glc_CY_1" name="cpd_C00569Glc_CY">
+      <listOfVariables>
+        <variable id="cpd_C00569Glc_CY" name="cpd_C00569Glc_CY" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C00569Glc_CY']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C00569Glc_CY </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C00051_CY_1" name="cpd_C00051_CY">
+      <listOfVariables>
+        <variable id="cpd_C00051_CY" name="cpd_C00051_CY" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C00051_CY']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C00051_CY </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C00660tot_CY_1" name="cpd_C00660tot_CY">
+      <listOfVariables>
+        <variable id="cpd_C00660tot_CY" name="cpd_C00660tot_CY" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C00660tot_CY']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C00660tot_CY </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cpd_C03339tot_CY_1" name="cpd_C03339tot_CY">
+      <listOfVariables>
+        <variable id="cpd_C03339tot_CY" name="cpd_C03339tot_CY" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cpd_C03339tot_CY']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cpd_C03339tot_CY </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ec_3_2_1_2_CS_1" name="ec_3_2_1_2_CS">
+      <listOfVariables>
+        <variable id="ec_3_2_1_2_CS" name="ec_3_2_1_2_CS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ec_3_2_1_2_CS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ec_3_2_1_2_CS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ec_3_2_1_68_CS_1" name="ec_3_2_1_68_CS">
+      <listOfVariables>
+        <variable id="ec_3_2_1_68_CS" name="ec_3_2_1_68_CS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ec_3_2_1_68_CS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ec_3_2_1_68_CS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ec_2_4_1_25_CS_1" name="ec_2_4_1_25_CS">
+      <listOfVariables>
+        <variable id="ec_2_4_1_25_CS" name="ec_2_4_1_25_CS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ec_2_4_1_25_CS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ec_2_4_1_25_CS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ec_2_4_1_25_CY_1" name="ec_2_4_1_25_CY">
+      <listOfVariables>
+        <variable id="ec_2_4_1_25_CY" name="ec_2_4_1_25_CY" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ec_2_4_1_25_CY']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ec_2_4_1_25_CY </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ec_2_4_1_1_CY_1" name="ec_2_4_1_1_CY">
+      <listOfVariables>
+        <variable id="ec_2_4_1_1_CY" name="ec_2_4_1_1_CY" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ec_2_4_1_1_CY']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ec_2_4_1_1_CY </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ec_2_7_1_1_CY_1" name="ec_2_7_1_1_CY">
+      <listOfVariables>
+        <variable id="ec_2_7_1_1_CY" name="ec_2_7_1_1_CY" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ec_2_7_1_1_CY']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ec_2_7_1_1_CY </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="tc_2_A_84_1_2_CIMS_1" name="tc_2_A_84_1_2_CIMS">
+      <listOfVariables>
+        <variable id="tc_2_A_84_1_2_CIMS" name="tc_2_A_84_1_2_CIMS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='tc_2_A_84_1_2_CIMS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> tc_2_A_84_1_2_CIMS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="tc_2_A_1_1_17_CIMS_1" name="tc_2_A_1_1_17_CIMS">
+      <listOfVariables>
+        <variable id="tc_2_A_1_1_17_CIMS" name="tc_2_A_1_1_17_CIMS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='tc_2_A_1_1_17_CIMS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> tc_2_A_1_1_17_CIMS </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C00369_CS_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C00369db_CS_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C00208_CY_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C00208_CS_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C01835_CS_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="cpd_G00343_CS_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C00031_CS_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C00031_CY_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C00569_CY_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C00569Glc_CY_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C00051_CY_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C00660tot_CY_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="cpd_C03339tot_CY_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="ec_3_2_1_2_CS_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="ec_3_2_1_68_CS_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="ec_2_4_1_25_CS_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="ec_2_4_1_25_CY_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="ec_2_4_1_1_CY_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="ec_2_7_1_1_CY_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="tc_2_A_84_1_2_CIMS_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="tc_2_A_1_1_17_CIMS_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="cpd_C00369_CS_1" />
+        <dataSet id="col_2" dataReference="cpd_C00369db_CS_1" />
+        <dataSet id="col_3" dataReference="cpd_C00208_CY_1" />
+        <dataSet id="col_4" dataReference="cpd_C00208_CS_1" />
+        <dataSet id="col_5" dataReference="cpd_C01835_CS_1" />
+        <dataSet id="col_6" dataReference="cpd_G00343_CS_1" />
+        <dataSet id="col_7" dataReference="cpd_C00031_CS_1" />
+        <dataSet id="col_8" dataReference="cpd_C00031_CY_1" />
+        <dataSet id="col_9" dataReference="cpd_C00569_CY_1" />
+        <dataSet id="col_10" dataReference="cpd_C00569Glc_CY_1" />
+        <dataSet id="col_11" dataReference="cpd_C00051_CY_1" />
+        <dataSet id="col_12" dataReference="cpd_C00660tot_CY_1" />
+        <dataSet id="col_13" dataReference="cpd_C03339tot_CY_1" />
+        <dataSet id="col_14" dataReference="ec_3_2_1_2_CS_1" />
+        <dataSet id="col_15" dataReference="ec_3_2_1_68_CS_1" />
+        <dataSet id="col_16" dataReference="ec_2_4_1_25_CS_1" />
+        <dataSet id="col_17" dataReference="ec_2_4_1_25_CY_1" />
+        <dataSet id="col_18" dataReference="ec_2_4_1_1_CY_1" />
+        <dataSet id="col_19" dataReference="ec_2_7_1_1_CY_1" />
+        <dataSet id="col_20" dataReference="tc_2_A_84_1_2_CIMS_1" />
+        <dataSet id="col_21" dataReference="tc_2_A_1_1_17_CIMS_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
