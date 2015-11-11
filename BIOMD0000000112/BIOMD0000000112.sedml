@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000112.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="receptor_1" name="receptor">
+      <listOfVariables>
+        <variable id="receptor" name="receptor" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='receptor']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> receptor </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_smad_cyt_1" name="R_smad_cyt">
+      <listOfVariables>
+        <variable id="R_smad_cyt" name="R_smad_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R_smad_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R_smad_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_smad_P_cyt_1" name="R_smad_P_cyt">
+      <listOfVariables>
+        <variable id="R_smad_P_cyt" name="R_smad_P_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R_smad_P_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R_smad_P_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="smad4_cyt_1" name="smad4_cyt">
+      <listOfVariables>
+        <variable id="smad4_cyt" name="smad4_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='smad4_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> smad4_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_smad_P_smad4_cyt_1" name="R_smad_P_smad4_cyt">
+      <listOfVariables>
+        <variable id="R_smad_P_smad4_cyt" name="R_smad_P_smad4_cyt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R_smad_P_smad4_cyt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R_smad_P_smad4_cyt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_smad_P_smad4_nuc_1" name="R_smad_P_smad4_nuc">
+      <listOfVariables>
+        <variable id="R_smad_P_smad4_nuc" name="R_smad_P_smad4_nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R_smad_P_smad4_nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R_smad_P_smad4_nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_smad_nuc_1" name="R_smad_nuc">
+      <listOfVariables>
+        <variable id="R_smad_nuc" name="R_smad_nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R_smad_nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R_smad_nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_smad_P_nuc_1" name="R_smad_P_nuc">
+      <listOfVariables>
+        <variable id="R_smad_P_nuc" name="R_smad_P_nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R_smad_P_nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R_smad_P_nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="smad4_nuc_1" name="smad4_nuc">
+      <listOfVariables>
+        <variable id="smad4_nuc" name="smad4_nuc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='smad4_nuc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> smad4_nuc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pi_1" name="Pi">
+      <listOfVariables>
+        <variable id="Pi" name="Pi" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pi']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <pi />
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="receptor_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="R_smad_cyt_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="R_smad_P_cyt_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="smad4_cyt_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="R_smad_P_smad4_cyt_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="R_smad_P_smad4_nuc_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="R_smad_nuc_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="R_smad_P_nuc_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="smad4_nuc_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="Pi_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="receptor_1" />
+        <dataSet id="col_2" dataReference="R_smad_cyt_1" />
+        <dataSet id="col_3" dataReference="R_smad_P_cyt_1" />
+        <dataSet id="col_4" dataReference="smad4_cyt_1" />
+        <dataSet id="col_5" dataReference="R_smad_P_smad4_cyt_1" />
+        <dataSet id="col_6" dataReference="R_smad_P_smad4_nuc_1" />
+        <dataSet id="col_7" dataReference="R_smad_nuc_1" />
+        <dataSet id="col_8" dataReference="R_smad_P_nuc_1" />
+        <dataSet id="col_9" dataReference="smad4_nuc_1" />
+        <dataSet id="col_10" dataReference="Pi_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
