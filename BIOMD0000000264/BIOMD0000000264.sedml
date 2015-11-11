@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000264.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EGFR_1" name="EGFR">
+      <listOfVariables>
+        <variable id="EGFR" name="EGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pEGFR_1" name="pEGFR">
+      <listOfVariables>
+        <variable id="pEGFR" name="pEGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pEGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pEGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pEGFR_Akt_1" name="pEGFR_Akt">
+      <listOfVariables>
+        <variable id="pEGFR_Akt" name="pEGFR_Akt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pEGFR_Akt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pEGFR_Akt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Akt_1" name="Akt">
+      <listOfVariables>
+        <variable id="Akt" name="Akt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Akt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Akt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pAkt_1" name="pAkt">
+      <listOfVariables>
+        <variable id="pAkt" name="pAkt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pAkt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pAkt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="S6_1" name="S6">
+      <listOfVariables>
+        <variable id="S6" name="S6" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='S6']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> S6 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pAkt_S6_1" name="pAkt_S6">
+      <listOfVariables>
+        <variable id="pAkt_S6" name="pAkt_S6" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pAkt_S6']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pAkt_S6 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pS6_1" name="pS6">
+      <listOfVariables>
+        <variable id="pS6" name="pS6" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pS6']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pS6 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EGF_EGFR_1" name="EGF_EGFR">
+      <listOfVariables>
+        <variable id="EGF_EGFR" name="EGF_EGFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EGF_EGFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EGF_EGFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EGFR_i_1" name="EGFR_i">
+      <listOfVariables>
+        <variable id="EGFR_i" name="EGFR_i" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EGFR_i']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EGFR_i </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EGF_EGFR_i_1" name="EGF_EGFR_i">
+      <listOfVariables>
+        <variable id="EGF_EGFR_i" name="EGF_EGFR_i" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EGF_EGFR_i']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EGF_EGFR_i </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="EGFR_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="pEGFR_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="pEGFR_Akt_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Akt_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="pAkt_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="S6_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="pAkt_S6_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="pS6_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="EGF_EGFR_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="EGFR_i_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="EGF_EGFR_i_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="EGFR_1" />
+        <dataSet id="col_2" dataReference="pEGFR_1" />
+        <dataSet id="col_3" dataReference="pEGFR_Akt_1" />
+        <dataSet id="col_4" dataReference="Akt_1" />
+        <dataSet id="col_5" dataReference="pAkt_1" />
+        <dataSet id="col_6" dataReference="S6_1" />
+        <dataSet id="col_7" dataReference="pAkt_S6_1" />
+        <dataSet id="col_8" dataReference="pS6_1" />
+        <dataSet id="col_9" dataReference="EGF_EGFR_1" />
+        <dataSet id="col_10" dataReference="EGFR_i_1" />
+        <dataSet id="col_11" dataReference="EGF_EGFR_i_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
