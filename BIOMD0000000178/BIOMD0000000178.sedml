@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000178.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="bulk_1" name="bulk">
+      <listOfVariables>
+        <variable id="bulk" name="bulk" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='bulk']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> bulk </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="free_1" name="free">
+      <listOfVariables>
+        <variable id="free" name="free" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='free']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> free </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="bound_1" name="bound">
+      <listOfVariables>
+        <variable id="bound" name="bound" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='bound']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> bound </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="translocate_1" name="translocate">
+      <listOfVariables>
+        <variable id="translocate" name="translocate" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='translocate']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> translocate </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="lytic_1" name="lytic">
+      <listOfVariables>
+        <variable id="lytic" name="lytic" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='lytic']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> lytic </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="bulk_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="free_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="bound_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="translocate_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="lytic_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="bulk_1" />
+        <dataSet id="col_2" dataReference="free_1" />
+        <dataSet id="col_3" dataReference="bound_1" />
+        <dataSet id="col_4" dataReference="translocate_1" />
+        <dataSet id="col_5" dataReference="lytic_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
