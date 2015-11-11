@@ -42,8 +42,7 @@ ads[6]="http://sysbioapps.dyndns.org/SED-ML_Web_Tools/Home/"
 ads[7]="http://www.ebi.ac.uk/biomodels-main/"
 
 # iterate over all biomodels
-# for i in {001..583}
-for i in {001..001}
+for i in {001..583}
 do
 		model=BIOMD0000000$i
 		modeldoc='http://www.ebi.ac.uk/biomodels-main/download?mid='$model
@@ -72,7 +71,7 @@ do
 		cd $model
 		/usr/bin/zip -qr combine-archive.omex * && rm manifest.xml metadata.rdf
 		cd -
-exit 1
+		
 		echo "simulating model and storing simulation results ..."
 		/usr/bin/curl -sLF file=@$model/combine-archive.omex http://sysbioapps.dyndns.org/SED-ML_Web_Tools/Home/SimulatePostArchive > $model/simulation-results.omex
 		
