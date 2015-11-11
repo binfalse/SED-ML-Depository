@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000305.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="S0_1" name="S0">
+      <listOfVariables>
+        <variable id="S0" name="S0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='S0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> S0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="S1_1" name="S1">
+      <listOfVariables>
+        <variable id="S1" name="S1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='S1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> S1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="fwd_step1_1" name="fwd_step1">
+      <listOfVariables>
+        <variable id="fwd_step1" name="fwd_step1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='fwd_step1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> fwd_step1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="fwd_step2_1" name="fwd_step2">
+      <listOfVariables>
+        <variable id="fwd_step2" name="fwd_step2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='fwd_step2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> fwd_step2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="back_step1_1" name="back_step1">
+      <listOfVariables>
+        <variable id="back_step1" name="back_step1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='back_step1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> back_step1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="back_step2_1" name="back_step2">
+      <listOfVariables>
+        <variable id="back_step2" name="back_step2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='back_step2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> back_step2 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="S0_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="S1_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="fwd_step1_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="fwd_step2_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="back_step1_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="back_step2_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="S0_1" />
+        <dataSet id="col_2" dataReference="S1_1" />
+        <dataSet id="col_3" dataReference="fwd_step1_1" />
+        <dataSet id="col_4" dataReference="fwd_step2_1" />
+        <dataSet id="col_5" dataReference="back_step1_1" />
+        <dataSet id="col_6" dataReference="back_step2_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
