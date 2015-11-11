@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000229.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ACA_1" name="ACA">
+      <listOfVariables>
+        <variable id="ACA" name="ACA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ACA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ACA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CAR1_1" name="CAR1">
+      <listOfVariables>
+        <variable id="CAR1" name="CAR1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CAR1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CAR1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PKA_1" name="PKA">
+      <listOfVariables>
+        <variable id="PKA" name="PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="incAMP_1" name="incAMP">
+      <listOfVariables>
+        <variable id="incAMP" name="incAMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='incAMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> incAMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK2_1" name="ERK2">
+      <listOfVariables>
+        <variable id="ERK2" name="ERK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="REGA_1" name="REGA">
+      <listOfVariables>
+        <variable id="REGA" name="REGA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='REGA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> REGA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="excAMP_1" name="excAMP">
+      <listOfVariables>
+        <variable id="excAMP" name="excAMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='excAMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> excAMP </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="ACA_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="CAR1_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="PKA_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="incAMP_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="ERK2_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="REGA_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="excAMP_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="ACA_1" />
+        <dataSet id="col_2" dataReference="CAR1_1" />
+        <dataSet id="col_3" dataReference="PKA_1" />
+        <dataSet id="col_4" dataReference="incAMP_1" />
+        <dataSet id="col_5" dataReference="ERK2_1" />
+        <dataSet id="col_6" dataReference="REGA_1" />
+        <dataSet id="col_7" dataReference="excAMP_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
