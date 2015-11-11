@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000066.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="aspp_1" name="aspp">
+      <listOfVariables>
+        <variable id="aspp" name="aspp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='aspp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> aspp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="asa_1" name="asa">
+      <listOfVariables>
+        <variable id="asa" name="asa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='asa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> asa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hs_1" name="hs">
+      <listOfVariables>
+        <variable id="hs" name="hs" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hs']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hs </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hsp_1" name="hsp">
+      <listOfVariables>
+        <variable id="hsp" name="hsp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hsp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hsp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="phos_1" name="phos">
+      <listOfVariables>
+        <variable id="phos" name="phos" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='phos']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> phos </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="thr_1" name="thr">
+      <listOfVariables>
+        <variable id="thr" name="thr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='thr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> thr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="asp_1" name="asp">
+      <listOfVariables>
+        <variable id="asp" name="asp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='asp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> asp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nadp_1" name="nadp">
+      <listOfVariables>
+        <variable id="nadp" name="nadp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nadp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nadp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nadph_1" name="nadph">
+      <listOfVariables>
+        <variable id="nadph" name="nadph" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nadph']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nadph </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="adp_1" name="adp">
+      <listOfVariables>
+        <variable id="adp" name="adp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='adp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> adp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="atp_1" name="atp">
+      <listOfVariables>
+        <variable id="atp" name="atp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='atp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> atp </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="aspp_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="asa_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="hs_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="hsp_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="phos_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="thr_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="asp_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="nadp_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="nadph_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="adp_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="atp_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="aspp_1" />
+        <dataSet id="col_2" dataReference="asa_1" />
+        <dataSet id="col_3" dataReference="hs_1" />
+        <dataSet id="col_4" dataReference="hsp_1" />
+        <dataSet id="col_5" dataReference="phos_1" />
+        <dataSet id="col_6" dataReference="thr_1" />
+        <dataSet id="col_7" dataReference="asp_1" />
+        <dataSet id="col_8" dataReference="nadp_1" />
+        <dataSet id="col_9" dataReference="nadph_1" />
+        <dataSet id="col_10" dataReference="adp_1" />
+        <dataSet id="col_11" dataReference="atp_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
