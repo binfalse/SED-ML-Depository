@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000481.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GnRH_Pit_1" name="GnRH_Pit">
+      <listOfVariables>
+        <variable id="GnRH_Pit" name="GnRH_Pit" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GnRH_Pit']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GnRH_Pit </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LH_Pit_1" name="LH_Pit">
+      <listOfVariables>
+        <variable id="LH_Pit" name="LH_Pit" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LH_Pit']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LH_Pit </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LH_Bld_1" name="LH_Bld">
+      <listOfVariables>
+        <variable id="LH_Bld" name="LH_Bld" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LH_Bld']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LH_Bld </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GnRH_Hyp_1" name="GnRH_Hyp">
+      <listOfVariables>
+        <variable id="GnRH_Hyp" name="GnRH_Hyp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GnRH_Hyp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GnRH_Hyp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FSH_Pit_1" name="FSH_Pit">
+      <listOfVariables>
+        <variable id="FSH_Pit" name="FSH_Pit" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FSH_Pit']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FSH_Pit </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FSH_Bld_1" name="FSH_Bld">
+      <listOfVariables>
+        <variable id="FSH_Bld" name="FSH_Bld" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FSH_Bld']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FSH_Bld </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Foll_1" name="Foll">
+      <listOfVariables>
+        <variable id="Foll" name="Foll" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Foll']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Foll </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CL_1" name="CL">
+      <listOfVariables>
+        <variable id="CL" name="CL" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CL']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CL </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E2_1" name="E2">
+      <listOfVariables>
+        <variable id="E2" name="E2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="P4_1" name="P4">
+      <listOfVariables>
+        <variable id="P4" name="P4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='P4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> P4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Inh_1" name="Inh">
+      <listOfVariables>
+        <variable id="Inh" name="Inh" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Inh']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Inh </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="OT_1" name="OT">
+      <listOfVariables>
+        <variable id="OT" name="OT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='OT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> OT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Enz_1" name="Enz">
+      <listOfVariables>
+        <variable id="Enz" name="Enz" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Enz']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Enz </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PGF_1" name="PGF">
+      <listOfVariables>
+        <variable id="PGF" name="PGF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PGF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PGF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IOF_1" name="IOF">
+      <listOfVariables>
+        <variable id="IOF" name="IOF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IOF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IOF </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="GnRH_Pit_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="LH_Pit_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="LH_Bld_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="GnRH_Hyp_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="FSH_Pit_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="FSH_Bld_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="Foll_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="CL_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="E2_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="P4_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="Inh_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="OT_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="Enz_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="PGF_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="IOF_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="GnRH_Pit_1" />
+        <dataSet id="col_2" dataReference="LH_Pit_1" />
+        <dataSet id="col_3" dataReference="LH_Bld_1" />
+        <dataSet id="col_4" dataReference="GnRH_Hyp_1" />
+        <dataSet id="col_5" dataReference="FSH_Pit_1" />
+        <dataSet id="col_6" dataReference="FSH_Bld_1" />
+        <dataSet id="col_7" dataReference="Foll_1" />
+        <dataSet id="col_8" dataReference="CL_1" />
+        <dataSet id="col_9" dataReference="E2_1" />
+        <dataSet id="col_10" dataReference="P4_1" />
+        <dataSet id="col_11" dataReference="Inh_1" />
+        <dataSet id="col_12" dataReference="OT_1" />
+        <dataSet id="col_13" dataReference="Enz_1" />
+        <dataSet id="col_14" dataReference="PGF_1" />
+        <dataSet id="col_15" dataReference="IOF_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
