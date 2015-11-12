@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000375.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="V_membrane_1" name="V_membrane">
+      <listOfVariables>
+        <variable id="V_membrane" name="V_membrane" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='V_membrane']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> V_membrane </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="n_1" name="n">
+      <listOfVariables>
+        <variable id="n" name="n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="jm_1" name="jm">
+      <listOfVariables>
+        <variable id="jm" name="jm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='jm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> jm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ca_er_Ca_equations_1" name="Ca_er_Ca_equations">
+      <listOfVariables>
+        <variable id="Ca_er_Ca_equations" name="Ca_er_Ca_equations" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ca_er_Ca_equations']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ca_er_Ca_equations </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ca_i_1" name="Ca_i">
+      <listOfVariables>
+        <variable id="Ca_i" name="Ca_i" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ca_i']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ca_i </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="V_membrane_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="n_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="jm_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Ca_er_Ca_equations_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Ca_i_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="V_membrane_1" />
+        <dataSet id="col_2" dataReference="n_1" />
+        <dataSet id="col_3" dataReference="jm_1" />
+        <dataSet id="col_4" dataReference="Ca_er_Ca_equations_1" />
+        <dataSet id="col_5" dataReference="Ca_i_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
