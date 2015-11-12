@@ -1,0 +1,1976 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000574.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_0_0_1" name="cam_RR_0_0">
+      <listOfVariables>
+        <variable id="cam_RR_0_0" name="cam_RR_0_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_0_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_0_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_0_rbp_1" name="cam_RR_0_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_0_rbp" name="cam_RR_0_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_0_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_0_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_0_tbp_1" name="cam_RR_0_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_0_tbp" name="cam_RR_0_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_0_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_0_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_A_0_1" name="cam_RR_A_0">
+      <listOfVariables>
+        <variable id="cam_RR_A_0" name="cam_RR_A_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_A_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_A_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_A_rbp_1" name="cam_RR_A_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_A_rbp" name="cam_RR_A_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_A_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_A_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_A_tbp_1" name="cam_RR_A_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_A_tbp" name="cam_RR_A_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_A_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_A_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_B_0_1" name="cam_RR_B_0">
+      <listOfVariables>
+        <variable id="cam_RR_B_0" name="cam_RR_B_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_B_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_B_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_B_rbp_1" name="cam_RR_B_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_B_rbp" name="cam_RR_B_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_B_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_B_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_B_tbp_1" name="cam_RR_B_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_B_tbp" name="cam_RR_B_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_B_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_B_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_C_0_1" name="cam_RR_C_0">
+      <listOfVariables>
+        <variable id="cam_RR_C_0" name="cam_RR_C_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_C_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_C_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_C_rbp_1" name="cam_RR_C_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_C_rbp" name="cam_RR_C_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_C_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_C_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_C_tbp_1" name="cam_RR_C_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_C_tbp" name="cam_RR_C_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_C_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_C_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_D_0_1" name="cam_RR_D_0">
+      <listOfVariables>
+        <variable id="cam_RR_D_0" name="cam_RR_D_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_D_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_D_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_D_rbp_1" name="cam_RR_D_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_D_rbp" name="cam_RR_D_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_D_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_D_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_D_tbp_1" name="cam_RR_D_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_D_tbp" name="cam_RR_D_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_D_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_D_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_AB_0_1" name="cam_RR_AB_0">
+      <listOfVariables>
+        <variable id="cam_RR_AB_0" name="cam_RR_AB_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_AB_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_AB_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_AB_rbp_1" name="cam_RR_AB_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_AB_rbp" name="cam_RR_AB_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_AB_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_AB_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_AB_tbp_1" name="cam_RR_AB_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_AB_tbp" name="cam_RR_AB_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_AB_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_AB_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_AC_0_1" name="cam_RR_AC_0">
+      <listOfVariables>
+        <variable id="cam_RR_AC_0" name="cam_RR_AC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_AC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_AC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_AC_rbp_1" name="cam_RR_AC_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_AC_rbp" name="cam_RR_AC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_AC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_AC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_AC_tbp_1" name="cam_RR_AC_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_AC_tbp" name="cam_RR_AC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_AC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_AC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_AD_0_1" name="cam_RR_AD_0">
+      <listOfVariables>
+        <variable id="cam_RR_AD_0" name="cam_RR_AD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_AD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_AD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_AD_rbp_1" name="cam_RR_AD_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_AD_rbp" name="cam_RR_AD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_AD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_AD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_AD_tbp_1" name="cam_RR_AD_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_AD_tbp" name="cam_RR_AD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_AD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_AD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_BC_0_1" name="cam_RR_BC_0">
+      <listOfVariables>
+        <variable id="cam_RR_BC_0" name="cam_RR_BC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_BC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_BC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_BC_rbp_1" name="cam_RR_BC_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_BC_rbp" name="cam_RR_BC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_BC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_BC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_BC_tbp_1" name="cam_RR_BC_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_BC_tbp" name="cam_RR_BC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_BC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_BC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_BD_0_1" name="cam_RR_BD_0">
+      <listOfVariables>
+        <variable id="cam_RR_BD_0" name="cam_RR_BD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_BD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_BD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_BD_rbp_1" name="cam_RR_BD_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_BD_rbp" name="cam_RR_BD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_BD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_BD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_BD_tbp_1" name="cam_RR_BD_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_BD_tbp" name="cam_RR_BD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_BD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_BD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_CD_0_1" name="cam_RR_CD_0">
+      <listOfVariables>
+        <variable id="cam_RR_CD_0" name="cam_RR_CD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_CD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_CD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_CD_rbp_1" name="cam_RR_CD_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_CD_rbp" name="cam_RR_CD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_CD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_CD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_CD_tbp_1" name="cam_RR_CD_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_CD_tbp" name="cam_RR_CD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_CD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_CD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ABC_0_1" name="cam_RR_ABC_0">
+      <listOfVariables>
+        <variable id="cam_RR_ABC_0" name="cam_RR_ABC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ABC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ABC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ABC_rbp_1" name="cam_RR_ABC_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_ABC_rbp" name="cam_RR_ABC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ABC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ABC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ABC_tbp_1" name="cam_RR_ABC_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_ABC_tbp" name="cam_RR_ABC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ABC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ABC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ABD_0_1" name="cam_RR_ABD_0">
+      <listOfVariables>
+        <variable id="cam_RR_ABD_0" name="cam_RR_ABD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ABD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ABD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ABD_rbp_1" name="cam_RR_ABD_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_ABD_rbp" name="cam_RR_ABD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ABD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ABD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ABD_tbp_1" name="cam_RR_ABD_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_ABD_tbp" name="cam_RR_ABD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ABD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ABD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ACD_0_1" name="cam_RR_ACD_0">
+      <listOfVariables>
+        <variable id="cam_RR_ACD_0" name="cam_RR_ACD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ACD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ACD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ACD_rbp_1" name="cam_RR_ACD_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_ACD_rbp" name="cam_RR_ACD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ACD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ACD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ACD_tbp_1" name="cam_RR_ACD_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_ACD_tbp" name="cam_RR_ACD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ACD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ACD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_BCD_0_1" name="cam_RR_BCD_0">
+      <listOfVariables>
+        <variable id="cam_RR_BCD_0" name="cam_RR_BCD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_BCD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_BCD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_BCD_rbp_1" name="cam_RR_BCD_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_BCD_rbp" name="cam_RR_BCD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_BCD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_BCD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_BCD_tbp_1" name="cam_RR_BCD_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_BCD_tbp" name="cam_RR_BCD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_BCD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_BCD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ABCD_0_1" name="cam_RR_ABCD_0">
+      <listOfVariables>
+        <variable id="cam_RR_ABCD_0" name="cam_RR_ABCD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ABCD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ABCD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ABCD_rbp_1" name="cam_RR_ABCD_rbp">
+      <listOfVariables>
+        <variable id="cam_RR_ABCD_rbp" name="cam_RR_ABCD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ABCD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ABCD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RR_ABCD_tbp_1" name="cam_RR_ABCD_tbp">
+      <listOfVariables>
+        <variable id="cam_RR_ABCD_tbp" name="cam_RR_ABCD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RR_ABCD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RR_ABCD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_0_0_1" name="cam_RT_0_0">
+      <listOfVariables>
+        <variable id="cam_RT_0_0" name="cam_RT_0_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_0_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_0_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_0_rbp_1" name="cam_RT_0_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_0_rbp" name="cam_RT_0_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_0_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_0_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_0_tbp_1" name="cam_RT_0_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_0_tbp" name="cam_RT_0_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_0_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_0_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_A_0_1" name="cam_RT_A_0">
+      <listOfVariables>
+        <variable id="cam_RT_A_0" name="cam_RT_A_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_A_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_A_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_A_rbp_1" name="cam_RT_A_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_A_rbp" name="cam_RT_A_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_A_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_A_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_A_tbp_1" name="cam_RT_A_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_A_tbp" name="cam_RT_A_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_A_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_A_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_B_0_1" name="cam_RT_B_0">
+      <listOfVariables>
+        <variable id="cam_RT_B_0" name="cam_RT_B_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_B_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_B_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_B_rbp_1" name="cam_RT_B_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_B_rbp" name="cam_RT_B_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_B_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_B_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_B_tbp_1" name="cam_RT_B_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_B_tbp" name="cam_RT_B_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_B_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_B_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_C_0_1" name="cam_RT_C_0">
+      <listOfVariables>
+        <variable id="cam_RT_C_0" name="cam_RT_C_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_C_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_C_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_C_rbp_1" name="cam_RT_C_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_C_rbp" name="cam_RT_C_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_C_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_C_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_C_tbp_1" name="cam_RT_C_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_C_tbp" name="cam_RT_C_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_C_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_C_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_D_0_1" name="cam_RT_D_0">
+      <listOfVariables>
+        <variable id="cam_RT_D_0" name="cam_RT_D_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_D_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_D_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_D_rbp_1" name="cam_RT_D_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_D_rbp" name="cam_RT_D_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_D_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_D_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_D_tbp_1" name="cam_RT_D_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_D_tbp" name="cam_RT_D_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_D_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_D_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_AB_0_1" name="cam_RT_AB_0">
+      <listOfVariables>
+        <variable id="cam_RT_AB_0" name="cam_RT_AB_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_AB_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_AB_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_AB_rbp_1" name="cam_RT_AB_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_AB_rbp" name="cam_RT_AB_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_AB_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_AB_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_AB_tbp_1" name="cam_RT_AB_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_AB_tbp" name="cam_RT_AB_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_AB_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_AB_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_AC_0_1" name="cam_RT_AC_0">
+      <listOfVariables>
+        <variable id="cam_RT_AC_0" name="cam_RT_AC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_AC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_AC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_AC_rbp_1" name="cam_RT_AC_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_AC_rbp" name="cam_RT_AC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_AC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_AC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_AC_tbp_1" name="cam_RT_AC_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_AC_tbp" name="cam_RT_AC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_AC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_AC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_AD_0_1" name="cam_RT_AD_0">
+      <listOfVariables>
+        <variable id="cam_RT_AD_0" name="cam_RT_AD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_AD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_AD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_AD_rbp_1" name="cam_RT_AD_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_AD_rbp" name="cam_RT_AD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_AD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_AD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_AD_tbp_1" name="cam_RT_AD_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_AD_tbp" name="cam_RT_AD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_AD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_AD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_BC_0_1" name="cam_RT_BC_0">
+      <listOfVariables>
+        <variable id="cam_RT_BC_0" name="cam_RT_BC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_BC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_BC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_BC_rbp_1" name="cam_RT_BC_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_BC_rbp" name="cam_RT_BC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_BC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_BC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_BC_tbp_1" name="cam_RT_BC_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_BC_tbp" name="cam_RT_BC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_BC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_BC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_BD_0_1" name="cam_RT_BD_0">
+      <listOfVariables>
+        <variable id="cam_RT_BD_0" name="cam_RT_BD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_BD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_BD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_BD_rbp_1" name="cam_RT_BD_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_BD_rbp" name="cam_RT_BD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_BD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_BD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_BD_tbp_1" name="cam_RT_BD_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_BD_tbp" name="cam_RT_BD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_BD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_BD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_CD_0_1" name="cam_RT_CD_0">
+      <listOfVariables>
+        <variable id="cam_RT_CD_0" name="cam_RT_CD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_CD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_CD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_CD_rbp_1" name="cam_RT_CD_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_CD_rbp" name="cam_RT_CD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_CD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_CD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_CD_tbp_1" name="cam_RT_CD_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_CD_tbp" name="cam_RT_CD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_CD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_CD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ABC_0_1" name="cam_RT_ABC_0">
+      <listOfVariables>
+        <variable id="cam_RT_ABC_0" name="cam_RT_ABC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ABC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ABC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ABC_rbp_1" name="cam_RT_ABC_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_ABC_rbp" name="cam_RT_ABC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ABC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ABC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ABC_tbp_1" name="cam_RT_ABC_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_ABC_tbp" name="cam_RT_ABC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ABC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ABC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ABD_0_1" name="cam_RT_ABD_0">
+      <listOfVariables>
+        <variable id="cam_RT_ABD_0" name="cam_RT_ABD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ABD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ABD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ABD_rbp_1" name="cam_RT_ABD_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_ABD_rbp" name="cam_RT_ABD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ABD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ABD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ABD_tbp_1" name="cam_RT_ABD_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_ABD_tbp" name="cam_RT_ABD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ABD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ABD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ACD_0_1" name="cam_RT_ACD_0">
+      <listOfVariables>
+        <variable id="cam_RT_ACD_0" name="cam_RT_ACD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ACD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ACD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ACD_rbp_1" name="cam_RT_ACD_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_ACD_rbp" name="cam_RT_ACD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ACD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ACD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ACD_tbp_1" name="cam_RT_ACD_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_ACD_tbp" name="cam_RT_ACD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ACD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ACD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_BCD_0_1" name="cam_RT_BCD_0">
+      <listOfVariables>
+        <variable id="cam_RT_BCD_0" name="cam_RT_BCD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_BCD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_BCD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_BCD_rbp_1" name="cam_RT_BCD_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_BCD_rbp" name="cam_RT_BCD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_BCD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_BCD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_BCD_tbp_1" name="cam_RT_BCD_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_BCD_tbp" name="cam_RT_BCD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_BCD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_BCD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ABCD_0_1" name="cam_RT_ABCD_0">
+      <listOfVariables>
+        <variable id="cam_RT_ABCD_0" name="cam_RT_ABCD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ABCD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ABCD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ABCD_rbp_1" name="cam_RT_ABCD_rbp">
+      <listOfVariables>
+        <variable id="cam_RT_ABCD_rbp" name="cam_RT_ABCD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ABCD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ABCD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_RT_ABCD_tbp_1" name="cam_RT_ABCD_tbp">
+      <listOfVariables>
+        <variable id="cam_RT_ABCD_tbp" name="cam_RT_ABCD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_RT_ABCD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_RT_ABCD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_0_0_1" name="cam_TR_0_0">
+      <listOfVariables>
+        <variable id="cam_TR_0_0" name="cam_TR_0_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_0_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_0_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_0_rbp_1" name="cam_TR_0_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_0_rbp" name="cam_TR_0_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_0_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_0_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_0_tbp_1" name="cam_TR_0_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_0_tbp" name="cam_TR_0_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_0_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_0_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_A_0_1" name="cam_TR_A_0">
+      <listOfVariables>
+        <variable id="cam_TR_A_0" name="cam_TR_A_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_A_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_A_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_A_rbp_1" name="cam_TR_A_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_A_rbp" name="cam_TR_A_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_A_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_A_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_A_tbp_1" name="cam_TR_A_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_A_tbp" name="cam_TR_A_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_A_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_A_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_B_0_1" name="cam_TR_B_0">
+      <listOfVariables>
+        <variable id="cam_TR_B_0" name="cam_TR_B_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_B_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_B_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_B_rbp_1" name="cam_TR_B_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_B_rbp" name="cam_TR_B_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_B_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_B_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_B_tbp_1" name="cam_TR_B_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_B_tbp" name="cam_TR_B_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_B_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_B_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_C_0_1" name="cam_TR_C_0">
+      <listOfVariables>
+        <variable id="cam_TR_C_0" name="cam_TR_C_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_C_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_C_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_C_rbp_1" name="cam_TR_C_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_C_rbp" name="cam_TR_C_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_C_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_C_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_C_tbp_1" name="cam_TR_C_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_C_tbp" name="cam_TR_C_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_C_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_C_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_D_0_1" name="cam_TR_D_0">
+      <listOfVariables>
+        <variable id="cam_TR_D_0" name="cam_TR_D_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_D_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_D_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_D_rbp_1" name="cam_TR_D_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_D_rbp" name="cam_TR_D_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_D_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_D_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_D_tbp_1" name="cam_TR_D_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_D_tbp" name="cam_TR_D_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_D_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_D_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_AB_0_1" name="cam_TR_AB_0">
+      <listOfVariables>
+        <variable id="cam_TR_AB_0" name="cam_TR_AB_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_AB_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_AB_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_AB_rbp_1" name="cam_TR_AB_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_AB_rbp" name="cam_TR_AB_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_AB_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_AB_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_AB_tbp_1" name="cam_TR_AB_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_AB_tbp" name="cam_TR_AB_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_AB_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_AB_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_AC_0_1" name="cam_TR_AC_0">
+      <listOfVariables>
+        <variable id="cam_TR_AC_0" name="cam_TR_AC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_AC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_AC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_AC_rbp_1" name="cam_TR_AC_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_AC_rbp" name="cam_TR_AC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_AC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_AC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_AC_tbp_1" name="cam_TR_AC_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_AC_tbp" name="cam_TR_AC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_AC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_AC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_AD_0_1" name="cam_TR_AD_0">
+      <listOfVariables>
+        <variable id="cam_TR_AD_0" name="cam_TR_AD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_AD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_AD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_AD_rbp_1" name="cam_TR_AD_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_AD_rbp" name="cam_TR_AD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_AD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_AD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_AD_tbp_1" name="cam_TR_AD_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_AD_tbp" name="cam_TR_AD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_AD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_AD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_BC_0_1" name="cam_TR_BC_0">
+      <listOfVariables>
+        <variable id="cam_TR_BC_0" name="cam_TR_BC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_BC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_BC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_BC_rbp_1" name="cam_TR_BC_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_BC_rbp" name="cam_TR_BC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_BC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_BC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_BC_tbp_1" name="cam_TR_BC_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_BC_tbp" name="cam_TR_BC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_BC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_BC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_BD_0_1" name="cam_TR_BD_0">
+      <listOfVariables>
+        <variable id="cam_TR_BD_0" name="cam_TR_BD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_BD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_BD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_BD_rbp_1" name="cam_TR_BD_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_BD_rbp" name="cam_TR_BD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_BD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_BD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_BD_tbp_1" name="cam_TR_BD_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_BD_tbp" name="cam_TR_BD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_BD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_BD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_CD_0_1" name="cam_TR_CD_0">
+      <listOfVariables>
+        <variable id="cam_TR_CD_0" name="cam_TR_CD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_CD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_CD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_CD_rbp_1" name="cam_TR_CD_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_CD_rbp" name="cam_TR_CD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_CD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_CD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_CD_tbp_1" name="cam_TR_CD_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_CD_tbp" name="cam_TR_CD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_CD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_CD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ABC_0_1" name="cam_TR_ABC_0">
+      <listOfVariables>
+        <variable id="cam_TR_ABC_0" name="cam_TR_ABC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ABC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ABC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ABC_rbp_1" name="cam_TR_ABC_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_ABC_rbp" name="cam_TR_ABC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ABC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ABC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ABC_tbp_1" name="cam_TR_ABC_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_ABC_tbp" name="cam_TR_ABC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ABC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ABC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ABD_0_1" name="cam_TR_ABD_0">
+      <listOfVariables>
+        <variable id="cam_TR_ABD_0" name="cam_TR_ABD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ABD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ABD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ABD_rbp_1" name="cam_TR_ABD_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_ABD_rbp" name="cam_TR_ABD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ABD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ABD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ABD_tbp_1" name="cam_TR_ABD_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_ABD_tbp" name="cam_TR_ABD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ABD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ABD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ACD_0_1" name="cam_TR_ACD_0">
+      <listOfVariables>
+        <variable id="cam_TR_ACD_0" name="cam_TR_ACD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ACD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ACD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ACD_rbp_1" name="cam_TR_ACD_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_ACD_rbp" name="cam_TR_ACD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ACD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ACD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ACD_tbp_1" name="cam_TR_ACD_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_ACD_tbp" name="cam_TR_ACD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ACD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ACD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_BCD_0_1" name="cam_TR_BCD_0">
+      <listOfVariables>
+        <variable id="cam_TR_BCD_0" name="cam_TR_BCD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_BCD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_BCD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_BCD_rbp_1" name="cam_TR_BCD_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_BCD_rbp" name="cam_TR_BCD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_BCD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_BCD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_BCD_tbp_1" name="cam_TR_BCD_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_BCD_tbp" name="cam_TR_BCD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_BCD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_BCD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ABCD_0_1" name="cam_TR_ABCD_0">
+      <listOfVariables>
+        <variable id="cam_TR_ABCD_0" name="cam_TR_ABCD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ABCD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ABCD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ABCD_rbp_1" name="cam_TR_ABCD_rbp">
+      <listOfVariables>
+        <variable id="cam_TR_ABCD_rbp" name="cam_TR_ABCD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ABCD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ABCD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TR_ABCD_tbp_1" name="cam_TR_ABCD_tbp">
+      <listOfVariables>
+        <variable id="cam_TR_ABCD_tbp" name="cam_TR_ABCD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TR_ABCD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TR_ABCD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_0_0_1" name="cam_TT_0_0">
+      <listOfVariables>
+        <variable id="cam_TT_0_0" name="cam_TT_0_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_0_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_0_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_0_rbp_1" name="cam_TT_0_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_0_rbp" name="cam_TT_0_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_0_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_0_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_0_tbp_1" name="cam_TT_0_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_0_tbp" name="cam_TT_0_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_0_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_0_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_A_0_1" name="cam_TT_A_0">
+      <listOfVariables>
+        <variable id="cam_TT_A_0" name="cam_TT_A_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_A_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_A_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_A_rbp_1" name="cam_TT_A_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_A_rbp" name="cam_TT_A_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_A_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_A_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_A_tbp_1" name="cam_TT_A_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_A_tbp" name="cam_TT_A_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_A_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_A_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_B_0_1" name="cam_TT_B_0">
+      <listOfVariables>
+        <variable id="cam_TT_B_0" name="cam_TT_B_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_B_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_B_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_B_rbp_1" name="cam_TT_B_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_B_rbp" name="cam_TT_B_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_B_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_B_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_B_tbp_1" name="cam_TT_B_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_B_tbp" name="cam_TT_B_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_B_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_B_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_C_0_1" name="cam_TT_C_0">
+      <listOfVariables>
+        <variable id="cam_TT_C_0" name="cam_TT_C_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_C_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_C_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_C_rbp_1" name="cam_TT_C_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_C_rbp" name="cam_TT_C_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_C_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_C_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_C_tbp_1" name="cam_TT_C_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_C_tbp" name="cam_TT_C_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_C_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_C_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_D_0_1" name="cam_TT_D_0">
+      <listOfVariables>
+        <variable id="cam_TT_D_0" name="cam_TT_D_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_D_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_D_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_D_rbp_1" name="cam_TT_D_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_D_rbp" name="cam_TT_D_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_D_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_D_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_D_tbp_1" name="cam_TT_D_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_D_tbp" name="cam_TT_D_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_D_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_D_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_AB_0_1" name="cam_TT_AB_0">
+      <listOfVariables>
+        <variable id="cam_TT_AB_0" name="cam_TT_AB_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_AB_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_AB_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_AB_rbp_1" name="cam_TT_AB_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_AB_rbp" name="cam_TT_AB_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_AB_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_AB_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_AB_tbp_1" name="cam_TT_AB_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_AB_tbp" name="cam_TT_AB_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_AB_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_AB_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_AC_0_1" name="cam_TT_AC_0">
+      <listOfVariables>
+        <variable id="cam_TT_AC_0" name="cam_TT_AC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_AC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_AC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_AC_rbp_1" name="cam_TT_AC_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_AC_rbp" name="cam_TT_AC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_AC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_AC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_AC_tbp_1" name="cam_TT_AC_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_AC_tbp" name="cam_TT_AC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_AC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_AC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_AD_0_1" name="cam_TT_AD_0">
+      <listOfVariables>
+        <variable id="cam_TT_AD_0" name="cam_TT_AD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_AD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_AD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_AD_rbp_1" name="cam_TT_AD_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_AD_rbp" name="cam_TT_AD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_AD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_AD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_AD_tbp_1" name="cam_TT_AD_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_AD_tbp" name="cam_TT_AD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_AD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_AD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_BC_0_1" name="cam_TT_BC_0">
+      <listOfVariables>
+        <variable id="cam_TT_BC_0" name="cam_TT_BC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_BC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_BC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_BC_rbp_1" name="cam_TT_BC_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_BC_rbp" name="cam_TT_BC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_BC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_BC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_BC_tbp_1" name="cam_TT_BC_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_BC_tbp" name="cam_TT_BC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_BC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_BC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_BD_0_1" name="cam_TT_BD_0">
+      <listOfVariables>
+        <variable id="cam_TT_BD_0" name="cam_TT_BD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_BD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_BD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_BD_rbp_1" name="cam_TT_BD_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_BD_rbp" name="cam_TT_BD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_BD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_BD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_BD_tbp_1" name="cam_TT_BD_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_BD_tbp" name="cam_TT_BD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_BD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_BD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_CD_0_1" name="cam_TT_CD_0">
+      <listOfVariables>
+        <variable id="cam_TT_CD_0" name="cam_TT_CD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_CD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_CD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_CD_rbp_1" name="cam_TT_CD_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_CD_rbp" name="cam_TT_CD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_CD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_CD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_CD_tbp_1" name="cam_TT_CD_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_CD_tbp" name="cam_TT_CD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_CD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_CD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ABC_0_1" name="cam_TT_ABC_0">
+      <listOfVariables>
+        <variable id="cam_TT_ABC_0" name="cam_TT_ABC_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ABC_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ABC_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ABC_rbp_1" name="cam_TT_ABC_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_ABC_rbp" name="cam_TT_ABC_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ABC_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ABC_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ABC_tbp_1" name="cam_TT_ABC_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_ABC_tbp" name="cam_TT_ABC_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ABC_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ABC_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ABD_0_1" name="cam_TT_ABD_0">
+      <listOfVariables>
+        <variable id="cam_TT_ABD_0" name="cam_TT_ABD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ABD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ABD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ABD_rbp_1" name="cam_TT_ABD_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_ABD_rbp" name="cam_TT_ABD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ABD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ABD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ABD_tbp_1" name="cam_TT_ABD_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_ABD_tbp" name="cam_TT_ABD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ABD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ABD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ACD_0_1" name="cam_TT_ACD_0">
+      <listOfVariables>
+        <variable id="cam_TT_ACD_0" name="cam_TT_ACD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ACD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ACD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ACD_rbp_1" name="cam_TT_ACD_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_ACD_rbp" name="cam_TT_ACD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ACD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ACD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ACD_tbp_1" name="cam_TT_ACD_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_ACD_tbp" name="cam_TT_ACD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ACD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ACD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_BCD_0_1" name="cam_TT_BCD_0">
+      <listOfVariables>
+        <variable id="cam_TT_BCD_0" name="cam_TT_BCD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_BCD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_BCD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_BCD_rbp_1" name="cam_TT_BCD_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_BCD_rbp" name="cam_TT_BCD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_BCD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_BCD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_BCD_tbp_1" name="cam_TT_BCD_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_BCD_tbp" name="cam_TT_BCD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_BCD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_BCD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ABCD_0_1" name="cam_TT_ABCD_0">
+      <listOfVariables>
+        <variable id="cam_TT_ABCD_0" name="cam_TT_ABCD_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ABCD_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ABCD_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ABCD_rbp_1" name="cam_TT_ABCD_rbp">
+      <listOfVariables>
+        <variable id="cam_TT_ABCD_rbp" name="cam_TT_ABCD_rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ABCD_rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ABCD_rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cam_TT_ABCD_tbp_1" name="cam_TT_ABCD_tbp">
+      <listOfVariables>
+        <variable id="cam_TT_ABCD_tbp" name="cam_TT_ABCD_tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cam_TT_ABCD_tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cam_TT_ABCD_tbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="rbp_1" name="rbp">
+      <listOfVariables>
+        <variable id="rbp" name="rbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='rbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> rbp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="tbp_1" name="tbp">
+      <listOfVariables>
+        <variable id="tbp" name="tbp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='tbp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> tbp </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_0_0_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_0_rbp_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_0_tbp_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_A_0_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_A_rbp_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_A_tbp_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_B_0_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_B_rbp_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_B_tbp_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_C_0_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_C_rbp_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_C_tbp_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_D_0_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_D_rbp_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_D_tbp_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_AB_0_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_AB_rbp_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_AB_tbp_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_AC_0_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_AC_rbp_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_AC_tbp_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_AD_0_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_AD_rbp_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_AD_tbp_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_BC_0_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_BC_rbp_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_BC_tbp_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_BD_0_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_BD_rbp_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_BD_tbp_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_CD_0_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_CD_rbp_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_CD_tbp_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ABC_0_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ABC_rbp_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ABC_tbp_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ABD_0_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ABD_rbp_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ABD_tbp_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ACD_0_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ACD_rbp_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ACD_tbp_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_BCD_0_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_BCD_rbp_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_BCD_tbp_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ABCD_0_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ABCD_rbp_1" />
+        <curve id="curve_47" logX="false" logY="false" xDataReference="time" yDataReference="cam_RR_ABCD_tbp_1" />
+        <curve id="curve_48" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_0_0_1" />
+        <curve id="curve_49" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_0_rbp_1" />
+        <curve id="curve_50" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_0_tbp_1" />
+        <curve id="curve_51" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_A_0_1" />
+        <curve id="curve_52" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_A_rbp_1" />
+        <curve id="curve_53" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_A_tbp_1" />
+        <curve id="curve_54" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_B_0_1" />
+        <curve id="curve_55" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_B_rbp_1" />
+        <curve id="curve_56" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_B_tbp_1" />
+        <curve id="curve_57" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_C_0_1" />
+        <curve id="curve_58" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_C_rbp_1" />
+        <curve id="curve_59" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_C_tbp_1" />
+        <curve id="curve_60" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_D_0_1" />
+        <curve id="curve_61" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_D_rbp_1" />
+        <curve id="curve_62" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_D_tbp_1" />
+        <curve id="curve_63" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_AB_0_1" />
+        <curve id="curve_64" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_AB_rbp_1" />
+        <curve id="curve_65" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_AB_tbp_1" />
+        <curve id="curve_66" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_AC_0_1" />
+        <curve id="curve_67" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_AC_rbp_1" />
+        <curve id="curve_68" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_AC_tbp_1" />
+        <curve id="curve_69" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_AD_0_1" />
+        <curve id="curve_70" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_AD_rbp_1" />
+        <curve id="curve_71" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_AD_tbp_1" />
+        <curve id="curve_72" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_BC_0_1" />
+        <curve id="curve_73" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_BC_rbp_1" />
+        <curve id="curve_74" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_BC_tbp_1" />
+        <curve id="curve_75" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_BD_0_1" />
+        <curve id="curve_76" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_BD_rbp_1" />
+        <curve id="curve_77" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_BD_tbp_1" />
+        <curve id="curve_78" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_CD_0_1" />
+        <curve id="curve_79" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_CD_rbp_1" />
+        <curve id="curve_80" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_CD_tbp_1" />
+        <curve id="curve_81" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ABC_0_1" />
+        <curve id="curve_82" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ABC_rbp_1" />
+        <curve id="curve_83" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ABC_tbp_1" />
+        <curve id="curve_84" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ABD_0_1" />
+        <curve id="curve_85" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ABD_rbp_1" />
+        <curve id="curve_86" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ABD_tbp_1" />
+        <curve id="curve_87" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ACD_0_1" />
+        <curve id="curve_88" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ACD_rbp_1" />
+        <curve id="curve_89" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ACD_tbp_1" />
+        <curve id="curve_90" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_BCD_0_1" />
+        <curve id="curve_91" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_BCD_rbp_1" />
+        <curve id="curve_92" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_BCD_tbp_1" />
+        <curve id="curve_93" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ABCD_0_1" />
+        <curve id="curve_94" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ABCD_rbp_1" />
+        <curve id="curve_95" logX="false" logY="false" xDataReference="time" yDataReference="cam_RT_ABCD_tbp_1" />
+        <curve id="curve_96" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_0_0_1" />
+        <curve id="curve_97" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_0_rbp_1" />
+        <curve id="curve_98" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_0_tbp_1" />
+        <curve id="curve_99" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_A_0_1" />
+        <curve id="curve_100" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_A_rbp_1" />
+        <curve id="curve_101" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_A_tbp_1" />
+        <curve id="curve_102" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_B_0_1" />
+        <curve id="curve_103" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_B_rbp_1" />
+        <curve id="curve_104" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_B_tbp_1" />
+        <curve id="curve_105" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_C_0_1" />
+        <curve id="curve_106" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_C_rbp_1" />
+        <curve id="curve_107" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_C_tbp_1" />
+        <curve id="curve_108" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_D_0_1" />
+        <curve id="curve_109" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_D_rbp_1" />
+        <curve id="curve_110" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_D_tbp_1" />
+        <curve id="curve_111" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_AB_0_1" />
+        <curve id="curve_112" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_AB_rbp_1" />
+        <curve id="curve_113" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_AB_tbp_1" />
+        <curve id="curve_114" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_AC_0_1" />
+        <curve id="curve_115" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_AC_rbp_1" />
+        <curve id="curve_116" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_AC_tbp_1" />
+        <curve id="curve_117" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_AD_0_1" />
+        <curve id="curve_118" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_AD_rbp_1" />
+        <curve id="curve_119" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_AD_tbp_1" />
+        <curve id="curve_120" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_BC_0_1" />
+        <curve id="curve_121" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_BC_rbp_1" />
+        <curve id="curve_122" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_BC_tbp_1" />
+        <curve id="curve_123" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_BD_0_1" />
+        <curve id="curve_124" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_BD_rbp_1" />
+        <curve id="curve_125" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_BD_tbp_1" />
+        <curve id="curve_126" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_CD_0_1" />
+        <curve id="curve_127" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_CD_rbp_1" />
+        <curve id="curve_128" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_CD_tbp_1" />
+        <curve id="curve_129" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ABC_0_1" />
+        <curve id="curve_130" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ABC_rbp_1" />
+        <curve id="curve_131" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ABC_tbp_1" />
+        <curve id="curve_132" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ABD_0_1" />
+        <curve id="curve_133" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ABD_rbp_1" />
+        <curve id="curve_134" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ABD_tbp_1" />
+        <curve id="curve_135" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ACD_0_1" />
+        <curve id="curve_136" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ACD_rbp_1" />
+        <curve id="curve_137" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ACD_tbp_1" />
+        <curve id="curve_138" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_BCD_0_1" />
+        <curve id="curve_139" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_BCD_rbp_1" />
+        <curve id="curve_140" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_BCD_tbp_1" />
+        <curve id="curve_141" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ABCD_0_1" />
+        <curve id="curve_142" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ABCD_rbp_1" />
+        <curve id="curve_143" logX="false" logY="false" xDataReference="time" yDataReference="cam_TR_ABCD_tbp_1" />
+        <curve id="curve_144" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_0_0_1" />
+        <curve id="curve_145" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_0_rbp_1" />
+        <curve id="curve_146" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_0_tbp_1" />
+        <curve id="curve_147" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_A_0_1" />
+        <curve id="curve_148" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_A_rbp_1" />
+        <curve id="curve_149" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_A_tbp_1" />
+        <curve id="curve_150" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_B_0_1" />
+        <curve id="curve_151" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_B_rbp_1" />
+        <curve id="curve_152" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_B_tbp_1" />
+        <curve id="curve_153" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_C_0_1" />
+        <curve id="curve_154" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_C_rbp_1" />
+        <curve id="curve_155" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_C_tbp_1" />
+        <curve id="curve_156" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_D_0_1" />
+        <curve id="curve_157" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_D_rbp_1" />
+        <curve id="curve_158" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_D_tbp_1" />
+        <curve id="curve_159" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_AB_0_1" />
+        <curve id="curve_160" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_AB_rbp_1" />
+        <curve id="curve_161" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_AB_tbp_1" />
+        <curve id="curve_162" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_AC_0_1" />
+        <curve id="curve_163" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_AC_rbp_1" />
+        <curve id="curve_164" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_AC_tbp_1" />
+        <curve id="curve_165" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_AD_0_1" />
+        <curve id="curve_166" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_AD_rbp_1" />
+        <curve id="curve_167" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_AD_tbp_1" />
+        <curve id="curve_168" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_BC_0_1" />
+        <curve id="curve_169" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_BC_rbp_1" />
+        <curve id="curve_170" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_BC_tbp_1" />
+        <curve id="curve_171" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_BD_0_1" />
+        <curve id="curve_172" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_BD_rbp_1" />
+        <curve id="curve_173" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_BD_tbp_1" />
+        <curve id="curve_174" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_CD_0_1" />
+        <curve id="curve_175" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_CD_rbp_1" />
+        <curve id="curve_176" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_CD_tbp_1" />
+        <curve id="curve_177" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ABC_0_1" />
+        <curve id="curve_178" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ABC_rbp_1" />
+        <curve id="curve_179" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ABC_tbp_1" />
+        <curve id="curve_180" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ABD_0_1" />
+        <curve id="curve_181" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ABD_rbp_1" />
+        <curve id="curve_182" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ABD_tbp_1" />
+        <curve id="curve_183" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ACD_0_1" />
+        <curve id="curve_184" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ACD_rbp_1" />
+        <curve id="curve_185" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ACD_tbp_1" />
+        <curve id="curve_186" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_BCD_0_1" />
+        <curve id="curve_187" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_BCD_rbp_1" />
+        <curve id="curve_188" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_BCD_tbp_1" />
+        <curve id="curve_189" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ABCD_0_1" />
+        <curve id="curve_190" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ABCD_rbp_1" />
+        <curve id="curve_191" logX="false" logY="false" xDataReference="time" yDataReference="cam_TT_ABCD_tbp_1" />
+        <curve id="curve_192" logX="false" logY="false" xDataReference="time" yDataReference="rbp_1" />
+        <curve id="curve_193" logX="false" logY="false" xDataReference="time" yDataReference="tbp_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="cam_RR_0_0_1" />
+        <dataSet id="col_2" dataReference="cam_RR_0_rbp_1" />
+        <dataSet id="col_3" dataReference="cam_RR_0_tbp_1" />
+        <dataSet id="col_4" dataReference="cam_RR_A_0_1" />
+        <dataSet id="col_5" dataReference="cam_RR_A_rbp_1" />
+        <dataSet id="col_6" dataReference="cam_RR_A_tbp_1" />
+        <dataSet id="col_7" dataReference="cam_RR_B_0_1" />
+        <dataSet id="col_8" dataReference="cam_RR_B_rbp_1" />
+        <dataSet id="col_9" dataReference="cam_RR_B_tbp_1" />
+        <dataSet id="col_10" dataReference="cam_RR_C_0_1" />
+        <dataSet id="col_11" dataReference="cam_RR_C_rbp_1" />
+        <dataSet id="col_12" dataReference="cam_RR_C_tbp_1" />
+        <dataSet id="col_13" dataReference="cam_RR_D_0_1" />
+        <dataSet id="col_14" dataReference="cam_RR_D_rbp_1" />
+        <dataSet id="col_15" dataReference="cam_RR_D_tbp_1" />
+        <dataSet id="col_16" dataReference="cam_RR_AB_0_1" />
+        <dataSet id="col_17" dataReference="cam_RR_AB_rbp_1" />
+        <dataSet id="col_18" dataReference="cam_RR_AB_tbp_1" />
+        <dataSet id="col_19" dataReference="cam_RR_AC_0_1" />
+        <dataSet id="col_20" dataReference="cam_RR_AC_rbp_1" />
+        <dataSet id="col_21" dataReference="cam_RR_AC_tbp_1" />
+        <dataSet id="col_22" dataReference="cam_RR_AD_0_1" />
+        <dataSet id="col_23" dataReference="cam_RR_AD_rbp_1" />
+        <dataSet id="col_24" dataReference="cam_RR_AD_tbp_1" />
+        <dataSet id="col_25" dataReference="cam_RR_BC_0_1" />
+        <dataSet id="col_26" dataReference="cam_RR_BC_rbp_1" />
+        <dataSet id="col_27" dataReference="cam_RR_BC_tbp_1" />
+        <dataSet id="col_28" dataReference="cam_RR_BD_0_1" />
+        <dataSet id="col_29" dataReference="cam_RR_BD_rbp_1" />
+        <dataSet id="col_30" dataReference="cam_RR_BD_tbp_1" />
+        <dataSet id="col_31" dataReference="cam_RR_CD_0_1" />
+        <dataSet id="col_32" dataReference="cam_RR_CD_rbp_1" />
+        <dataSet id="col_33" dataReference="cam_RR_CD_tbp_1" />
+        <dataSet id="col_34" dataReference="cam_RR_ABC_0_1" />
+        <dataSet id="col_35" dataReference="cam_RR_ABC_rbp_1" />
+        <dataSet id="col_36" dataReference="cam_RR_ABC_tbp_1" />
+        <dataSet id="col_37" dataReference="cam_RR_ABD_0_1" />
+        <dataSet id="col_38" dataReference="cam_RR_ABD_rbp_1" />
+        <dataSet id="col_39" dataReference="cam_RR_ABD_tbp_1" />
+        <dataSet id="col_40" dataReference="cam_RR_ACD_0_1" />
+        <dataSet id="col_41" dataReference="cam_RR_ACD_rbp_1" />
+        <dataSet id="col_42" dataReference="cam_RR_ACD_tbp_1" />
+        <dataSet id="col_43" dataReference="cam_RR_BCD_0_1" />
+        <dataSet id="col_44" dataReference="cam_RR_BCD_rbp_1" />
+        <dataSet id="col_45" dataReference="cam_RR_BCD_tbp_1" />
+        <dataSet id="col_46" dataReference="cam_RR_ABCD_0_1" />
+        <dataSet id="col_47" dataReference="cam_RR_ABCD_rbp_1" />
+        <dataSet id="col_48" dataReference="cam_RR_ABCD_tbp_1" />
+        <dataSet id="col_49" dataReference="cam_RT_0_0_1" />
+        <dataSet id="col_50" dataReference="cam_RT_0_rbp_1" />
+        <dataSet id="col_51" dataReference="cam_RT_0_tbp_1" />
+        <dataSet id="col_52" dataReference="cam_RT_A_0_1" />
+        <dataSet id="col_53" dataReference="cam_RT_A_rbp_1" />
+        <dataSet id="col_54" dataReference="cam_RT_A_tbp_1" />
+        <dataSet id="col_55" dataReference="cam_RT_B_0_1" />
+        <dataSet id="col_56" dataReference="cam_RT_B_rbp_1" />
+        <dataSet id="col_57" dataReference="cam_RT_B_tbp_1" />
+        <dataSet id="col_58" dataReference="cam_RT_C_0_1" />
+        <dataSet id="col_59" dataReference="cam_RT_C_rbp_1" />
+        <dataSet id="col_60" dataReference="cam_RT_C_tbp_1" />
+        <dataSet id="col_61" dataReference="cam_RT_D_0_1" />
+        <dataSet id="col_62" dataReference="cam_RT_D_rbp_1" />
+        <dataSet id="col_63" dataReference="cam_RT_D_tbp_1" />
+        <dataSet id="col_64" dataReference="cam_RT_AB_0_1" />
+        <dataSet id="col_65" dataReference="cam_RT_AB_rbp_1" />
+        <dataSet id="col_66" dataReference="cam_RT_AB_tbp_1" />
+        <dataSet id="col_67" dataReference="cam_RT_AC_0_1" />
+        <dataSet id="col_68" dataReference="cam_RT_AC_rbp_1" />
+        <dataSet id="col_69" dataReference="cam_RT_AC_tbp_1" />
+        <dataSet id="col_70" dataReference="cam_RT_AD_0_1" />
+        <dataSet id="col_71" dataReference="cam_RT_AD_rbp_1" />
+        <dataSet id="col_72" dataReference="cam_RT_AD_tbp_1" />
+        <dataSet id="col_73" dataReference="cam_RT_BC_0_1" />
+        <dataSet id="col_74" dataReference="cam_RT_BC_rbp_1" />
+        <dataSet id="col_75" dataReference="cam_RT_BC_tbp_1" />
+        <dataSet id="col_76" dataReference="cam_RT_BD_0_1" />
+        <dataSet id="col_77" dataReference="cam_RT_BD_rbp_1" />
+        <dataSet id="col_78" dataReference="cam_RT_BD_tbp_1" />
+        <dataSet id="col_79" dataReference="cam_RT_CD_0_1" />
+        <dataSet id="col_80" dataReference="cam_RT_CD_rbp_1" />
+        <dataSet id="col_81" dataReference="cam_RT_CD_tbp_1" />
+        <dataSet id="col_82" dataReference="cam_RT_ABC_0_1" />
+        <dataSet id="col_83" dataReference="cam_RT_ABC_rbp_1" />
+        <dataSet id="col_84" dataReference="cam_RT_ABC_tbp_1" />
+        <dataSet id="col_85" dataReference="cam_RT_ABD_0_1" />
+        <dataSet id="col_86" dataReference="cam_RT_ABD_rbp_1" />
+        <dataSet id="col_87" dataReference="cam_RT_ABD_tbp_1" />
+        <dataSet id="col_88" dataReference="cam_RT_ACD_0_1" />
+        <dataSet id="col_89" dataReference="cam_RT_ACD_rbp_1" />
+        <dataSet id="col_90" dataReference="cam_RT_ACD_tbp_1" />
+        <dataSet id="col_91" dataReference="cam_RT_BCD_0_1" />
+        <dataSet id="col_92" dataReference="cam_RT_BCD_rbp_1" />
+        <dataSet id="col_93" dataReference="cam_RT_BCD_tbp_1" />
+        <dataSet id="col_94" dataReference="cam_RT_ABCD_0_1" />
+        <dataSet id="col_95" dataReference="cam_RT_ABCD_rbp_1" />
+        <dataSet id="col_96" dataReference="cam_RT_ABCD_tbp_1" />
+        <dataSet id="col_97" dataReference="cam_TR_0_0_1" />
+        <dataSet id="col_98" dataReference="cam_TR_0_rbp_1" />
+        <dataSet id="col_99" dataReference="cam_TR_0_tbp_1" />
+        <dataSet id="col_100" dataReference="cam_TR_A_0_1" />
+        <dataSet id="col_101" dataReference="cam_TR_A_rbp_1" />
+        <dataSet id="col_102" dataReference="cam_TR_A_tbp_1" />
+        <dataSet id="col_103" dataReference="cam_TR_B_0_1" />
+        <dataSet id="col_104" dataReference="cam_TR_B_rbp_1" />
+        <dataSet id="col_105" dataReference="cam_TR_B_tbp_1" />
+        <dataSet id="col_106" dataReference="cam_TR_C_0_1" />
+        <dataSet id="col_107" dataReference="cam_TR_C_rbp_1" />
+        <dataSet id="col_108" dataReference="cam_TR_C_tbp_1" />
+        <dataSet id="col_109" dataReference="cam_TR_D_0_1" />
+        <dataSet id="col_110" dataReference="cam_TR_D_rbp_1" />
+        <dataSet id="col_111" dataReference="cam_TR_D_tbp_1" />
+        <dataSet id="col_112" dataReference="cam_TR_AB_0_1" />
+        <dataSet id="col_113" dataReference="cam_TR_AB_rbp_1" />
+        <dataSet id="col_114" dataReference="cam_TR_AB_tbp_1" />
+        <dataSet id="col_115" dataReference="cam_TR_AC_0_1" />
+        <dataSet id="col_116" dataReference="cam_TR_AC_rbp_1" />
+        <dataSet id="col_117" dataReference="cam_TR_AC_tbp_1" />
+        <dataSet id="col_118" dataReference="cam_TR_AD_0_1" />
+        <dataSet id="col_119" dataReference="cam_TR_AD_rbp_1" />
+        <dataSet id="col_120" dataReference="cam_TR_AD_tbp_1" />
+        <dataSet id="col_121" dataReference="cam_TR_BC_0_1" />
+        <dataSet id="col_122" dataReference="cam_TR_BC_rbp_1" />
+        <dataSet id="col_123" dataReference="cam_TR_BC_tbp_1" />
+        <dataSet id="col_124" dataReference="cam_TR_BD_0_1" />
+        <dataSet id="col_125" dataReference="cam_TR_BD_rbp_1" />
+        <dataSet id="col_126" dataReference="cam_TR_BD_tbp_1" />
+        <dataSet id="col_127" dataReference="cam_TR_CD_0_1" />
+        <dataSet id="col_128" dataReference="cam_TR_CD_rbp_1" />
+        <dataSet id="col_129" dataReference="cam_TR_CD_tbp_1" />
+        <dataSet id="col_130" dataReference="cam_TR_ABC_0_1" />
+        <dataSet id="col_131" dataReference="cam_TR_ABC_rbp_1" />
+        <dataSet id="col_132" dataReference="cam_TR_ABC_tbp_1" />
+        <dataSet id="col_133" dataReference="cam_TR_ABD_0_1" />
+        <dataSet id="col_134" dataReference="cam_TR_ABD_rbp_1" />
+        <dataSet id="col_135" dataReference="cam_TR_ABD_tbp_1" />
+        <dataSet id="col_136" dataReference="cam_TR_ACD_0_1" />
+        <dataSet id="col_137" dataReference="cam_TR_ACD_rbp_1" />
+        <dataSet id="col_138" dataReference="cam_TR_ACD_tbp_1" />
+        <dataSet id="col_139" dataReference="cam_TR_BCD_0_1" />
+        <dataSet id="col_140" dataReference="cam_TR_BCD_rbp_1" />
+        <dataSet id="col_141" dataReference="cam_TR_BCD_tbp_1" />
+        <dataSet id="col_142" dataReference="cam_TR_ABCD_0_1" />
+        <dataSet id="col_143" dataReference="cam_TR_ABCD_rbp_1" />
+        <dataSet id="col_144" dataReference="cam_TR_ABCD_tbp_1" />
+        <dataSet id="col_145" dataReference="cam_TT_0_0_1" />
+        <dataSet id="col_146" dataReference="cam_TT_0_rbp_1" />
+        <dataSet id="col_147" dataReference="cam_TT_0_tbp_1" />
+        <dataSet id="col_148" dataReference="cam_TT_A_0_1" />
+        <dataSet id="col_149" dataReference="cam_TT_A_rbp_1" />
+        <dataSet id="col_150" dataReference="cam_TT_A_tbp_1" />
+        <dataSet id="col_151" dataReference="cam_TT_B_0_1" />
+        <dataSet id="col_152" dataReference="cam_TT_B_rbp_1" />
+        <dataSet id="col_153" dataReference="cam_TT_B_tbp_1" />
+        <dataSet id="col_154" dataReference="cam_TT_C_0_1" />
+        <dataSet id="col_155" dataReference="cam_TT_C_rbp_1" />
+        <dataSet id="col_156" dataReference="cam_TT_C_tbp_1" />
+        <dataSet id="col_157" dataReference="cam_TT_D_0_1" />
+        <dataSet id="col_158" dataReference="cam_TT_D_rbp_1" />
+        <dataSet id="col_159" dataReference="cam_TT_D_tbp_1" />
+        <dataSet id="col_160" dataReference="cam_TT_AB_0_1" />
+        <dataSet id="col_161" dataReference="cam_TT_AB_rbp_1" />
+        <dataSet id="col_162" dataReference="cam_TT_AB_tbp_1" />
+        <dataSet id="col_163" dataReference="cam_TT_AC_0_1" />
+        <dataSet id="col_164" dataReference="cam_TT_AC_rbp_1" />
+        <dataSet id="col_165" dataReference="cam_TT_AC_tbp_1" />
+        <dataSet id="col_166" dataReference="cam_TT_AD_0_1" />
+        <dataSet id="col_167" dataReference="cam_TT_AD_rbp_1" />
+        <dataSet id="col_168" dataReference="cam_TT_AD_tbp_1" />
+        <dataSet id="col_169" dataReference="cam_TT_BC_0_1" />
+        <dataSet id="col_170" dataReference="cam_TT_BC_rbp_1" />
+        <dataSet id="col_171" dataReference="cam_TT_BC_tbp_1" />
+        <dataSet id="col_172" dataReference="cam_TT_BD_0_1" />
+        <dataSet id="col_173" dataReference="cam_TT_BD_rbp_1" />
+        <dataSet id="col_174" dataReference="cam_TT_BD_tbp_1" />
+        <dataSet id="col_175" dataReference="cam_TT_CD_0_1" />
+        <dataSet id="col_176" dataReference="cam_TT_CD_rbp_1" />
+        <dataSet id="col_177" dataReference="cam_TT_CD_tbp_1" />
+        <dataSet id="col_178" dataReference="cam_TT_ABC_0_1" />
+        <dataSet id="col_179" dataReference="cam_TT_ABC_rbp_1" />
+        <dataSet id="col_180" dataReference="cam_TT_ABC_tbp_1" />
+        <dataSet id="col_181" dataReference="cam_TT_ABD_0_1" />
+        <dataSet id="col_182" dataReference="cam_TT_ABD_rbp_1" />
+        <dataSet id="col_183" dataReference="cam_TT_ABD_tbp_1" />
+        <dataSet id="col_184" dataReference="cam_TT_ACD_0_1" />
+        <dataSet id="col_185" dataReference="cam_TT_ACD_rbp_1" />
+        <dataSet id="col_186" dataReference="cam_TT_ACD_tbp_1" />
+        <dataSet id="col_187" dataReference="cam_TT_BCD_0_1" />
+        <dataSet id="col_188" dataReference="cam_TT_BCD_rbp_1" />
+        <dataSet id="col_189" dataReference="cam_TT_BCD_tbp_1" />
+        <dataSet id="col_190" dataReference="cam_TT_ABCD_0_1" />
+        <dataSet id="col_191" dataReference="cam_TT_ABCD_rbp_1" />
+        <dataSet id="col_192" dataReference="cam_TT_ABCD_tbp_1" />
+        <dataSet id="col_193" dataReference="rbp_1" />
+        <dataSet id="col_194" dataReference="tbp_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
