@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000575.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Protofibril_1" name="Protofibril">
+      <listOfVariables>
+        <variable id="Protofibril" name="Protofibril" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Protofibril']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Protofibril </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Fibril_1" name="Fibril">
+      <listOfVariables>
+        <variable id="Fibril" name="Fibril" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Fibril']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Fibril </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Lewy_body_1" name="Lewy_body">
+      <listOfVariables>
+        <variable id="Lewy_body" name="Lewy_body" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Lewy_body']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Lewy_body </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Dopamine_1" name="Dopamine">
+      <listOfVariables>
+        <variable id="Dopamine" name="Dopamine" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Dopamine']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Dopamine </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="OH_1" name="OH">
+      <listOfVariables>
+        <variable id="OH" name="OH" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='OH']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> OH </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="OH_radical_1" name="OH_radical">
+      <listOfVariables>
+        <variable id="OH_radical" name="OH_radical" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='OH_radical']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> OH_radical </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="H2O2_1" name="H2O2">
+      <listOfVariables>
+        <variable id="H2O2" name="H2O2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='H2O2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> H2O2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DA_quinone_1" name="DA_quinone">
+      <listOfVariables>
+        <variable id="DA_quinone" name="DA_quinone" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DA_quinone']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DA_quinone </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ubiquitin_1" name="Ubiquitin">
+      <listOfVariables>
+        <variable id="Ubiquitin" name="Ubiquitin" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ubiquitin']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ubiquitin </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E1_1" name="E1">
+      <listOfVariables>
+        <variable id="E1" name="E1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ub_E1_1" name="Ub_E1">
+      <listOfVariables>
+        <variable id="Ub_E1" name="Ub_E1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ub_E1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ub_E1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UbcH8_1" name="UbcH8">
+      <listOfVariables>
+        <variable id="UbcH8" name="UbcH8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UbcH8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UbcH8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UbcH8_Ub_1" name="UbcH8_Ub">
+      <listOfVariables>
+        <variable id="UbcH8_Ub" name="UbcH8_Ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UbcH8_Ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UbcH8_Ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Parkin_1" name="Parkin">
+      <listOfVariables>
+        <variable id="Parkin" name="Parkin" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Parkin']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Parkin </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Parkin_sub_1" name="Parkin_sub">
+      <listOfVariables>
+        <variable id="Parkin_sub" name="Parkin_sub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Parkin_sub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Parkin_sub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Parkin_synphilin_1_1" name="Parkin_synphilin_1">
+      <listOfVariables>
+        <variable id="Parkin_synphilin_1" name="Parkin_synphilin_1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Parkin_synphilin_1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Parkin_synphilin_1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Parkin_synphilin_1_ub_1" name="Parkin_synphilin_1_ub">
+      <listOfVariables>
+        <variable id="Parkin_synphilin_1_ub" name="Parkin_synphilin_1_ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Parkin_synphilin_1_ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Parkin_synphilin_1_ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Parkin_sub_ub4_1" name="Parkin_sub_ub4">
+      <listOfVariables>
+        <variable id="Parkin_sub_ub4" name="Parkin_sub_ub4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Parkin_sub_ub4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Parkin_sub_ub4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Fragments_1" name="Fragments">
+      <listOfVariables>
+        <variable id="Fragments" name="Fragments" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Fragments']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Fragments </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UCH_L1_1" name="UCH_L1">
+      <listOfVariables>
+        <variable id="UCH_L1" name="UCH_L1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UCH_L1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UCH_L1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_Dopa_1" name="L_Dopa">
+      <listOfVariables>
+        <variable id="L_Dopa" name="L_Dopa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L_Dopa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L_Dopa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DOPAL_1" name="DOPAL">
+      <listOfVariables>
+        <variable id="DOPAL" name="DOPAL" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DOPAL']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DOPAL </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DOPAC_1" name="DOPAC">
+      <listOfVariables>
+        <variable id="DOPAC" name="DOPAC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DOPAC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DOPAC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GSH_1" name="GSH">
+      <listOfVariables>
+        <variable id="GSH" name="GSH" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GSH']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GSH </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GSSG_1" name="GSSG">
+      <listOfVariables>
+        <variable id="GSSG" name="GSSG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GSSG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GSSG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Fe3_1" name="Fe3">
+      <listOfVariables>
+        <variable id="Fe3" name="Fe3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Fe3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Fe3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UbcH8ub2_1" name="UbcH8ub2">
+      <listOfVariables>
+        <variable id="UbcH8ub2" name="UbcH8ub2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UbcH8ub2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UbcH8ub2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UbcH8ub3_1" name="UbcH8ub3">
+      <listOfVariables>
+        <variable id="UbcH8ub3" name="UbcH8ub3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UbcH8ub3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UbcH8ub3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UbcH8ub4_1" name="UbcH8ub4">
+      <listOfVariables>
+        <variable id="UbcH8ub4" name="UbcH8ub4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UbcH8ub4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UbcH8ub4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UbcH13_Uev1a_1" name="UbcH13_Uev1a">
+      <listOfVariables>
+        <variable id="UbcH13_Uev1a" name="UbcH13_Uev1a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UbcH13_Uev1a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UbcH13_Uev1a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UbcH13_Uev1a_ub_1" name="UbcH13_Uev1a_ub">
+      <listOfVariables>
+        <variable id="UbcH13_Uev1a_ub" name="UbcH13_Uev1a_ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UbcH13_Uev1a_ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UbcH13_Uev1a_ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="asyn_UCH_L1_1" name="asyn_UCH_L1">
+      <listOfVariables>
+        <variable id="asyn_UCH_L1" name="asyn_UCH_L1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='asyn_UCH_L1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> asyn_UCH_L1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="asyn_ub_1" name="asyn_ub">
+      <listOfVariables>
+        <variable id="asyn_ub" name="asyn_ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='asyn_ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> asyn_ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Protofibril_UCH_L1_1" name="Protofibril_UCH_L1">
+      <listOfVariables>
+        <variable id="Protofibril_UCH_L1" name="Protofibril_UCH_L1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Protofibril_UCH_L1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Protofibril_UCH_L1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Protofibril_Ub_1" name="Protofibril_Ub">
+      <listOfVariables>
+        <variable id="Protofibril_Ub" name="Protofibril_Ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Protofibril_Ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Protofibril_Ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UCH_L1_asyn_ub4_1" name="UCH_L1_asyn_ub4">
+      <listOfVariables>
+        <variable id="UCH_L1_asyn_ub4" name="UCH_L1_asyn_ub4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UCH_L1_asyn_ub4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UCH_L1_asyn_ub4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Hsc70_asyn_1" name="Hsc70_asyn">
+      <listOfVariables>
+        <variable id="Hsc70_asyn" name="Hsc70_asyn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Hsc70_asyn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Hsc70_asyn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Hsc70_Protofibril_1" name="Hsc70_Protofibril">
+      <listOfVariables>
+        <variable id="Hsc70_Protofibril" name="Hsc70_Protofibril" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Hsc70_Protofibril']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Hsc70_Protofibril </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Hsc70_fibril_1" name="Hsc70_fibril">
+      <listOfVariables>
+        <variable id="Hsc70_fibril" name="Hsc70_fibril" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Hsc70_fibril']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Hsc70_fibril </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Hsc70_1" name="Hsc70">
+      <listOfVariables>
+        <variable id="Hsc70" name="Hsc70" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Hsc70']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Hsc70 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DA_S_parkin_1" name="DA_S_parkin">
+      <listOfVariables>
+        <variable id="DA_S_parkin" name="DA_S_parkin" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DA_S_parkin']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DA_S_parkin </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="O2_1" name="O2">
+      <listOfVariables>
+        <variable id="O2" name="O2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='O2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> O2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DA_GSH_1" name="DA_GSH">
+      <listOfVariables>
+        <variable id="DA_GSH" name="DA_GSH" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DA_GSH']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DA_GSH </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Neuromelanin_1" name="Neuromelanin">
+      <listOfVariables>
+        <variable id="Neuromelanin" name="Neuromelanin" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Neuromelanin']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Neuromelanin </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Neuromelanin_ntox_Fe3_1" name="Neuromelanin_ntox_Fe3">
+      <listOfVariables>
+        <variable id="Neuromelanin_ntox_Fe3" name="Neuromelanin_ntox_Fe3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Neuromelanin_ntox_Fe3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Neuromelanin_ntox_Fe3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="V_DA_1" name="V_DA">
+      <listOfVariables>
+        <variable id="V_DA" name="V_DA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='V_DA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> V_DA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="V_ntox_ba_1" name="V_ntox_ba">
+      <listOfVariables>
+        <variable id="V_ntox_ba" name="V_ntox_ba" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='V_ntox_ba']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> V_ntox_ba </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Autophagosome_0_1" name="Autophagosome_0">
+      <listOfVariables>
+        <variable id="Autophagosome_0" name="Autophagosome_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Autophagosome_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Autophagosome_0 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Protofibril_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Fibril_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Lewy_body_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Dopamine_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="OH_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="OH_radical_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="H2O2_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="DA_quinone_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="Ubiquitin_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="E1_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="Ub_E1_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="UbcH8_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="UbcH8_Ub_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Parkin_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Parkin_sub_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="Parkin_synphilin_1_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="Parkin_synphilin_1_ub_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Parkin_sub_ub4_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="Fragments_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="UCH_L1_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="L_Dopa_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="DOPAL_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="DOPAC_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="GSH_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="GSSG_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="Fe3_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="UbcH8ub2_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="UbcH8ub3_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="UbcH8ub4_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="UbcH13_Uev1a_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="UbcH13_Uev1a_ub_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="asyn_UCH_L1_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="asyn_ub_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="Protofibril_UCH_L1_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="Protofibril_Ub_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="UCH_L1_asyn_ub4_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="Hsc70_asyn_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="Hsc70_Protofibril_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="Hsc70_fibril_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="Hsc70_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="DA_S_parkin_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="O2_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="DA_GSH_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="Neuromelanin_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="Neuromelanin_ntox_Fe3_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="V_DA_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="V_ntox_ba_1" />
+        <curve id="curve_47" logX="false" logY="false" xDataReference="time" yDataReference="Autophagosome_0_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Protofibril_1" />
+        <dataSet id="col_2" dataReference="Fibril_1" />
+        <dataSet id="col_3" dataReference="Lewy_body_1" />
+        <dataSet id="col_4" dataReference="Dopamine_1" />
+        <dataSet id="col_5" dataReference="OH_1" />
+        <dataSet id="col_6" dataReference="OH_radical_1" />
+        <dataSet id="col_7" dataReference="H2O2_1" />
+        <dataSet id="col_8" dataReference="DA_quinone_1" />
+        <dataSet id="col_9" dataReference="Ubiquitin_1" />
+        <dataSet id="col_10" dataReference="E1_1" />
+        <dataSet id="col_11" dataReference="Ub_E1_1" />
+        <dataSet id="col_12" dataReference="UbcH8_1" />
+        <dataSet id="col_13" dataReference="UbcH8_Ub_1" />
+        <dataSet id="col_14" dataReference="Parkin_1" />
+        <dataSet id="col_15" dataReference="Parkin_sub_1" />
+        <dataSet id="col_16" dataReference="Parkin_synphilin_1_1" />
+        <dataSet id="col_17" dataReference="Parkin_synphilin_1_ub_1" />
+        <dataSet id="col_18" dataReference="Parkin_sub_ub4_1" />
+        <dataSet id="col_19" dataReference="Fragments_1" />
+        <dataSet id="col_20" dataReference="UCH_L1_1" />
+        <dataSet id="col_21" dataReference="L_Dopa_1" />
+        <dataSet id="col_22" dataReference="DOPAL_1" />
+        <dataSet id="col_23" dataReference="DOPAC_1" />
+        <dataSet id="col_24" dataReference="GSH_1" />
+        <dataSet id="col_25" dataReference="GSSG_1" />
+        <dataSet id="col_26" dataReference="Fe3_1" />
+        <dataSet id="col_27" dataReference="UbcH8ub2_1" />
+        <dataSet id="col_28" dataReference="UbcH8ub3_1" />
+        <dataSet id="col_29" dataReference="UbcH8ub4_1" />
+        <dataSet id="col_30" dataReference="UbcH13_Uev1a_1" />
+        <dataSet id="col_31" dataReference="UbcH13_Uev1a_ub_1" />
+        <dataSet id="col_32" dataReference="asyn_UCH_L1_1" />
+        <dataSet id="col_33" dataReference="asyn_ub_1" />
+        <dataSet id="col_34" dataReference="Protofibril_UCH_L1_1" />
+        <dataSet id="col_35" dataReference="Protofibril_Ub_1" />
+        <dataSet id="col_36" dataReference="UCH_L1_asyn_ub4_1" />
+        <dataSet id="col_37" dataReference="Hsc70_asyn_1" />
+        <dataSet id="col_38" dataReference="Hsc70_Protofibril_1" />
+        <dataSet id="col_39" dataReference="Hsc70_fibril_1" />
+        <dataSet id="col_40" dataReference="Hsc70_1" />
+        <dataSet id="col_41" dataReference="DA_S_parkin_1" />
+        <dataSet id="col_42" dataReference="O2_1" />
+        <dataSet id="col_43" dataReference="DA_GSH_1" />
+        <dataSet id="col_44" dataReference="Neuromelanin_1" />
+        <dataSet id="col_45" dataReference="Neuromelanin_ntox_Fe3_1" />
+        <dataSet id="col_46" dataReference="V_DA_1" />
+        <dataSet id="col_47" dataReference="V_ntox_ba_1" />
+        <dataSet id="col_48" dataReference="Autophagosome_0_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
