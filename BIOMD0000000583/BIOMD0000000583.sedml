@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000583.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdiff_1" name="Cdiff">
+      <listOfVariables>
+        <variable id="Cdiff" name="Cdiff" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdiff']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdiff </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Commensal_Beneficial_1" name="Commensal_Beneficial">
+      <listOfVariables>
+        <variable id="Commensal_Beneficial" name="Commensal_Beneficial" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Commensal_Beneficial']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Commensal_Beneficial </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Commensal_Dead_1" name="Commensal_Dead">
+      <listOfVariables>
+        <variable id="Commensal_Dead" name="Commensal_Dead" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Commensal_Dead']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Commensal_Dead </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="tDC_LP_1" name="tDC_LP">
+      <listOfVariables>
+        <variable id="tDC_LP" name="tDC_LP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='tDC_LP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> tDC_LP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="tDC_MLN_1" name="tDC_MLN">
+      <listOfVariables>
+        <variable id="tDC_MLN" name="tDC_MLN" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='tDC_MLN']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> tDC_MLN </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Commensal_Harmful_1" name="Commensal_Harmful">
+      <listOfVariables>
+        <variable id="Commensal_Harmful" name="Commensal_Harmful" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Commensal_Harmful']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Commensal_Harmful </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="N_Lum_1" name="N_Lum">
+      <listOfVariables>
+        <variable id="N_Lum" name="N_Lum" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='N_Lum']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> N_Lum </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E_1" name="E">
+      <listOfVariables>
+        <variable id="E" name="E" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E_d_1" name="E_d">
+      <listOfVariables>
+        <variable id="E_d" name="E_d" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E_d']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E_d </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E_i_1" name="E_i">
+      <listOfVariables>
+        <variable id="E_i" name="E_i" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E_i']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E_i </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="M_LP_1" name="M_LP">
+      <listOfVariables>
+        <variable id="M_LP" name="M_LP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='M_LP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> M_LP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="eDC_LP_1" name="eDC_LP">
+      <listOfVariables>
+        <variable id="eDC_LP" name="eDC_LP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='eDC_LP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> eDC_LP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Th17_LP_1" name="Th17_LP">
+      <listOfVariables>
+        <variable id="Th17_LP" name="Th17_LP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Th17_LP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Th17_LP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Th1_LP_1" name="Th1_LP">
+      <listOfVariables>
+        <variable id="Th1_LP" name="Th1_LP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Th1_LP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Th1_LP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="iTreg_LP_1" name="iTreg_LP">
+      <listOfVariables>
+        <variable id="iTreg_LP" name="iTreg_LP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='iTreg_LP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> iTreg_LP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="eDC_MLN_1" name="eDC_MLN">
+      <listOfVariables>
+        <variable id="eDC_MLN" name="eDC_MLN" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='eDC_MLN']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> eDC_MLN </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="iTreg_MLN_1" name="iTreg_MLN">
+      <listOfVariables>
+        <variable id="iTreg_MLN" name="iTreg_MLN" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='iTreg_MLN']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> iTreg_MLN </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Th17_MLN_1" name="Th17_MLN">
+      <listOfVariables>
+        <variable id="Th17_MLN" name="Th17_MLN" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Th17_MLN']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Th17_MLN </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Th1_MLN_1" name="Th1_MLN">
+      <listOfVariables>
+        <variable id="Th1_MLN" name="Th1_MLN" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Th1_MLN']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Th1_MLN </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Cdiff_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Commensal_Beneficial_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Commensal_Dead_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="tDC_LP_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="tDC_MLN_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Commensal_Harmful_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="N_Lum_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="E_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="E_d_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="E_i_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="M_LP_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="eDC_LP_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="Th17_LP_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Th1_LP_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="iTreg_LP_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="eDC_MLN_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="iTreg_MLN_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Th17_MLN_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="Th1_MLN_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Cdiff_1" />
+        <dataSet id="col_2" dataReference="Commensal_Beneficial_1" />
+        <dataSet id="col_3" dataReference="Commensal_Dead_1" />
+        <dataSet id="col_4" dataReference="tDC_LP_1" />
+        <dataSet id="col_5" dataReference="tDC_MLN_1" />
+        <dataSet id="col_6" dataReference="Commensal_Harmful_1" />
+        <dataSet id="col_7" dataReference="N_Lum_1" />
+        <dataSet id="col_8" dataReference="E_1" />
+        <dataSet id="col_9" dataReference="E_d_1" />
+        <dataSet id="col_10" dataReference="E_i_1" />
+        <dataSet id="col_11" dataReference="M_LP_1" />
+        <dataSet id="col_12" dataReference="eDC_LP_1" />
+        <dataSet id="col_13" dataReference="Th17_LP_1" />
+        <dataSet id="col_14" dataReference="Th1_LP_1" />
+        <dataSet id="col_15" dataReference="iTreg_LP_1" />
+        <dataSet id="col_16" dataReference="eDC_MLN_1" />
+        <dataSet id="col_17" dataReference="iTreg_MLN_1" />
+        <dataSet id="col_18" dataReference="Th17_MLN_1" />
+        <dataSet id="col_19" dataReference="Th1_MLN_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
