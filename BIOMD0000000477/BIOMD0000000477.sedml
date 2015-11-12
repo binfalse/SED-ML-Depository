@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000477.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw4d2e70a7_f499_461d_ae18_bc53b365b091_1" name="mw4d2e70a7_f499_461d_ae18_bc53b365b091">
+      <listOfVariables>
+        <variable id="mw4d2e70a7_f499_461d_ae18_bc53b365b091" name="mw4d2e70a7_f499_461d_ae18_bc53b365b091" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw4d2e70a7_f499_461d_ae18_bc53b365b091']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw4d2e70a7_f499_461d_ae18_bc53b365b091 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw8cc67de0_64e6_428f_ab09_4c2825cc172c_1" name="mw8cc67de0_64e6_428f_ab09_4c2825cc172c">
+      <listOfVariables>
+        <variable id="mw8cc67de0_64e6_428f_ab09_4c2825cc172c" name="mw8cc67de0_64e6_428f_ab09_4c2825cc172c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw8cc67de0_64e6_428f_ab09_4c2825cc172c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw8cc67de0_64e6_428f_ab09_4c2825cc172c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw6ee00a71_ab68_454b_b1cd_60c1ebd19cfa_1" name="mw6ee00a71_ab68_454b_b1cd_60c1ebd19cfa">
+      <listOfVariables>
+        <variable id="mw6ee00a71_ab68_454b_b1cd_60c1ebd19cfa" name="mw6ee00a71_ab68_454b_b1cd_60c1ebd19cfa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw6ee00a71_ab68_454b_b1cd_60c1ebd19cfa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw6ee00a71_ab68_454b_b1cd_60c1ebd19cfa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw2dc73059_a841_48d5_b4bd_3ac24d94c42e_1" name="mw2dc73059_a841_48d5_b4bd_3ac24d94c42e">
+      <listOfVariables>
+        <variable id="mw2dc73059_a841_48d5_b4bd_3ac24d94c42e" name="mw2dc73059_a841_48d5_b4bd_3ac24d94c42e" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw2dc73059_a841_48d5_b4bd_3ac24d94c42e']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw2dc73059_a841_48d5_b4bd_3ac24d94c42e </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw136c8391_14f4_4a28_83a3_35cc74a2e040_1" name="mw136c8391_14f4_4a28_83a3_35cc74a2e040">
+      <listOfVariables>
+        <variable id="mw136c8391_14f4_4a28_83a3_35cc74a2e040" name="mw136c8391_14f4_4a28_83a3_35cc74a2e040" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw136c8391_14f4_4a28_83a3_35cc74a2e040']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw136c8391_14f4_4a28_83a3_35cc74a2e040 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw7204ab72_2ee5_4b92_b420_2583dacc4343_1" name="mw7204ab72_2ee5_4b92_b420_2583dacc4343">
+      <listOfVariables>
+        <variable id="mw7204ab72_2ee5_4b92_b420_2583dacc4343" name="mw7204ab72_2ee5_4b92_b420_2583dacc4343" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw7204ab72_2ee5_4b92_b420_2583dacc4343']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw7204ab72_2ee5_4b92_b420_2583dacc4343 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw6939cefe_e7ff_4a3f_b45b_a9234d1b5573_1" name="mw6939cefe_e7ff_4a3f_b45b_a9234d1b5573">
+      <listOfVariables>
+        <variable id="mw6939cefe_e7ff_4a3f_b45b_a9234d1b5573" name="mw6939cefe_e7ff_4a3f_b45b_a9234d1b5573" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw6939cefe_e7ff_4a3f_b45b_a9234d1b5573']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw6939cefe_e7ff_4a3f_b45b_a9234d1b5573 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwf8cfed1b_6fcf_4cba_bc30_b44490814a7a_1" name="mwf8cfed1b_6fcf_4cba_bc30_b44490814a7a">
+      <listOfVariables>
+        <variable id="mwf8cfed1b_6fcf_4cba_bc30_b44490814a7a" name="mwf8cfed1b_6fcf_4cba_bc30_b44490814a7a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwf8cfed1b_6fcf_4cba_bc30_b44490814a7a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwf8cfed1b_6fcf_4cba_bc30_b44490814a7a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw702be69a_eb4f_425e_87c7_ef7d85254536_1" name="mw702be69a_eb4f_425e_87c7_ef7d85254536">
+      <listOfVariables>
+        <variable id="mw702be69a_eb4f_425e_87c7_ef7d85254536" name="mw702be69a_eb4f_425e_87c7_ef7d85254536" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw702be69a_eb4f_425e_87c7_ef7d85254536']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw702be69a_eb4f_425e_87c7_ef7d85254536 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwbee11634_55df_4a3f_998a_634dfaf46fd7_1" name="mwbee11634_55df_4a3f_998a_634dfaf46fd7">
+      <listOfVariables>
+        <variable id="mwbee11634_55df_4a3f_998a_634dfaf46fd7" name="mwbee11634_55df_4a3f_998a_634dfaf46fd7" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwbee11634_55df_4a3f_998a_634dfaf46fd7']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwbee11634_55df_4a3f_998a_634dfaf46fd7 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw805b55df_cc91_4227_bb52_930e961b682c_1" name="mw805b55df_cc91_4227_bb52_930e961b682c">
+      <listOfVariables>
+        <variable id="mw805b55df_cc91_4227_bb52_930e961b682c" name="mw805b55df_cc91_4227_bb52_930e961b682c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw805b55df_cc91_4227_bb52_930e961b682c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw805b55df_cc91_4227_bb52_930e961b682c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwb71eb539_dca6_47ab_8df5_430d84af0bfb_1" name="mwb71eb539_dca6_47ab_8df5_430d84af0bfb">
+      <listOfVariables>
+        <variable id="mwb71eb539_dca6_47ab_8df5_430d84af0bfb" name="mwb71eb539_dca6_47ab_8df5_430d84af0bfb" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwb71eb539_dca6_47ab_8df5_430d84af0bfb']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwb71eb539_dca6_47ab_8df5_430d84af0bfb </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwa5d6f7e4_dc4d_4931_91ce_1e78e7b2f195_1" name="mwa5d6f7e4_dc4d_4931_91ce_1e78e7b2f195">
+      <listOfVariables>
+        <variable id="mwa5d6f7e4_dc4d_4931_91ce_1e78e7b2f195" name="mwa5d6f7e4_dc4d_4931_91ce_1e78e7b2f195" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwa5d6f7e4_dc4d_4931_91ce_1e78e7b2f195']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwa5d6f7e4_dc4d_4931_91ce_1e78e7b2f195 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw4079e13c_446e_4aa2_9ec4_233583833d02_1" name="mw4079e13c_446e_4aa2_9ec4_233583833d02">
+      <listOfVariables>
+        <variable id="mw4079e13c_446e_4aa2_9ec4_233583833d02" name="mw4079e13c_446e_4aa2_9ec4_233583833d02" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw4079e13c_446e_4aa2_9ec4_233583833d02']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw4079e13c_446e_4aa2_9ec4_233583833d02 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwe5fade7d_1715_4bb1_843f_923da8ecddf1_1" name="mwe5fade7d_1715_4bb1_843f_923da8ecddf1">
+      <listOfVariables>
+        <variable id="mwe5fade7d_1715_4bb1_843f_923da8ecddf1" name="mwe5fade7d_1715_4bb1_843f_923da8ecddf1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwe5fade7d_1715_4bb1_843f_923da8ecddf1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwe5fade7d_1715_4bb1_843f_923da8ecddf1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw262497ec_3d54_4367_bfe3_76a9c57497cb_1" name="mw262497ec_3d54_4367_bfe3_76a9c57497cb">
+      <listOfVariables>
+        <variable id="mw262497ec_3d54_4367_bfe3_76a9c57497cb" name="mw262497ec_3d54_4367_bfe3_76a9c57497cb" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw262497ec_3d54_4367_bfe3_76a9c57497cb']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw262497ec_3d54_4367_bfe3_76a9c57497cb </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw8bffd47e_34de_4738_81bf_7a39a40b3ae8_1" name="mw8bffd47e_34de_4738_81bf_7a39a40b3ae8">
+      <listOfVariables>
+        <variable id="mw8bffd47e_34de_4738_81bf_7a39a40b3ae8" name="mw8bffd47e_34de_4738_81bf_7a39a40b3ae8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw8bffd47e_34de_4738_81bf_7a39a40b3ae8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw8bffd47e_34de_4738_81bf_7a39a40b3ae8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw308b75ec_28b7_4d97_92e2_51a8ce04116a_1" name="mw308b75ec_28b7_4d97_92e2_51a8ce04116a">
+      <listOfVariables>
+        <variable id="mw308b75ec_28b7_4d97_92e2_51a8ce04116a" name="mw308b75ec_28b7_4d97_92e2_51a8ce04116a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw308b75ec_28b7_4d97_92e2_51a8ce04116a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw308b75ec_28b7_4d97_92e2_51a8ce04116a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw75377e12_e23d_44b3_9823_5fac9b23edc8_1" name="mw75377e12_e23d_44b3_9823_5fac9b23edc8">
+      <listOfVariables>
+        <variable id="mw75377e12_e23d_44b3_9823_5fac9b23edc8" name="mw75377e12_e23d_44b3_9823_5fac9b23edc8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw75377e12_e23d_44b3_9823_5fac9b23edc8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw75377e12_e23d_44b3_9823_5fac9b23edc8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw67d0cf04_d6a7_4725_a869_098a96a3350d_1" name="mw67d0cf04_d6a7_4725_a869_098a96a3350d">
+      <listOfVariables>
+        <variable id="mw67d0cf04_d6a7_4725_a869_098a96a3350d" name="mw67d0cf04_d6a7_4725_a869_098a96a3350d" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw67d0cf04_d6a7_4725_a869_098a96a3350d']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw67d0cf04_d6a7_4725_a869_098a96a3350d </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw46ee629a_dd6b_4163_9da1_2614bb1d74bc_1" name="mw46ee629a_dd6b_4163_9da1_2614bb1d74bc">
+      <listOfVariables>
+        <variable id="mw46ee629a_dd6b_4163_9da1_2614bb1d74bc" name="mw46ee629a_dd6b_4163_9da1_2614bb1d74bc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw46ee629a_dd6b_4163_9da1_2614bb1d74bc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw46ee629a_dd6b_4163_9da1_2614bb1d74bc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw0be0d193_fd6b_4824_8928_dbade8b5c99c_1" name="mw0be0d193_fd6b_4824_8928_dbade8b5c99c">
+      <listOfVariables>
+        <variable id="mw0be0d193_fd6b_4824_8928_dbade8b5c99c" name="mw0be0d193_fd6b_4824_8928_dbade8b5c99c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw0be0d193_fd6b_4824_8928_dbade8b5c99c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw0be0d193_fd6b_4824_8928_dbade8b5c99c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw280197c8_98de_43f0_bf01_0f332a1ab689_1" name="mw280197c8_98de_43f0_bf01_0f332a1ab689">
+      <listOfVariables>
+        <variable id="mw280197c8_98de_43f0_bf01_0f332a1ab689" name="mw280197c8_98de_43f0_bf01_0f332a1ab689" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw280197c8_98de_43f0_bf01_0f332a1ab689']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw280197c8_98de_43f0_bf01_0f332a1ab689 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw9a5baf6d_0285_4ad3_9499_059c553d9cf6_1" name="mw9a5baf6d_0285_4ad3_9499_059c553d9cf6">
+      <listOfVariables>
+        <variable id="mw9a5baf6d_0285_4ad3_9499_059c553d9cf6" name="mw9a5baf6d_0285_4ad3_9499_059c553d9cf6" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw9a5baf6d_0285_4ad3_9499_059c553d9cf6']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw9a5baf6d_0285_4ad3_9499_059c553d9cf6 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw05469f51_73f7_4ba1_9f1a_bce5fea143c2_1" name="mw05469f51_73f7_4ba1_9f1a_bce5fea143c2">
+      <listOfVariables>
+        <variable id="mw05469f51_73f7_4ba1_9f1a_bce5fea143c2" name="mw05469f51_73f7_4ba1_9f1a_bce5fea143c2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw05469f51_73f7_4ba1_9f1a_bce5fea143c2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw05469f51_73f7_4ba1_9f1a_bce5fea143c2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwf20834c8_a115_460b_859c_4e3ca1ffd953_1" name="mwf20834c8_a115_460b_859c_4e3ca1ffd953">
+      <listOfVariables>
+        <variable id="mwf20834c8_a115_460b_859c_4e3ca1ffd953" name="mwf20834c8_a115_460b_859c_4e3ca1ffd953" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwf20834c8_a115_460b_859c_4e3ca1ffd953']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwf20834c8_a115_460b_859c_4e3ca1ffd953 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwb4633da9_f9d6_4ad8_a7e5_da075c830e17_1" name="mwb4633da9_f9d6_4ad8_a7e5_da075c830e17">
+      <listOfVariables>
+        <variable id="mwb4633da9_f9d6_4ad8_a7e5_da075c830e17" name="mwb4633da9_f9d6_4ad8_a7e5_da075c830e17" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwb4633da9_f9d6_4ad8_a7e5_da075c830e17']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwb4633da9_f9d6_4ad8_a7e5_da075c830e17 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw9bb804c9_3e4e_4684_9f6b_4e6f6706a58e_1" name="mw9bb804c9_3e4e_4684_9f6b_4e6f6706a58e">
+      <listOfVariables>
+        <variable id="mw9bb804c9_3e4e_4684_9f6b_4e6f6706a58e" name="mw9bb804c9_3e4e_4684_9f6b_4e6f6706a58e" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw9bb804c9_3e4e_4684_9f6b_4e6f6706a58e']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw9bb804c9_3e4e_4684_9f6b_4e6f6706a58e </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw64453fc5_a275_4bba_84f0_2af249b31514_1" name="mw64453fc5_a275_4bba_84f0_2af249b31514">
+      <listOfVariables>
+        <variable id="mw64453fc5_a275_4bba_84f0_2af249b31514" name="mw64453fc5_a275_4bba_84f0_2af249b31514" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw64453fc5_a275_4bba_84f0_2af249b31514']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw64453fc5_a275_4bba_84f0_2af249b31514 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw323a57b4_8e59_4116_9ad1_fe547b89c858_1" name="mw323a57b4_8e59_4116_9ad1_fe547b89c858">
+      <listOfVariables>
+        <variable id="mw323a57b4_8e59_4116_9ad1_fe547b89c858" name="mw323a57b4_8e59_4116_9ad1_fe547b89c858" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw323a57b4_8e59_4116_9ad1_fe547b89c858']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw323a57b4_8e59_4116_9ad1_fe547b89c858 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw173d8585_5817_4b4c_932a_cf7d673680ac_1" name="mw173d8585_5817_4b4c_932a_cf7d673680ac">
+      <listOfVariables>
+        <variable id="mw173d8585_5817_4b4c_932a_cf7d673680ac" name="mw173d8585_5817_4b4c_932a_cf7d673680ac" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw173d8585_5817_4b4c_932a_cf7d673680ac']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw173d8585_5817_4b4c_932a_cf7d673680ac </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw32c21c39_237b_4d4c_bb5d_117cb30ce68a_1" name="mw32c21c39_237b_4d4c_bb5d_117cb30ce68a">
+      <listOfVariables>
+        <variable id="mw32c21c39_237b_4d4c_bb5d_117cb30ce68a" name="mw32c21c39_237b_4d4c_bb5d_117cb30ce68a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw32c21c39_237b_4d4c_bb5d_117cb30ce68a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw32c21c39_237b_4d4c_bb5d_117cb30ce68a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw3832f277_aef2_4f1d_87af_abc2a3c1a7d5_1" name="mw3832f277_aef2_4f1d_87af_abc2a3c1a7d5">
+      <listOfVariables>
+        <variable id="mw3832f277_aef2_4f1d_87af_abc2a3c1a7d5" name="mw3832f277_aef2_4f1d_87af_abc2a3c1a7d5" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw3832f277_aef2_4f1d_87af_abc2a3c1a7d5']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw3832f277_aef2_4f1d_87af_abc2a3c1a7d5 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw13651143_feb5_49a5_adab_9105c2647446_1" name="mw13651143_feb5_49a5_adab_9105c2647446">
+      <listOfVariables>
+        <variable id="mw13651143_feb5_49a5_adab_9105c2647446" name="mw13651143_feb5_49a5_adab_9105c2647446" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw13651143_feb5_49a5_adab_9105c2647446']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw13651143_feb5_49a5_adab_9105c2647446 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw8a358487_b18b_42df_a646_cd75eb5bfcc2_1" name="mw8a358487_b18b_42df_a646_cd75eb5bfcc2">
+      <listOfVariables>
+        <variable id="mw8a358487_b18b_42df_a646_cd75eb5bfcc2" name="mw8a358487_b18b_42df_a646_cd75eb5bfcc2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw8a358487_b18b_42df_a646_cd75eb5bfcc2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw8a358487_b18b_42df_a646_cd75eb5bfcc2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwd9e7a9b9_6f1b_4bbc_afa5_6cb192b62ce8_1" name="mwd9e7a9b9_6f1b_4bbc_afa5_6cb192b62ce8">
+      <listOfVariables>
+        <variable id="mwd9e7a9b9_6f1b_4bbc_afa5_6cb192b62ce8" name="mwd9e7a9b9_6f1b_4bbc_afa5_6cb192b62ce8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwd9e7a9b9_6f1b_4bbc_afa5_6cb192b62ce8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwd9e7a9b9_6f1b_4bbc_afa5_6cb192b62ce8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwfed5a135_c91b_4d20_91b2_3a61723544dd_1" name="mwfed5a135_c91b_4d20_91b2_3a61723544dd">
+      <listOfVariables>
+        <variable id="mwfed5a135_c91b_4d20_91b2_3a61723544dd" name="mwfed5a135_c91b_4d20_91b2_3a61723544dd" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwfed5a135_c91b_4d20_91b2_3a61723544dd']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwfed5a135_c91b_4d20_91b2_3a61723544dd </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw97345a67_a8e8_42aa_8e62_69e9d2b6cf45_1" name="mw97345a67_a8e8_42aa_8e62_69e9d2b6cf45">
+      <listOfVariables>
+        <variable id="mw97345a67_a8e8_42aa_8e62_69e9d2b6cf45" name="mw97345a67_a8e8_42aa_8e62_69e9d2b6cf45" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw97345a67_a8e8_42aa_8e62_69e9d2b6cf45']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw97345a67_a8e8_42aa_8e62_69e9d2b6cf45 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw5c67812a_17f5_43cf_8acb_9bde272c1911_1" name="mw5c67812a_17f5_43cf_8acb_9bde272c1911">
+      <listOfVariables>
+        <variable id="mw5c67812a_17f5_43cf_8acb_9bde272c1911" name="mw5c67812a_17f5_43cf_8acb_9bde272c1911" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw5c67812a_17f5_43cf_8acb_9bde272c1911']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw5c67812a_17f5_43cf_8acb_9bde272c1911 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw1f12e5bc_ebbc_4347_b6b7_5cd1740ac69a_1" name="mw1f12e5bc_ebbc_4347_b6b7_5cd1740ac69a">
+      <listOfVariables>
+        <variable id="mw1f12e5bc_ebbc_4347_b6b7_5cd1740ac69a" name="mw1f12e5bc_ebbc_4347_b6b7_5cd1740ac69a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw1f12e5bc_ebbc_4347_b6b7_5cd1740ac69a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw1f12e5bc_ebbc_4347_b6b7_5cd1740ac69a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwda4716f1_ae00_4149_aec3_12531380425a_1" name="mwda4716f1_ae00_4149_aec3_12531380425a">
+      <listOfVariables>
+        <variable id="mwda4716f1_ae00_4149_aec3_12531380425a" name="mwda4716f1_ae00_4149_aec3_12531380425a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwda4716f1_ae00_4149_aec3_12531380425a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwda4716f1_ae00_4149_aec3_12531380425a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mw17ae9adc_54ab_407b_a34d_8413a3a10cc6_1" name="mw17ae9adc_54ab_407b_a34d_8413a3a10cc6">
+      <listOfVariables>
+        <variable id="mw17ae9adc_54ab_407b_a34d_8413a3a10cc6" name="mw17ae9adc_54ab_407b_a34d_8413a3a10cc6" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mw17ae9adc_54ab_407b_a34d_8413a3a10cc6']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mw17ae9adc_54ab_407b_a34d_8413a3a10cc6 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mwc844b7c0_98f5_4d0d_8f0c_00dfe8b54e6d_1" name="mwc844b7c0_98f5_4d0d_8f0c_00dfe8b54e6d">
+      <listOfVariables>
+        <variable id="mwc844b7c0_98f5_4d0d_8f0c_00dfe8b54e6d" name="mwc844b7c0_98f5_4d0d_8f0c_00dfe8b54e6d" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mwc844b7c0_98f5_4d0d_8f0c_00dfe8b54e6d']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mwc844b7c0_98f5_4d0d_8f0c_00dfe8b54e6d </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="mw4d2e70a7_f499_461d_ae18_bc53b365b091_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="mw8cc67de0_64e6_428f_ab09_4c2825cc172c_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="mw6ee00a71_ab68_454b_b1cd_60c1ebd19cfa_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="mw2dc73059_a841_48d5_b4bd_3ac24d94c42e_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="mw136c8391_14f4_4a28_83a3_35cc74a2e040_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="mw7204ab72_2ee5_4b92_b420_2583dacc4343_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="mw6939cefe_e7ff_4a3f_b45b_a9234d1b5573_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="mwf8cfed1b_6fcf_4cba_bc30_b44490814a7a_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="mw702be69a_eb4f_425e_87c7_ef7d85254536_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="mwbee11634_55df_4a3f_998a_634dfaf46fd7_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="mw805b55df_cc91_4227_bb52_930e961b682c_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="mwb71eb539_dca6_47ab_8df5_430d84af0bfb_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="mwa5d6f7e4_dc4d_4931_91ce_1e78e7b2f195_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="mw4079e13c_446e_4aa2_9ec4_233583833d02_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="mwe5fade7d_1715_4bb1_843f_923da8ecddf1_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="mw262497ec_3d54_4367_bfe3_76a9c57497cb_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="mw8bffd47e_34de_4738_81bf_7a39a40b3ae8_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="mw308b75ec_28b7_4d97_92e2_51a8ce04116a_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="mw75377e12_e23d_44b3_9823_5fac9b23edc8_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="mw67d0cf04_d6a7_4725_a869_098a96a3350d_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="mw46ee629a_dd6b_4163_9da1_2614bb1d74bc_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="mw0be0d193_fd6b_4824_8928_dbade8b5c99c_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="mw280197c8_98de_43f0_bf01_0f332a1ab689_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="mw9a5baf6d_0285_4ad3_9499_059c553d9cf6_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="mw05469f51_73f7_4ba1_9f1a_bce5fea143c2_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="mwf20834c8_a115_460b_859c_4e3ca1ffd953_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="mwb4633da9_f9d6_4ad8_a7e5_da075c830e17_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="mw9bb804c9_3e4e_4684_9f6b_4e6f6706a58e_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="mw64453fc5_a275_4bba_84f0_2af249b31514_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="mw323a57b4_8e59_4116_9ad1_fe547b89c858_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="mw173d8585_5817_4b4c_932a_cf7d673680ac_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="mw32c21c39_237b_4d4c_bb5d_117cb30ce68a_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="mw3832f277_aef2_4f1d_87af_abc2a3c1a7d5_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="mw13651143_feb5_49a5_adab_9105c2647446_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="mw8a358487_b18b_42df_a646_cd75eb5bfcc2_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="mwd9e7a9b9_6f1b_4bbc_afa5_6cb192b62ce8_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="mwfed5a135_c91b_4d20_91b2_3a61723544dd_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="mw97345a67_a8e8_42aa_8e62_69e9d2b6cf45_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="mw5c67812a_17f5_43cf_8acb_9bde272c1911_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="mw1f12e5bc_ebbc_4347_b6b7_5cd1740ac69a_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="mwda4716f1_ae00_4149_aec3_12531380425a_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="mw17ae9adc_54ab_407b_a34d_8413a3a10cc6_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="mwc844b7c0_98f5_4d0d_8f0c_00dfe8b54e6d_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="mw4d2e70a7_f499_461d_ae18_bc53b365b091_1" />
+        <dataSet id="col_2" dataReference="mw8cc67de0_64e6_428f_ab09_4c2825cc172c_1" />
+        <dataSet id="col_3" dataReference="mw6ee00a71_ab68_454b_b1cd_60c1ebd19cfa_1" />
+        <dataSet id="col_4" dataReference="mw2dc73059_a841_48d5_b4bd_3ac24d94c42e_1" />
+        <dataSet id="col_5" dataReference="mw136c8391_14f4_4a28_83a3_35cc74a2e040_1" />
+        <dataSet id="col_6" dataReference="mw7204ab72_2ee5_4b92_b420_2583dacc4343_1" />
+        <dataSet id="col_7" dataReference="mw6939cefe_e7ff_4a3f_b45b_a9234d1b5573_1" />
+        <dataSet id="col_8" dataReference="mwf8cfed1b_6fcf_4cba_bc30_b44490814a7a_1" />
+        <dataSet id="col_9" dataReference="mw702be69a_eb4f_425e_87c7_ef7d85254536_1" />
+        <dataSet id="col_10" dataReference="mwbee11634_55df_4a3f_998a_634dfaf46fd7_1" />
+        <dataSet id="col_11" dataReference="mw805b55df_cc91_4227_bb52_930e961b682c_1" />
+        <dataSet id="col_12" dataReference="mwb71eb539_dca6_47ab_8df5_430d84af0bfb_1" />
+        <dataSet id="col_13" dataReference="mwa5d6f7e4_dc4d_4931_91ce_1e78e7b2f195_1" />
+        <dataSet id="col_14" dataReference="mw4079e13c_446e_4aa2_9ec4_233583833d02_1" />
+        <dataSet id="col_15" dataReference="mwe5fade7d_1715_4bb1_843f_923da8ecddf1_1" />
+        <dataSet id="col_16" dataReference="mw262497ec_3d54_4367_bfe3_76a9c57497cb_1" />
+        <dataSet id="col_17" dataReference="mw8bffd47e_34de_4738_81bf_7a39a40b3ae8_1" />
+        <dataSet id="col_18" dataReference="mw308b75ec_28b7_4d97_92e2_51a8ce04116a_1" />
+        <dataSet id="col_19" dataReference="mw75377e12_e23d_44b3_9823_5fac9b23edc8_1" />
+        <dataSet id="col_20" dataReference="mw67d0cf04_d6a7_4725_a869_098a96a3350d_1" />
+        <dataSet id="col_21" dataReference="mw46ee629a_dd6b_4163_9da1_2614bb1d74bc_1" />
+        <dataSet id="col_22" dataReference="mw0be0d193_fd6b_4824_8928_dbade8b5c99c_1" />
+        <dataSet id="col_23" dataReference="mw280197c8_98de_43f0_bf01_0f332a1ab689_1" />
+        <dataSet id="col_24" dataReference="mw9a5baf6d_0285_4ad3_9499_059c553d9cf6_1" />
+        <dataSet id="col_25" dataReference="mw05469f51_73f7_4ba1_9f1a_bce5fea143c2_1" />
+        <dataSet id="col_26" dataReference="mwf20834c8_a115_460b_859c_4e3ca1ffd953_1" />
+        <dataSet id="col_27" dataReference="mwb4633da9_f9d6_4ad8_a7e5_da075c830e17_1" />
+        <dataSet id="col_28" dataReference="mw9bb804c9_3e4e_4684_9f6b_4e6f6706a58e_1" />
+        <dataSet id="col_29" dataReference="mw64453fc5_a275_4bba_84f0_2af249b31514_1" />
+        <dataSet id="col_30" dataReference="mw323a57b4_8e59_4116_9ad1_fe547b89c858_1" />
+        <dataSet id="col_31" dataReference="mw173d8585_5817_4b4c_932a_cf7d673680ac_1" />
+        <dataSet id="col_32" dataReference="mw32c21c39_237b_4d4c_bb5d_117cb30ce68a_1" />
+        <dataSet id="col_33" dataReference="mw3832f277_aef2_4f1d_87af_abc2a3c1a7d5_1" />
+        <dataSet id="col_34" dataReference="mw13651143_feb5_49a5_adab_9105c2647446_1" />
+        <dataSet id="col_35" dataReference="mw8a358487_b18b_42df_a646_cd75eb5bfcc2_1" />
+        <dataSet id="col_36" dataReference="mwd9e7a9b9_6f1b_4bbc_afa5_6cb192b62ce8_1" />
+        <dataSet id="col_37" dataReference="mwfed5a135_c91b_4d20_91b2_3a61723544dd_1" />
+        <dataSet id="col_38" dataReference="mw97345a67_a8e8_42aa_8e62_69e9d2b6cf45_1" />
+        <dataSet id="col_39" dataReference="mw5c67812a_17f5_43cf_8acb_9bde272c1911_1" />
+        <dataSet id="col_40" dataReference="mw1f12e5bc_ebbc_4347_b6b7_5cd1740ac69a_1" />
+        <dataSet id="col_41" dataReference="mwda4716f1_ae00_4149_aec3_12531380425a_1" />
+        <dataSet id="col_42" dataReference="mw17ae9adc_54ab_407b_a34d_8413a3a10cc6_1" />
+        <dataSet id="col_43" dataReference="mwc844b7c0_98f5_4d0d_8f0c_00dfe8b54e6d_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
