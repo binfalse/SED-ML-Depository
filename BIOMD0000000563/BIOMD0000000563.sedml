@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000563.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PAMP_1" name="PAMP">
+      <listOfVariables>
+        <variable id="PAMP" name="PAMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PAMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PAMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_1" name="R">
+      <listOfVariables>
+        <variable id="R" name="R" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_0_1" name="R_0">
+      <listOfVariables>
+        <variable id="R_0" name="R_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E_int_1" name="E_int">
+      <listOfVariables>
+        <variable id="E_int" name="E_int" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E_int']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E_int </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Callose_1" name="Callose">
+      <listOfVariables>
+        <variable id="Callose" name="Callose" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Callose']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Callose </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Path_1" name="Path">
+      <listOfVariables>
+        <variable id="Path" name="Path" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Path']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Path </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Path_bulk_1" name="Path_bulk">
+      <listOfVariables>
+        <variable id="Path_bulk" name="Path_bulk" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Path_bulk']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Path_bulk </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PRR_1" name="PRR">
+      <listOfVariables>
+        <variable id="PRR" name="PRR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PRR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PRR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PRR_0_1" name="PRR_0">
+      <listOfVariables>
+        <variable id="PRR_0" name="PRR_0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PRR_0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PRR_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E_1" name="E">
+      <listOfVariables>
+        <variable id="E" name="E" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="PAMP_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="R_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="R_0_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="E_int_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Callose_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Path_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="Path_bulk_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="PRR_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="PRR_0_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="E_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="PAMP_1" />
+        <dataSet id="col_2" dataReference="R_1" />
+        <dataSet id="col_3" dataReference="R_0_1" />
+        <dataSet id="col_4" dataReference="E_int_1" />
+        <dataSet id="col_5" dataReference="Callose_1" />
+        <dataSet id="col_6" dataReference="Path_1" />
+        <dataSet id="col_7" dataReference="Path_bulk_1" />
+        <dataSet id="col_8" dataReference="PRR_1" />
+        <dataSet id="col_9" dataReference="PRR_0_1" />
+        <dataSet id="col_10" dataReference="E_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
