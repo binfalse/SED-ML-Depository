@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000522.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Auxin_1" name="Auxin">
+      <listOfVariables>
+        <variable id="Auxin" name="Auxin" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Auxin']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Auxin </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cytokinin_1" name="Cytokinin">
+      <listOfVariables>
+        <variable id="Cytokinin" name="Cytokinin" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cytokinin']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cytokinin </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AHP6m_1" name="AHP6m">
+      <listOfVariables>
+        <variable id="AHP6m" name="AHP6m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AHP6m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AHP6m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AHP6p_1" name="AHP6p">
+      <listOfVariables>
+        <variable id="AHP6p" name="AHP6p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AHP6p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AHP6p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IAA2m_1" name="IAA2m">
+      <listOfVariables>
+        <variable id="IAA2m" name="IAA2m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IAA2m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IAA2m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IAA2p_1" name="IAA2p">
+      <listOfVariables>
+        <variable id="IAA2p" name="IAA2p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IAA2p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IAA2p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARR5m_1" name="ARR5m">
+      <listOfVariables>
+        <variable id="ARR5m" name="ARR5m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARR5m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARR5m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARR5p_1" name="ARR5p">
+      <listOfVariables>
+        <variable id="ARR5p" name="ARR5p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARR5p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARR5p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PHBm_1" name="PHBm">
+      <listOfVariables>
+        <variable id="PHBm" name="PHBm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PHBm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PHBm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PHBp_1" name="PHBp">
+      <listOfVariables>
+        <variable id="PHBp" name="PHBp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PHBp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PHBp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CKX3m_1" name="CKX3m">
+      <listOfVariables>
+        <variable id="CKX3m" name="CKX3m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CKX3m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CKX3m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CKX3p_1" name="CKX3p">
+      <listOfVariables>
+        <variable id="CKX3p" name="CKX3p" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CKX3p']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CKX3p </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIN3m_1" name="PIN3m">
+      <listOfVariables>
+        <variable id="PIN3m" name="PIN3m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIN3m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIN3m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIN1m_1" name="PIN1m">
+      <listOfVariables>
+        <variable id="PIN1m" name="PIN1m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIN1m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIN1m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIN7m_1" name="PIN7m">
+      <listOfVariables>
+        <variable id="PIN7m" name="PIN7m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIN7m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIN7m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="miRNA_1" name="miRNA">
+      <listOfVariables>
+        <variable id="miRNA" name="miRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='miRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> miRNA </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Auxin_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Cytokinin_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="AHP6m_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="AHP6p_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="IAA2m_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="IAA2p_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="ARR5m_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="ARR5p_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="PHBm_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="PHBp_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="CKX3m_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="CKX3p_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="PIN3m_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="PIN1m_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="PIN7m_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="miRNA_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Auxin_1" />
+        <dataSet id="col_2" dataReference="Cytokinin_1" />
+        <dataSet id="col_3" dataReference="AHP6m_1" />
+        <dataSet id="col_4" dataReference="AHP6p_1" />
+        <dataSet id="col_5" dataReference="IAA2m_1" />
+        <dataSet id="col_6" dataReference="IAA2p_1" />
+        <dataSet id="col_7" dataReference="ARR5m_1" />
+        <dataSet id="col_8" dataReference="ARR5p_1" />
+        <dataSet id="col_9" dataReference="PHBm_1" />
+        <dataSet id="col_10" dataReference="PHBp_1" />
+        <dataSet id="col_11" dataReference="CKX3m_1" />
+        <dataSet id="col_12" dataReference="CKX3p_1" />
+        <dataSet id="col_13" dataReference="PIN3m_1" />
+        <dataSet id="col_14" dataReference="PIN1m_1" />
+        <dataSet id="col_15" dataReference="PIN7m_1" />
+        <dataSet id="col_16" dataReference="miRNA_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
