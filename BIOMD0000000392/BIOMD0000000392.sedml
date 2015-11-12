@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000392.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RuBP_1" name="RuBP">
+      <listOfVariables>
+        <variable id="RuBP" name="RuBP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RuBP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RuBP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ER_1" name="ER">
+      <listOfVariables>
+        <variable id="ER" name="ER" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ER']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ER </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EPP_1" name="EPP">
+      <listOfVariables>
+        <variable id="EPP" name="EPP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EPP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EPP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EPG_1" name="EPG">
+      <listOfVariables>
+        <variable id="EPG" name="EPG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EPG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EPG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EP_1" name="EP">
+      <listOfVariables>
+        <variable id="EP" name="EP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EOP_1" name="EOP">
+      <listOfVariables>
+        <variable id="EOP" name="EOP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EOP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EOP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PGA_1" name="PGA">
+      <listOfVariables>
+        <variable id="PGA" name="PGA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PGA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PGA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TP_1" name="TP">
+      <listOfVariables>
+        <variable id="TP" name="TP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FBP_1" name="FBP">
+      <listOfVariables>
+        <variable id="FBP" name="FBP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FBP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FBP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HeP_1" name="HeP">
+      <listOfVariables>
+        <variable id="HeP" name="HeP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HeP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HeP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E4P_1" name="E4P">
+      <listOfVariables>
+        <variable id="E4P" name="E4P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E4P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E4P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SBP_1" name="SBP">
+      <listOfVariables>
+        <variable id="SBP" name="SBP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SBP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SBP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="S7P_1" name="S7P">
+      <listOfVariables>
+        <variable id="S7P" name="S7P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='S7P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> S7P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PeP_1" name="PeP">
+      <listOfVariables>
+        <variable id="PeP" name="PeP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PeP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PeP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ADPG_1" name="ADPG">
+      <listOfVariables>
+        <variable id="ADPG" name="ADPG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ADPG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ADPG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATP_1" name="ATP">
+      <listOfVariables>
+        <variable id="ATP" name="ATP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PGAc_1" name="PGAc">
+      <listOfVariables>
+        <variable id="PGAc" name="PGAc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PGAc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PGAc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TPc_1" name="TPc">
+      <listOfVariables>
+        <variable id="TPc" name="TPc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TPc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TPc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FBPc_1" name="FBPc">
+      <listOfVariables>
+        <variable id="FBPc" name="FBPc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FBPc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FBPc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F26BPc_1" name="F26BPc">
+      <listOfVariables>
+        <variable id="F26BPc" name="F26BPc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F26BPc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F26BPc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HePc_1" name="HePc">
+      <listOfVariables>
+        <variable id="HePc" name="HePc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HePc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HePc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UDPGc_1" name="UDPGc">
+      <listOfVariables>
+        <variable id="UDPGc" name="UDPGc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UDPGc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UDPGc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SucPc_1" name="SucPc">
+      <listOfVariables>
+        <variable id="SucPc" name="SucPc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SucPc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SucPc </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="RuBP_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="ER_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="EPP_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="EPG_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="EP_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="EOP_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="PGA_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="TP_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="FBP_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="HeP_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="E4P_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="SBP_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="S7P_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="PeP_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="ADPG_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="ATP_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="PGAc_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="TPc_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="FBPc_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="F26BPc_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="HePc_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="UDPGc_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="SucPc_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="RuBP_1" />
+        <dataSet id="col_2" dataReference="ER_1" />
+        <dataSet id="col_3" dataReference="EPP_1" />
+        <dataSet id="col_4" dataReference="EPG_1" />
+        <dataSet id="col_5" dataReference="EP_1" />
+        <dataSet id="col_6" dataReference="EOP_1" />
+        <dataSet id="col_7" dataReference="PGA_1" />
+        <dataSet id="col_8" dataReference="TP_1" />
+        <dataSet id="col_9" dataReference="FBP_1" />
+        <dataSet id="col_10" dataReference="HeP_1" />
+        <dataSet id="col_11" dataReference="E4P_1" />
+        <dataSet id="col_12" dataReference="SBP_1" />
+        <dataSet id="col_13" dataReference="S7P_1" />
+        <dataSet id="col_14" dataReference="PeP_1" />
+        <dataSet id="col_15" dataReference="ADPG_1" />
+        <dataSet id="col_16" dataReference="ATP_1" />
+        <dataSet id="col_17" dataReference="PGAc_1" />
+        <dataSet id="col_18" dataReference="TPc_1" />
+        <dataSet id="col_19" dataReference="FBPc_1" />
+        <dataSet id="col_20" dataReference="F26BPc_1" />
+        <dataSet id="col_21" dataReference="HePc_1" />
+        <dataSet id="col_22" dataReference="UDPGc_1" />
+        <dataSet id="col_23" dataReference="SucPc_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
