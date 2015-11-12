@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000572.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="G6P_1" name="G6P">
+      <listOfVariables>
+        <variable id="G6P" name="G6P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='G6P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> G6P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATP_1" name="ATP">
+      <listOfVariables>
+        <variable id="ATP" name="ATP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ADP_1" name="ADP">
+      <listOfVariables>
+        <variable id="ADP" name="ADP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ADP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ADP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pint_1" name="Pint">
+      <listOfVariables>
+        <variable id="Pint" name="Pint" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pint']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pint </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F6P_1" name="F6P">
+      <listOfVariables>
+        <variable id="F6P" name="F6P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F6P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F6P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FBP_1" name="FBP">
+      <listOfVariables>
+        <variable id="FBP" name="FBP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FBP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FBP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="G3P_1" name="G3P">
+      <listOfVariables>
+        <variable id="G3P" name="G3P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='G3P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> G3P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BPG_1" name="BPG">
+      <listOfVariables>
+        <variable id="BPG" name="BPG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BPG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BPG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PEP_1" name="PEP">
+      <listOfVariables>
+        <variable id="PEP" name="PEP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PEP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PEP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NAD_1" name="NAD">
+      <listOfVariables>
+        <variable id="NAD" name="NAD" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NAD']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NAD </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NADH_1" name="NADH">
+      <listOfVariables>
+        <variable id="NADH" name="NADH" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NADH']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NADH </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PYR_1" name="PYR">
+      <listOfVariables>
+        <variable id="PYR" name="PYR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PYR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PYR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AcetCoA_1" name="AcetCoA">
+      <listOfVariables>
+        <variable id="AcetCoA" name="AcetCoA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AcetCoA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AcetCoA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Acetoin_1" name="Acetoin">
+      <listOfVariables>
+        <variable id="Acetoin" name="Acetoin" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Acetoin']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Acetoin </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mannitol_1" name="Mannitol">
+      <listOfVariables>
+        <variable id="Mannitol" name="Mannitol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mannitol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mannitol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mannitol1Phosphate_1" name="Mannitol1Phosphate">
+      <listOfVariables>
+        <variable id="Mannitol1Phosphate" name="Mannitol1Phosphate" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mannitol1Phosphate']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mannitol1Phosphate </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CoA_1" name="CoA">
+      <listOfVariables>
+        <variable id="CoA" name="CoA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CoA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CoA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pext_1" name="Pext">
+      <listOfVariables>
+        <variable id="Pext" name="Pext" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pext']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pext </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Lactate_1" name="Lactate">
+      <listOfVariables>
+        <variable id="Lactate" name="Lactate" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Lactate']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Lactate </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ethanol_1" name="Ethanol">
+      <listOfVariables>
+        <variable id="Ethanol" name="Ethanol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ethanol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ethanol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Acetate_1" name="Acetate">
+      <listOfVariables>
+        <variable id="Acetate" name="Acetate" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Acetate']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Acetate </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Butanediol_1" name="Butanediol">
+      <listOfVariables>
+        <variable id="Butanediol" name="Butanediol" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Butanediol']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Butanediol </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Glucose_1" name="Glucose">
+      <listOfVariables>
+        <variable id="Glucose" name="Glucose" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Glucose']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Glucose </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Acetoin_Ext_1" name="Acetoin_Ext">
+      <listOfVariables>
+        <variable id="Acetoin_Ext" name="Acetoin_Ext" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Acetoin_Ext']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Acetoin_Ext </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mannitol_Ext_1" name="Mannitol_Ext">
+      <listOfVariables>
+        <variable id="Mannitol_Ext" name="Mannitol_Ext" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mannitol_Ext']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mannitol_Ext </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Formate_1" name="Formate">
+      <listOfVariables>
+        <variable id="Formate" name="Formate" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Formate']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Formate </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="G6P_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="ATP_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="ADP_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Pint_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="F6P_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="FBP_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="G3P_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="BPG_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="PEP_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="NAD_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="NADH_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="PYR_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="AcetCoA_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Acetoin_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Mannitol_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="Mannitol1Phosphate_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="CoA_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Pext_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="Lactate_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="Ethanol_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="Acetate_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="Butanediol_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="Glucose_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="Acetoin_Ext_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="Mannitol_Ext_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="Formate_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="G6P_1" />
+        <dataSet id="col_2" dataReference="ATP_1" />
+        <dataSet id="col_3" dataReference="ADP_1" />
+        <dataSet id="col_4" dataReference="Pint_1" />
+        <dataSet id="col_5" dataReference="F6P_1" />
+        <dataSet id="col_6" dataReference="FBP_1" />
+        <dataSet id="col_7" dataReference="G3P_1" />
+        <dataSet id="col_8" dataReference="BPG_1" />
+        <dataSet id="col_9" dataReference="PEP_1" />
+        <dataSet id="col_10" dataReference="NAD_1" />
+        <dataSet id="col_11" dataReference="NADH_1" />
+        <dataSet id="col_12" dataReference="PYR_1" />
+        <dataSet id="col_13" dataReference="AcetCoA_1" />
+        <dataSet id="col_14" dataReference="Acetoin_1" />
+        <dataSet id="col_15" dataReference="Mannitol_1" />
+        <dataSet id="col_16" dataReference="Mannitol1Phosphate_1" />
+        <dataSet id="col_17" dataReference="CoA_1" />
+        <dataSet id="col_18" dataReference="Pext_1" />
+        <dataSet id="col_19" dataReference="Lactate_1" />
+        <dataSet id="col_20" dataReference="Ethanol_1" />
+        <dataSet id="col_21" dataReference="Acetate_1" />
+        <dataSet id="col_22" dataReference="Butanediol_1" />
+        <dataSet id="col_23" dataReference="Glucose_1" />
+        <dataSet id="col_24" dataReference="Acetoin_Ext_1" />
+        <dataSet id="col_25" dataReference="Mannitol_Ext_1" />
+        <dataSet id="col_26" dataReference="Formate_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
