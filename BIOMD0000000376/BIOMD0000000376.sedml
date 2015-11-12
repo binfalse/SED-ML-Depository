@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000376.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Vm_1" name="Vm">
+      <listOfVariables>
+        <variable id="Vm" name="Vm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Vm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Vm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="n_1" name="n">
+      <listOfVariables>
+        <variable id="n" name="n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="G6P_1" name="G6P">
+      <listOfVariables>
+        <variable id="G6P" name="G6P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='G6P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> G6P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FBP_1" name="FBP">
+      <listOfVariables>
+        <variable id="FBP" name="FBP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FBP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FBP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NADHm_1" name="NADHm">
+      <listOfVariables>
+        <variable id="NADHm" name="NADHm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NADHm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NADHm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="delta_psi_1" name="delta_psi">
+      <listOfVariables>
+        <variable id="delta_psi" name="delta_psi" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='delta_psi']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> delta_psi </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cam_1" name="Cam">
+      <listOfVariables>
+        <variable id="Cam" name="Cam" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cam']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cam </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ADPm_1" name="ADPm">
+      <listOfVariables>
+        <variable id="ADPm" name="ADPm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ADPm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ADPm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="adp_1" name="adp">
+      <listOfVariables>
+        <variable id="adp" name="adp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='adp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> adp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_1" name="c">
+      <listOfVariables>
+        <variable id="c" name="c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Caer_1" name="Caer">
+      <listOfVariables>
+        <variable id="Caer" name="Caer" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Caer']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Caer </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Vm_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="n_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="G6P_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="FBP_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="NADHm_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="delta_psi_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="Cam_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="ADPm_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="adp_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="c_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="Caer_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Vm_1" />
+        <dataSet id="col_2" dataReference="n_1" />
+        <dataSet id="col_3" dataReference="G6P_1" />
+        <dataSet id="col_4" dataReference="FBP_1" />
+        <dataSet id="col_5" dataReference="NADHm_1" />
+        <dataSet id="col_6" dataReference="delta_psi_1" />
+        <dataSet id="col_7" dataReference="Cam_1" />
+        <dataSet id="col_8" dataReference="ADPm_1" />
+        <dataSet id="col_9" dataReference="adp_1" />
+        <dataSet id="col_10" dataReference="c_1" />
+        <dataSet id="col_11" dataReference="Caer_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
