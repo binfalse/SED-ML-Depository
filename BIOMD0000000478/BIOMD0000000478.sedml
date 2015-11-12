@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000478.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras2_GDP_1" name="Ras2_GDP">
+      <listOfVariables>
+        <variable id="Ras2_GDP" name="Ras2_GDP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras2_GDP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras2_GDP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdc25_1" name="Cdc25">
+      <listOfVariables>
+        <variable id="Cdc25" name="Cdc25" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdc25']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdc25 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras2_GDP_Cdc25_1" name="Ras2_GDP_Cdc25">
+      <listOfVariables>
+        <variable id="Ras2_GDP_Cdc25" name="Ras2_GDP_Cdc25" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras2_GDP_Cdc25']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras2_GDP_Cdc25 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras2_Cdc25_1" name="Ras2_Cdc25">
+      <listOfVariables>
+        <variable id="Ras2_Cdc25" name="Ras2_Cdc25" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras2_Cdc25']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras2_Cdc25 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras2_GTP_Cdc25_1" name="Ras2_GTP_Cdc25">
+      <listOfVariables>
+        <variable id="Ras2_GTP_Cdc25" name="Ras2_GTP_Cdc25" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras2_GTP_Cdc25']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras2_GTP_Cdc25 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras2_GTP_1" name="Ras2_GTP">
+      <listOfVariables>
+        <variable id="Ras2_GTP" name="Ras2_GTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras2_GTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras2_GTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ira2_1" name="Ira2">
+      <listOfVariables>
+        <variable id="Ira2" name="Ira2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ira2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ira2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras2_GTP_Ira2_1" name="Ras2_GTP_Ira2">
+      <listOfVariables>
+        <variable id="Ras2_GTP_Ira2" name="Ras2_GTP_Ira2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras2_GTP_Ira2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras2_GTP_Ira2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CYR1_1" name="CYR1">
+      <listOfVariables>
+        <variable id="CYR1" name="CYR1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CYR1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CYR1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras2_GTP_CYR1_1" name="Ras2_GTP_CYR1">
+      <listOfVariables>
+        <variable id="Ras2_GTP_CYR1" name="Ras2_GTP_CYR1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras2_GTP_CYR1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras2_GTP_CYR1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP_1" name="cAMP">
+      <listOfVariables>
+        <variable id="cAMP" name="cAMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PKA_1" name="PKA">
+      <listOfVariables>
+        <variable id="PKA" name="PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP_PKA_1" name="cAMP_PKA">
+      <listOfVariables>
+        <variable id="cAMP_PKA" name="cAMP_PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP_PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP_PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IIcAMP_PKA_1" name="IIcAMP_PKA">
+      <listOfVariables>
+        <variable id="IIcAMP_PKA" name="IIcAMP_PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IIcAMP_PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IIcAMP_PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IIIcAMP_PKA_1" name="IIIcAMP_PKA">
+      <listOfVariables>
+        <variable id="IIIcAMP_PKA" name="IIIcAMP_PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IIIcAMP_PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IIIcAMP_PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IVcAMP_PKA_1" name="IVcAMP_PKA">
+      <listOfVariables>
+        <variable id="IVcAMP_PKA" name="IVcAMP_PKA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IVcAMP_PKA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IVcAMP_PKA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C_1" name="C">
+      <listOfVariables>
+        <variable id="C" name="C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_2cAMP_1" name="R_2cAMP">
+      <listOfVariables>
+        <variable id="R_2cAMP" name="R_2cAMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R_2cAMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R_2cAMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_1" name="R">
+      <listOfVariables>
+        <variable id="R" name="R" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_C_1" name="R_C">
+      <listOfVariables>
+        <variable id="R_C" name="R_C" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R_C']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R_C </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pde1_1" name="Pde1">
+      <listOfVariables>
+        <variable id="Pde1" name="Pde1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pde1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pde1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pde1f_1" name="Pde1f">
+      <listOfVariables>
+        <variable id="Pde1f" name="Pde1f" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pde1f']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pde1f </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP_Pde1f_1" name="cAMP_Pde1f">
+      <listOfVariables>
+        <variable id="cAMP_Pde1f" name="cAMP_Pde1f" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP_Pde1f']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP_Pde1f </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AMP_1" name="AMP">
+      <listOfVariables>
+        <variable id="AMP" name="AMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PPA2_1" name="PPA2">
+      <listOfVariables>
+        <variable id="PPA2" name="PPA2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PPA2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PPA2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pde2_1" name="Pde2">
+      <listOfVariables>
+        <variable id="Pde2" name="Pde2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pde2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pde2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP_Pde2_1" name="cAMP_Pde2">
+      <listOfVariables>
+        <variable id="cAMP_Pde2" name="cAMP_Pde2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP_Pde2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP_Pde2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Cdc25f_1" name="Cdc25f">
+      <listOfVariables>
+        <variable id="Cdc25f" name="Cdc25f" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Cdc25f']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Cdc25f </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ira2P_1" name="Ira2P">
+      <listOfVariables>
+        <variable id="Ira2P" name="Ira2P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ira2P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ira2P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras2_GTP_Ira2P_1" name="Ras2_GTP_Ira2P">
+      <listOfVariables>
+        <variable id="Ras2_GTP_Ira2P" name="Ras2_GTP_Ira2P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras2_GTP_Ira2P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras2_GTP_Ira2P </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Ras2_GDP_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Cdc25_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Ras2_GDP_Cdc25_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Ras2_Cdc25_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Ras2_GTP_Cdc25_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Ras2_GTP_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="Ira2_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="Ras2_GTP_Ira2_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="CYR1_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="Ras2_GTP_CYR1_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="cAMP_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="PKA_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="cAMP_PKA_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="IIcAMP_PKA_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="IIIcAMP_PKA_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="IVcAMP_PKA_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="C_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="R_2cAMP_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="R_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="R_C_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="Pde1_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="Pde1f_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="cAMP_Pde1f_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="AMP_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="PPA2_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="Pde2_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="cAMP_Pde2_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="Cdc25f_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="Ira2P_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="Ras2_GTP_Ira2P_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Ras2_GDP_1" />
+        <dataSet id="col_2" dataReference="Cdc25_1" />
+        <dataSet id="col_3" dataReference="Ras2_GDP_Cdc25_1" />
+        <dataSet id="col_4" dataReference="Ras2_Cdc25_1" />
+        <dataSet id="col_5" dataReference="Ras2_GTP_Cdc25_1" />
+        <dataSet id="col_6" dataReference="Ras2_GTP_1" />
+        <dataSet id="col_7" dataReference="Ira2_1" />
+        <dataSet id="col_8" dataReference="Ras2_GTP_Ira2_1" />
+        <dataSet id="col_9" dataReference="CYR1_1" />
+        <dataSet id="col_10" dataReference="Ras2_GTP_CYR1_1" />
+        <dataSet id="col_11" dataReference="cAMP_1" />
+        <dataSet id="col_12" dataReference="PKA_1" />
+        <dataSet id="col_13" dataReference="cAMP_PKA_1" />
+        <dataSet id="col_14" dataReference="IIcAMP_PKA_1" />
+        <dataSet id="col_15" dataReference="IIIcAMP_PKA_1" />
+        <dataSet id="col_16" dataReference="IVcAMP_PKA_1" />
+        <dataSet id="col_17" dataReference="C_1" />
+        <dataSet id="col_18" dataReference="R_2cAMP_1" />
+        <dataSet id="col_19" dataReference="R_1" />
+        <dataSet id="col_20" dataReference="R_C_1" />
+        <dataSet id="col_21" dataReference="Pde1_1" />
+        <dataSet id="col_22" dataReference="Pde1f_1" />
+        <dataSet id="col_23" dataReference="cAMP_Pde1f_1" />
+        <dataSet id="col_24" dataReference="AMP_1" />
+        <dataSet id="col_25" dataReference="PPA2_1" />
+        <dataSet id="col_26" dataReference="Pde2_1" />
+        <dataSet id="col_27" dataReference="cAMP_Pde2_1" />
+        <dataSet id="col_28" dataReference="Cdc25f_1" />
+        <dataSet id="col_29" dataReference="Ira2P_1" />
+        <dataSet id="col_30" dataReference="Ras2_GTP_Ira2P_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
