@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000416.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IAAm_1" name="IAAm">
+      <listOfVariables>
+        <variable id="IAAm" name="IAAm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IAAm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IAAm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IAAp_1" name="IAAp">
+      <listOfVariables>
+        <variable id="IAAp" name="IAAp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IAAp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IAAp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AuxTIR1_1" name="AuxTIR1">
+      <listOfVariables>
+        <variable id="AuxTIR1" name="AuxTIR1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AuxTIR1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AuxTIR1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AuxTIAA_1" name="AuxTIAA">
+      <listOfVariables>
+        <variable id="AuxTIAA" name="AuxTIAA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AuxTIAA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AuxTIAA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IAAs_1" name="IAAs">
+      <listOfVariables>
+        <variable id="IAAs" name="IAAs" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IAAs']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IAAs </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARFIAA_1" name="ARFIAA">
+      <listOfVariables>
+        <variable id="ARFIAA" name="ARFIAA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARFIAA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARFIAA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARF2_1" name="ARF2">
+      <listOfVariables>
+        <variable id="ARF2" name="ARF2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARF2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARF2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Aux_1" name="Aux">
+      <listOfVariables>
+        <variable id="Aux" name="Aux" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Aux']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Aux </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PINm_1" name="PINm">
+      <listOfVariables>
+        <variable id="PINm" name="PINm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PINm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PINm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PINp_1" name="PINp">
+      <listOfVariables>
+        <variable id="PINp" name="PINp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PINp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PINp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARm_1" name="ARm">
+      <listOfVariables>
+        <variable id="ARm" name="ARm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARp_1" name="ARp">
+      <listOfVariables>
+        <variable id="ARp" name="ARp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TIR1_1" name="TIR1">
+      <listOfVariables>
+        <variable id="TIR1" name="TIR1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TIR1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TIR1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARF_1" name="ARF">
+      <listOfVariables>
+        <variable id="ARF" name="ARF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRm_1" name="CRm">
+      <listOfVariables>
+        <variable id="CRm" name="CRm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRp_1" name="CRp">
+      <listOfVariables>
+        <variable id="CRp" name="CRp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AHKph_1" name="AHKph">
+      <listOfVariables>
+        <variable id="AHKph" name="AHKph" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AHKph']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AHKph </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ck_1" name="Ck">
+      <listOfVariables>
+        <variable id="Ck" name="Ck" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ck']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ck </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARRBph_1" name="ARRBph">
+      <listOfVariables>
+        <variable id="ARRBph" name="ARRBph" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARRBph']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARRBph </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARRAph_1" name="ARRAph">
+      <listOfVariables>
+        <variable id="ARRAph" name="ARRAph" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARRAph']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARRAph </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARRAm_1" name="ARRAm">
+      <listOfVariables>
+        <variable id="ARRAm" name="ARRAm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARRAm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARRAm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARRAp_1" name="ARRAp">
+      <listOfVariables>
+        <variable id="ARRAp" name="ARRAp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARRAp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARRAp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ARRBp_1" name="ARRBp">
+      <listOfVariables>
+        <variable id="ARRBp" name="ARRBp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ARRBp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ARRBp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CkAHKph_1" name="CkAHKph">
+      <listOfVariables>
+        <variable id="CkAHKph" name="CkAHKph" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CkAHKph']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CkAHKph </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CkAHK_1" name="CkAHK">
+      <listOfVariables>
+        <variable id="CkAHK" name="CkAHK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CkAHK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CkAHK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F1_1" name="F1">
+      <listOfVariables>
+        <variable id="F1" name="F1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F2_1" name="F2">
+      <listOfVariables>
+        <variable id="F2" name="F2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F3_1" name="F3">
+      <listOfVariables>
+        <variable id="F3" name="F3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F4_1" name="F4">
+      <listOfVariables>
+        <variable id="F4" name="F4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F5a_1" name="F5a">
+      <listOfVariables>
+        <variable id="F5a" name="F5a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F5a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F5a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F5b_1" name="F5b">
+      <listOfVariables>
+        <variable id="F5b" name="F5b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F5b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F5b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="F6_1" name="F6">
+      <listOfVariables>
+        <variable id="F6" name="F6" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='F6']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> F6 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="IAAm_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="IAAp_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="AuxTIR1_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="AuxTIAA_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="IAAs_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="ARFIAA_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="ARF2_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="Aux_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="PINm_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="PINp_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="ARm_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="ARp_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="TIR1_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="ARF_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="CRm_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="CRp_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="AHKph_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Ck_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="ARRBph_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="ARRAph_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="ARRAm_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="ARRAp_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="ARRBp_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="CkAHKph_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="CkAHK_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="F1_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="F2_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="F3_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="F4_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="F5a_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="F5b_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="F6_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="IAAm_1" />
+        <dataSet id="col_2" dataReference="IAAp_1" />
+        <dataSet id="col_3" dataReference="AuxTIR1_1" />
+        <dataSet id="col_4" dataReference="AuxTIAA_1" />
+        <dataSet id="col_5" dataReference="IAAs_1" />
+        <dataSet id="col_6" dataReference="ARFIAA_1" />
+        <dataSet id="col_7" dataReference="ARF2_1" />
+        <dataSet id="col_8" dataReference="Aux_1" />
+        <dataSet id="col_9" dataReference="PINm_1" />
+        <dataSet id="col_10" dataReference="PINp_1" />
+        <dataSet id="col_11" dataReference="ARm_1" />
+        <dataSet id="col_12" dataReference="ARp_1" />
+        <dataSet id="col_13" dataReference="TIR1_1" />
+        <dataSet id="col_14" dataReference="ARF_1" />
+        <dataSet id="col_15" dataReference="CRm_1" />
+        <dataSet id="col_16" dataReference="CRp_1" />
+        <dataSet id="col_17" dataReference="AHKph_1" />
+        <dataSet id="col_18" dataReference="Ck_1" />
+        <dataSet id="col_19" dataReference="ARRBph_1" />
+        <dataSet id="col_20" dataReference="ARRAph_1" />
+        <dataSet id="col_21" dataReference="ARRAm_1" />
+        <dataSet id="col_22" dataReference="ARRAp_1" />
+        <dataSet id="col_23" dataReference="ARRBp_1" />
+        <dataSet id="col_24" dataReference="CkAHKph_1" />
+        <dataSet id="col_25" dataReference="CkAHK_1" />
+        <dataSet id="col_26" dataReference="F1_1" />
+        <dataSet id="col_27" dataReference="F2_1" />
+        <dataSet id="col_28" dataReference="F3_1" />
+        <dataSet id="col_29" dataReference="F4_1" />
+        <dataSet id="col_30" dataReference="F5a_1" />
+        <dataSet id="col_31" dataReference="F5b_1" />
+        <dataSet id="col_32" dataReference="F6_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
