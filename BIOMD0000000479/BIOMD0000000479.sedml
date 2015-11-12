@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000479.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_1" name="L">
+      <listOfVariables>
+        <variable id="L" name="L" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="R_1" name="R">
+      <listOfVariables>
+        <variable id="R" name="R" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='R']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> R </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LR_1" name="LR">
+      <listOfVariables>
+        <variable id="LR" name="LR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Gabg_1" name="Gabg">
+      <listOfVariables>
+        <variable id="Gabg" name="Gabg" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Gabg']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Gabg </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RGabg_1" name="RGabg">
+      <listOfVariables>
+        <variable id="RGabg" name="RGabg" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RGabg']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RGabg </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LRGabg_1" name="LRGabg">
+      <listOfVariables>
+        <variable id="LRGabg" name="LRGabg" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LRGabg']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LRGabg </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RRGSm_1" name="RRGSm">
+      <listOfVariables>
+        <variable id="RRGSm" name="RRGSm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RRGSm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RRGSm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LRRGSm_1" name="LRRGSm">
+      <listOfVariables>
+        <variable id="LRRGSm" name="LRRGSm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LRRGSm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LRRGSm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RRGSmGabg_1" name="RRGSmGabg">
+      <listOfVariables>
+        <variable id="RRGSmGabg" name="RRGSmGabg" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RRGSmGabg']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RRGSmGabg </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LRRGSmGabg_1" name="LRRGSmGabg">
+      <listOfVariables>
+        <variable id="LRRGSmGabg" name="LRRGSmGabg" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LRRGSmGabg']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LRRGSmGabg </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GaGTP_1" name="GaGTP">
+      <listOfVariables>
+        <variable id="GaGTP" name="GaGTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GaGTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GaGTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Gbg_1" name="Gbg">
+      <listOfVariables>
+        <variable id="Gbg" name="Gbg" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Gbg']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Gbg </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Effector_1" name="Effector">
+      <listOfVariables>
+        <variable id="Effector" name="Effector" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Effector']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Effector </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GaGTPEffector_1" name="GaGTPEffector">
+      <listOfVariables>
+        <variable id="GaGTPEffector" name="GaGTPEffector" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GaGTPEffector']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GaGTPEffector </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RGSc_1" name="RGSc">
+      <listOfVariables>
+        <variable id="RGSc" name="RGSc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RGSc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RGSc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RGSm_1" name="RGSm">
+      <listOfVariables>
+        <variable id="RGSm" name="RGSm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RGSm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RGSm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RGSmGaGTP_1" name="RGSmGaGTP">
+      <listOfVariables>
+        <variable id="RGSmGaGTP" name="RGSmGaGTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RGSmGaGTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RGSmGaGTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GaGTPEffectorOFF_1" name="GaGTPEffectorOFF">
+      <listOfVariables>
+        <variable id="GaGTPEffectorOFF" name="GaGTPEffectorOFF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GaGTPEffectorOFF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GaGTPEffectorOFF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RGSmGaGTPEffectorOFF_1" name="RGSmGaGTPEffectorOFF">
+      <listOfVariables>
+        <variable id="RGSmGaGTPEffectorOFF" name="RGSmGaGTPEffectorOFF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RGSmGaGTPEffectorOFF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RGSmGaGTPEffectorOFF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GaGDPP_1" name="GaGDPP">
+      <listOfVariables>
+        <variable id="GaGDPP" name="GaGDPP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GaGDPP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GaGDPP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LRRGSmGaGTP_1" name="LRRGSmGaGTP">
+      <listOfVariables>
+        <variable id="LRRGSmGaGTP" name="LRRGSmGaGTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LRRGSmGaGTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LRRGSmGaGTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RRGSmGaGTP_1" name="RRGSmGaGTP">
+      <listOfVariables>
+        <variable id="RRGSmGaGTP" name="RRGSmGaGTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RRGSmGaGTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RRGSmGaGTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LRRGSmGaGTPEffectorOFF_1" name="LRRGSmGaGTPEffectorOFF">
+      <listOfVariables>
+        <variable id="LRRGSmGaGTPEffectorOFF" name="LRRGSmGaGTPEffectorOFF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LRRGSmGaGTPEffectorOFF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LRRGSmGaGTPEffectorOFF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GaGDP_1" name="GaGDP">
+      <listOfVariables>
+        <variable id="GaGDP" name="GaGDP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GaGDP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GaGDP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="P_1" name="P">
+      <listOfVariables>
+        <variable id="P" name="P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="z1_1" name="z1">
+      <listOfVariables>
+        <variable id="z1" name="z1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='z1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> z1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="z2_1" name="z2">
+      <listOfVariables>
+        <variable id="z2" name="z2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='z2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> z2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="z3_1" name="z3">
+      <listOfVariables>
+        <variable id="z3" name="z3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='z3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> z3 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="L_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="R_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="LR_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Gabg_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="RGabg_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="LRGabg_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="RRGSm_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="LRRGSm_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="RRGSmGabg_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="LRRGSmGabg_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="GaGTP_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="Gbg_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="Effector_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="GaGTPEffector_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="RGSc_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="RGSm_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="RGSmGaGTP_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="GaGTPEffectorOFF_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="RGSmGaGTPEffectorOFF_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="GaGDPP_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="LRRGSmGaGTP_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="RRGSmGaGTP_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="LRRGSmGaGTPEffectorOFF_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="GaGDP_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="P_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="z1_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="z2_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="z3_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="L_1" />
+        <dataSet id="col_2" dataReference="R_1" />
+        <dataSet id="col_3" dataReference="LR_1" />
+        <dataSet id="col_4" dataReference="Gabg_1" />
+        <dataSet id="col_5" dataReference="RGabg_1" />
+        <dataSet id="col_6" dataReference="LRGabg_1" />
+        <dataSet id="col_7" dataReference="RRGSm_1" />
+        <dataSet id="col_8" dataReference="LRRGSm_1" />
+        <dataSet id="col_9" dataReference="RRGSmGabg_1" />
+        <dataSet id="col_10" dataReference="LRRGSmGabg_1" />
+        <dataSet id="col_11" dataReference="GaGTP_1" />
+        <dataSet id="col_12" dataReference="Gbg_1" />
+        <dataSet id="col_13" dataReference="Effector_1" />
+        <dataSet id="col_14" dataReference="GaGTPEffector_1" />
+        <dataSet id="col_15" dataReference="RGSc_1" />
+        <dataSet id="col_16" dataReference="RGSm_1" />
+        <dataSet id="col_17" dataReference="RGSmGaGTP_1" />
+        <dataSet id="col_18" dataReference="GaGTPEffectorOFF_1" />
+        <dataSet id="col_19" dataReference="RGSmGaGTPEffectorOFF_1" />
+        <dataSet id="col_20" dataReference="GaGDPP_1" />
+        <dataSet id="col_21" dataReference="LRRGSmGaGTP_1" />
+        <dataSet id="col_22" dataReference="RRGSmGaGTP_1" />
+        <dataSet id="col_23" dataReference="LRRGSmGaGTPEffectorOFF_1" />
+        <dataSet id="col_24" dataReference="GaGDP_1" />
+        <dataSet id="col_25" dataReference="P_1" />
+        <dataSet id="col_26" dataReference="z1_1" />
+        <dataSet id="col_27" dataReference="z2_1" />
+        <dataSet id="col_28" dataReference="z3_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
