@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000506.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C16AcylCarCYT_1" name="C16AcylCarCYT">
+      <listOfVariables>
+        <variable id="C16AcylCarCYT" name="C16AcylCarCYT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C16AcylCarCYT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C16AcylCarCYT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C16AcylCarMAT_1" name="C16AcylCarMAT">
+      <listOfVariables>
+        <variable id="C16AcylCarMAT" name="C16AcylCarMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C16AcylCarMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C16AcylCarMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C16AcylCoAMAT_1" name="C16AcylCoAMAT">
+      <listOfVariables>
+        <variable id="C16AcylCoAMAT" name="C16AcylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C16AcylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C16AcylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C16EnoylCoAMAT_1" name="C16EnoylCoAMAT">
+      <listOfVariables>
+        <variable id="C16EnoylCoAMAT" name="C16EnoylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C16EnoylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C16EnoylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C16HydroxyacylCoAMAT_1" name="C16HydroxyacylCoAMAT">
+      <listOfVariables>
+        <variable id="C16HydroxyacylCoAMAT" name="C16HydroxyacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C16HydroxyacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C16HydroxyacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C16KetoacylCoAMAT_1" name="C16KetoacylCoAMAT">
+      <listOfVariables>
+        <variable id="C16KetoacylCoAMAT" name="C16KetoacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C16KetoacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C16KetoacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C14AcylCarCYT_1" name="C14AcylCarCYT">
+      <listOfVariables>
+        <variable id="C14AcylCarCYT" name="C14AcylCarCYT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C14AcylCarCYT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C14AcylCarCYT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C14AcylCarMAT_1" name="C14AcylCarMAT">
+      <listOfVariables>
+        <variable id="C14AcylCarMAT" name="C14AcylCarMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C14AcylCarMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C14AcylCarMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C14AcylCoAMAT_1" name="C14AcylCoAMAT">
+      <listOfVariables>
+        <variable id="C14AcylCoAMAT" name="C14AcylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C14AcylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C14AcylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C14EnoylCoAMAT_1" name="C14EnoylCoAMAT">
+      <listOfVariables>
+        <variable id="C14EnoylCoAMAT" name="C14EnoylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C14EnoylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C14EnoylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C14HydroxyacylCoAMAT_1" name="C14HydroxyacylCoAMAT">
+      <listOfVariables>
+        <variable id="C14HydroxyacylCoAMAT" name="C14HydroxyacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C14HydroxyacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C14HydroxyacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C14KetoacylCoAMAT_1" name="C14KetoacylCoAMAT">
+      <listOfVariables>
+        <variable id="C14KetoacylCoAMAT" name="C14KetoacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C14KetoacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C14KetoacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C12AcylCarCYT_1" name="C12AcylCarCYT">
+      <listOfVariables>
+        <variable id="C12AcylCarCYT" name="C12AcylCarCYT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C12AcylCarCYT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C12AcylCarCYT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C12AcylCarMAT_1" name="C12AcylCarMAT">
+      <listOfVariables>
+        <variable id="C12AcylCarMAT" name="C12AcylCarMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C12AcylCarMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C12AcylCarMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C12AcylCoAMAT_1" name="C12AcylCoAMAT">
+      <listOfVariables>
+        <variable id="C12AcylCoAMAT" name="C12AcylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C12AcylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C12AcylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C12EnoylCoAMAT_1" name="C12EnoylCoAMAT">
+      <listOfVariables>
+        <variable id="C12EnoylCoAMAT" name="C12EnoylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C12EnoylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C12EnoylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C12HydroxyacylCoAMAT_1" name="C12HydroxyacylCoAMAT">
+      <listOfVariables>
+        <variable id="C12HydroxyacylCoAMAT" name="C12HydroxyacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C12HydroxyacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C12HydroxyacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C12KetoacylCoAMAT_1" name="C12KetoacylCoAMAT">
+      <listOfVariables>
+        <variable id="C12KetoacylCoAMAT" name="C12KetoacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C12KetoacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C12KetoacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C10AcylCarCYT_1" name="C10AcylCarCYT">
+      <listOfVariables>
+        <variable id="C10AcylCarCYT" name="C10AcylCarCYT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C10AcylCarCYT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C10AcylCarCYT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C10AcylCarMAT_1" name="C10AcylCarMAT">
+      <listOfVariables>
+        <variable id="C10AcylCarMAT" name="C10AcylCarMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C10AcylCarMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C10AcylCarMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C10AcylCoAMAT_1" name="C10AcylCoAMAT">
+      <listOfVariables>
+        <variable id="C10AcylCoAMAT" name="C10AcylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C10AcylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C10AcylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C10EnoylCoAMAT_1" name="C10EnoylCoAMAT">
+      <listOfVariables>
+        <variable id="C10EnoylCoAMAT" name="C10EnoylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C10EnoylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C10EnoylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C10HydroxyacylCoAMAT_1" name="C10HydroxyacylCoAMAT">
+      <listOfVariables>
+        <variable id="C10HydroxyacylCoAMAT" name="C10HydroxyacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C10HydroxyacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C10HydroxyacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C10KetoacylCoAMAT_1" name="C10KetoacylCoAMAT">
+      <listOfVariables>
+        <variable id="C10KetoacylCoAMAT" name="C10KetoacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C10KetoacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C10KetoacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C8AcylCarCYT_1" name="C8AcylCarCYT">
+      <listOfVariables>
+        <variable id="C8AcylCarCYT" name="C8AcylCarCYT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C8AcylCarCYT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C8AcylCarCYT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C8AcylCarMAT_1" name="C8AcylCarMAT">
+      <listOfVariables>
+        <variable id="C8AcylCarMAT" name="C8AcylCarMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C8AcylCarMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C8AcylCarMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C8AcylCoAMAT_1" name="C8AcylCoAMAT">
+      <listOfVariables>
+        <variable id="C8AcylCoAMAT" name="C8AcylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C8AcylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C8AcylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C8EnoylCoAMAT_1" name="C8EnoylCoAMAT">
+      <listOfVariables>
+        <variable id="C8EnoylCoAMAT" name="C8EnoylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C8EnoylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C8EnoylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C8HydroxyacylCoAMAT_1" name="C8HydroxyacylCoAMAT">
+      <listOfVariables>
+        <variable id="C8HydroxyacylCoAMAT" name="C8HydroxyacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C8HydroxyacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C8HydroxyacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C8KetoacylCoAMAT_1" name="C8KetoacylCoAMAT">
+      <listOfVariables>
+        <variable id="C8KetoacylCoAMAT" name="C8KetoacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C8KetoacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C8KetoacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C6AcylCarCYT_1" name="C6AcylCarCYT">
+      <listOfVariables>
+        <variable id="C6AcylCarCYT" name="C6AcylCarCYT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C6AcylCarCYT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C6AcylCarCYT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C6AcylCarMAT_1" name="C6AcylCarMAT">
+      <listOfVariables>
+        <variable id="C6AcylCarMAT" name="C6AcylCarMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C6AcylCarMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C6AcylCarMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C6AcylCoAMAT_1" name="C6AcylCoAMAT">
+      <listOfVariables>
+        <variable id="C6AcylCoAMAT" name="C6AcylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C6AcylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C6AcylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C6EnoylCoAMAT_1" name="C6EnoylCoAMAT">
+      <listOfVariables>
+        <variable id="C6EnoylCoAMAT" name="C6EnoylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C6EnoylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C6EnoylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C6HydroxyacylCoAMAT_1" name="C6HydroxyacylCoAMAT">
+      <listOfVariables>
+        <variable id="C6HydroxyacylCoAMAT" name="C6HydroxyacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C6HydroxyacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C6HydroxyacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C6KetoacylCoAMAT_1" name="C6KetoacylCoAMAT">
+      <listOfVariables>
+        <variable id="C6KetoacylCoAMAT" name="C6KetoacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C6KetoacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C6KetoacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4AcylCarCYT_1" name="C4AcylCarCYT">
+      <listOfVariables>
+        <variable id="C4AcylCarCYT" name="C4AcylCarCYT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4AcylCarCYT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4AcylCarCYT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4AcylCarMAT_1" name="C4AcylCarMAT">
+      <listOfVariables>
+        <variable id="C4AcylCarMAT" name="C4AcylCarMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4AcylCarMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4AcylCarMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4AcylCoAMAT_1" name="C4AcylCoAMAT">
+      <listOfVariables>
+        <variable id="C4AcylCoAMAT" name="C4AcylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4AcylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4AcylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4EnoylCoAMAT_1" name="C4EnoylCoAMAT">
+      <listOfVariables>
+        <variable id="C4EnoylCoAMAT" name="C4EnoylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4EnoylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4EnoylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4HydroxyacylCoAMAT_1" name="C4HydroxyacylCoAMAT">
+      <listOfVariables>
+        <variable id="C4HydroxyacylCoAMAT" name="C4HydroxyacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4HydroxyacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4HydroxyacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="C4AcetoacylCoAMAT_1" name="C4AcetoacylCoAMAT">
+      <listOfVariables>
+        <variable id="C4AcetoacylCoAMAT" name="C4AcetoacylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='C4AcetoacylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> C4AcetoacylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AcetylCoAMAT_1" name="AcetylCoAMAT">
+      <listOfVariables>
+        <variable id="AcetylCoAMAT" name="AcetylCoAMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AcetylCoAMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AcetylCoAMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FADHMAT_1" name="FADHMAT">
+      <listOfVariables>
+        <variable id="FADHMAT" name="FADHMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FADHMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FADHMAT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NADHMAT_1" name="NADHMAT">
+      <listOfVariables>
+        <variable id="NADHMAT" name="NADHMAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NADHMAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NADHMAT </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="C16AcylCarCYT_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="C16AcylCarMAT_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="C16AcylCoAMAT_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="C16EnoylCoAMAT_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="C16HydroxyacylCoAMAT_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="C16KetoacylCoAMAT_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="C14AcylCarCYT_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="C14AcylCarMAT_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="C14AcylCoAMAT_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="C14EnoylCoAMAT_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="C14HydroxyacylCoAMAT_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="C14KetoacylCoAMAT_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="C12AcylCarCYT_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="C12AcylCarMAT_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="C12AcylCoAMAT_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="C12EnoylCoAMAT_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="C12HydroxyacylCoAMAT_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="C12KetoacylCoAMAT_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="C10AcylCarCYT_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="C10AcylCarMAT_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="C10AcylCoAMAT_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="C10EnoylCoAMAT_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="C10HydroxyacylCoAMAT_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="C10KetoacylCoAMAT_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="C8AcylCarCYT_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="C8AcylCarMAT_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="C8AcylCoAMAT_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="C8EnoylCoAMAT_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="C8HydroxyacylCoAMAT_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="C8KetoacylCoAMAT_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="C6AcylCarCYT_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="C6AcylCarMAT_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="C6AcylCoAMAT_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="C6EnoylCoAMAT_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="C6HydroxyacylCoAMAT_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="C6KetoacylCoAMAT_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="C4AcylCarCYT_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="C4AcylCarMAT_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="C4AcylCoAMAT_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="C4EnoylCoAMAT_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="C4HydroxyacylCoAMAT_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="C4AcetoacylCoAMAT_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="AcetylCoAMAT_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="FADHMAT_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="NADHMAT_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="C16AcylCarCYT_1" />
+        <dataSet id="col_2" dataReference="C16AcylCarMAT_1" />
+        <dataSet id="col_3" dataReference="C16AcylCoAMAT_1" />
+        <dataSet id="col_4" dataReference="C16EnoylCoAMAT_1" />
+        <dataSet id="col_5" dataReference="C16HydroxyacylCoAMAT_1" />
+        <dataSet id="col_6" dataReference="C16KetoacylCoAMAT_1" />
+        <dataSet id="col_7" dataReference="C14AcylCarCYT_1" />
+        <dataSet id="col_8" dataReference="C14AcylCarMAT_1" />
+        <dataSet id="col_9" dataReference="C14AcylCoAMAT_1" />
+        <dataSet id="col_10" dataReference="C14EnoylCoAMAT_1" />
+        <dataSet id="col_11" dataReference="C14HydroxyacylCoAMAT_1" />
+        <dataSet id="col_12" dataReference="C14KetoacylCoAMAT_1" />
+        <dataSet id="col_13" dataReference="C12AcylCarCYT_1" />
+        <dataSet id="col_14" dataReference="C12AcylCarMAT_1" />
+        <dataSet id="col_15" dataReference="C12AcylCoAMAT_1" />
+        <dataSet id="col_16" dataReference="C12EnoylCoAMAT_1" />
+        <dataSet id="col_17" dataReference="C12HydroxyacylCoAMAT_1" />
+        <dataSet id="col_18" dataReference="C12KetoacylCoAMAT_1" />
+        <dataSet id="col_19" dataReference="C10AcylCarCYT_1" />
+        <dataSet id="col_20" dataReference="C10AcylCarMAT_1" />
+        <dataSet id="col_21" dataReference="C10AcylCoAMAT_1" />
+        <dataSet id="col_22" dataReference="C10EnoylCoAMAT_1" />
+        <dataSet id="col_23" dataReference="C10HydroxyacylCoAMAT_1" />
+        <dataSet id="col_24" dataReference="C10KetoacylCoAMAT_1" />
+        <dataSet id="col_25" dataReference="C8AcylCarCYT_1" />
+        <dataSet id="col_26" dataReference="C8AcylCarMAT_1" />
+        <dataSet id="col_27" dataReference="C8AcylCoAMAT_1" />
+        <dataSet id="col_28" dataReference="C8EnoylCoAMAT_1" />
+        <dataSet id="col_29" dataReference="C8HydroxyacylCoAMAT_1" />
+        <dataSet id="col_30" dataReference="C8KetoacylCoAMAT_1" />
+        <dataSet id="col_31" dataReference="C6AcylCarCYT_1" />
+        <dataSet id="col_32" dataReference="C6AcylCarMAT_1" />
+        <dataSet id="col_33" dataReference="C6AcylCoAMAT_1" />
+        <dataSet id="col_34" dataReference="C6EnoylCoAMAT_1" />
+        <dataSet id="col_35" dataReference="C6HydroxyacylCoAMAT_1" />
+        <dataSet id="col_36" dataReference="C6KetoacylCoAMAT_1" />
+        <dataSet id="col_37" dataReference="C4AcylCarCYT_1" />
+        <dataSet id="col_38" dataReference="C4AcylCarMAT_1" />
+        <dataSet id="col_39" dataReference="C4AcylCoAMAT_1" />
+        <dataSet id="col_40" dataReference="C4EnoylCoAMAT_1" />
+        <dataSet id="col_41" dataReference="C4HydroxyacylCoAMAT_1" />
+        <dataSet id="col_42" dataReference="C4AcetoacylCoAMAT_1" />
+        <dataSet id="col_43" dataReference="AcetylCoAMAT_1" />
+        <dataSet id="col_44" dataReference="FADHMAT_1" />
+        <dataSet id="col_45" dataReference="NADHMAT_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
