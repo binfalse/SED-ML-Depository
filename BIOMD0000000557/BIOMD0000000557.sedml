@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000557.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERKc_1" name="ERKc">
+      <listOfVariables>
+        <variable id="ERKc" name="ERKc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERKc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERKc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pERKc_1" name="pERKc">
+      <listOfVariables>
+        <variable id="pERKc" name="pERKc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pERKc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pERKc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERKc_1" name="ppERKc">
+      <listOfVariables>
+        <variable id="ppERKc" name="ppERKc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERKc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERKc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK_ppMEKc_1" name="ERK_ppMEKc">
+      <listOfVariables>
+        <variable id="ERK_ppMEKc" name="ERK_ppMEKc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK_ppMEKc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK_ppMEKc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pERK_ppMEKc_1" name="pERK_ppMEKc">
+      <listOfVariables>
+        <variable id="pERK_ppMEKc" name="pERK_ppMEKc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pERK_ppMEKc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pERK_ppMEKc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DUSPc_1" name="DUSPc">
+      <listOfVariables>
+        <variable id="DUSPc" name="DUSPc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DUSPc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DUSPc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pERK_DUSPc_1" name="pERK_DUSPc">
+      <listOfVariables>
+        <variable id="pERK_DUSPc" name="pERK_DUSPc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pERK_DUSPc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pERK_DUSPc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERK_DUSPc_1" name="ppERK_DUSPc">
+      <listOfVariables>
+        <variable id="ppERK_DUSPc" name="ppERK_DUSPc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERK_DUSPc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERK_DUSPc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERKn_1" name="ERKn">
+      <listOfVariables>
+        <variable id="ERKn" name="ERKn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERKn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERKn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pERKn_1" name="pERKn">
+      <listOfVariables>
+        <variable id="pERKn" name="pERKn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pERKn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pERKn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERKn_1" name="ppERKn">
+      <listOfVariables>
+        <variable id="ppERKn" name="ppERKn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERKn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERKn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pERK_DUSPn_1" name="pERK_DUSPn">
+      <listOfVariables>
+        <variable id="pERK_DUSPn" name="pERK_DUSPn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pERK_DUSPn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pERK_DUSPn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERK_DUSPn_1" name="ppERK_DUSPn">
+      <listOfVariables>
+        <variable id="ppERK_DUSPn" name="ppERK_DUSPn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERK_DUSPn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERK_DUSPn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STYXn_1" name="STYXn">
+      <listOfVariables>
+        <variable id="STYXn" name="STYXn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STYXn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STYXn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK_STYXn_1" name="ERK_STYXn">
+      <listOfVariables>
+        <variable id="ERK_STYXn" name="ERK_STYXn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK_STYXn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK_STYXn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pERK_STYXn_1" name="pERK_STYXn">
+      <listOfVariables>
+        <variable id="pERK_STYXn" name="pERK_STYXn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pERK_STYXn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pERK_STYXn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERK_STYXn_1" name="ppERK_STYXn">
+      <listOfVariables>
+        <variable id="ppERK_STYXn" name="ppERK_STYXn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERK_STYXn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERK_STYXn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="duspn_1" name="duspn">
+      <listOfVariables>
+        <variable id="duspn" name="duspn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='duspn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> duspn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DUSPn_1" name="DUSPn">
+      <listOfVariables>
+        <variable id="DUSPn" name="DUSPn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DUSPn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DUSPn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="u_ppMEKc_tot_1" name="u_ppMEKc_tot">
+      <listOfVariables>
+        <variable id="u_ppMEKc_tot" name="u_ppMEKc_tot" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='u_ppMEKc_tot']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> u_ppMEKc_tot </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppMEKc_tot_1" name="ppMEKc_tot">
+      <listOfVariables>
+        <variable id="ppMEKc_tot" name="ppMEKc_tot" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppMEKc_tot']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppMEKc_tot </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERKc_obs_1" name="ERKc_obs">
+      <listOfVariables>
+        <variable id="ERKc_obs" name="ERKc_obs" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERKc_obs']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERKc_obs </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pERKc_obs_1" name="pERKc_obs">
+      <listOfVariables>
+        <variable id="pERKc_obs" name="pERKc_obs" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pERKc_obs']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pERKc_obs </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ppERKc_obs_1" name="ppERKc_obs">
+      <listOfVariables>
+        <variable id="ppERKc_obs" name="ppERKc_obs" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ppERKc_obs']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ppERKc_obs </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK_ppMEKc_obs_1" name="ERK_ppMEKc_obs">
+      <listOfVariables>
+        <variable id="ERK_ppMEKc_obs" name="ERK_ppMEKc_obs" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK_ppMEKc_obs']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK_ppMEKc_obs </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="ERKc_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="pERKc_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="ppERKc_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="ERK_ppMEKc_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="pERK_ppMEKc_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="DUSPc_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="pERK_DUSPc_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="ppERK_DUSPc_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="ERKn_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="pERKn_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="ppERKn_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="pERK_DUSPn_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="ppERK_DUSPn_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="STYXn_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="ERK_STYXn_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="pERK_STYXn_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="ppERK_STYXn_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="duspn_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="DUSPn_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="u_ppMEKc_tot_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="ppMEKc_tot_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="ERKc_obs_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="pERKc_obs_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="ppERKc_obs_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="ERK_ppMEKc_obs_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="ERKc_1" />
+        <dataSet id="col_2" dataReference="pERKc_1" />
+        <dataSet id="col_3" dataReference="ppERKc_1" />
+        <dataSet id="col_4" dataReference="ERK_ppMEKc_1" />
+        <dataSet id="col_5" dataReference="pERK_ppMEKc_1" />
+        <dataSet id="col_6" dataReference="DUSPc_1" />
+        <dataSet id="col_7" dataReference="pERK_DUSPc_1" />
+        <dataSet id="col_8" dataReference="ppERK_DUSPc_1" />
+        <dataSet id="col_9" dataReference="ERKn_1" />
+        <dataSet id="col_10" dataReference="pERKn_1" />
+        <dataSet id="col_11" dataReference="ppERKn_1" />
+        <dataSet id="col_12" dataReference="pERK_DUSPn_1" />
+        <dataSet id="col_13" dataReference="ppERK_DUSPn_1" />
+        <dataSet id="col_14" dataReference="STYXn_1" />
+        <dataSet id="col_15" dataReference="ERK_STYXn_1" />
+        <dataSet id="col_16" dataReference="pERK_STYXn_1" />
+        <dataSet id="col_17" dataReference="ppERK_STYXn_1" />
+        <dataSet id="col_18" dataReference="duspn_1" />
+        <dataSet id="col_19" dataReference="DUSPn_1" />
+        <dataSet id="col_20" dataReference="u_ppMEKc_tot_1" />
+        <dataSet id="col_21" dataReference="ppMEKc_tot_1" />
+        <dataSet id="col_22" dataReference="ERKc_obs_1" />
+        <dataSet id="col_23" dataReference="pERKc_obs_1" />
+        <dataSet id="col_24" dataReference="ppERKc_obs_1" />
+        <dataSet id="col_25" dataReference="ERK_ppMEKc_obs_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
