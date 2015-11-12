@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000437.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_WCC_1" name="L_WCC">
+      <listOfVariables>
+        <variable id="L_WCC" name="L_WCC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L_WCC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L_WCC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="L_WCCVVDn_1" name="L_WCCVVDn">
+      <listOfVariables>
+        <variable id="L_WCCVVDn" name="L_WCCVVDn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='L_WCCVVDn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> L_WCCVVDn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Period_1" name="Period">
+      <listOfVariables>
+        <variable id="Period" name="Period" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Period']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Period </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="T_1" name="T">
+      <listOfVariables>
+        <variable id="T" name="T" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='T']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> T </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VVDc_1" name="VVDc">
+      <listOfVariables>
+        <variable id="VVDc" name="VVDc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VVDc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VVDc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VVDn_1" name="VVDn">
+      <listOfVariables>
+        <variable id="VVDn" name="VVDn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VVDn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VVDn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="WC1c_1" name="WC1c">
+      <listOfVariables>
+        <variable id="WC1c" name="WC1c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='WC1c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> WC1c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="WC2c_1" name="WC2c">
+      <listOfVariables>
+        <variable id="WC2c" name="WC2c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='WC2c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> WC2c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="X_1" name="X">
+      <listOfVariables>
+        <variable id="X" name="X" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='X']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> X </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Y_1" name="Y">
+      <listOfVariables>
+        <variable id="Y" name="Y" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Y']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Y </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="active_hypoWCCn_1" name="active_hypoWCCn">
+      <listOfVariables>
+        <variable id="active_hypoWCCn" name="active_hypoWCCn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='active_hypoWCCn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> active_hypoWCCn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="c_hypoFRQ_to_hyperFRQ_1" name="c_hypoFRQ_to_hyperFRQ">
+      <listOfVariables>
+        <variable id="c_hypoFRQ_to_hyperFRQ" name="c_hypoFRQ_to_hyperFRQ" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='c_hypoFRQ_to_hyperFRQ']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> c_hypoFRQ_to_hyperFRQ </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cycle_1" name="cycle">
+      <listOfVariables>
+        <variable id="cycle" name="cycle" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cycle']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cycle </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_L_WCCCVVDn_1" name="degraded_L_WCCCVVDn">
+      <listOfVariables>
+        <variable id="degraded_L_WCCCVVDn" name="degraded_L_WCCCVVDn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_L_WCCCVVDn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_L_WCCCVVDn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_VVDc_1" name="degraded_VVDc">
+      <listOfVariables>
+        <variable id="degraded_VVDc" name="degraded_VVDc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_VVDc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_VVDc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_VVDn_1" name="degraded_VVDn">
+      <listOfVariables>
+        <variable id="degraded_VVDn" name="degraded_VVDn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_VVDn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_VVDn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_WC1c_1" name="degraded_WC1c">
+      <listOfVariables>
+        <variable id="degraded_WC1c" name="degraded_WC1c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_WC1c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_WC1c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_WC2c_1" name="degraded_WC2c">
+      <listOfVariables>
+        <variable id="degraded_WC2c" name="degraded_WC2c" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_WC2c']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_WC2c </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_active_hypoWCCn_1" name="degraded_active_hypoWCCn">
+      <listOfVariables>
+        <variable id="degraded_active_hypoWCCn" name="degraded_active_hypoWCCn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_active_hypoWCCn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_active_hypoWCCn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_frq_mRNA_1" name="degraded_frq_mRNA">
+      <listOfVariables>
+        <variable id="degraded_frq_mRNA" name="degraded_frq_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_frq_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_frq_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_hyperFFCn_1" name="degraded_hyperFFCn">
+      <listOfVariables>
+        <variable id="degraded_hyperFFCn" name="degraded_hyperFFCn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_hyperFFCn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_hyperFFCn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_hyperFRQc_1" name="degraded_hyperFRQc">
+      <listOfVariables>
+        <variable id="degraded_hyperFRQc" name="degraded_hyperFRQc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_hyperFRQc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_hyperFRQc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_hyperWCCc_1" name="degraded_hyperWCCc">
+      <listOfVariables>
+        <variable id="degraded_hyperWCCc" name="degraded_hyperWCCc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_hyperWCCc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_hyperWCCc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_hyperWCCn_1" name="degraded_hyperWCCn">
+      <listOfVariables>
+        <variable id="degraded_hyperWCCn" name="degraded_hyperWCCn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_hyperWCCn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_hyperWCCn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_vvd_mRNA_1" name="degraded_vvd_mRNA">
+      <listOfVariables>
+        <variable id="degraded_vvd_mRNA" name="degraded_vvd_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_vvd_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_vvd_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_wc1_mRNA_1" name="degraded_wc1_mRNA">
+      <listOfVariables>
+        <variable id="degraded_wc1_mRNA" name="degraded_wc1_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_wc1_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_wc1_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degraded_wc2_mRNA_1" name="degraded_wc2_mRNA">
+      <listOfVariables>
+        <variable id="degraded_wc2_mRNA" name="degraded_wc2_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degraded_wc2_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degraded_wc2_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="frq_level_A_1" name="frq_level_A">
+      <listOfVariables>
+        <variable id="frq_level_A" name="frq_level_A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='frq_level_A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> frq_level_A </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="frq_mRNA_1" name="frq_mRNA">
+      <listOfVariables>
+        <variable id="frq_mRNA" name="frq_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='frq_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> frq_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hyperFRQc_1" name="hyperFRQc">
+      <listOfVariables>
+        <variable id="hyperFRQc" name="hyperFRQc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hyperFRQc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hyperFRQc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hyperFRQn_1" name="hyperFRQn">
+      <listOfVariables>
+        <variable id="hyperFRQn" name="hyperFRQn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hyperFRQn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hyperFRQn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hyperWCCc_1" name="hyperWCCc">
+      <listOfVariables>
+        <variable id="hyperWCCc" name="hyperWCCc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hyperWCCc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hyperWCCc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hyperWCCn_1" name="hyperWCCn">
+      <listOfVariables>
+        <variable id="hyperWCCn" name="hyperWCCn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hyperWCCn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hyperWCCn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hypoFRQc_1" name="hypoFRQc">
+      <listOfVariables>
+        <variable id="hypoFRQc" name="hypoFRQc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hypoFRQc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hypoFRQc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hypoFRQn_1" name="hypoFRQn">
+      <listOfVariables>
+        <variable id="hypoFRQn" name="hypoFRQn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hypoFRQn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hypoFRQn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hypoWCCc_1" name="hypoWCCc">
+      <listOfVariables>
+        <variable id="hypoWCCc" name="hypoWCCc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hypoWCCc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hypoWCCc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="hypoWCCn_1" name="hypoWCCn">
+      <listOfVariables>
+        <variable id="hypoWCCn" name="hypoWCCn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='hypoWCCn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> hypoWCCn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="n_hypoFRQ_to_hyperFRQ_1" name="n_hypoFRQ_to_hyperFRQ">
+      <listOfVariables>
+        <variable id="n_hypoFRQ_to_hyperFRQ" name="n_hypoFRQ_to_hyperFRQ" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='n_hypoFRQ_to_hyperFRQ']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> n_hypoFRQ_to_hyperFRQ </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="time_1" name="time">
+      <listOfVariables>
+        <variable id="time_1_time_0" name="time" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='time']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> time_1_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="total_FRQ_1" name="total_FRQ">
+      <listOfVariables>
+        <variable id="total_FRQ" name="total_FRQ" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='total_FRQ']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> total_FRQ </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="total_FRQc_1" name="total_FRQc">
+      <listOfVariables>
+        <variable id="total_FRQc" name="total_FRQc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='total_FRQc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> total_FRQc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="total_FRQn_1" name="total_FRQn">
+      <listOfVariables>
+        <variable id="total_FRQn" name="total_FRQn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='total_FRQn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> total_FRQn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="total_VVD_1" name="total_VVD">
+      <listOfVariables>
+        <variable id="total_VVD" name="total_VVD" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='total_VVD']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> total_VVD </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="total_WC1_1" name="total_WC1">
+      <listOfVariables>
+        <variable id="total_WC1" name="total_WC1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='total_WC1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> total_WC1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="total_WC2_1" name="total_WC2">
+      <listOfVariables>
+        <variable id="total_WC2" name="total_WC2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='total_WC2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> total_WC2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="total_WCCn_1" name="total_WCCn">
+      <listOfVariables>
+        <variable id="total_WCCn" name="total_WCCn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='total_WCCn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> total_WCCn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="total_hyper_FRQ_1" name="total_hyper_FRQ">
+      <listOfVariables>
+        <variable id="total_hyper_FRQ" name="total_hyper_FRQ" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='total_hyper_FRQ']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> total_hyper_FRQ </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="total_hypoWCC_1" name="total_hypoWCC">
+      <listOfVariables>
+        <variable id="total_hypoWCC" name="total_hypoWCC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='total_hypoWCC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> total_hypoWCC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="total_hypo_FRQ_1" name="total_hypo_FRQ">
+      <listOfVariables>
+        <variable id="total_hypo_FRQ" name="total_hypo_FRQ" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='total_hypo_FRQ']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> total_hypo_FRQ </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="vvd_gene_1" name="vvd_gene">
+      <listOfVariables>
+        <variable id="vvd_gene" name="vvd_gene" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='vvd_gene']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> vvd_gene </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="vvd_mRNA_1" name="vvd_mRNA">
+      <listOfVariables>
+        <variable id="vvd_mRNA" name="vvd_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='vvd_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> vvd_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="wc1_mRNA_1" name="wc1_mRNA">
+      <listOfVariables>
+        <variable id="wc1_mRNA" name="wc1_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='wc1_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> wc1_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="wc2_mRNA_1" name="wc2_mRNA">
+      <listOfVariables>
+        <variable id="wc2_mRNA" name="wc2_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='wc2_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> wc2_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="line_1" name="line">
+      <listOfVariables>
+        <variable id="line" name="line" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='line']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> line </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="line2_1" name="line2">
+      <listOfVariables>
+        <variable id="line2" name="line2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='line2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> line2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="line3_1" name="line3">
+      <listOfVariables>
+        <variable id="line3" name="line3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='line3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> line3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="total_hyperWCC_1" name="total_hyperWCC">
+      <listOfVariables>
+        <variable id="total_hyperWCC" name="total_hyperWCC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='total_hyperWCC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> total_hyperWCC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="s61_1" name="s61">
+      <listOfVariables>
+        <variable id="s61" name="s61" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='s61']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> s61 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="L_WCC_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="L_WCCVVDn_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Period_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="T_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="VVDc_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="VVDn_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="WC1c_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="WC2c_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="X_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="Y_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="active_hypoWCCn_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="c_hypoFRQ_to_hyperFRQ_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="cycle_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="degraded_L_WCCCVVDn_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="degraded_VVDc_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="degraded_VVDn_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="degraded_WC1c_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="degraded_WC2c_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="degraded_active_hypoWCCn_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="degraded_frq_mRNA_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="degraded_hyperFFCn_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="degraded_hyperFRQc_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="degraded_hyperWCCc_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="degraded_hyperWCCn_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="degraded_vvd_mRNA_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="degraded_wc1_mRNA_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="degraded_wc2_mRNA_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="frq_level_A_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="frq_mRNA_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="hyperFRQc_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="hyperFRQn_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="hyperWCCc_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="hyperWCCn_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="hypoFRQc_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="hypoFRQn_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="hypoWCCc_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="hypoWCCn_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="n_hypoFRQ_to_hyperFRQ_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="time_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="total_FRQ_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="total_FRQc_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="total_FRQn_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="total_VVD_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="total_WC1_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="total_WC2_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="total_WCCn_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="total_hyper_FRQ_1" />
+        <curve id="curve_47" logX="false" logY="false" xDataReference="time" yDataReference="total_hypoWCC_1" />
+        <curve id="curve_48" logX="false" logY="false" xDataReference="time" yDataReference="total_hypo_FRQ_1" />
+        <curve id="curve_49" logX="false" logY="false" xDataReference="time" yDataReference="vvd_gene_1" />
+        <curve id="curve_50" logX="false" logY="false" xDataReference="time" yDataReference="vvd_mRNA_1" />
+        <curve id="curve_51" logX="false" logY="false" xDataReference="time" yDataReference="wc1_mRNA_1" />
+        <curve id="curve_52" logX="false" logY="false" xDataReference="time" yDataReference="wc2_mRNA_1" />
+        <curve id="curve_53" logX="false" logY="false" xDataReference="time" yDataReference="line_1" />
+        <curve id="curve_54" logX="false" logY="false" xDataReference="time" yDataReference="line2_1" />
+        <curve id="curve_55" logX="false" logY="false" xDataReference="time" yDataReference="line3_1" />
+        <curve id="curve_56" logX="false" logY="false" xDataReference="time" yDataReference="total_hyperWCC_1" />
+        <curve id="curve_57" logX="false" logY="false" xDataReference="time" yDataReference="s61_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="L_WCC_1" />
+        <dataSet id="col_2" dataReference="L_WCCVVDn_1" />
+        <dataSet id="col_3" dataReference="Period_1" />
+        <dataSet id="col_4" dataReference="T_1" />
+        <dataSet id="col_5" dataReference="VVDc_1" />
+        <dataSet id="col_6" dataReference="VVDn_1" />
+        <dataSet id="col_7" dataReference="WC1c_1" />
+        <dataSet id="col_8" dataReference="WC2c_1" />
+        <dataSet id="col_9" dataReference="X_1" />
+        <dataSet id="col_10" dataReference="Y_1" />
+        <dataSet id="col_11" dataReference="active_hypoWCCn_1" />
+        <dataSet id="col_12" dataReference="c_hypoFRQ_to_hyperFRQ_1" />
+        <dataSet id="col_13" dataReference="cycle_1" />
+        <dataSet id="col_14" dataReference="degraded_L_WCCCVVDn_1" />
+        <dataSet id="col_15" dataReference="degraded_VVDc_1" />
+        <dataSet id="col_16" dataReference="degraded_VVDn_1" />
+        <dataSet id="col_17" dataReference="degraded_WC1c_1" />
+        <dataSet id="col_18" dataReference="degraded_WC2c_1" />
+        <dataSet id="col_19" dataReference="degraded_active_hypoWCCn_1" />
+        <dataSet id="col_20" dataReference="degraded_frq_mRNA_1" />
+        <dataSet id="col_21" dataReference="degraded_hyperFFCn_1" />
+        <dataSet id="col_22" dataReference="degraded_hyperFRQc_1" />
+        <dataSet id="col_23" dataReference="degraded_hyperWCCc_1" />
+        <dataSet id="col_24" dataReference="degraded_hyperWCCn_1" />
+        <dataSet id="col_25" dataReference="degraded_vvd_mRNA_1" />
+        <dataSet id="col_26" dataReference="degraded_wc1_mRNA_1" />
+        <dataSet id="col_27" dataReference="degraded_wc2_mRNA_1" />
+        <dataSet id="col_28" dataReference="frq_level_A_1" />
+        <dataSet id="col_29" dataReference="frq_mRNA_1" />
+        <dataSet id="col_30" dataReference="hyperFRQc_1" />
+        <dataSet id="col_31" dataReference="hyperFRQn_1" />
+        <dataSet id="col_32" dataReference="hyperWCCc_1" />
+        <dataSet id="col_33" dataReference="hyperWCCn_1" />
+        <dataSet id="col_34" dataReference="hypoFRQc_1" />
+        <dataSet id="col_35" dataReference="hypoFRQn_1" />
+        <dataSet id="col_36" dataReference="hypoWCCc_1" />
+        <dataSet id="col_37" dataReference="hypoWCCn_1" />
+        <dataSet id="col_38" dataReference="n_hypoFRQ_to_hyperFRQ_1" />
+        <dataSet id="col_39" dataReference="time_1" />
+        <dataSet id="col_40" dataReference="total_FRQ_1" />
+        <dataSet id="col_41" dataReference="total_FRQc_1" />
+        <dataSet id="col_42" dataReference="total_FRQn_1" />
+        <dataSet id="col_43" dataReference="total_VVD_1" />
+        <dataSet id="col_44" dataReference="total_WC1_1" />
+        <dataSet id="col_45" dataReference="total_WC2_1" />
+        <dataSet id="col_46" dataReference="total_WCCn_1" />
+        <dataSet id="col_47" dataReference="total_hyper_FRQ_1" />
+        <dataSet id="col_48" dataReference="total_hypoWCC_1" />
+        <dataSet id="col_49" dataReference="total_hypo_FRQ_1" />
+        <dataSet id="col_50" dataReference="vvd_gene_1" />
+        <dataSet id="col_51" dataReference="vvd_mRNA_1" />
+        <dataSet id="col_52" dataReference="wc1_mRNA_1" />
+        <dataSet id="col_53" dataReference="wc2_mRNA_1" />
+        <dataSet id="col_54" dataReference="line_1" />
+        <dataSet id="col_55" dataReference="line2_1" />
+        <dataSet id="col_56" dataReference="line3_1" />
+        <dataSet id="col_57" dataReference="total_hyperWCC_1" />
+        <dataSet id="col_58" dataReference="s61_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
