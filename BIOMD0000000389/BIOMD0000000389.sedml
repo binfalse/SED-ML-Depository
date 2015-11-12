@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000389.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RuBP_1" name="RuBP">
+      <listOfVariables>
+        <variable id="RuBP" name="RuBP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RuBP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RuBP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PGA_1" name="PGA">
+      <listOfVariables>
+        <variable id="PGA" name="PGA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PGA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PGA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TP_1" name="TP">
+      <listOfVariables>
+        <variable id="TP" name="TP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HeP_1" name="HeP">
+      <listOfVariables>
+        <variable id="HeP" name="HeP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HeP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HeP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TPGA_1" name="TPGA">
+      <listOfVariables>
+        <variable id="TPGA" name="TPGA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TPGA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TPGA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E4P_1" name="E4P">
+      <listOfVariables>
+        <variable id="E4P" name="E4P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E4P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E4P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="S7P_1" name="S7P">
+      <listOfVariables>
+        <variable id="S7P" name="S7P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='S7P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> S7P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ru5P_1" name="Ru5P">
+      <listOfVariables>
+        <variable id="Ru5P" name="Ru5P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ru5P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ru5P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GG_1" name="GG">
+      <listOfVariables>
+        <variable id="GG" name="GG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATP_1" name="ATP">
+      <listOfVariables>
+        <variable id="ATP" name="ATP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ADP_1" name="ADP">
+      <listOfVariables>
+        <variable id="ADP" name="ADP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ADP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ADP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UTP_1" name="UTP">
+      <listOfVariables>
+        <variable id="UTP" name="UTP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UTP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UTP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="UDP_1" name="UDP">
+      <listOfVariables>
+        <variable id="UDP" name="UDP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='UDP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> UDP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pi_1" name="Pi">
+      <listOfVariables>
+        <variable id="Pi" name="Pi" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pi']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <pi />
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TPc_1" name="TPc">
+      <listOfVariables>
+        <variable id="TPc" name="TPc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TPc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TPc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HePc_1" name="HePc">
+      <listOfVariables>
+        <variable id="HePc" name="HePc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HePc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HePc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Suc_1" name="Suc">
+      <listOfVariables>
+        <variable id="Suc" name="Suc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Suc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Suc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Pic_1" name="Pic">
+      <listOfVariables>
+        <variable id="Pic" name="Pic" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Pic']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Pic </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SucV_1" name="SucV">
+      <listOfVariables>
+        <variable id="SucV" name="SucV" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SucV']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SucV </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="RuBP_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="PGA_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="TP_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="HeP_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="TPGA_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="E4P_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="S7P_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="Ru5P_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="GG_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="ATP_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="ADP_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="UTP_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="UDP_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Pi_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="TPc_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="HePc_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="Suc_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Pic_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="SucV_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="RuBP_1" />
+        <dataSet id="col_2" dataReference="PGA_1" />
+        <dataSet id="col_3" dataReference="TP_1" />
+        <dataSet id="col_4" dataReference="HeP_1" />
+        <dataSet id="col_5" dataReference="TPGA_1" />
+        <dataSet id="col_6" dataReference="E4P_1" />
+        <dataSet id="col_7" dataReference="S7P_1" />
+        <dataSet id="col_8" dataReference="Ru5P_1" />
+        <dataSet id="col_9" dataReference="GG_1" />
+        <dataSet id="col_10" dataReference="ATP_1" />
+        <dataSet id="col_11" dataReference="ADP_1" />
+        <dataSet id="col_12" dataReference="UTP_1" />
+        <dataSet id="col_13" dataReference="UDP_1" />
+        <dataSet id="col_14" dataReference="Pi_1" />
+        <dataSet id="col_15" dataReference="TPc_1" />
+        <dataSet id="col_16" dataReference="HePc_1" />
+        <dataSet id="col_17" dataReference="Suc_1" />
+        <dataSet id="col_18" dataReference="Pic_1" />
+        <dataSet id="col_19" dataReference="SucV_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
