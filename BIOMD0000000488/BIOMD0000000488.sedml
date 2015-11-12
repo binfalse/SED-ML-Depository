@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000488.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_1" name="Mdm2">
+      <listOfVariables>
+        <variable id="Mdm2" name="Mdm2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p53_1" name="p53">
+      <listOfVariables>
+        <variable id="p53" name="p53" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p53']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p53 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_p53_1" name="Mdm2_p53">
+      <listOfVariables>
+        <variable id="Mdm2_p53" name="Mdm2_p53" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_p53']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_p53 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_mRNA_1" name="Mdm2_mRNA">
+      <listOfVariables>
+        <variable id="Mdm2_mRNA" name="Mdm2_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p53_mRNA_1" name="p53_mRNA">
+      <listOfVariables>
+        <variable id="p53_mRNA" name="p53_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p53_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p53_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATMA_1" name="ATMA">
+      <listOfVariables>
+        <variable id="ATMA" name="ATMA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATMA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATMA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ATMI_1" name="ATMI">
+      <listOfVariables>
+        <variable id="ATMI" name="ATMI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ATMI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ATMI </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p53_P_1" name="p53_P">
+      <listOfVariables>
+        <variable id="p53_P" name="p53_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p53_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p53_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_P_1" name="Mdm2_P">
+      <listOfVariables>
+        <variable id="Mdm2_P" name="Mdm2_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IR_1" name="IR">
+      <listOfVariables>
+        <variable id="IR" name="IR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ROS_1" name="ROS">
+      <listOfVariables>
+        <variable id="ROS" name="ROS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ROS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ROS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="damDNA_1" name="damDNA">
+      <listOfVariables>
+        <variable id="damDNA" name="damDNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='damDNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> damDNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E1_1" name="E1">
+      <listOfVariables>
+        <variable id="E1" name="E1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E2_1" name="E2">
+      <listOfVariables>
+        <variable id="E2" name="E2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E1_Ub_1" name="E1_Ub">
+      <listOfVariables>
+        <variable id="E1_Ub" name="E1_Ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E1_Ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E1_Ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E2_Ub_1" name="E2_Ub">
+      <listOfVariables>
+        <variable id="E2_Ub" name="E2_Ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E2_Ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E2_Ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Proteasome_1" name="Proteasome">
+      <listOfVariables>
+        <variable id="Proteasome" name="Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Proteasome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ub_1" name="Ub">
+      <listOfVariables>
+        <variable id="Ub" name="Ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p53DUB_1" name="p53DUB">
+      <listOfVariables>
+        <variable id="p53DUB" name="p53DUB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p53DUB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p53DUB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2DUB_1" name="Mdm2DUB">
+      <listOfVariables>
+        <variable id="Mdm2DUB" name="Mdm2DUB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2DUB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2DUB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DUB_1" name="DUB">
+      <listOfVariables>
+        <variable id="DUB" name="DUB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DUB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DUB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_p53_Ub_1" name="Mdm2_p53_Ub">
+      <listOfVariables>
+        <variable id="Mdm2_p53_Ub" name="Mdm2_p53_Ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_p53_Ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_p53_Ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_p53_Ub2_1" name="Mdm2_p53_Ub2">
+      <listOfVariables>
+        <variable id="Mdm2_p53_Ub2" name="Mdm2_p53_Ub2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_p53_Ub2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_p53_Ub2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_p53_Ub3_1" name="Mdm2_p53_Ub3">
+      <listOfVariables>
+        <variable id="Mdm2_p53_Ub3" name="Mdm2_p53_Ub3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_p53_Ub3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_p53_Ub3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_p53_Ub4_1" name="Mdm2_p53_Ub4">
+      <listOfVariables>
+        <variable id="Mdm2_p53_Ub4" name="Mdm2_p53_Ub4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_p53_Ub4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_p53_Ub4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_P1_p53_Ub4_1" name="Mdm2_P1_p53_Ub4">
+      <listOfVariables>
+        <variable id="Mdm2_P1_p53_Ub4" name="Mdm2_P1_p53_Ub4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_P1_p53_Ub4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_P1_p53_Ub4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_Ub_1" name="Mdm2_Ub">
+      <listOfVariables>
+        <variable id="Mdm2_Ub" name="Mdm2_Ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_Ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_Ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_Ub2_1" name="Mdm2_Ub2">
+      <listOfVariables>
+        <variable id="Mdm2_Ub2" name="Mdm2_Ub2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_Ub2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_Ub2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_Ub3_1" name="Mdm2_Ub3">
+      <listOfVariables>
+        <variable id="Mdm2_Ub3" name="Mdm2_Ub3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_Ub3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_Ub3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_Ub4_1" name="Mdm2_Ub4">
+      <listOfVariables>
+        <variable id="Mdm2_Ub4" name="Mdm2_Ub4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_Ub4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_Ub4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_P_Ub_1" name="Mdm2_P_Ub">
+      <listOfVariables>
+        <variable id="Mdm2_P_Ub" name="Mdm2_P_Ub" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_P_Ub']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_P_Ub </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_P_Ub2_1" name="Mdm2_P_Ub2">
+      <listOfVariables>
+        <variable id="Mdm2_P_Ub2" name="Mdm2_P_Ub2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_P_Ub2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_P_Ub2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_P_Ub3_1" name="Mdm2_P_Ub3">
+      <listOfVariables>
+        <variable id="Mdm2_P_Ub3" name="Mdm2_P_Ub3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_P_Ub3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_P_Ub3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_P_Ub4_1" name="Mdm2_P_Ub4">
+      <listOfVariables>
+        <variable id="Mdm2_P_Ub4" name="Mdm2_P_Ub4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_P_Ub4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_P_Ub4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="p53_Ub4_Proteasome_1" name="p53_Ub4_Proteasome">
+      <listOfVariables>
+        <variable id="p53_Ub4_Proteasome" name="p53_Ub4_Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='p53_Ub4_Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> p53_Ub4_Proteasome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_Ub4_Proteasome_1" name="Mdm2_Ub4_Proteasome">
+      <listOfVariables>
+        <variable id="Mdm2_Ub4_Proteasome" name="Mdm2_Ub4_Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_Ub4_Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_Ub4_Proteasome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mdm2_P_Ub4_Proteasome_1" name="Mdm2_P_Ub4_Proteasome">
+      <listOfVariables>
+        <variable id="Mdm2_P_Ub4_Proteasome" name="Mdm2_P_Ub4_Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mdm2_P_Ub4_Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mdm2_P_Ub4_Proteasome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GSK3b_1" name="GSK3b">
+      <listOfVariables>
+        <variable id="GSK3b" name="GSK3b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GSK3b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GSK3b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GSK3b_p53_1" name="GSK3b_p53">
+      <listOfVariables>
+        <variable id="GSK3b_p53" name="GSK3b_p53" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GSK3b_p53']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GSK3b_p53 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GSK3b_p53_P_1" name="GSK3b_p53_P">
+      <listOfVariables>
+        <variable id="GSK3b_p53_P" name="GSK3b_p53_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GSK3b_p53_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GSK3b_p53_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Abeta_1" name="Abeta">
+      <listOfVariables>
+        <variable id="Abeta" name="Abeta" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Abeta']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Abeta </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggAbeta_Proteasome_1" name="AggAbeta_Proteasome">
+      <listOfVariables>
+        <variable id="AggAbeta_Proteasome" name="AggAbeta_Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggAbeta_Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggAbeta_Proteasome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AbetaPlaque_1" name="AbetaPlaque">
+      <listOfVariables>
+        <variable id="AbetaPlaque" name="AbetaPlaque" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AbetaPlaque']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AbetaPlaque </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Tau_1" name="Tau">
+      <listOfVariables>
+        <variable id="Tau" name="Tau" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Tau']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Tau </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Tau_P1_1" name="Tau_P1">
+      <listOfVariables>
+        <variable id="Tau_P1" name="Tau_P1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Tau_P1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Tau_P1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Tau_P2_1" name="Tau_P2">
+      <listOfVariables>
+        <variable id="Tau_P2" name="Tau_P2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Tau_P2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Tau_P2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="MT_Tau_1" name="MT_Tau">
+      <listOfVariables>
+        <variable id="MT_Tau" name="MT_Tau" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='MT_Tau']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> MT_Tau </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggTau_1" name="AggTau">
+      <listOfVariables>
+        <variable id="AggTau" name="AggTau" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggTau']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggTau </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AggTau_Proteasome_1" name="AggTau_Proteasome">
+      <listOfVariables>
+        <variable id="AggTau_Proteasome" name="AggTau_Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AggTau_Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AggTau_Proteasome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Proteasome_Tau_1" name="Proteasome_Tau">
+      <listOfVariables>
+        <variable id="Proteasome_Tau" name="Proteasome_Tau" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Proteasome_Tau']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Proteasome_Tau </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP1_1" name="PP1">
+      <listOfVariables>
+        <variable id="PP1" name="PP1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFT_1" name="NFT">
+      <listOfVariables>
+        <variable id="NFT" name="NFT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AbetaDimer_1" name="AbetaDimer">
+      <listOfVariables>
+        <variable id="AbetaDimer" name="AbetaDimer" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AbetaDimer']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AbetaDimer </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AbetaPlaque_GliaA_1" name="AbetaPlaque_GliaA">
+      <listOfVariables>
+        <variable id="AbetaPlaque_GliaA" name="AbetaPlaque_GliaA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AbetaPlaque_GliaA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AbetaPlaque_GliaA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GliaI_1" name="GliaI">
+      <listOfVariables>
+        <variable id="GliaI" name="GliaI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GliaI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GliaI </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GliaM1_1" name="GliaM1">
+      <listOfVariables>
+        <variable id="GliaM1" name="GliaM1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GliaM1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GliaM1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GliaM2_1" name="GliaM2">
+      <listOfVariables>
+        <variable id="GliaM2" name="GliaM2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GliaM2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GliaM2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GliaA_1" name="GliaA">
+      <listOfVariables>
+        <variable id="GliaA" name="GliaA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GliaA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GliaA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="antiAb_1" name="antiAb">
+      <listOfVariables>
+        <variable id="antiAb" name="antiAb" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='antiAb']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> antiAb </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Abeta_antiAb_1" name="Abeta_antiAb">
+      <listOfVariables>
+        <variable id="Abeta_antiAb" name="Abeta_antiAb" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Abeta_antiAb']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Abeta_antiAb </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AbetaDimer_antiAb_1" name="AbetaDimer_antiAb">
+      <listOfVariables>
+        <variable id="AbetaDimer_antiAb" name="AbetaDimer_antiAb" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AbetaDimer_antiAb']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AbetaDimer_antiAb </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degAbetaGlia_1" name="degAbetaGlia">
+      <listOfVariables>
+        <variable id="degAbetaGlia" name="degAbetaGlia" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degAbetaGlia']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degAbetaGlia </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="disaggPlaque1_1" name="disaggPlaque1">
+      <listOfVariables>
+        <variable id="disaggPlaque1" name="disaggPlaque1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='disaggPlaque1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> disaggPlaque1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="disaggPlaque2_1" name="disaggPlaque2">
+      <listOfVariables>
+        <variable id="disaggPlaque2" name="disaggPlaque2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='disaggPlaque2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> disaggPlaque2 </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="p53_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_p53_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_mRNA_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="p53_mRNA_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="ATMA_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="ATMI_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="p53_P_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_P_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="IR_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="ROS_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="damDNA_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="E1_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="E2_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="E1_Ub_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="E2_Ub_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="Proteasome_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Ub_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="p53DUB_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2DUB_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="DUB_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_p53_Ub_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_p53_Ub2_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_p53_Ub3_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_p53_Ub4_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_P1_p53_Ub4_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_Ub_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_Ub2_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_Ub3_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_Ub4_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_P_Ub_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_P_Ub2_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_P_Ub3_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_P_Ub4_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="p53_Ub4_Proteasome_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_Ub4_Proteasome_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="Mdm2_P_Ub4_Proteasome_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="GSK3b_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="GSK3b_p53_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="GSK3b_p53_P_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="Abeta_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="AggAbeta_Proteasome_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="AbetaPlaque_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="Tau_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="Tau_P1_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="Tau_P2_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="MT_Tau_1" />
+        <curve id="curve_47" logX="false" logY="false" xDataReference="time" yDataReference="AggTau_1" />
+        <curve id="curve_48" logX="false" logY="false" xDataReference="time" yDataReference="AggTau_Proteasome_1" />
+        <curve id="curve_49" logX="false" logY="false" xDataReference="time" yDataReference="Proteasome_Tau_1" />
+        <curve id="curve_50" logX="false" logY="false" xDataReference="time" yDataReference="PP1_1" />
+        <curve id="curve_51" logX="false" logY="false" xDataReference="time" yDataReference="NFT_1" />
+        <curve id="curve_52" logX="false" logY="false" xDataReference="time" yDataReference="AbetaDimer_1" />
+        <curve id="curve_53" logX="false" logY="false" xDataReference="time" yDataReference="AbetaPlaque_GliaA_1" />
+        <curve id="curve_54" logX="false" logY="false" xDataReference="time" yDataReference="GliaI_1" />
+        <curve id="curve_55" logX="false" logY="false" xDataReference="time" yDataReference="GliaM1_1" />
+        <curve id="curve_56" logX="false" logY="false" xDataReference="time" yDataReference="GliaM2_1" />
+        <curve id="curve_57" logX="false" logY="false" xDataReference="time" yDataReference="GliaA_1" />
+        <curve id="curve_58" logX="false" logY="false" xDataReference="time" yDataReference="antiAb_1" />
+        <curve id="curve_59" logX="false" logY="false" xDataReference="time" yDataReference="Abeta_antiAb_1" />
+        <curve id="curve_60" logX="false" logY="false" xDataReference="time" yDataReference="AbetaDimer_antiAb_1" />
+        <curve id="curve_61" logX="false" logY="false" xDataReference="time" yDataReference="degAbetaGlia_1" />
+        <curve id="curve_62" logX="false" logY="false" xDataReference="time" yDataReference="disaggPlaque1_1" />
+        <curve id="curve_63" logX="false" logY="false" xDataReference="time" yDataReference="disaggPlaque2_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Mdm2_1" />
+        <dataSet id="col_2" dataReference="p53_1" />
+        <dataSet id="col_3" dataReference="Mdm2_p53_1" />
+        <dataSet id="col_4" dataReference="Mdm2_mRNA_1" />
+        <dataSet id="col_5" dataReference="p53_mRNA_1" />
+        <dataSet id="col_6" dataReference="ATMA_1" />
+        <dataSet id="col_7" dataReference="ATMI_1" />
+        <dataSet id="col_8" dataReference="p53_P_1" />
+        <dataSet id="col_9" dataReference="Mdm2_P_1" />
+        <dataSet id="col_10" dataReference="IR_1" />
+        <dataSet id="col_11" dataReference="ROS_1" />
+        <dataSet id="col_12" dataReference="damDNA_1" />
+        <dataSet id="col_13" dataReference="E1_1" />
+        <dataSet id="col_14" dataReference="E2_1" />
+        <dataSet id="col_15" dataReference="E1_Ub_1" />
+        <dataSet id="col_16" dataReference="E2_Ub_1" />
+        <dataSet id="col_17" dataReference="Proteasome_1" />
+        <dataSet id="col_18" dataReference="Ub_1" />
+        <dataSet id="col_19" dataReference="p53DUB_1" />
+        <dataSet id="col_20" dataReference="Mdm2DUB_1" />
+        <dataSet id="col_21" dataReference="DUB_1" />
+        <dataSet id="col_22" dataReference="Mdm2_p53_Ub_1" />
+        <dataSet id="col_23" dataReference="Mdm2_p53_Ub2_1" />
+        <dataSet id="col_24" dataReference="Mdm2_p53_Ub3_1" />
+        <dataSet id="col_25" dataReference="Mdm2_p53_Ub4_1" />
+        <dataSet id="col_26" dataReference="Mdm2_P1_p53_Ub4_1" />
+        <dataSet id="col_27" dataReference="Mdm2_Ub_1" />
+        <dataSet id="col_28" dataReference="Mdm2_Ub2_1" />
+        <dataSet id="col_29" dataReference="Mdm2_Ub3_1" />
+        <dataSet id="col_30" dataReference="Mdm2_Ub4_1" />
+        <dataSet id="col_31" dataReference="Mdm2_P_Ub_1" />
+        <dataSet id="col_32" dataReference="Mdm2_P_Ub2_1" />
+        <dataSet id="col_33" dataReference="Mdm2_P_Ub3_1" />
+        <dataSet id="col_34" dataReference="Mdm2_P_Ub4_1" />
+        <dataSet id="col_35" dataReference="p53_Ub4_Proteasome_1" />
+        <dataSet id="col_36" dataReference="Mdm2_Ub4_Proteasome_1" />
+        <dataSet id="col_37" dataReference="Mdm2_P_Ub4_Proteasome_1" />
+        <dataSet id="col_38" dataReference="GSK3b_1" />
+        <dataSet id="col_39" dataReference="GSK3b_p53_1" />
+        <dataSet id="col_40" dataReference="GSK3b_p53_P_1" />
+        <dataSet id="col_41" dataReference="Abeta_1" />
+        <dataSet id="col_42" dataReference="AggAbeta_Proteasome_1" />
+        <dataSet id="col_43" dataReference="AbetaPlaque_1" />
+        <dataSet id="col_44" dataReference="Tau_1" />
+        <dataSet id="col_45" dataReference="Tau_P1_1" />
+        <dataSet id="col_46" dataReference="Tau_P2_1" />
+        <dataSet id="col_47" dataReference="MT_Tau_1" />
+        <dataSet id="col_48" dataReference="AggTau_1" />
+        <dataSet id="col_49" dataReference="AggTau_Proteasome_1" />
+        <dataSet id="col_50" dataReference="Proteasome_Tau_1" />
+        <dataSet id="col_51" dataReference="PP1_1" />
+        <dataSet id="col_52" dataReference="NFT_1" />
+        <dataSet id="col_53" dataReference="AbetaDimer_1" />
+        <dataSet id="col_54" dataReference="AbetaPlaque_GliaA_1" />
+        <dataSet id="col_55" dataReference="GliaI_1" />
+        <dataSet id="col_56" dataReference="GliaM1_1" />
+        <dataSet id="col_57" dataReference="GliaM2_1" />
+        <dataSet id="col_58" dataReference="GliaA_1" />
+        <dataSet id="col_59" dataReference="antiAb_1" />
+        <dataSet id="col_60" dataReference="Abeta_antiAb_1" />
+        <dataSet id="col_61" dataReference="AbetaDimer_antiAb_1" />
+        <dataSet id="col_62" dataReference="degAbetaGlia_1" />
+        <dataSet id="col_63" dataReference="disaggPlaque1_1" />
+        <dataSet id="col_64" dataReference="disaggPlaque2_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
