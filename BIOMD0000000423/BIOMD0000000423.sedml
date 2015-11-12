@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000423.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IR_1" name="IR">
+      <listOfVariables>
+        <variable id="IR" name="IR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRins_1" name="IRins">
+      <listOfVariables>
+        <variable id="IRins" name="IRins" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRins']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRins </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRp_1" name="IRp">
+      <listOfVariables>
+        <variable id="IRp" name="IRp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRiP_1" name="IRiP">
+      <listOfVariables>
+        <variable id="IRiP" name="IRiP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRiP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRiP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRi_1" name="IRi">
+      <listOfVariables>
+        <variable id="IRi" name="IRi" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRi']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRi </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRS_1" name="IRS">
+      <listOfVariables>
+        <variable id="IRS" name="IRS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRSiP_1" name="IRSiP">
+      <listOfVariables>
+        <variable id="IRSiP" name="IRSiP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRSiP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRSiP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="X_1" name="X">
+      <listOfVariables>
+        <variable id="X" name="X" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='X']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> X </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Xp_1" name="Xp">
+      <listOfVariables>
+        <variable id="Xp" name="Xp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Xp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Xp </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="IR_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="IRins_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="IRp_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="IRiP_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="IRi_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="IRS_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="IRSiP_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="X_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="Xp_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="IR_1" />
+        <dataSet id="col_2" dataReference="IRins_1" />
+        <dataSet id="col_3" dataReference="IRp_1" />
+        <dataSet id="col_4" dataReference="IRiP_1" />
+        <dataSet id="col_5" dataReference="IRi_1" />
+        <dataSet id="col_6" dataReference="IRS_1" />
+        <dataSet id="col_7" dataReference="IRSiP_1" />
+        <dataSet id="col_8" dataReference="X_1" />
+        <dataSet id="col_9" dataReference="Xp_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
