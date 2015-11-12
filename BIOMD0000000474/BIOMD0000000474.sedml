@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000474.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="InR_1" name="InR">
+      <listOfVariables>
+        <variable id="InR" name="InR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='InR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> InR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ins_InR_1" name="Ins_InR">
+      <listOfVariables>
+        <variable id="Ins_InR" name="Ins_InR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ins_InR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ins_InR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ins_InR_P_1" name="Ins_InR_P">
+      <listOfVariables>
+        <variable id="Ins_InR_P" name="Ins_InR_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ins_InR_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ins_InR_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ins_2_InR_P_1" name="Ins_2_InR_P">
+      <listOfVariables>
+        <variable id="Ins_2_InR_P" name="Ins_2_InR_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ins_2_InR_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ins_2_InR_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_InR_1" name="cytoplasm_InR">
+      <listOfVariables>
+        <variable id="cytoplasm_InR" name="cytoplasm_InR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_InR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_InR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Ins_2_InR_P_1" name="cytoplasm_Ins_2_InR_P">
+      <listOfVariables>
+        <variable id="cytoplasm_Ins_2_InR_P" name="cytoplasm_Ins_2_InR_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Ins_2_InR_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Ins_2_InR_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Ins_InR_P_1" name="cytoplasm_Ins_InR_P">
+      <listOfVariables>
+        <variable id="cytoplasm_Ins_InR_P" name="cytoplasm_Ins_InR_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Ins_InR_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Ins_InR_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PTP1B_1" name="PTP1B">
+      <listOfVariables>
+        <variable id="PTP1B" name="PTP1B" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PTP1B']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PTP1B </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRS1_TyrP_PI3K_1" name="IRS1_TyrP_PI3K">
+      <listOfVariables>
+        <variable id="IRS1_TyrP_PI3K" name="IRS1_TyrP_PI3K" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRS1_TyrP_PI3K']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRS1_TyrP_PI3K </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PI345P3_1" name="PI345P3">
+      <listOfVariables>
+        <variable id="PI345P3" name="PI345P3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PI345P3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PI345P3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIP2_1" name="PIP2">
+      <listOfVariables>
+        <variable id="PIP2" name="PIP2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIP2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIP2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Akt_1" name="Akt">
+      <listOfVariables>
+        <variable id="Akt" name="Akt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Akt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Akt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Akt_P2_1" name="Akt_P2">
+      <listOfVariables>
+        <variable id="Akt_P2" name="Akt_P2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Akt_P2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Akt_P2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PKC_1" name="PKC">
+      <listOfVariables>
+        <variable id="PKC" name="PKC" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PKC']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PKC </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PKC_P_1" name="PKC_P">
+      <listOfVariables>
+        <variable id="PKC_P" name="PKC_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PKC_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PKC_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AS160_1" name="AS160">
+      <listOfVariables>
+        <variable id="AS160" name="AS160" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AS160']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AS160 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AS160_P_1" name="AS160_P">
+      <listOfVariables>
+        <variable id="AS160_P" name="AS160_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AS160_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AS160_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_GLUT4_1" name="cytoplasm_GLUT4">
+      <listOfVariables>
+        <variable id="cytoplasm_GLUT4" name="cytoplasm_GLUT4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_GLUT4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_GLUT4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cellsurface_GLUT4_1" name="cellsurface_GLUT4">
+      <listOfVariables>
+        <variable id="cellsurface_GLUT4" name="cellsurface_GLUT4" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cellsurface_GLUT4']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cellsurface_GLUT4 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PTEN_1" name="PTEN">
+      <listOfVariables>
+        <variable id="PTEN" name="PTEN" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PTEN']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PTEN </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2A_1" name="PP2A">
+      <listOfVariables>
+        <variable id="PP2A" name="PP2A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2A </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PTP1B_ox_1" name="PTP1B_ox">
+      <listOfVariables>
+        <variable id="PTP1B_ox" name="PTP1B_ox" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PTP1B_ox']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PTP1B_ox </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PTEN_ox_1" name="PTEN_ox">
+      <listOfVariables>
+        <variable id="PTEN_ox" name="PTEN_ox" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PTEN_ox']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PTEN_ox </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ROS_1" name="ROS">
+      <listOfVariables>
+        <variable id="ROS" name="ROS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ROS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ROS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GSH_1" name="GSH">
+      <listOfVariables>
+        <variable id="GSH" name="GSH" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GSH']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GSH </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="GSSG_1" name="GSSG">
+      <listOfVariables>
+        <variable id="GSSG" name="GSSG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='GSSG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> GSSG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_SOD2_1" name="cytoplasm_SOD2">
+      <listOfVariables>
+        <variable id="cytoplasm_SOD2" name="cytoplasm_SOD2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_SOD2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_SOD2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NOX_inact_1" name="NOX_inact">
+      <listOfVariables>
+        <variable id="NOX_inact" name="NOX_inact" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NOX_inact']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NOX_inact </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NOX_1" name="NOX">
+      <listOfVariables>
+        <variable id="NOX" name="NOX" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NOX']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NOX </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NOX_deact_1" name="NOX_deact">
+      <listOfVariables>
+        <variable id="NOX_deact" name="NOX_deact" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NOX_deact']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NOX_deact </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRS1_1" name="IRS1">
+      <listOfVariables>
+        <variable id="IRS1" name="IRS1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRS1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRS1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRS1_TyrP_1" name="IRS1_TyrP">
+      <listOfVariables>
+        <variable id="IRS1_TyrP" name="IRS1_TyrP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRS1_TyrP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRS1_TyrP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRS1_PolySerP_1" name="IRS1_PolySerP">
+      <listOfVariables>
+        <variable id="IRS1_PolySerP" name="IRS1_PolySerP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRS1_PolySerP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRS1_PolySerP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRS1_TyrP_PolySerP_1" name="IRS1_TyrP_PolySerP">
+      <listOfVariables>
+        <variable id="IRS1_TyrP_PolySerP" name="IRS1_TyrP_PolySerP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRS1_TyrP_PolySerP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRS1_TyrP_PolySerP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PI3K_1" name="PI3K">
+      <listOfVariables>
+        <variable id="PI3K" name="PI3K" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PI3K']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PI3K </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="JNK_P_1" name="JNK_P">
+      <listOfVariables>
+        <variable id="JNK_P" name="JNK_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='JNK_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> JNK_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IKK_P_1" name="IKK_P">
+      <listOfVariables>
+        <variable id="IKK_P" name="IKK_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IKK_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IKK_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="JNK_1" name="JNK">
+      <listOfVariables>
+        <variable id="JNK" name="JNK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='JNK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> JNK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IKK_1" name="IKK">
+      <listOfVariables>
+        <variable id="IKK" name="IKK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IKK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IKK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DUSP_1" name="DUSP">
+      <listOfVariables>
+        <variable id="DUSP" name="DUSP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DUSP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DUSP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DUSP_ox_1" name="DUSP_ox">
+      <listOfVariables>
+        <variable id="DUSP_ox" name="DUSP_ox" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DUSP_ox']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DUSP_ox </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="degr_Foxo1_1" name="degr_Foxo1">
+      <listOfVariables>
+        <variable id="degr_Foxo1" name="degr_Foxo1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='degr_Foxo1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> degr_Foxo1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb0_1" name="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb0" name="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb0_1" name="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb0" name="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa0_Pd0_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa0_Pd0_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb0_1" name="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb0" name="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa0_Pd0_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa0_Pd0_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb1_1" name="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb1" name="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb1_1" name="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb1" name="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa0_Pd0_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa0_Pd0_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb1_1" name="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb1" name="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa0_Pd0_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa0_Pd0_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb0_1" name="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb0" name="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb0_1" name="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb0" name="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa0_Pd0_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa0_Pd0_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb0_1" name="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb0" name="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa0_Pd0_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa0_Pd0_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb1_1" name="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb1" name="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb1_1" name="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb1" name="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa0_Pd0_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa0_Pd0_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb1_1" name="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb1" name="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa0_Pd0_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa0_Pd0_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb0_1" name="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb0" name="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb0_1" name="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb0" name="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa0_Pd1_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa0_Pd1_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb0_1" name="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb0" name="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa0_Pd1_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa0_Pd1_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb1_1" name="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb1" name="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb1_1" name="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb1" name="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa0_Pd1_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa0_Pd1_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb1_1" name="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb1" name="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa0_Pd1_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa0_Pd1_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb0_1" name="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb0" name="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb0_1" name="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb0" name="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa0_Pd1_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa0_Pd1_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb0_1" name="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb0" name="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa0_Pd1_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa0_Pd1_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb1_1" name="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb1" name="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb1_1" name="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb1" name="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa0_Pd1_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa0_Pd1_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb1_1" name="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb1" name="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa0_Pd1_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa0_Pd1_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb0_1" name="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb0" name="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb0_1" name="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb0" name="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa1_Pd0_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa1_Pd0_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb0_1" name="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb0" name="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa1_Pd0_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa1_Pd0_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb1_1" name="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb1" name="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb1_1" name="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb1" name="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa1_Pd0_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa1_Pd0_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb1_1" name="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb1" name="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa1_Pd0_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa1_Pd0_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb0_1" name="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb0" name="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb0_1" name="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb0" name="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa1_Pd0_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa1_Pd0_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb0_1" name="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb0" name="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa1_Pd0_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa1_Pd0_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb1_1" name="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb1" name="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb1_1" name="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb1" name="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa1_Pd0_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa1_Pd0_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb1_1" name="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb1" name="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa1_Pd0_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa1_Pd0_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb0_1" name="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb0" name="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb0_1" name="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb0" name="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa1_Pd1_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa1_Pd1_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb0_1" name="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb0">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb0" name="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa1_Pd1_Pe0_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa1_Pd1_Pe0_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb1_1" name="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb1" name="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb1_1" name="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb1" name="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa1_Pd1_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa1_Pd1_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb1_1" name="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb1">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb1" name="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa1_Pd1_Pe0_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa1_Pd1_Pe0_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb0_1" name="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb0" name="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb0_1" name="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb0" name="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa1_Pd1_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa1_Pd1_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb0_1" name="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb0">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb0" name="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa1_Pd1_Pe1_pUb0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa1_Pd1_Pe1_pUb0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb1_1" name="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb1" name="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb1_1" name="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb1" name="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_Foxo1_Pa1_Pd1_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_Foxo1_Pa1_Pd1_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb1_1" name="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb1">
+      <listOfVariables>
+        <variable id="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb1" name="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='dnabound_Foxo1_Pa1_Pd1_Pe1_pUb1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> dnabound_Foxo1_Pa1_Pd1_Pe1_pUb1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_RNA_InR_1" name="nucleus_RNA_InR">
+      <listOfVariables>
+        <variable id="nucleus_RNA_InR" name="nucleus_RNA_InR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_RNA_InR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_RNA_InR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_RNA_InR_1" name="cytoplasm_RNA_InR">
+      <listOfVariables>
+        <variable id="cytoplasm_RNA_InR" name="cytoplasm_RNA_InR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_RNA_InR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_RNA_InR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="nucleus_RNA_SOD2_1" name="nucleus_RNA_SOD2">
+      <listOfVariables>
+        <variable id="nucleus_RNA_SOD2" name="nucleus_RNA_SOD2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='nucleus_RNA_SOD2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> nucleus_RNA_SOD2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cytoplasm_RNA_SOD2_1" name="cytoplasm_RNA_SOD2">
+      <listOfVariables>
+        <variable id="cytoplasm_RNA_SOD2" name="cytoplasm_RNA_SOD2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cytoplasm_RNA_SOD2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cytoplasm_RNA_SOD2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E2F1_1" name="E2F1">
+      <listOfVariables>
+        <variable id="E2F1" name="E2F1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E2F1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E2F1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SGK_1" name="SGK">
+      <listOfVariables>
+        <variable id="SGK" name="SGK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SGK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SGK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CDK2_1" name="CDK2">
+      <listOfVariables>
+        <variable id="CDK2" name="CDK2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CDK2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CDK2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AMPK_1" name="AMPK">
+      <listOfVariables>
+        <variable id="AMPK" name="AMPK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AMPK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AMPK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CBPP300_1" name="CBPP300">
+      <listOfVariables>
+        <variable id="CBPP300" name="CBPP300" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CBPP300']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CBPP300 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SIRT1_1" name="SIRT1">
+      <listOfVariables>
+        <variable id="SIRT1" name="SIRT1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SIRT1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SIRT1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="E3_1" name="E3">
+      <listOfVariables>
+        <variable id="E3" name="E3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='E3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> E3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="USP7_1" name="USP7">
+      <listOfVariables>
+        <variable id="USP7" name="USP7" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='USP7']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> USP7 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SCF_1" name="SCF">
+      <listOfVariables>
+        <variable id="SCF" name="SCF" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SCF']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SCF </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Proteasome_1" name="Proteasome">
+      <listOfVariables>
+        <variable id="Proteasome" name="Proteasome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Proteasome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Proteasome </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="InR_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Ins_InR_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="Ins_InR_P_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Ins_2_InR_P_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_InR_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Ins_2_InR_P_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Ins_InR_P_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="PTP1B_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="IRS1_TyrP_PI3K_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="PI345P3_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="PIP2_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="Akt_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="Akt_P2_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="PKC_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="PKC_P_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="AS160_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="AS160_P_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_GLUT4_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="cellsurface_GLUT4_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="PTEN_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="PP2A_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="PTP1B_ox_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="PTEN_ox_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="ROS_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="GSH_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="GSSG_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_SOD2_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="NOX_inact_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="NOX_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="NOX_deact_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="IRS1_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="IRS1_TyrP_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="IRS1_PolySerP_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="IRS1_TyrP_PolySerP_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="PI3K_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="JNK_P_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="IKK_P_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="JNK_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="IKK_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="DUSP_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="DUSP_ox_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="degr_Foxo1_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb0_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb0_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb0_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb1_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb1_1" />
+        <curve id="curve_47" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb1_1" />
+        <curve id="curve_48" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb0_1" />
+        <curve id="curve_49" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb0_1" />
+        <curve id="curve_50" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb0_1" />
+        <curve id="curve_51" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb1_1" />
+        <curve id="curve_52" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb1_1" />
+        <curve id="curve_53" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb1_1" />
+        <curve id="curve_54" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb0_1" />
+        <curve id="curve_55" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb0_1" />
+        <curve id="curve_56" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb0_1" />
+        <curve id="curve_57" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb1_1" />
+        <curve id="curve_58" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb1_1" />
+        <curve id="curve_59" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb1_1" />
+        <curve id="curve_60" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb0_1" />
+        <curve id="curve_61" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb0_1" />
+        <curve id="curve_62" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb0_1" />
+        <curve id="curve_63" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb1_1" />
+        <curve id="curve_64" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb1_1" />
+        <curve id="curve_65" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb1_1" />
+        <curve id="curve_66" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb0_1" />
+        <curve id="curve_67" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb0_1" />
+        <curve id="curve_68" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb0_1" />
+        <curve id="curve_69" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb1_1" />
+        <curve id="curve_70" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb1_1" />
+        <curve id="curve_71" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb1_1" />
+        <curve id="curve_72" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb0_1" />
+        <curve id="curve_73" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb0_1" />
+        <curve id="curve_74" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb0_1" />
+        <curve id="curve_75" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb1_1" />
+        <curve id="curve_76" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb1_1" />
+        <curve id="curve_77" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb1_1" />
+        <curve id="curve_78" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb0_1" />
+        <curve id="curve_79" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb0_1" />
+        <curve id="curve_80" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb0_1" />
+        <curve id="curve_81" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb1_1" />
+        <curve id="curve_82" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb1_1" />
+        <curve id="curve_83" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb1_1" />
+        <curve id="curve_84" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb0_1" />
+        <curve id="curve_85" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb0_1" />
+        <curve id="curve_86" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb0_1" />
+        <curve id="curve_87" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb1_1" />
+        <curve id="curve_88" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb1_1" />
+        <curve id="curve_89" logX="false" logY="false" xDataReference="time" yDataReference="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb1_1" />
+        <curve id="curve_90" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_RNA_InR_1" />
+        <curve id="curve_91" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_RNA_InR_1" />
+        <curve id="curve_92" logX="false" logY="false" xDataReference="time" yDataReference="nucleus_RNA_SOD2_1" />
+        <curve id="curve_93" logX="false" logY="false" xDataReference="time" yDataReference="cytoplasm_RNA_SOD2_1" />
+        <curve id="curve_94" logX="false" logY="false" xDataReference="time" yDataReference="E2F1_1" />
+        <curve id="curve_95" logX="false" logY="false" xDataReference="time" yDataReference="SGK_1" />
+        <curve id="curve_96" logX="false" logY="false" xDataReference="time" yDataReference="CDK2_1" />
+        <curve id="curve_97" logX="false" logY="false" xDataReference="time" yDataReference="AMPK_1" />
+        <curve id="curve_98" logX="false" logY="false" xDataReference="time" yDataReference="CBPP300_1" />
+        <curve id="curve_99" logX="false" logY="false" xDataReference="time" yDataReference="SIRT1_1" />
+        <curve id="curve_100" logX="false" logY="false" xDataReference="time" yDataReference="E3_1" />
+        <curve id="curve_101" logX="false" logY="false" xDataReference="time" yDataReference="USP7_1" />
+        <curve id="curve_102" logX="false" logY="false" xDataReference="time" yDataReference="SCF_1" />
+        <curve id="curve_103" logX="false" logY="false" xDataReference="time" yDataReference="Proteasome_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="InR_1" />
+        <dataSet id="col_2" dataReference="Ins_InR_1" />
+        <dataSet id="col_3" dataReference="Ins_InR_P_1" />
+        <dataSet id="col_4" dataReference="Ins_2_InR_P_1" />
+        <dataSet id="col_5" dataReference="cytoplasm_InR_1" />
+        <dataSet id="col_6" dataReference="cytoplasm_Ins_2_InR_P_1" />
+        <dataSet id="col_7" dataReference="cytoplasm_Ins_InR_P_1" />
+        <dataSet id="col_8" dataReference="PTP1B_1" />
+        <dataSet id="col_9" dataReference="IRS1_TyrP_PI3K_1" />
+        <dataSet id="col_10" dataReference="PI345P3_1" />
+        <dataSet id="col_11" dataReference="PIP2_1" />
+        <dataSet id="col_12" dataReference="Akt_1" />
+        <dataSet id="col_13" dataReference="Akt_P2_1" />
+        <dataSet id="col_14" dataReference="PKC_1" />
+        <dataSet id="col_15" dataReference="PKC_P_1" />
+        <dataSet id="col_16" dataReference="AS160_1" />
+        <dataSet id="col_17" dataReference="AS160_P_1" />
+        <dataSet id="col_18" dataReference="cytoplasm_GLUT4_1" />
+        <dataSet id="col_19" dataReference="cellsurface_GLUT4_1" />
+        <dataSet id="col_20" dataReference="PTEN_1" />
+        <dataSet id="col_21" dataReference="PP2A_1" />
+        <dataSet id="col_22" dataReference="PTP1B_ox_1" />
+        <dataSet id="col_23" dataReference="PTEN_ox_1" />
+        <dataSet id="col_24" dataReference="ROS_1" />
+        <dataSet id="col_25" dataReference="GSH_1" />
+        <dataSet id="col_26" dataReference="GSSG_1" />
+        <dataSet id="col_27" dataReference="cytoplasm_SOD2_1" />
+        <dataSet id="col_28" dataReference="NOX_inact_1" />
+        <dataSet id="col_29" dataReference="NOX_1" />
+        <dataSet id="col_30" dataReference="NOX_deact_1" />
+        <dataSet id="col_31" dataReference="IRS1_1" />
+        <dataSet id="col_32" dataReference="IRS1_TyrP_1" />
+        <dataSet id="col_33" dataReference="IRS1_PolySerP_1" />
+        <dataSet id="col_34" dataReference="IRS1_TyrP_PolySerP_1" />
+        <dataSet id="col_35" dataReference="PI3K_1" />
+        <dataSet id="col_36" dataReference="JNK_P_1" />
+        <dataSet id="col_37" dataReference="IKK_P_1" />
+        <dataSet id="col_38" dataReference="JNK_1" />
+        <dataSet id="col_39" dataReference="IKK_1" />
+        <dataSet id="col_40" dataReference="DUSP_1" />
+        <dataSet id="col_41" dataReference="DUSP_ox_1" />
+        <dataSet id="col_42" dataReference="degr_Foxo1_1" />
+        <dataSet id="col_43" dataReference="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb0_1" />
+        <dataSet id="col_44" dataReference="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb0_1" />
+        <dataSet id="col_45" dataReference="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb0_1" />
+        <dataSet id="col_46" dataReference="cytoplasm_Foxo1_Pa0_Pd0_Pe0_pUb1_1" />
+        <dataSet id="col_47" dataReference="nucleus_Foxo1_Pa0_Pd0_Pe0_pUb1_1" />
+        <dataSet id="col_48" dataReference="dnabound_Foxo1_Pa0_Pd0_Pe0_pUb1_1" />
+        <dataSet id="col_49" dataReference="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb0_1" />
+        <dataSet id="col_50" dataReference="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb0_1" />
+        <dataSet id="col_51" dataReference="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb0_1" />
+        <dataSet id="col_52" dataReference="cytoplasm_Foxo1_Pa0_Pd0_Pe1_pUb1_1" />
+        <dataSet id="col_53" dataReference="nucleus_Foxo1_Pa0_Pd0_Pe1_pUb1_1" />
+        <dataSet id="col_54" dataReference="dnabound_Foxo1_Pa0_Pd0_Pe1_pUb1_1" />
+        <dataSet id="col_55" dataReference="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb0_1" />
+        <dataSet id="col_56" dataReference="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb0_1" />
+        <dataSet id="col_57" dataReference="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb0_1" />
+        <dataSet id="col_58" dataReference="cytoplasm_Foxo1_Pa0_Pd1_Pe0_pUb1_1" />
+        <dataSet id="col_59" dataReference="nucleus_Foxo1_Pa0_Pd1_Pe0_pUb1_1" />
+        <dataSet id="col_60" dataReference="dnabound_Foxo1_Pa0_Pd1_Pe0_pUb1_1" />
+        <dataSet id="col_61" dataReference="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb0_1" />
+        <dataSet id="col_62" dataReference="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb0_1" />
+        <dataSet id="col_63" dataReference="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb0_1" />
+        <dataSet id="col_64" dataReference="cytoplasm_Foxo1_Pa0_Pd1_Pe1_pUb1_1" />
+        <dataSet id="col_65" dataReference="nucleus_Foxo1_Pa0_Pd1_Pe1_pUb1_1" />
+        <dataSet id="col_66" dataReference="dnabound_Foxo1_Pa0_Pd1_Pe1_pUb1_1" />
+        <dataSet id="col_67" dataReference="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb0_1" />
+        <dataSet id="col_68" dataReference="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb0_1" />
+        <dataSet id="col_69" dataReference="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb0_1" />
+        <dataSet id="col_70" dataReference="cytoplasm_Foxo1_Pa1_Pd0_Pe0_pUb1_1" />
+        <dataSet id="col_71" dataReference="nucleus_Foxo1_Pa1_Pd0_Pe0_pUb1_1" />
+        <dataSet id="col_72" dataReference="dnabound_Foxo1_Pa1_Pd0_Pe0_pUb1_1" />
+        <dataSet id="col_73" dataReference="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb0_1" />
+        <dataSet id="col_74" dataReference="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb0_1" />
+        <dataSet id="col_75" dataReference="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb0_1" />
+        <dataSet id="col_76" dataReference="cytoplasm_Foxo1_Pa1_Pd0_Pe1_pUb1_1" />
+        <dataSet id="col_77" dataReference="nucleus_Foxo1_Pa1_Pd0_Pe1_pUb1_1" />
+        <dataSet id="col_78" dataReference="dnabound_Foxo1_Pa1_Pd0_Pe1_pUb1_1" />
+        <dataSet id="col_79" dataReference="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb0_1" />
+        <dataSet id="col_80" dataReference="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb0_1" />
+        <dataSet id="col_81" dataReference="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb0_1" />
+        <dataSet id="col_82" dataReference="cytoplasm_Foxo1_Pa1_Pd1_Pe0_pUb1_1" />
+        <dataSet id="col_83" dataReference="nucleus_Foxo1_Pa1_Pd1_Pe0_pUb1_1" />
+        <dataSet id="col_84" dataReference="dnabound_Foxo1_Pa1_Pd1_Pe0_pUb1_1" />
+        <dataSet id="col_85" dataReference="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb0_1" />
+        <dataSet id="col_86" dataReference="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb0_1" />
+        <dataSet id="col_87" dataReference="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb0_1" />
+        <dataSet id="col_88" dataReference="cytoplasm_Foxo1_Pa1_Pd1_Pe1_pUb1_1" />
+        <dataSet id="col_89" dataReference="nucleus_Foxo1_Pa1_Pd1_Pe1_pUb1_1" />
+        <dataSet id="col_90" dataReference="dnabound_Foxo1_Pa1_Pd1_Pe1_pUb1_1" />
+        <dataSet id="col_91" dataReference="nucleus_RNA_InR_1" />
+        <dataSet id="col_92" dataReference="cytoplasm_RNA_InR_1" />
+        <dataSet id="col_93" dataReference="nucleus_RNA_SOD2_1" />
+        <dataSet id="col_94" dataReference="cytoplasm_RNA_SOD2_1" />
+        <dataSet id="col_95" dataReference="E2F1_1" />
+        <dataSet id="col_96" dataReference="SGK_1" />
+        <dataSet id="col_97" dataReference="CDK2_1" />
+        <dataSet id="col_98" dataReference="AMPK_1" />
+        <dataSet id="col_99" dataReference="CBPP300_1" />
+        <dataSet id="col_100" dataReference="SIRT1_1" />
+        <dataSet id="col_101" dataReference="E3_1" />
+        <dataSet id="col_102" dataReference="USP7_1" />
+        <dataSet id="col_103" dataReference="SCF_1" />
+        <dataSet id="col_104" dataReference="Proteasome_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
