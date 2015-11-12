@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000490.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AA_b_1" name="AA_b">
+      <listOfVariables>
+        <variable id="AA_b" name="AA_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AA_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AA_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HPETE_b_1" name="HPETE_b">
+      <listOfVariables>
+        <variable id="HPETE_b" name="HPETE_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HPETE_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HPETE_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HETE_b_1" name="HETE_b">
+      <listOfVariables>
+        <variable id="HETE_b" name="HETE_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HETE_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HETE_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LTA4_b_1" name="LTA4_b">
+      <listOfVariables>
+        <variable id="LTA4_b" name="LTA4_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LTA4_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LTA4_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LTC4_b_1" name="LTC4_b">
+      <listOfVariables>
+        <variable id="LTC4_b" name="LTC4_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LTC4_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LTC4_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LTC4_b_out_1" name="LTC4_b_out">
+      <listOfVariables>
+        <variable id="LTC4_b_out" name="LTC4_b_out" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LTC4_b_out']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LTC4_b_out </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LTD4_b_1" name="LTD4_b">
+      <listOfVariables>
+        <variable id="LTD4_b" name="LTD4_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LTD4_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LTD4_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LTE4_b_1" name="LTE4_b">
+      <listOfVariables>
+        <variable id="LTE4_b" name="LTE4_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LTE4_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LTE4_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EO_b_1" name="EO_b">
+      <listOfVariables>
+        <variable id="EO_b" name="EO_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EO_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EO_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EO_i_b_1" name="EO_i_b">
+      <listOfVariables>
+        <variable id="EO_i_b" name="EO_i_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EO_i_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EO_i_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EO_a_b_1" name="EO_a_b">
+      <listOfVariables>
+        <variable id="EO_a_b" name="EO_a_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EO_a_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EO_a_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EO_i_aw_1" name="EO_i_aw">
+      <listOfVariables>
+        <variable id="EO_i_aw" name="EO_i_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EO_i_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EO_i_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EO_a_aw_1" name="EO_a_aw">
+      <listOfVariables>
+        <variable id="EO_a_aw" name="EO_a_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EO_a_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EO_a_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EO_aw_1" name="EO_aw">
+      <listOfVariables>
+        <variable id="EO_aw" name="EO_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EO_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EO_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Hn_b_1" name="Hn_b">
+      <listOfVariables>
+        <variable id="Hn_b" name="Hn_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Hn_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Hn_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IL_b_1" name="IL_b">
+      <listOfVariables>
+        <variable id="IL_b" name="IL_b" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IL_b']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IL_b </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IL_bm_1" name="IL_bm">
+      <listOfVariables>
+        <variable id="IL_bm" name="IL_bm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IL_bm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IL_bm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EO_bm_1" name="EO_bm">
+      <listOfVariables>
+        <variable id="EO_bm" name="EO_bm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EO_bm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EO_bm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AA_aw_1" name="AA_aw">
+      <listOfVariables>
+        <variable id="AA_aw" name="AA_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AA_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AA_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HPETE_aw_1" name="HPETE_aw">
+      <listOfVariables>
+        <variable id="HPETE_aw" name="HPETE_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HPETE_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HPETE_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HETE_aw_1" name="HETE_aw">
+      <listOfVariables>
+        <variable id="HETE_aw" name="HETE_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HETE_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HETE_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LTA4_aw_1" name="LTA4_aw">
+      <listOfVariables>
+        <variable id="LTA4_aw" name="LTA4_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LTA4_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LTA4_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LTC4_aw_1" name="LTC4_aw">
+      <listOfVariables>
+        <variable id="LTC4_aw" name="LTC4_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LTC4_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LTC4_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LTC4_aw_out_1" name="LTC4_aw_out">
+      <listOfVariables>
+        <variable id="LTC4_aw_out" name="LTC4_aw_out" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LTC4_aw_out']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LTC4_aw_out </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LTD4_aw_1" name="LTD4_aw">
+      <listOfVariables>
+        <variable id="LTD4_aw" name="LTD4_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LTD4_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LTD4_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="LTE4_aw_1" name="LTE4_aw">
+      <listOfVariables>
+        <variable id="LTE4_aw" name="LTE4_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='LTE4_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> LTE4_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Hn_aw_1" name="Hn_aw">
+      <listOfVariables>
+        <variable id="Hn_aw" name="Hn_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Hn_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Hn_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IL_aw_1" name="IL_aw">
+      <listOfVariables>
+        <variable id="IL_aw" name="IL_aw" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IL_aw']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IL_aw </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ZF_intes_1" name="ZF_intes">
+      <listOfVariables>
+        <variable id="ZF_intes" name="ZF_intes" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ZF_intes']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ZF_intes </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ZF_blood_1" name="ZF_blood">
+      <listOfVariables>
+        <variable id="ZF_blood" name="ZF_blood" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ZF_blood']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ZF_blood </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ZF_airways_1" name="ZF_airways">
+      <listOfVariables>
+        <variable id="ZF_airways" name="ZF_airways" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ZF_airways']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ZF_airways </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ML_intes_1" name="ML_intes">
+      <listOfVariables>
+        <variable id="ML_intes" name="ML_intes" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ML_intes']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ML_intes </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ML_blood_1" name="ML_blood">
+      <listOfVariables>
+        <variable id="ML_blood" name="ML_blood" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ML_blood']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ML_blood </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="AA_b_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="HPETE_b_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="HETE_b_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="LTA4_b_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="LTC4_b_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="LTC4_b_out_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="LTD4_b_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="LTE4_b_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="EO_b_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="EO_i_b_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="EO_a_b_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="EO_i_aw_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="EO_a_aw_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="EO_aw_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Hn_b_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="IL_b_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="IL_bm_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="EO_bm_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="AA_aw_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="HPETE_aw_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="HETE_aw_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="LTA4_aw_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="LTC4_aw_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="LTC4_aw_out_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="LTD4_aw_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="LTE4_aw_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="Hn_aw_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="IL_aw_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="ZF_intes_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="ZF_blood_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="ZF_airways_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="ML_intes_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="ML_blood_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="AA_b_1" />
+        <dataSet id="col_2" dataReference="HPETE_b_1" />
+        <dataSet id="col_3" dataReference="HETE_b_1" />
+        <dataSet id="col_4" dataReference="LTA4_b_1" />
+        <dataSet id="col_5" dataReference="LTC4_b_1" />
+        <dataSet id="col_6" dataReference="LTC4_b_out_1" />
+        <dataSet id="col_7" dataReference="LTD4_b_1" />
+        <dataSet id="col_8" dataReference="LTE4_b_1" />
+        <dataSet id="col_9" dataReference="EO_b_1" />
+        <dataSet id="col_10" dataReference="EO_i_b_1" />
+        <dataSet id="col_11" dataReference="EO_a_b_1" />
+        <dataSet id="col_12" dataReference="EO_i_aw_1" />
+        <dataSet id="col_13" dataReference="EO_a_aw_1" />
+        <dataSet id="col_14" dataReference="EO_aw_1" />
+        <dataSet id="col_15" dataReference="Hn_b_1" />
+        <dataSet id="col_16" dataReference="IL_b_1" />
+        <dataSet id="col_17" dataReference="IL_bm_1" />
+        <dataSet id="col_18" dataReference="EO_bm_1" />
+        <dataSet id="col_19" dataReference="AA_aw_1" />
+        <dataSet id="col_20" dataReference="HPETE_aw_1" />
+        <dataSet id="col_21" dataReference="HETE_aw_1" />
+        <dataSet id="col_22" dataReference="LTA4_aw_1" />
+        <dataSet id="col_23" dataReference="LTC4_aw_1" />
+        <dataSet id="col_24" dataReference="LTC4_aw_out_1" />
+        <dataSet id="col_25" dataReference="LTD4_aw_1" />
+        <dataSet id="col_26" dataReference="LTE4_aw_1" />
+        <dataSet id="col_27" dataReference="Hn_aw_1" />
+        <dataSet id="col_28" dataReference="IL_aw_1" />
+        <dataSet id="col_29" dataReference="ZF_intes_1" />
+        <dataSet id="col_30" dataReference="ZF_blood_1" />
+        <dataSet id="col_31" dataReference="ZF_airways_1" />
+        <dataSet id="col_32" dataReference="ML_intes_1" />
+        <dataSet id="col_33" dataReference="ML_blood_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
