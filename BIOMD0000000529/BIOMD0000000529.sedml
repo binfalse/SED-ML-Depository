@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000529.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNb_mRNA_1" name="IFNb_mRNA">
+      <listOfVariables>
+        <variable id="IFNb_mRNA" name="IFNb_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNb_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNb_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNb_env_1" name="IFNb_env">
+      <listOfVariables>
+        <variable id="IFNb_env" name="IFNb_env" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNb_env']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNb_env </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STATP2n_1" name="STATP2n">
+      <listOfVariables>
+        <variable id="STATP2n" name="STATP2n" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STATP2n']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STATP2n </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SOCS1m_1" name="SOCS1m">
+      <listOfVariables>
+        <variable id="SOCS1m" name="SOCS1m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SOCS1m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SOCS1m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRF7m_1" name="IRF7m">
+      <listOfVariables>
+        <variable id="IRF7m" name="IRF7m" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRF7m']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRF7m </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IRF7Pn_1" name="IRF7Pn">
+      <listOfVariables>
+        <variable id="IRF7Pn" name="IRF7Pn" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IRF7Pn']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IRF7Pn </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNa_mRNA_1" name="IFNa_mRNA">
+      <listOfVariables>
+        <variable id="IFNa_mRNA" name="IFNa_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNa_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNa_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IFNa_env_1" name="IFNa_env">
+      <listOfVariables>
+        <variable id="IFNa_env" name="IFNa_env" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IFNa_env']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IFNa_env </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFam_1" name="TNFam">
+      <listOfVariables>
+        <variable id="TNFam" name="TNFam" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFam']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFam </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFenv_1" name="TNFenv">
+      <listOfVariables>
+        <variable id="TNFenv" name="TNFenv" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFenv']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFenv </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STATm_1" name="STATm">
+      <listOfVariables>
+        <variable id="STATm" name="STATm" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STATm']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STATm </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="STAT_1" name="STAT">
+      <listOfVariables>
+        <variable id="STAT" name="STAT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='STAT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> STAT </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="IFNb_mRNA_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="IFNb_env_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="STATP2n_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="SOCS1m_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="IRF7m_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="IRF7Pn_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="IFNa_mRNA_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="IFNa_env_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="TNFam_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="TNFenv_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="STATm_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="STAT_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="IFNb_mRNA_1" />
+        <dataSet id="col_2" dataReference="IFNb_env_1" />
+        <dataSet id="col_3" dataReference="STATP2n_1" />
+        <dataSet id="col_4" dataReference="SOCS1m_1" />
+        <dataSet id="col_5" dataReference="IRF7m_1" />
+        <dataSet id="col_6" dataReference="IRF7Pn_1" />
+        <dataSet id="col_7" dataReference="IFNa_mRNA_1" />
+        <dataSet id="col_8" dataReference="IFNa_env_1" />
+        <dataSet id="col_9" dataReference="TNFam_1" />
+        <dataSet id="col_10" dataReference="TNFenv_1" />
+        <dataSet id="col_11" dataReference="STATm_1" />
+        <dataSet id="col_12" dataReference="STAT_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
