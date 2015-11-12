@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000413.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="auxin_1" name="auxin">
+      <listOfVariables>
+        <variable id="auxin" name="auxin" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='auxin']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> auxin </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TIR1_1" name="TIR1">
+      <listOfVariables>
+        <variable id="TIR1" name="TIR1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TIR1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TIR1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="auxinTIR1_1" name="auxinTIR1">
+      <listOfVariables>
+        <variable id="auxinTIR1" name="auxinTIR1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='auxinTIR1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> auxinTIR1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="auxinTIR1VENUS_1" name="auxinTIR1VENUS">
+      <listOfVariables>
+        <variable id="auxinTIR1VENUS" name="auxinTIR1VENUS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='auxinTIR1VENUS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> auxinTIR1VENUS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="VENUS_1" name="VENUS">
+      <listOfVariables>
+        <variable id="VENUS" name="VENUS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='VENUS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> VENUS </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="auxin_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="TIR1_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="auxinTIR1_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="auxinTIR1VENUS_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="VENUS_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="auxin_1" />
+        <dataSet id="col_2" dataReference="TIR1_1" />
+        <dataSet id="col_3" dataReference="auxinTIR1_1" />
+        <dataSet id="col_4" dataReference="auxinTIR1VENUS_1" />
+        <dataSet id="col_5" dataReference="VENUS_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
