@@ -1,0 +1,5019 @@
+<?xml version="1.0" encoding="utf-8"?>
+<numl version="1" level="1" xmlns="http://www.numl.org/numl/level1/version1">
+  <resultComponent>
+    <dimensionDescription>
+      <compositeDescription name="time" indexType="double">
+        <compositeDescription name="Names" indexType="string">
+          <atomicDescription name="Value" valueType="double" />
+        </compositeDescription>
+      </compositeDescription>
+    </dimensionDescription>
+    <dimension>
+      <compositeValue indexValue="0">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>1</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.997803691200275</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.995611480479053</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.993423727663304</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.99124052260693</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.989061893571275</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.986887831083952</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.98471833594228</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.982553407023607</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="0.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.980393018954606</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.978237074113217</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.976085671433508</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.973938810915479</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.971796492559128</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.969659546011941</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.967526642418399</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.965398748924648</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.963274889961327</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.961155413676278</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="1.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.959041061318869</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.956930730791779</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.954824767638115</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.952723261212983</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.950626236946672</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.948533685587711</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.946445607497233</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.944362669247043</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.942283722865046</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.940209107823826</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="2.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.93813891334802</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.93607316371272</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.934012504087571</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.931955814639127</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.929903430528889</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.92785544086958</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.925811869132004</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.923773354009305</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.921738787127191</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.919708499366227</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="3.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.917682579710162</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.91566105084431</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.913643903682619</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.911631138322921</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.909622754366966</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.90761873239991</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.905619038489603</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.90362370819753</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.90163274152369</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.899646138468085</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="4.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.897663899030712</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.895686023211573</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.893712426134223</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.891743140993465</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.889778189425519</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.887817571430385</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.885861287008063</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.883909336158552</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.881961692590314</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.88001827150642</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="5.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.878079149642051</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.876144326997208</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.87421380357189</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.872287579366098</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.870365654379832</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.868447940082174</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.866534453074987</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.864625229253329</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.862720268617198</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.860819571166596</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="6.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.858923136901521</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.857030949366162</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.855142897806638</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.853259072661303</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.851379473930156</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.849504101613197</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.847632955710427</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.845766036221844</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.84390328626622</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.842044693246099</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="7.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.840190286097993</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.83834006106679</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.836494014397379</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.83465214233465</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.832814441123492</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.830980907008793</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.829151517131006</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.827326250973903</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.825505123236302</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.823688128347104</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="8.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.821875260735211</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.820066514829526</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.818261885058949</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.816461365852384</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.814664948479789</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.812872620197017</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.811084381362993</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.809300225940268</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.807520147891391</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.805744141178912</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="9.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.80397219976538</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.802204317613345</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.800440488714722</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.798680707225571</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.796924966970444</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.795173261921025</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.793425586049001</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.791681933326058</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.78994229772388</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.788206673214155</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="10.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.786475053768566</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.784747440025958</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.783023820826238</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.781304190104008</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.779588541837553</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.777876870005156</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.776169168585105</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.774465431555682</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.772765652895173</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.771069826581864</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="11.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.769377946594038</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.767690006909981</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.766006001507978</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.764325924366314</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.762649769463273</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.76097753077714</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.759309202286201</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.75764477796874</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.755984251803042</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.754327617767392</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="12.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.752674869840075</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.751026001999376</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.749381008223579</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.74773988249097</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.746102618779834</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.744469211068455</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.742839653335119</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.741213939558109</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.739592063715712</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.737974019786212</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="13.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.736359801747894</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.73474940413635</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.733142821212122</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.731540046245283</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.729941073218224</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.728345896113337</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.726754508913012</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.725166905599639</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.723583080155609</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.722003026563312</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="14.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.72042673880514</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.718854210863483</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.717285436720732</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.715720410359276</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.714159125761508</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.712601576909817</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.711047757786594</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.709497662374229</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.707951284655114</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.706408618611639</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="15.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.704869658226195</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.703334397481172</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.70180283035896</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.700274950841951</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.698751251162322</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.697230874595953</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.695714058606934</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.694201361518487</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.692691971619771</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.691186578713703</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="16.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.689684482363941</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.688185917019902</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.686691435398491</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.685200234355698</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.683712996006545</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.68222902756779</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.680748560524778</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.679272142033157</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.67779897742401</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.6763297412206</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="17.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.674863748199259</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.673401226931636</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.671942719057394</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.670487438290972</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.66903605165983</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.667587881406525</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.666143153239129</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.664702403326783</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.663264853675598</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.661831163912951</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="18.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.660400663654496</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.658973575794575</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.657550431077433</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.656130459709267</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.65471388291993</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.65330122822062</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.651891730693799</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.650486038324983</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.649083492333882</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.647684311215715</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="19.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.646289017130095</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.644896853213343</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.643508460298327</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.642123186737112</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.640741248339265</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.639363161958797</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.637988178694751</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.636616932321839</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.63524877823254</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.63388392959938</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="20.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.632522898016851</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.631164942455834</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.629810689726929</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.628459502171512</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.627111590373295</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.625767460713403</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.624426379943966</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.623088968005023</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.62175459409581</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.620423466259019</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="21.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.619096085708637</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.61777172688777</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.616451002958931</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.615133289888675</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.613818793226038</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.612508009064136</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.611200219447147</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.609896030852522</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.608594825924143</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.607296807764289</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="22.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.606002467391508</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.604711094361536</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.603423288558633</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.602138439214587</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.600856747031349</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.599578697999204</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.598303589096374</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.597032013705151</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.595763367556431</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.594497848997764</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="23.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.593235939037474</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.591976941987659</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.590721444819201</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.589468849673947</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.588219352590457</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.586973429641382</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.585730392384575</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.584490821469369</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.583254125361075</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.582020497834152</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="24.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.580790410071822</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.579563180790104</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.578339384405903</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.577118435621221</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.575900525990751</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.574686121854483</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.573474548999569</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.572266375698841</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.571061022804952</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.569858679696612</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="25.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.568659807916702</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.567463740237054</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.566271038874</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.565081130745562</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.563894203097669</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.562710712722142</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.561529999289653</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.56035261904678</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.559178004892423</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.55800634198235</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="26.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.556838082403269</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.555672572639488</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.554510363053734</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.553350892442109</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.552194343912237</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.551041164891554</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.549890708593456</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.54874351958186</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.54759904246722</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.546457458350431</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="27.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.54531921004537</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.544183657410659</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.543051339295554</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.541921706042872</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.540794936787568</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.539671469775539</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.538550671427479</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.537433074961215</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.536318136370817</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.53520603286546</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="28.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.534097198168494</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.532991005180249</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.531887981569431</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.530787588901147</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.529690002498314</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.528595651607003</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.527503915525497</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.526415316454733</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.525329321451556</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.524246103991498</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="29.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.523166088888448</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.522088661757724</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.521014339412877</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.519942594324119</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.518873598157824</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.517807771340607</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.516744505724683</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.515684312815618</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.514626670419571</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.513571748431317</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="30.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.512519962934914</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.511470711940136</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.510424501722966</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.509380815349045</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.508339820978449</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.507301930397188</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.506266547694068</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.505234173992877</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.504204297543257</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.503177084806807</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="31.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.502152943315779</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.50113128316032</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.500112269800028</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.499095963242633</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.498082367355168</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.497071469703756</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.4960636371912</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.495058254273094</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.494055484442683</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.493055386849877</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="32.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.492057965327073</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.491063564396246</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.490071586709138</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.489082194158215</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.488095445177458</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.487111343576605</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.48613023037756</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.485151514166876</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.48417535526989</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.483201811403935</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="33.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.482230886361516</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.481262917709472</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.480297319890113</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.479334251694604</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.478373770123169</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.477415878956303</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.476460912350348</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.475508290525284</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.474558170770383</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.473610609368533</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="34.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.472665610093255</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.471723503734517</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.470783716212858</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.469846403347247</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.468911620703252</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.467979372052266</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.467049984861551</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.466122890676085</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.465198243875429</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.464276099308091</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="35.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.463356460747986</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.462439652382889</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.461525111307081</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.460612990490934</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.459703344066372</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.458796175814315</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.457891806685795</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.456989679250269</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.45608994509844</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.455192657646358</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="36.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.454297820686245</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.453405751974678</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.452515899483153</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.451628413451547</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.450743346580966</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.449860702679052</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.448980796349747</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.448103080894455</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.447227705230385</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.446354721344842</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="37.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.445484133064843</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.444616251883031</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.443750536359601</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.442887134116574</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.4420260964288</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.441167427146461</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.440311113728342</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.439457482985866</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.438605987819316</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.43775677433177</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="38.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.436909892945199</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.436065347542343</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.435223442914089</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.434383648944718</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.433546110500189</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.432710877293712</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.431877953238948</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.431047640144555</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.430219412932813</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.429393415257882</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="39.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.428569696126201</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.427748259485628</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.42692940420191</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.426112610168457</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.425298019852283</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.424485681555234</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.423675599262492</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.422868068935725</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.42206257537361</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.42125925988001</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="40.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.420458170054544</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.419659309922693</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.418862972580386</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.41806864766672</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.417276475345748</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.416486502517397</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.415698733250285</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.414913457812453</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.414130170619577</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.413349010718587</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="41.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.412570024312435</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.411793215515569</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.411018871805498</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.410246492311647</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.409476214985866</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.408708085337013</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.407942107527924</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.407178566282442</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.406416965381914</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.405657441704512</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="42.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.404900040068048</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.404144764686168</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.403391897565425</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.402640947078257</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.401892049049933</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.401145247610418</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.400400547026468</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.399658226623225</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.398917799304386</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.39817939986246</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="43.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.397443071742928</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.396708819267821</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.395976919116259</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.395246888664359</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.394518861691396</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.393792880961872</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.393068950855139</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.392347345439195</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.391627586504718</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.390909806836669</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="44.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.390194048522217</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.389480315999964</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.38876888076119</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.388059268954265</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.387351612388139</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.386645952476446</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.385942293718842</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.385240905063809</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.384541316961509</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.383843660262595</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="45.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.383147975711086</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.382454267869397</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.381762803176633</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.381073116329821</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.380385337238443</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.379699505980954</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.379015627184116</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.378333964810599</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.377654057750328</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.376976034988154</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="46.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.376299935941148</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.375625765301903</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.374953784589105</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.374283536832569</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.373615150108482</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.372948663176831</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.372284080797416</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.371621662076915</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.370960954132964</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.370302084148494</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="47.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.36964509023082</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.368989977208234</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.368337001806887</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.367685715181119</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.367036243635448</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.366388624629046</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.365742863059878</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.365099213304579</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.364457230504001</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.36381704009855</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="48.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.363178678903884</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.362542151888734</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.361907711110753</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.361274915648033</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.360643890090629</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.360014670615424</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.359387262262911</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.358761914801818</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.358138191199128</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.357516215207773</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="49.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.356896022370693</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.356277617801059</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.355661249008257</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.355046482800714</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.354433442106949</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.353822161840887</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.353212647189202</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.352605143431059</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.351999221169778</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.351395002521659</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="50.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.350792521776632</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.350191784195617</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.349593032856214</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.348995842110971</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.348400333275663</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.347806540021326</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.347214467683796</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.346624357167295</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.346035786528816</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.345448876294808</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="51.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.344863659522597</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.344280141623525</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.34369856135617</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.343118500438052</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.342540078617007</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.341963328341912</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.341388255100133</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.340815095531886</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.340243434972152</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.339673392400395</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="52.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.33910499966238</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.338538262321942</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.337973414927761</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.337410046390067</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.336848274929724</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.33628813179479</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.335729622625948</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.335172979906723</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.334617796081216</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.334064188621008</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="53.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.33351218818192</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.332961800481795</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.332413255964942</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.331866150568783</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.331320601024482</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.330776637401157</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.33023426549406</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.329693713733787</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.32915458151134</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.328616984825898</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="54.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.328080953165469</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.327546492402903</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.327013828980148</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.326482565702854</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.325952817846215</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.325424614322777</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.324897961083117</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.324373082605173</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.323849585071103</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.323327583039698</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="55.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.322807104853741</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.322288156541613</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.321770960641449</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.321255126674556</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.3207407684905</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.320227913868042</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.31971656891339</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.319206954248667</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.318698682697742</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.318191867407726</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="56.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.317686535599151</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.317182693456021</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.316680559707822</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.316179750445155</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.315680378119057</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.315182469397666</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.314686030542701</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.314191278413974</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.313697832333737</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.313205804062953</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="57.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.312715219723234</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.312226085653892</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.311738616867617</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.311252435883971</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.310767653779468</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.3102842961351</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.309802369367602</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.309322086664696</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.308843073709631</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.308365440899741</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="58.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.30788921328133</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.307414397348348</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.306941204485302</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.306469263506223</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.305998684134174</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.30552949088674</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.305061690334828</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.304595492081097</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.304130528038157</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.303666907259361</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="59.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.303204653739567</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.302743774126351</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.3022844762615</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.301826395124684</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.301369639103781</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.300914231676933</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.30046017956806</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.300007688878666</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.29955639762465</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.299106413532317</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="60.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.298657759569125</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.298210442534976</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.297764666811312</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.297320073420088</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.29687676942962</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.296434777302736</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.295994103914927</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.295554951947412</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.295116965398693</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.294680250682371</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="61.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.294244829762709</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.293810709590361</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.293378091165805</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.292946621435217</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.292516406160458</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.292087466813304</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.291659810419121</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.291233636316756</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.290808594371824</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.29038478969713</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="62.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.28996224327805</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.28954096221418</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.289121144201497</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.288702442160284</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.288284960068143</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.287868718918692</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.287453725722403</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.287040176550788</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.286627727440966</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.286216480969939</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="63.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.285806458413185</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.285397666602353</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.284990099244392</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.284583750729371</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.284178625796827</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.28377472444676</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.283372037145414</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.282970552784595</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.282570281586412</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.282171223550862</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="64.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.281773366084062</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.281376698184391</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.280981231141496</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.280586964955376</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.28019388504898</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.279801982192298</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.279411267336264</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.27902174048088</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.278633379617676</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.278246173802033</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="65.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.277860135601451</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.277475264001082</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.277091557986075</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.276709016541581</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.276327638652749</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.275947423304731</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.275568369482676</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.275190441927809</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.274813653147244</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.274438007514879</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="66.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.274063502562883</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.273690135823424</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.27331790482867</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.27294680711079</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.272576840201953</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.272208000554483</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.271840268153025</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.271473652845619</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.271108151520995</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.270743761067883</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="67.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.270380478375015</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.270018300331122</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.269657223824933</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.269297245745181</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.268938362046161</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.268580567912837</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.268223861783952</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.267868240440121</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.267513700661961</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.267160239230086</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="68.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.266807852925115</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.26645653852766</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.26610629281834</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.265757113941628</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.265408998940997</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.265061943839157</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.264715945500901</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.264371000791022</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.264027106574313</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.263684259715567</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="69.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.263342457079576</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.263001695531134</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.262661976668134</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.262323294898111</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.261985646331482</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.26164902790809</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.261313436567782</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.2609788692504</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.260645322895791</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.2603127944438</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="70.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.259981280834269</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.259650779007046</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.259321285901973</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.258992798458896</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.25866531361766</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.258338831277531</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.258013354606917</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.257688873798249</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.257365385918276</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.257042888026463</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="71.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.256721377174989</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.256400850408749</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.256081304765354</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.255762737275129</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.255445144961117</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.255128524839073</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.254812873917471</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.254498189197497</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.254184467673055</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.253871706330762</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="72.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.253559902149953</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.253249052102677</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.252939153153699</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.252630202260498</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.252322200600017</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.252015154185537</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.251709049949541</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.251403885091249</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.251099656811049</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.250796362310503</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="73.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.250493998792342</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.250192563460467</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.249892053519951</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.249592466177038</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.249293798639142</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.248996048114847</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.248699211813911</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.248403286947259</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.248108270726988</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.247814160366368</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="74.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.247520953079836</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.247228646083002</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.246937236592648</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.246646724396058</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.246357112450061</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.246068391690341</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.245780559504701</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.24549361328761</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.2452075504402</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.24492236837027</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="75.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.244638064492283</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.244354636227367</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.244072081003316</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.243790396254589</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.243509579422309</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.243229627954265</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.242950539304911</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.242672310935366</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.242394940313415</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.242118424913505</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="76.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.241842762216753</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.241567949710937</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.241293985378904</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.241020867860046</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.240748593428983</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.24047715963253</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.240206564025238</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.239936804169392</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.239667877635014</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.239399781999856</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="77.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.239132514849411</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.2388660737769</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.238600456383285</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.238335660277257</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.238071683075247</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.237808522401417</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.237546175887665</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.237284641173624</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.237023915906661</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.236763997741878</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="78.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.236504884342113</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.236246572971887</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.235989060321669</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.235732345136294</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.235476425081961</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.235221297831693</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.234966961065337</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.234713412469561</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.234460649737859</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.234208670570548</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="79.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.233957472674767</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.233707053764481</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.233457411560476</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.233208543790362</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.232960448188574</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.23271312249637</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.232466564461829</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.232220771839858</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.231975742392182</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.231731473887355</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="80.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.231487963733325</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.231245208779021</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.231003207803423</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.230761958576794</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.230521458875379</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.2302817064814</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.230042699183055</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.229804434774524</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.229566911055961</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.2293301258335</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="81.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.229094076919254</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.228858762131311</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.228624179293741</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.228390326236589</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.22815720079588</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.227924800813614</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.227693124137773</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.227462168622315</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.227231932127175</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.227002412400665</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="82.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.226773607002712</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.226545514138766</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.226318131684277</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.226091457520398</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.225865489533977</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.225640225617569</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.225415663669423</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.225191801593493</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.224968637299432</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.224746168702593</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="83.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.22452439372403</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.224303310290497</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.224082916334449</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.22386320979404</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.223644188613126</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.223425850741263</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.223208194133708</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.222991216751417</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.222774916527288</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.222559291343345</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="84.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.222344339277796</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.222130058313178</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.221916446437728</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.221703501645377</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.221491221935756</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.221279605314192</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.221068649791709</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.22085835338503</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.220648714116573</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.220439730014456</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="85.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.220231399112491</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.22002371945019</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.219816689072762</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.219610306031113</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.219404568381844</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.219199474187258</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.218995021515352</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.21879120843982</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.218588033040055</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.218385493401148</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="86.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.218183587613884</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.217982313774749</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.217781669985924</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.217581654355288</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.217382264996417</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.217183500028585</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.216985357576763</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.21678783577162</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.216590932749521</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.216394644790186</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="87.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.216198970403463</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.216003908916065</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.21580945847668</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.215615617239755</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.2154223833655</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.215229755019889</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.215037730374653</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.214846307607289</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.214655484901053</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.214465260444965</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="88.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.214275632433803</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.21408659906811</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.21389815855419</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.213710309104107</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.213523048935689</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.213336376272524</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.213150289343962</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.212964786385116</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.212779865636858</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.212595525345824</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="89.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.21241176376441</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.212228579150776</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.212045969768842</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.211863933888288</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.211682469784559</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.211501575738861</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.211321250038159</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.211141490975182</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.210962296848421</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.210783665962127</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="90.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.210605596626314</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.210428087156757</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.210251135874993</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.21007474110832</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.209898901189798</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.209723614458249</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.209548879258257</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.209374693940168</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.209201056860086</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.209027966379882</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="91.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.208855420867185</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.208683418695387</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.208511958243642</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.208341037896864</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.208170656045731</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.208000811086681</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.207831501421914</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.207662725459391</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.207494481612837</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.207326768301736</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="92.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.207159583951336</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.206992926992644</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.206826795862431</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.20666118761985</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.206496095243722</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.206331523202535</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.206167469915086</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.206003933805086</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.205840913301155</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.205678406836827</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="93.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.205516412850548</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.205354929785675</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.205193956090478</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.205033490218138</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.204873530626749</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.204714075779317</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.204555124143759</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.204396674192905</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.204238724404497</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.204081273261187</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="94.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.203924319250543</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.203767860865041</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.203611896602071</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.203456424963934</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.203301444457846</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.20314695359593</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.202992950895226</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.202839434877682</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.202686404070161</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.202533857004435</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="95.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.202381792217192</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.202230208250028</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.202079103649454</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.201928476966891</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.201778326758673</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.201628651586046</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.201479450015167</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.201330718182608</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.201182454480961</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.201034659580165</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="96.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.200887332041166</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.200740470429339</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.200594073314488</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.200448139270846</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.200302666877074</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.200157654716264</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.200013101375936</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.199869005448037</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.199725365528945</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.199582180219467</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="97.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.199439448124838</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.199297167854723</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.199155338023214</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.199013957248835</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.198873024154535</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.198732537367696</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.198592495520127</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.198452897248064</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.198313741192176</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.198175025997557</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="98.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.198036750313734</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.197898912794658</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.1">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.197761512098714</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.2">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.197624546888713</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.3">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.197488015831894</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.4">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.197351917599928</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.5">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.197216250868913</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.6">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.197081014319376</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.7">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.196946206636273</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.8">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.19681182650899</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="99.9">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.19667787263134</atomicValue>
+        </compositeValue>
+      </compositeValue>
+      <compositeValue indexValue="100">
+        <compositeValue indexValue="VENUS">
+          <atomicValue>0.19654434125772</atomicValue>
+        </compositeValue>
+      </compositeValue>
+    </dimension>
+  </resultComponent>
+</numl>
