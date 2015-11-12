@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000571.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_1" name="CRP">
+      <listOfVariables>
+        <variable id="CRP" name="CRP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsiteI_crp_1" name="CRPsiteI_crp">
+      <listOfVariables>
+        <variable id="CRPsiteI_crp" name="CRPsiteI_crp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsiteI_crp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsiteI_crp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsiteII_crp_1" name="CRPsiteII_crp">
+      <listOfVariables>
+        <variable id="CRPsiteII_crp" name="CRPsiteII_crp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsiteII_crp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsiteII_crp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsite_cyaA_1" name="CRPsite_cyaA">
+      <listOfVariables>
+        <variable id="CRPsite_cyaA" name="CRPsite_cyaA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsite_cyaA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsite_cyaA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsite_genome_1" name="CRPsite_genome">
+      <listOfVariables>
+        <variable id="CRPsite_genome" name="CRPsite_genome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsite_genome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsite_genome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsite_ptsGp1_1" name="CRPsite_ptsGp1">
+      <listOfVariables>
+        <variable id="CRPsite_ptsGp1" name="CRPsite_ptsGp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsite_ptsGp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsite_ptsGp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsite_ptsGp2_1" name="CRPsite_ptsGp2">
+      <listOfVariables>
+        <variable id="CRPsite_ptsGp2" name="CRPsite_ptsGp2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsite_ptsGp2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsite_ptsGp2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsite_ptsHp0_1" name="CRPsite_ptsHp0">
+      <listOfVariables>
+        <variable id="CRPsite_ptsHp0" name="CRPsite_ptsHp0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsite_ptsHp0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsite_ptsHp0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsite_ptsHp1_1" name="CRPsite_ptsHp1">
+      <listOfVariables>
+        <variable id="CRPsite_ptsHp1" name="CRPsite_ptsHp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsite_ptsHp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsite_ptsHp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsite_ptsIp0_1" name="CRPsite_ptsIp0">
+      <listOfVariables>
+        <variable id="CRPsite_ptsIp0" name="CRPsite_ptsIp0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsite_ptsIp0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsite_ptsIp0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsite_ptsIp1_1" name="CRPsite_ptsIp1">
+      <listOfVariables>
+        <variable id="CRPsite_ptsIp1" name="CRPsite_ptsIp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsite_ptsIp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsite_ptsIp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsite_mlcp1_1" name="CRPsite_mlcp1">
+      <listOfVariables>
+        <variable id="CRPsite_mlcp1" name="CRPsite_mlcp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsite_mlcp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsite_mlcp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRPsite_mlcp2_1" name="CRPsite_mlcp2">
+      <listOfVariables>
+        <variable id="CRPsite_mlcp2" name="CRPsite_mlcp2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRPsite_mlcp2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRPsite_mlcp2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlc_1" name="Mlc">
+      <listOfVariables>
+        <variable id="Mlc" name="Mlc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlcsite_mlcp1_1" name="Mlcsite_mlcp1">
+      <listOfVariables>
+        <variable id="Mlcsite_mlcp1" name="Mlcsite_mlcp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlcsite_mlcp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlcsite_mlcp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlcsite_mlcp2_1" name="Mlcsite_mlcp2">
+      <listOfVariables>
+        <variable id="Mlcsite_mlcp2" name="Mlcsite_mlcp2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlcsite_mlcp2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlcsite_mlcp2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlcsite_ptsGp1_1" name="Mlcsite_ptsGp1">
+      <listOfVariables>
+        <variable id="Mlcsite_ptsGp1" name="Mlcsite_ptsGp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlcsite_ptsGp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlcsite_ptsGp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlcsite_ptsGp2_1" name="Mlcsite_ptsGp2">
+      <listOfVariables>
+        <variable id="Mlcsite_ptsGp2" name="Mlcsite_ptsGp2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlcsite_ptsGp2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlcsite_ptsGp2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlcsite_ptsHp0_1" name="Mlcsite_ptsHp0">
+      <listOfVariables>
+        <variable id="Mlcsite_ptsHp0" name="Mlcsite_ptsHp0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlcsite_ptsHp0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlcsite_ptsHp0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlcsite_ptsIp0_1" name="Mlcsite_ptsIp0">
+      <listOfVariables>
+        <variable id="Mlcsite_ptsIp0" name="Mlcsite_ptsIp0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlcsite_ptsIp0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlcsite_ptsIp0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_1" name="CRP_cAMP">
+      <listOfVariables>
+        <variable id="CRP_cAMP" name="CRP_cAMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsiteI_crp_1" name="CRP_cAMP_CRPsiteI_crp">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsiteI_crp" name="CRP_cAMP_CRPsiteI_crp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsiteI_crp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsiteI_crp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsiteII_crp_1" name="CRP_cAMP_CRPsiteII_crp">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsiteII_crp" name="CRP_cAMP_CRPsiteII_crp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsiteII_crp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsiteII_crp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsite_cyaA_1" name="CRP_cAMP_CRPsite_cyaA">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsite_cyaA" name="CRP_cAMP_CRPsite_cyaA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsite_cyaA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsite_cyaA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsite_genome_1" name="CRP_cAMP_CRPsite_genome">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsite_genome" name="CRP_cAMP_CRPsite_genome" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsite_genome']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsite_genome </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsite_ptsGp1_1" name="CRP_cAMP_CRPsite_ptsGp1">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsite_ptsGp1" name="CRP_cAMP_CRPsite_ptsGp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsite_ptsGp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsite_ptsGp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsite_ptsGp2_1" name="CRP_cAMP_CRPsite_ptsGp2">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsite_ptsGp2" name="CRP_cAMP_CRPsite_ptsGp2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsite_ptsGp2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsite_ptsGp2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsite_ptsHp0_1" name="CRP_cAMP_CRPsite_ptsHp0">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsite_ptsHp0" name="CRP_cAMP_CRPsite_ptsHp0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsite_ptsHp0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsite_ptsHp0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsite_ptsHp1_1" name="CRP_cAMP_CRPsite_ptsHp1">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsite_ptsHp1" name="CRP_cAMP_CRPsite_ptsHp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsite_ptsHp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsite_ptsHp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsite_ptsIp0_1" name="CRP_cAMP_CRPsite_ptsIp0">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsite_ptsIp0" name="CRP_cAMP_CRPsite_ptsIp0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsite_ptsIp0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsite_ptsIp0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsite_ptsIp1_1" name="CRP_cAMP_CRPsite_ptsIp1">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsite_ptsIp1" name="CRP_cAMP_CRPsite_ptsIp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsite_ptsIp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsite_ptsIp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsite_mlcp1_1" name="CRP_cAMP_CRPsite_mlcp1">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsite_mlcp1" name="CRP_cAMP_CRPsite_mlcp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsite_mlcp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsite_mlcp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CRP_cAMP_CRPsite_mlcp2_1" name="CRP_cAMP_CRPsite_mlcp2">
+      <listOfVariables>
+        <variable id="CRP_cAMP_CRPsite_mlcp2" name="CRP_cAMP_CRPsite_mlcp2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CRP_cAMP_CRPsite_mlcp2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CRP_cAMP_CRPsite_mlcp2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlc_Mlcsite_ptsGp1_1" name="Mlc_Mlcsite_ptsGp1">
+      <listOfVariables>
+        <variable id="Mlc_Mlcsite_ptsGp1" name="Mlc_Mlcsite_ptsGp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlc_Mlcsite_ptsGp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlc_Mlcsite_ptsGp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlc_Mlcsite_ptsGp2_1" name="Mlc_Mlcsite_ptsGp2">
+      <listOfVariables>
+        <variable id="Mlc_Mlcsite_ptsGp2" name="Mlc_Mlcsite_ptsGp2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlc_Mlcsite_ptsGp2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlc_Mlcsite_ptsGp2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlc_Mlcsite_ptsIp0_1" name="Mlc_Mlcsite_ptsIp0">
+      <listOfVariables>
+        <variable id="Mlc_Mlcsite_ptsIp0" name="Mlc_Mlcsite_ptsIp0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlc_Mlcsite_ptsIp0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlc_Mlcsite_ptsIp0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlc_Mlcsite_ptsHp0_1" name="Mlc_Mlcsite_ptsHp0">
+      <listOfVariables>
+        <variable id="Mlc_Mlcsite_ptsHp0" name="Mlc_Mlcsite_ptsHp0" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlc_Mlcsite_ptsHp0']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlc_Mlcsite_ptsHp0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlc_Mlcsite_mlcp1_1" name="Mlc_Mlcsite_mlcp1">
+      <listOfVariables>
+        <variable id="Mlc_Mlcsite_mlcp1" name="Mlc_Mlcsite_mlcp1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlc_Mlcsite_mlcp1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlc_Mlcsite_mlcp1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mlc_Mlcsite_mlcp2_1" name="Mlc_Mlcsite_mlcp2">
+      <listOfVariables>
+        <variable id="Mlc_Mlcsite_mlcp2" name="Mlc_Mlcsite_mlcp2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mlc_Mlcsite_mlcp2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mlc_Mlcsite_mlcp2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IICB_1" name="IICB">
+      <listOfVariables>
+        <variable id="IICB" name="IICB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IICB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IICB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IICB_Mlc_1" name="IICB_Mlc">
+      <listOfVariables>
+        <variable id="IICB_Mlc" name="IICB_Mlc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IICB_Mlc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IICB_Mlc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CYA_1" name="CYA">
+      <listOfVariables>
+        <variable id="CYA" name="CYA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CYA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CYA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IIA_P_1" name="IIA_P">
+      <listOfVariables>
+        <variable id="IIA_P" name="IIA_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IIA_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IIA_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IIA_P_CYA_1" name="IIA_P_CYA">
+      <listOfVariables>
+        <variable id="IIA_P_CYA" name="IIA_P_CYA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IIA_P_CYA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IIA_P_CYA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mRNA_cyaA_1" name="mRNA_cyaA">
+      <listOfVariables>
+        <variable id="mRNA_cyaA" name="mRNA_cyaA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mRNA_cyaA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mRNA_cyaA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mRNA_crp_1" name="mRNA_crp">
+      <listOfVariables>
+        <variable id="mRNA_crp" name="mRNA_crp" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mRNA_crp']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mRNA_crp </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mRNA_ptsG_1" name="mRNA_ptsG">
+      <listOfVariables>
+        <variable id="mRNA_ptsG" name="mRNA_ptsG" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mRNA_ptsG']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mRNA_ptsG </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mRNA_ptsH_1" name="mRNA_ptsH">
+      <listOfVariables>
+        <variable id="mRNA_ptsH" name="mRNA_ptsH" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mRNA_ptsH']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mRNA_ptsH </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mRNA_ptsI_1" name="mRNA_ptsI">
+      <listOfVariables>
+        <variable id="mRNA_ptsI" name="mRNA_ptsI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mRNA_ptsI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mRNA_ptsI </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mRNA_crr_1" name="mRNA_crr">
+      <listOfVariables>
+        <variable id="mRNA_crr" name="mRNA_crr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mRNA_crr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mRNA_crr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mRNA_mlc_1" name="mRNA_mlc">
+      <listOfVariables>
+        <variable id="mRNA_mlc" name="mRNA_mlc" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mRNA_mlc']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mRNA_mlc </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IICB_P_1" name="IICB_P">
+      <listOfVariables>
+        <variable id="IICB_P" name="IICB_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IICB_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IICB_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IIA_1" name="IIA">
+      <listOfVariables>
+        <variable id="IIA" name="IIA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IIA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IIA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HPr_P_1" name="HPr_P">
+      <listOfVariables>
+        <variable id="HPr_P" name="HPr_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HPr_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HPr_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="HPr_1" name="HPr">
+      <listOfVariables>
+        <variable id="HPr" name="HPr" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='HPr']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> HPr </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EI_P_1" name="EI_P">
+      <listOfVariables>
+        <variable id="EI_P" name="EI_P" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EI_P']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EI_P </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EI_1" name="EI">
+      <listOfVariables>
+        <variable id="EI" name="EI" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EI']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EI </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cAMP_1" name="cAMP">
+      <listOfVariables>
+        <variable id="cAMP" name="cAMP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cAMP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cAMP </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="CRP_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="CRPsiteI_crp_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="CRPsiteII_crp_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="CRPsite_cyaA_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="CRPsite_genome_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="CRPsite_ptsGp1_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="CRPsite_ptsGp2_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="CRPsite_ptsHp0_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="CRPsite_ptsHp1_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="CRPsite_ptsIp0_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="CRPsite_ptsIp1_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="CRPsite_mlcp1_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="CRPsite_mlcp2_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="Mlc_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Mlcsite_mlcp1_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="Mlcsite_mlcp2_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="Mlcsite_ptsGp1_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Mlcsite_ptsGp2_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="Mlcsite_ptsHp0_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="Mlcsite_ptsIp0_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsiteI_crp_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsiteII_crp_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsite_cyaA_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsite_genome_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsite_ptsGp1_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsite_ptsGp2_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsite_ptsHp0_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsite_ptsHp1_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsite_ptsIp0_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsite_ptsIp1_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsite_mlcp1_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="CRP_cAMP_CRPsite_mlcp2_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="Mlc_Mlcsite_ptsGp1_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="Mlc_Mlcsite_ptsGp2_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="Mlc_Mlcsite_ptsIp0_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="Mlc_Mlcsite_ptsHp0_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="Mlc_Mlcsite_mlcp1_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="Mlc_Mlcsite_mlcp2_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="IICB_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="IICB_Mlc_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="CYA_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="IIA_P_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="IIA_P_CYA_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="mRNA_cyaA_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="mRNA_crp_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="mRNA_ptsG_1" />
+        <curve id="curve_47" logX="false" logY="false" xDataReference="time" yDataReference="mRNA_ptsH_1" />
+        <curve id="curve_48" logX="false" logY="false" xDataReference="time" yDataReference="mRNA_ptsI_1" />
+        <curve id="curve_49" logX="false" logY="false" xDataReference="time" yDataReference="mRNA_crr_1" />
+        <curve id="curve_50" logX="false" logY="false" xDataReference="time" yDataReference="mRNA_mlc_1" />
+        <curve id="curve_51" logX="false" logY="false" xDataReference="time" yDataReference="IICB_P_1" />
+        <curve id="curve_52" logX="false" logY="false" xDataReference="time" yDataReference="IIA_1" />
+        <curve id="curve_53" logX="false" logY="false" xDataReference="time" yDataReference="HPr_P_1" />
+        <curve id="curve_54" logX="false" logY="false" xDataReference="time" yDataReference="HPr_1" />
+        <curve id="curve_55" logX="false" logY="false" xDataReference="time" yDataReference="EI_P_1" />
+        <curve id="curve_56" logX="false" logY="false" xDataReference="time" yDataReference="EI_1" />
+        <curve id="curve_57" logX="false" logY="false" xDataReference="time" yDataReference="cAMP_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="CRP_1" />
+        <dataSet id="col_2" dataReference="CRPsiteI_crp_1" />
+        <dataSet id="col_3" dataReference="CRPsiteII_crp_1" />
+        <dataSet id="col_4" dataReference="CRPsite_cyaA_1" />
+        <dataSet id="col_5" dataReference="CRPsite_genome_1" />
+        <dataSet id="col_6" dataReference="CRPsite_ptsGp1_1" />
+        <dataSet id="col_7" dataReference="CRPsite_ptsGp2_1" />
+        <dataSet id="col_8" dataReference="CRPsite_ptsHp0_1" />
+        <dataSet id="col_9" dataReference="CRPsite_ptsHp1_1" />
+        <dataSet id="col_10" dataReference="CRPsite_ptsIp0_1" />
+        <dataSet id="col_11" dataReference="CRPsite_ptsIp1_1" />
+        <dataSet id="col_12" dataReference="CRPsite_mlcp1_1" />
+        <dataSet id="col_13" dataReference="CRPsite_mlcp2_1" />
+        <dataSet id="col_14" dataReference="Mlc_1" />
+        <dataSet id="col_15" dataReference="Mlcsite_mlcp1_1" />
+        <dataSet id="col_16" dataReference="Mlcsite_mlcp2_1" />
+        <dataSet id="col_17" dataReference="Mlcsite_ptsGp1_1" />
+        <dataSet id="col_18" dataReference="Mlcsite_ptsGp2_1" />
+        <dataSet id="col_19" dataReference="Mlcsite_ptsHp0_1" />
+        <dataSet id="col_20" dataReference="Mlcsite_ptsIp0_1" />
+        <dataSet id="col_21" dataReference="CRP_cAMP_1" />
+        <dataSet id="col_22" dataReference="CRP_cAMP_CRPsiteI_crp_1" />
+        <dataSet id="col_23" dataReference="CRP_cAMP_CRPsiteII_crp_1" />
+        <dataSet id="col_24" dataReference="CRP_cAMP_CRPsite_cyaA_1" />
+        <dataSet id="col_25" dataReference="CRP_cAMP_CRPsite_genome_1" />
+        <dataSet id="col_26" dataReference="CRP_cAMP_CRPsite_ptsGp1_1" />
+        <dataSet id="col_27" dataReference="CRP_cAMP_CRPsite_ptsGp2_1" />
+        <dataSet id="col_28" dataReference="CRP_cAMP_CRPsite_ptsHp0_1" />
+        <dataSet id="col_29" dataReference="CRP_cAMP_CRPsite_ptsHp1_1" />
+        <dataSet id="col_30" dataReference="CRP_cAMP_CRPsite_ptsIp0_1" />
+        <dataSet id="col_31" dataReference="CRP_cAMP_CRPsite_ptsIp1_1" />
+        <dataSet id="col_32" dataReference="CRP_cAMP_CRPsite_mlcp1_1" />
+        <dataSet id="col_33" dataReference="CRP_cAMP_CRPsite_mlcp2_1" />
+        <dataSet id="col_34" dataReference="Mlc_Mlcsite_ptsGp1_1" />
+        <dataSet id="col_35" dataReference="Mlc_Mlcsite_ptsGp2_1" />
+        <dataSet id="col_36" dataReference="Mlc_Mlcsite_ptsIp0_1" />
+        <dataSet id="col_37" dataReference="Mlc_Mlcsite_ptsHp0_1" />
+        <dataSet id="col_38" dataReference="Mlc_Mlcsite_mlcp1_1" />
+        <dataSet id="col_39" dataReference="Mlc_Mlcsite_mlcp2_1" />
+        <dataSet id="col_40" dataReference="IICB_1" />
+        <dataSet id="col_41" dataReference="IICB_Mlc_1" />
+        <dataSet id="col_42" dataReference="CYA_1" />
+        <dataSet id="col_43" dataReference="IIA_P_1" />
+        <dataSet id="col_44" dataReference="IIA_P_CYA_1" />
+        <dataSet id="col_45" dataReference="mRNA_cyaA_1" />
+        <dataSet id="col_46" dataReference="mRNA_crp_1" />
+        <dataSet id="col_47" dataReference="mRNA_ptsG_1" />
+        <dataSet id="col_48" dataReference="mRNA_ptsH_1" />
+        <dataSet id="col_49" dataReference="mRNA_ptsI_1" />
+        <dataSet id="col_50" dataReference="mRNA_crr_1" />
+        <dataSet id="col_51" dataReference="mRNA_mlc_1" />
+        <dataSet id="col_52" dataReference="IICB_P_1" />
+        <dataSet id="col_53" dataReference="IIA_1" />
+        <dataSet id="col_54" dataReference="HPr_P_1" />
+        <dataSet id="col_55" dataReference="HPr_1" />
+        <dataSet id="col_56" dataReference="EI_P_1" />
+        <dataSet id="col_57" dataReference="EI_1" />
+        <dataSet id="col_58" dataReference="cAMP_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
