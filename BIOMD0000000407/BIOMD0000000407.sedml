@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000407.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFR_E_1" name="TNFR_E">
+      <listOfVariables>
+        <variable id="TNFR_E" name="TNFR_E" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFR_E']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFR_E </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNF_E_1" name="TNF_E">
+      <listOfVariables>
+        <variable id="TNF_E" name="TNF_E" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNF_E']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNF_E </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNF_TNFR_E_1" name="TNF_TNFR_E">
+      <listOfVariables>
+        <variable id="TNF_TNFR_E" name="TNF_TNFR_E" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNF_TNFR_E']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNF_TNFR_E </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFR_1" name="TNFR">
+      <listOfVariables>
+        <variable id="TNFR" name="TNFR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RIP_1" name="RIP">
+      <listOfVariables>
+        <variable id="RIP" name="RIP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RIP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RIP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TRADD_1" name="TRADD">
+      <listOfVariables>
+        <variable id="TRADD" name="TRADD" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TRADD']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TRADD </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TRAF2_1" name="TRAF2">
+      <listOfVariables>
+        <variable id="TRAF2" name="TRAF2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TRAF2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TRAF2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FADD_1" name="FADD">
+      <listOfVariables>
+        <variable id="FADD" name="FADD" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FADD']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FADD </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNF_TNFR_TRADD_1" name="TNF_TNFR_TRADD">
+      <listOfVariables>
+        <variable id="TNF_TNFR_TRADD" name="TNF_TNFR_TRADD" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNF_TNFR_TRADD']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNF_TNFR_TRADD </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFRC1_1" name="TNFRC1">
+      <listOfVariables>
+        <variable id="TNFRC1" name="TNFRC1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFRC1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFRC1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFRCint1_1" name="TNFRCint1">
+      <listOfVariables>
+        <variable id="TNFRCint1" name="TNFRCint1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFRCint1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFRCint1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFRCint2_1" name="TNFRCint2">
+      <listOfVariables>
+        <variable id="TNFRCint2" name="TNFRCint2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFRCint2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFRCint2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFRCint3_1" name="TNFRCint3">
+      <listOfVariables>
+        <variable id="TNFRCint3" name="TNFRCint3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFRCint3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFRCint3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFRC2_1" name="TNFRC2">
+      <listOfVariables>
+        <variable id="TNFRC2" name="TNFRC2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFRC2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFRC2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FLIP_1" name="FLIP">
+      <listOfVariables>
+        <variable id="FLIP" name="FLIP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FLIP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FLIP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFRC2_FLIP_1" name="TNFRC2_FLIP">
+      <listOfVariables>
+        <variable id="TNFRC2_FLIP" name="TNFRC2_FLIP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFRC2_FLIP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFRC2_FLIP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFRC2_pCasp8_1" name="TNFRC2_pCasp8">
+      <listOfVariables>
+        <variable id="TNFRC2_pCasp8" name="TNFRC2_pCasp8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFRC2_pCasp8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFRC2_pCasp8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFRC2_FLIP_FLIP_1" name="TNFRC2_FLIP_FLIP">
+      <listOfVariables>
+        <variable id="TNFRC2_FLIP_FLIP" name="TNFRC2_FLIP_FLIP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFRC2_FLIP_FLIP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFRC2_FLIP_FLIP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFRC2_pCasp8_pCasp8_1" name="TNFRC2_pCasp8_pCasp8">
+      <listOfVariables>
+        <variable id="TNFRC2_pCasp8_pCasp8" name="TNFRC2_pCasp8_pCasp8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFRC2_pCasp8_pCasp8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFRC2_pCasp8_pCasp8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFRC2_FLIP_pCasp8_1" name="TNFRC2_FLIP_pCasp8">
+      <listOfVariables>
+        <variable id="TNFRC2_FLIP_pCasp8" name="TNFRC2_FLIP_pCasp8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFRC2_FLIP_pCasp8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFRC2_FLIP_pCasp8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="TNFRC2_FLIP_pCasp8_RIP_TRAF2_1" name="TNFRC2_FLIP_pCasp8_RIP_TRAF2">
+      <listOfVariables>
+        <variable id="TNFRC2_FLIP_pCasp8_RIP_TRAF2" name="TNFRC2_FLIP_pCasp8_RIP_TRAF2" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='TNFRC2_FLIP_pCasp8_RIP_TRAF2']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> TNFRC2_FLIP_pCasp8_RIP_TRAF2 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IKK_1" name="IKK">
+      <listOfVariables>
+        <variable id="IKK" name="IKK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IKK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IKK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IKKa_1" name="IKKa">
+      <listOfVariables>
+        <variable id="IKKa" name="IKKa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IKKa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IKKa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A20_1" name="A20">
+      <listOfVariables>
+        <variable id="A20" name="A20" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A20']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A20 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFkB_1" name="NFkB">
+      <listOfVariables>
+        <variable id="NFkB" name="NFkB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFkB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFkB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBa_1" name="IkBa">
+      <listOfVariables>
+        <variable id="IkBa" name="IkBa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBa_NFkB_1" name="IkBa_NFkB">
+      <listOfVariables>
+        <variable id="IkBa_NFkB" name="IkBa_NFkB" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBa_NFkB']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBa_NFkB </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PIkBa_1" name="PIkBa">
+      <listOfVariables>
+        <variable id="PIkBa" name="PIkBa" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PIkBa']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PIkBa </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="NFkB_N_1" name="NFkB_N">
+      <listOfVariables>
+        <variable id="NFkB_N" name="NFkB_N" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='NFkB_N']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> NFkB_N </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBa_N_1" name="IkBa_N">
+      <listOfVariables>
+        <variable id="IkBa_N" name="IkBa_N" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBa_N']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBa_N </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBa_NFkB_N_1" name="IkBa_NFkB_N">
+      <listOfVariables>
+        <variable id="IkBa_NFkB_N" name="IkBa_NFkB_N" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBa_NFkB_N']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBa_NFkB_N </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A20_mRNA_1" name="A20_mRNA">
+      <listOfVariables>
+        <variable id="A20_mRNA" name="A20_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A20_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A20_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IkBa_mRNA_1" name="IkBa_mRNA">
+      <listOfVariables>
+        <variable id="IkBa_mRNA" name="IkBa_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IkBa_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IkBa_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_mRNA_1" name="XIAP_mRNA">
+      <listOfVariables>
+        <variable id="XIAP_mRNA" name="XIAP_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FLIP_mRNA_1" name="FLIP_mRNA">
+      <listOfVariables>
+        <variable id="FLIP_mRNA" name="FLIP_mRNA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FLIP_mRNA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FLIP_mRNA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BAR_1" name="BAR">
+      <listOfVariables>
+        <variable id="BAR" name="BAR" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BAR']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BAR </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_1" name="XIAP">
+      <listOfVariables>
+        <variable id="XIAP" name="XIAP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pCasp8_1" name="pCasp8">
+      <listOfVariables>
+        <variable id="pCasp8" name="pCasp8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pCasp8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pCasp8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pCasp3_1" name="pCasp3">
+      <listOfVariables>
+        <variable id="pCasp3" name="pCasp3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pCasp3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pCasp3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="pCasp6_1" name="pCasp6">
+      <listOfVariables>
+        <variable id="pCasp6" name="pCasp6" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='pCasp6']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> pCasp6 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Casp8_1" name="Casp8">
+      <listOfVariables>
+        <variable id="Casp8" name="Casp8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Casp8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Casp8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Casp3_1" name="Casp3">
+      <listOfVariables>
+        <variable id="Casp3" name="Casp3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Casp3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Casp3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Casp6_1" name="Casp6">
+      <listOfVariables>
+        <variable id="Casp6" name="Casp6" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Casp6']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Casp6 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="BAR_Casp8_1" name="BAR_Casp8">
+      <listOfVariables>
+        <variable id="BAR_Casp8" name="BAR_Casp8" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='BAR_Casp8']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> BAR_Casp8 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="XIAP_Casp3_1" name="XIAP_Casp3">
+      <listOfVariables>
+        <variable id="XIAP_Casp3" name="XIAP_Casp3" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='XIAP_Casp3']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> XIAP_Casp3 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PARP_1" name="PARP">
+      <listOfVariables>
+        <variable id="PARP" name="PARP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PARP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PARP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="cPARP_1" name="cPARP">
+      <listOfVariables>
+        <variable id="cPARP" name="cPARP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='cPARP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> cPARP </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="TNFR_E_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="TNF_E_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="TNF_TNFR_E_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="TNFR_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="RIP_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="TRADD_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="TRAF2_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="FADD_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="TNF_TNFR_TRADD_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="TNFRC1_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="TNFRCint1_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="TNFRCint2_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="TNFRCint3_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="TNFRC2_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="FLIP_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="TNFRC2_FLIP_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="TNFRC2_pCasp8_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="TNFRC2_FLIP_FLIP_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="TNFRC2_pCasp8_pCasp8_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="TNFRC2_FLIP_pCasp8_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="TNFRC2_FLIP_pCasp8_RIP_TRAF2_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="IKK_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="IKKa_1" />
+        <curve id="curve_23" logX="false" logY="false" xDataReference="time" yDataReference="A20_1" />
+        <curve id="curve_24" logX="false" logY="false" xDataReference="time" yDataReference="NFkB_1" />
+        <curve id="curve_25" logX="false" logY="false" xDataReference="time" yDataReference="IkBa_1" />
+        <curve id="curve_26" logX="false" logY="false" xDataReference="time" yDataReference="IkBa_NFkB_1" />
+        <curve id="curve_27" logX="false" logY="false" xDataReference="time" yDataReference="PIkBa_1" />
+        <curve id="curve_28" logX="false" logY="false" xDataReference="time" yDataReference="NFkB_N_1" />
+        <curve id="curve_29" logX="false" logY="false" xDataReference="time" yDataReference="IkBa_N_1" />
+        <curve id="curve_30" logX="false" logY="false" xDataReference="time" yDataReference="IkBa_NFkB_N_1" />
+        <curve id="curve_31" logX="false" logY="false" xDataReference="time" yDataReference="A20_mRNA_1" />
+        <curve id="curve_32" logX="false" logY="false" xDataReference="time" yDataReference="IkBa_mRNA_1" />
+        <curve id="curve_33" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_mRNA_1" />
+        <curve id="curve_34" logX="false" logY="false" xDataReference="time" yDataReference="FLIP_mRNA_1" />
+        <curve id="curve_35" logX="false" logY="false" xDataReference="time" yDataReference="BAR_1" />
+        <curve id="curve_36" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_1" />
+        <curve id="curve_37" logX="false" logY="false" xDataReference="time" yDataReference="pCasp8_1" />
+        <curve id="curve_38" logX="false" logY="false" xDataReference="time" yDataReference="pCasp3_1" />
+        <curve id="curve_39" logX="false" logY="false" xDataReference="time" yDataReference="pCasp6_1" />
+        <curve id="curve_40" logX="false" logY="false" xDataReference="time" yDataReference="Casp8_1" />
+        <curve id="curve_41" logX="false" logY="false" xDataReference="time" yDataReference="Casp3_1" />
+        <curve id="curve_42" logX="false" logY="false" xDataReference="time" yDataReference="Casp6_1" />
+        <curve id="curve_43" logX="false" logY="false" xDataReference="time" yDataReference="BAR_Casp8_1" />
+        <curve id="curve_44" logX="false" logY="false" xDataReference="time" yDataReference="XIAP_Casp3_1" />
+        <curve id="curve_45" logX="false" logY="false" xDataReference="time" yDataReference="PARP_1" />
+        <curve id="curve_46" logX="false" logY="false" xDataReference="time" yDataReference="cPARP_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="TNFR_E_1" />
+        <dataSet id="col_2" dataReference="TNF_E_1" />
+        <dataSet id="col_3" dataReference="TNF_TNFR_E_1" />
+        <dataSet id="col_4" dataReference="TNFR_1" />
+        <dataSet id="col_5" dataReference="RIP_1" />
+        <dataSet id="col_6" dataReference="TRADD_1" />
+        <dataSet id="col_7" dataReference="TRAF2_1" />
+        <dataSet id="col_8" dataReference="FADD_1" />
+        <dataSet id="col_9" dataReference="TNF_TNFR_TRADD_1" />
+        <dataSet id="col_10" dataReference="TNFRC1_1" />
+        <dataSet id="col_11" dataReference="TNFRCint1_1" />
+        <dataSet id="col_12" dataReference="TNFRCint2_1" />
+        <dataSet id="col_13" dataReference="TNFRCint3_1" />
+        <dataSet id="col_14" dataReference="TNFRC2_1" />
+        <dataSet id="col_15" dataReference="FLIP_1" />
+        <dataSet id="col_16" dataReference="TNFRC2_FLIP_1" />
+        <dataSet id="col_17" dataReference="TNFRC2_pCasp8_1" />
+        <dataSet id="col_18" dataReference="TNFRC2_FLIP_FLIP_1" />
+        <dataSet id="col_19" dataReference="TNFRC2_pCasp8_pCasp8_1" />
+        <dataSet id="col_20" dataReference="TNFRC2_FLIP_pCasp8_1" />
+        <dataSet id="col_21" dataReference="TNFRC2_FLIP_pCasp8_RIP_TRAF2_1" />
+        <dataSet id="col_22" dataReference="IKK_1" />
+        <dataSet id="col_23" dataReference="IKKa_1" />
+        <dataSet id="col_24" dataReference="A20_1" />
+        <dataSet id="col_25" dataReference="NFkB_1" />
+        <dataSet id="col_26" dataReference="IkBa_1" />
+        <dataSet id="col_27" dataReference="IkBa_NFkB_1" />
+        <dataSet id="col_28" dataReference="PIkBa_1" />
+        <dataSet id="col_29" dataReference="NFkB_N_1" />
+        <dataSet id="col_30" dataReference="IkBa_N_1" />
+        <dataSet id="col_31" dataReference="IkBa_NFkB_N_1" />
+        <dataSet id="col_32" dataReference="A20_mRNA_1" />
+        <dataSet id="col_33" dataReference="IkBa_mRNA_1" />
+        <dataSet id="col_34" dataReference="XIAP_mRNA_1" />
+        <dataSet id="col_35" dataReference="FLIP_mRNA_1" />
+        <dataSet id="col_36" dataReference="BAR_1" />
+        <dataSet id="col_37" dataReference="XIAP_1" />
+        <dataSet id="col_38" dataReference="pCasp8_1" />
+        <dataSet id="col_39" dataReference="pCasp3_1" />
+        <dataSet id="col_40" dataReference="pCasp6_1" />
+        <dataSet id="col_41" dataReference="Casp8_1" />
+        <dataSet id="col_42" dataReference="Casp3_1" />
+        <dataSet id="col_43" dataReference="Casp6_1" />
+        <dataSet id="col_44" dataReference="BAR_Casp8_1" />
+        <dataSet id="col_45" dataReference="XIAP_Casp3_1" />
+        <dataSet id="col_46" dataReference="PARP_1" />
+        <dataSet id="col_47" dataReference="cPARP_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
