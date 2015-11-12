@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000427.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="EGFR_active_1" name="EGFR_active">
+      <listOfVariables>
+        <variable id="EGFR_active" name="EGFR_active" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='EGFR_active']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> EGFR_active </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="D_SOS_1" name="D_SOS">
+      <listOfVariables>
+        <variable id="D_SOS" name="D_SOS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='D_SOS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> D_SOS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="A_SOS_1" name="A_SOS">
+      <listOfVariables>
+        <variable id="A_SOS" name="A_SOS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='A_SOS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> A_SOS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Raf_1" name="Raf">
+      <listOfVariables>
+        <variable id="Raf" name="Raf" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Raf']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Raf </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras_active_1" name="Ras_active">
+      <listOfVariables>
+        <variable id="Ras_active" name="Ras_active" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras_active']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras_active </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mek_active_1" name="Mek_active">
+      <listOfVariables>
+        <variable id="Mek_active" name="Mek_active" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mek_active']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mek_active </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK_1" name="ERK">
+      <listOfVariables>
+        <variable id="ERK" name="ERK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ERK_active_1" name="ERK_active">
+      <listOfVariables>
+        <variable id="ERK_active" name="ERK_active" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ERK_active']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ERK_active </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IGFR_active_1" name="IGFR_active">
+      <listOfVariables>
+        <variable id="IGFR_active" name="IGFR_active" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IGFR_active']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IGFR_active </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PI3KCA_1" name="PI3KCA">
+      <listOfVariables>
+        <variable id="PI3KCA" name="PI3KCA" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PI3KCA']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PI3KCA </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PI3KCA_active_1" name="PI3KCA_active">
+      <listOfVariables>
+        <variable id="PI3KCA_active" name="PI3KCA_active" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PI3KCA_active']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PI3KCA_active </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AKT_active_1" name="AKT_active">
+      <listOfVariables>
+        <variable id="AKT_active" name="AKT_active" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AKT_active']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AKT_active </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AKT_1" name="AKT">
+      <listOfVariables>
+        <variable id="AKT" name="AKT" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AKT']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AKT </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="PP2A_1" name="PP2A">
+      <listOfVariables>
+        <variable id="PP2A" name="PP2A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='PP2A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> PP2A </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Ras_1" name="Ras">
+      <listOfVariables>
+        <variable id="Ras" name="Ras" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Ras']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Ras </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Raf_active_1" name="Raf_active">
+      <listOfVariables>
+        <variable id="Raf_active" name="Raf_active" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Raf_active']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Raf_active </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mek_1" name="Mek">
+      <listOfVariables>
+        <variable id="Mek" name="Mek" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mek']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mek </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RasGapActive_1" name="RasGapActive">
+      <listOfVariables>
+        <variable id="RasGapActive" name="RasGapActive" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RasGapActive']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RasGapActive </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="RafPP_1" name="RafPP">
+      <listOfVariables>
+        <variable id="RafPP" name="RafPP" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='RafPP']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> RafPP </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="P90RskInactive_1" name="P90RskInactive">
+      <listOfVariables>
+        <variable id="P90RskInactive" name="P90RskInactive" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='P90RskInactive']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> P90RskInactive </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="P90Rsk_Active_1" name="P90Rsk_Active">
+      <listOfVariables>
+        <variable id="P90Rsk_Active" name="P90Rsk_Active" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='P90Rsk_Active']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> P90Rsk_Active </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="EGFR_active_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="D_SOS_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="A_SOS_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="Raf_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="Ras_active_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="Mek_active_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="ERK_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="ERK_active_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="IGFR_active_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="PI3KCA_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="PI3KCA_active_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="AKT_active_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="AKT_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="PP2A_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="Ras_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="Raf_active_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="Mek_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="RasGapActive_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="RafPP_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="P90RskInactive_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="P90Rsk_Active_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="EGFR_active_1" />
+        <dataSet id="col_2" dataReference="D_SOS_1" />
+        <dataSet id="col_3" dataReference="A_SOS_1" />
+        <dataSet id="col_4" dataReference="Raf_1" />
+        <dataSet id="col_5" dataReference="Ras_active_1" />
+        <dataSet id="col_6" dataReference="Mek_active_1" />
+        <dataSet id="col_7" dataReference="ERK_1" />
+        <dataSet id="col_8" dataReference="ERK_active_1" />
+        <dataSet id="col_9" dataReference="IGFR_active_1" />
+        <dataSet id="col_10" dataReference="PI3KCA_1" />
+        <dataSet id="col_11" dataReference="PI3KCA_active_1" />
+        <dataSet id="col_12" dataReference="AKT_active_1" />
+        <dataSet id="col_13" dataReference="AKT_1" />
+        <dataSet id="col_14" dataReference="PP2A_1" />
+        <dataSet id="col_15" dataReference="Ras_1" />
+        <dataSet id="col_16" dataReference="Raf_active_1" />
+        <dataSet id="col_17" dataReference="Mek_1" />
+        <dataSet id="col_18" dataReference="RasGapActive_1" />
+        <dataSet id="col_19" dataReference="RafPP_1" />
+        <dataSet id="col_20" dataReference="P90RskInactive_1" />
+        <dataSet id="col_21" dataReference="P90Rsk_Active_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
