@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Written by libSedML v1.1.5793.19667 see http://libsedml.sf.net -->
+<sedML level="1" version="1" xmlns="http://sed-ml.org/">
+  <listOfSimulations>
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="0" outputEndTime="100" numberOfPoints="1000">
+      <algorithm kisaoID="KISAO:0000019" />
+    </uniformTimeCourse>
+  </listOfSimulations>
+  <listOfModels>
+    <model id="model1" language="urn:sedml:language:sbml" source="BIOMD0000000582.sbml" />
+  </listOfModels>
+  <listOfTasks>
+    <task id="task1" modelReference="model1" simulationReference="sim1" />
+  </listOfTasks>
+  <listOfDataGenerators>
+    <dataGenerator id="time" name="time">
+      <listOfVariables>
+        <variable id="var_time_0" taskReference="task1" symbol="urn:sedml:symbol:time" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> var_time_0 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Akt_1" name="Akt">
+      <listOfVariables>
+        <variable id="Akt" name="Akt" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Akt']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Akt </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Akt_pS473_1" name="Akt_pS473">
+      <listOfVariables>
+        <variable id="Akt_pS473" name="Akt_pS473" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Akt_pS473']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Akt_pS473 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AMPK_1" name="AMPK">
+      <listOfVariables>
+        <variable id="AMPK" name="AMPK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AMPK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AMPK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="AMPK_pT172_1" name="AMPK_pT172">
+      <listOfVariables>
+        <variable id="AMPK_pT172" name="AMPK_pT172" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='AMPK_pT172']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> AMPK_pT172 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mTORC1_1" name="mTORC1">
+      <listOfVariables>
+        <variable id="mTORC1" name="mTORC1" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mTORC1']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mTORC1 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="mTORC1_pS2448_1" name="mTORC1_pS2448">
+      <listOfVariables>
+        <variable id="mTORC1_pS2448" name="mTORC1_pS2448" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='mTORC1_pS2448']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> mTORC1_pS2448 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mitophagy_1" name="Mitophagy">
+      <listOfVariables>
+        <variable id="Mitophagy" name="Mitophagy" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mitophagy']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mitophagy </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FoxO3a_1" name="FoxO3a">
+      <listOfVariables>
+        <variable id="FoxO3a" name="FoxO3a" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FoxO3a']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FoxO3a </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="FoxO3a_pS253_1" name="FoxO3a_pS253">
+      <listOfVariables>
+        <variable id="FoxO3a_pS253" name="FoxO3a_pS253" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='FoxO3a_pS253']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> FoxO3a_pS253 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CDKN1A_1" name="CDKN1A">
+      <listOfVariables>
+        <variable id="CDKN1A" name="CDKN1A" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CDKN1A']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CDKN1A </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="CDKN1B_1" name="CDKN1B">
+      <listOfVariables>
+        <variable id="CDKN1B" name="CDKN1B" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='CDKN1B']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> CDKN1B </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="JNK_1" name="JNK">
+      <listOfVariables>
+        <variable id="JNK" name="JNK" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='JNK']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> JNK </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="JNK_pT183_1" name="JNK_pT183">
+      <listOfVariables>
+        <variable id="JNK_pT183" name="JNK_pT183" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='JNK_pT183']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> JNK_pT183 </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="ROS_1" name="ROS">
+      <listOfVariables>
+        <variable id="ROS" name="ROS" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='ROS']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> ROS </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="DNA_damage_1" name="DNA_damage">
+      <listOfVariables>
+        <variable id="DNA_damage" name="DNA_damage" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='DNA_damage']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> DNA_damage </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="SA_beta_gal_1" name="SA_beta_gal">
+      <listOfVariables>
+        <variable id="SA_beta_gal" name="SA_beta_gal" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='SA_beta_gal']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> SA_beta_gal </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="IKKbeta_1" name="IKKbeta">
+      <listOfVariables>
+        <variable id="IKKbeta" name="IKKbeta" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='IKKbeta']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> IKKbeta </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mito_mass_new_1" name="Mito_mass_new">
+      <listOfVariables>
+        <variable id="Mito_mass_new" name="Mito_mass_new" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mito_mass_new']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mito_mass_new </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mito_mass_old_1" name="Mito_mass_old">
+      <listOfVariables>
+        <variable id="Mito_mass_old" name="Mito_mass_old" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mito_mass_old']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mito_mass_old </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mito_mass_turnover_1" name="Mito_mass_turnover">
+      <listOfVariables>
+        <variable id="Mito_mass_turnover" name="Mito_mass_turnover" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mito_mass_turnover']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mito_mass_turnover </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mito_membr_pot_new_1" name="Mito_membr_pot_new">
+      <listOfVariables>
+        <variable id="Mito_membr_pot_new" name="Mito_membr_pot_new" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mito_membr_pot_new']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mito_membr_pot_new </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Mito_membr_pot_old_1" name="Mito_membr_pot_old">
+      <listOfVariables>
+        <variable id="Mito_membr_pot_old" name="Mito_membr_pot_old" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Mito_membr_pot_old']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Mito_membr_pot_old </ci>
+      </math>
+    </dataGenerator>
+    <dataGenerator id="Nil_1" name="Nil">
+      <listOfVariables>
+        <variable id="Nil" name="Nil" taskReference="task1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id='Nil']" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> Nil </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+  <listOfOutputs>
+    <plot2D id="plot1">
+      <listOfCurves>
+        <curve id="curve_0" logX="false" logY="false" xDataReference="time" yDataReference="Akt_1" />
+        <curve id="curve_1" logX="false" logY="false" xDataReference="time" yDataReference="Akt_pS473_1" />
+        <curve id="curve_2" logX="false" logY="false" xDataReference="time" yDataReference="AMPK_1" />
+        <curve id="curve_3" logX="false" logY="false" xDataReference="time" yDataReference="AMPK_pT172_1" />
+        <curve id="curve_4" logX="false" logY="false" xDataReference="time" yDataReference="mTORC1_1" />
+        <curve id="curve_5" logX="false" logY="false" xDataReference="time" yDataReference="mTORC1_pS2448_1" />
+        <curve id="curve_6" logX="false" logY="false" xDataReference="time" yDataReference="Mitophagy_1" />
+        <curve id="curve_7" logX="false" logY="false" xDataReference="time" yDataReference="FoxO3a_1" />
+        <curve id="curve_8" logX="false" logY="false" xDataReference="time" yDataReference="FoxO3a_pS253_1" />
+        <curve id="curve_9" logX="false" logY="false" xDataReference="time" yDataReference="CDKN1A_1" />
+        <curve id="curve_10" logX="false" logY="false" xDataReference="time" yDataReference="CDKN1B_1" />
+        <curve id="curve_11" logX="false" logY="false" xDataReference="time" yDataReference="JNK_1" />
+        <curve id="curve_12" logX="false" logY="false" xDataReference="time" yDataReference="JNK_pT183_1" />
+        <curve id="curve_13" logX="false" logY="false" xDataReference="time" yDataReference="ROS_1" />
+        <curve id="curve_14" logX="false" logY="false" xDataReference="time" yDataReference="DNA_damage_1" />
+        <curve id="curve_15" logX="false" logY="false" xDataReference="time" yDataReference="SA_beta_gal_1" />
+        <curve id="curve_16" logX="false" logY="false" xDataReference="time" yDataReference="IKKbeta_1" />
+        <curve id="curve_17" logX="false" logY="false" xDataReference="time" yDataReference="Mito_mass_new_1" />
+        <curve id="curve_18" logX="false" logY="false" xDataReference="time" yDataReference="Mito_mass_old_1" />
+        <curve id="curve_19" logX="false" logY="false" xDataReference="time" yDataReference="Mito_mass_turnover_1" />
+        <curve id="curve_20" logX="false" logY="false" xDataReference="time" yDataReference="Mito_membr_pot_new_1" />
+        <curve id="curve_21" logX="false" logY="false" xDataReference="time" yDataReference="Mito_membr_pot_old_1" />
+        <curve id="curve_22" logX="false" logY="false" xDataReference="time" yDataReference="Nil_1" />
+      </listOfCurves>
+    </plot2D>
+    <report id="report1">
+      <listOfDataSets>
+        <dataSet id="col_0" dataReference="time" label="time" />
+        <dataSet id="col_1" dataReference="Akt_1" />
+        <dataSet id="col_2" dataReference="Akt_pS473_1" />
+        <dataSet id="col_3" dataReference="AMPK_1" />
+        <dataSet id="col_4" dataReference="AMPK_pT172_1" />
+        <dataSet id="col_5" dataReference="mTORC1_1" />
+        <dataSet id="col_6" dataReference="mTORC1_pS2448_1" />
+        <dataSet id="col_7" dataReference="Mitophagy_1" />
+        <dataSet id="col_8" dataReference="FoxO3a_1" />
+        <dataSet id="col_9" dataReference="FoxO3a_pS253_1" />
+        <dataSet id="col_10" dataReference="CDKN1A_1" />
+        <dataSet id="col_11" dataReference="CDKN1B_1" />
+        <dataSet id="col_12" dataReference="JNK_1" />
+        <dataSet id="col_13" dataReference="JNK_pT183_1" />
+        <dataSet id="col_14" dataReference="ROS_1" />
+        <dataSet id="col_15" dataReference="DNA_damage_1" />
+        <dataSet id="col_16" dataReference="SA_beta_gal_1" />
+        <dataSet id="col_17" dataReference="IKKbeta_1" />
+        <dataSet id="col_18" dataReference="Mito_mass_new_1" />
+        <dataSet id="col_19" dataReference="Mito_mass_old_1" />
+        <dataSet id="col_20" dataReference="Mito_mass_turnover_1" />
+        <dataSet id="col_21" dataReference="Mito_membr_pot_new_1" />
+        <dataSet id="col_22" dataReference="Mito_membr_pot_old_1" />
+        <dataSet id="col_23" dataReference="Nil_1" />
+      </listOfDataSets>
+    </report>
+  </listOfOutputs>
+</sedML>
